@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase";
 import { getAuthErrorMessage } from "../lib/authErrors";
+import GoogleButton from "../components/GoogleButton";
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -61,6 +62,8 @@ export default function Login() {
           {loading ? "Logging in..." : "Log in"}
         </button>
       </form>
+
+      <GoogleButton onError={setError} />
 
       <p className="mt-4 text-sm text-gray-600">
         New here?{" "}

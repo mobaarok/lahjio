@@ -16,6 +16,11 @@ export function getAuthErrorMessage(code) {
       return "Too many attempts. Please try again later.";
     case "auth/network-request-failed":
       return "Network error. Check your connection.";
+    case "auth/popup-closed-by-user":
+    case "auth/cancelled-popup-request":
+      return "Google sign-in was cancelled.";
+    case "auth/popup-blocked":
+      return "Your browser blocked the popup. Please allow popups and try again.";
     default:
       return "Something went wrong. Please try again.";
   }

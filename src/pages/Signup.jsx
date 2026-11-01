@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase"; // adjust path/name if your Step 4 file differs
 import { getAuthErrorMessage } from "../lib/authErrors";
+import GoogleButton from "../components/GoogleButton";
 
 export default function Signup() {
   const [email, setEmail] = useState("");
@@ -74,6 +75,8 @@ export default function Signup() {
           {loading ? "Creating account..." : "Sign up"}
         </button>
       </form>
+
+      <GoogleButton onError={setError} />
 
       <p className="mt-4 text-sm text-gray-600">
         Already have an account?{" "}

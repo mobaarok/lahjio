@@ -1,13 +1,8 @@
 import { useState } from "react";
-import { NavLink, Link } from "react-router-dom";
-
-// temp:  to check auth
+import { NavLink, Link, useNavigate } from "react-router-dom";
+import { signOut } from "firebase/auth";
+import { auth } from "../firebase";
 import { useAuth } from "../hooks/useAuth";
-
-
-
-
-
 
 const links = [
   { to: "/words", label: "Words" },
@@ -23,10 +18,14 @@ const linkClass = ({ isActive }) =>
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const { user } = useAuth();
+  const navigate = useNavigate();
 
-  // inside the component: temp to auth
-const { user } = useAuth();
-console.log("Current user:", user);
+  async function handleLogout() {
+    await signOut(auth);
+    setOpen(false);
+    navigate("/");
+  }
 
   return (
     <header className="border-b bg-white">
@@ -42,13 +41,24 @@ console.log("Current user:", user);
               {l.label}
             </NavLink>
           ))}
-          <NavLink to="/login" className={linkClass}>Login</NavLink>
-          <Link
-            to="/signup"
-            className="ml-2 rounded-md bg-emerald-600 px-4 py-2 text-sm font-medium text-white hover:bg-emerald-700"
-          >
-            Sign up
-          </Link>
+          {user ? (
+            <button
+              onClick={handleLogout}
+              className="ml-2 rounded-md px-3 py-2 text-sm font-medium text-slate-600 hover:bg-slate-100"
+            >
+              Log out
+            </button>
+          ) : (
+            <>
+              <NavLink to="/login" className={linkClass}>Login</NavLink>
+              <Link
+                to="/signup"
+                className="ml-2 rounded-md bg-emerald-600 px-4 py-2 text-sm font-medium text-white hover:bg-emerald-700"
+              >
+                Sign up
+              </Link>
+            </>
+          )}
         </div>
 
         {/* Mobile toggle */}
@@ -69,8 +79,19 @@ console.log("Current user:", user);
               {l.label}
             </NavLink>
           ))}
-          <NavLink to="/login" className={linkClass} onClick={() => setOpen(false)}>Login</NavLink>
-          <NavLink to="/signup" className={linkClass} onClick={() => setOpen(false)}>Sign up</NavLink>
+          {user ? (
+            <button
+              onClick={handleLogout}
+              className="rounded-md px-3 py-2 text-left text-sm font-medium text-slate-600 hover:bg-slate-100"
+            >
+              Log out
+            </button>
+          ) : (
+            <>
+              <NavLink to="/login" className={linkClass} onClick={() => setOpen(false)}>Login</NavLink>
+              <NavLink to="/signup" className={linkClass} onClick={() => setOpen(false)}>Sign up</NavLink>
+            </>
+          )}
         </div>
       )}
     </header>
