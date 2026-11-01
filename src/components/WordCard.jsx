@@ -1,8 +1,13 @@
 import { useState } from "react";
-import { speakArabic } from "../lib/speak";
+import { playWord } from "../lib/speak";
 
 export default function WordCard({ word, listView }) {
   const [noVoice, setNoVoice] = useState(false);
+
+  async function handlePlay() {
+    const played = await playWord(word);
+    setNoVoice(!played);
+  }
 
   return (
     <article
@@ -16,7 +21,7 @@ export default function WordCard({ word, listView }) {
         }`}
       >
         <button
-          onClick={() => setNoVoice(!speakArabic(word.arabic))}
+          onClick={handlePlay}
           aria-label={`${word.bangla} শব্দের উচ্চারণ শোনো`}
           className="shrink-0 rounded-full p-2 text-xl hover:bg-emerald-50"
         >

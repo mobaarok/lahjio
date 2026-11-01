@@ -1,4 +1,32 @@
-// Web Speech helper: reads Arabic text aloud
+// Audio helpers: play a word's own file, or read it with Web Speech
+
+let currentAudio = null; // the audio file playing now, if any
+
+// Plays a word. Returns true if it played, false if no sound was possible.
+export async function playWord(word) {
+  if (currentAudio) currentAudio.pause(); // stop the previous word
+  currentAudio = null;
+
+  // 1. Own audio file: used when the word has an "audio" path in words.json
+  if (word.audio) {
+    const audio = new Audio(word.audio);
+    currentAudio = audio;
+    window.speechSynthesis?.cancel();
+
+    try {
+      await audio.play();
+      return true;
+    } catch {
+      // The file couldn't play, for example a wrong path or missing file.
+      // If another word was clicked while it loaded, don't fall back
+      if (currentAudio !== audio) return true;
+      currentAudio = null;
+    }
+  }
+
+  // 2. Fallback: no audio file, or it failed, so use Web Speech
+  return speakArabic(word.arabic);
+}
 
 export function speakArabic(text) {
   if (!("speechSynthesis" in window)) return false;
