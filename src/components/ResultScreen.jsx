@@ -1,11 +1,11 @@
-import { bn } from "../lib/format";
+import { useLocale } from "../hooks/useLocale";
 import { cardClass } from "../lib/styles";
 
 // End-of-session summary for quizzes, practice and lessons
 export default function ResultScreen({ title, score, total, xp, children }) {
+  const { t, num } = useLocale();
   const percent = total > 0 ? Math.round((score / total) * 100) : 0;
-  const message =
-    percent === 100 ? "অসাধারণ! সব ঠিক!" : percent >= 70 ? "দারুণ হয়েছে!" : "চালিয়ে যাও, প্র্যাকটিসে সব সহজ হবে।";
+  const message = percent === 100 ? t("result.perfect") : percent >= 70 ? t("result.great") : t("result.keepGoing");
   const emoji = percent === 100 ? "🏆" : percent >= 70 ? "🎉" : "💪";
 
   return (
@@ -17,13 +17,13 @@ export default function ResultScreen({ title, score, total, xp, children }) {
       <div className="mt-6 grid grid-cols-2 gap-3">
         <div className="rounded-2xl bg-emerald-50 p-4">
           <p className="text-3xl font-bold text-emerald-700">
-            {bn(score)}/{bn(total)}
+            {num(score)}/{num(total)}
           </p>
-          <p className="text-sm text-emerald-800">সঠিক উত্তর</p>
+          <p className="text-sm text-emerald-800">{t("result.correct")}</p>
         </div>
         <div className="rounded-2xl bg-amber-50 p-4">
-          <p className="text-3xl font-bold text-amber-600">+{bn(xp)}</p>
-          <p className="text-sm text-amber-800">XP পেয়েছো</p>
+          <p className="text-3xl font-bold text-amber-600">+{num(xp)}</p>
+          <p className="text-sm text-amber-800">{t("result.xp")}</p>
         </div>
       </div>
 

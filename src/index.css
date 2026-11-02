@@ -3,6 +3,19 @@
 @theme {
   --font-sans: "Hind Siliguri", ui-sans-serif, system-ui, sans-serif;
   --font-arabic: "Noto Naskh Arabic", "Segoe UI", serif;
+
+  /* Gentle up-and-down motion for the landing page phone and badges */
+  --animate-float: float 5s ease-in-out infinite;
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
 }
 
 @layer base {
@@ -15,4 +28,14 @@
     font-family: var(--font-arabic);
     line-height: 1.6;
   }
+
+  /* Hide the default arrow of <details> in the FAQ */
+  summary::-webkit-details-marker {
+    display: none;
+  }
+}
+
+/* Lets a section stretch to the full screen width inside the centered page */
+@utility full-bleed {
+  margin-inline: calc(50% - 50vw);
 }

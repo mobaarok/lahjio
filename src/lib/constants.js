@@ -1,15 +1,16 @@
-// Fixed choices used across the app. Keep values in English (saved in
-// Firestore) and labels for display.
+// Fixed choices for the admin area. Values are saved in Firestore; labels are
+// shown in the (English) admin. Learner pages translate values with
+// t("level.beginner") and similar keys in i18n/messages.
 
 export const ITEM_TYPES = [
-  { value: "word", label: "Word", bn: "শব্দ" },
-  { value: "phrase", label: "Phrase", bn: "বাক্যাংশ" },
+  { value: "word", label: "Word" },
+  { value: "phrase", label: "Phrase" },
 ];
 
 export const LEVELS = [
-  { value: "beginner", label: "Beginner", bn: "শুরুর স্তর" },
-  { value: "intermediate", label: "Intermediate", bn: "মাঝারি স্তর" },
-  { value: "advanced", label: "Advanced", bn: "উচ্চ স্তর" },
+  { value: "beginner", label: "Beginner" },
+  { value: "intermediate", label: "Intermediate" },
+  { value: "advanced", label: "Advanced" },
 ];
 
 export const STATUSES = [
@@ -19,13 +20,13 @@ export const STATUSES = [
 ];
 
 export const COURSE_TYPES = [
-  { value: "word", label: "Word course", bn: "শব্দ কোর্স" },
-  { value: "phrase", label: "Phrase course", bn: "বাক্য কোর্স" },
-  { value: "topic", label: "Topic course", bn: "বিষয়ভিত্তিক কোর্স" },
-  { value: "mixed", label: "Mixed course", bn: "মিশ্র কোর্স" },
+  { value: "word", label: "Word course" },
+  { value: "phrase", label: "Phrase course" },
+  { value: "topic", label: "Topic course" },
+  { value: "mixed", label: "Mixed course" },
 ];
 
-// Finds the label for a saved value, e.g. labelOf(LEVELS, "beginner", "bn")
+// Finds the admin label for a saved value, e.g. labelOf(LEVELS, "beginner")
 export function labelOf(options, value, key = "label") {
   return options.find((o) => o.value === value)?.[key] ?? value;
 }

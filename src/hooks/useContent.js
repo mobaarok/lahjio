@@ -22,11 +22,8 @@ export function useContent() {
       .catch(() => {
         contentPromise = null; // try again next time
         if (!ignore) {
-          setState({
-            content: null,
-            loading: false,
-            error: "কনটেন্ট লোড করা যায়নি। ইন্টারনেট সংযোগ দেখে আবার চেষ্টা করো।",
-          });
+          // A message key; pages show it with t(error)
+          setState({ content: null, loading: false, error: "error.contentLoad" });
         }
       });
 

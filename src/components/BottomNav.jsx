@@ -1,18 +1,21 @@
 import { NavLink } from "react-router-dom";
 import Icon from "./Icon";
+import { useLocale } from "../hooks/useLocale";
 
-// App-style tab bar, only shown on phones
+// App-style tab bar, only shown on phones and tablets
 const tabs = [
-  { to: "/", label: "হোম", icon: "home", end: true },
-  { to: "/courses", label: "কোর্স", icon: "book" },
-  { to: "/words", label: "শব্দ", icon: "list" },
-  { to: "/practice", label: "প্র্যাকটিস", icon: "cards" },
-  { to: "/account", label: "প্রোফাইল", icon: "user" },
+  { to: "/", key: "nav.home", icon: "home", end: true },
+  { to: "/courses", key: "nav.courses", icon: "book" },
+  { to: "/words", key: "nav.words", icon: "list" },
+  { to: "/practice", key: "nav.practice", icon: "cards" },
+  { to: "/account", key: "nav.profile", icon: "user" },
 ];
 
 export default function BottomNav() {
+  const { t } = useLocale();
+
   return (
-    <nav className="fixed inset-x-0 bottom-0 z-30 border-t border-slate-200 bg-white/95 pb-[env(safe-area-inset-bottom)] backdrop-blur md:hidden">
+    <nav className="fixed inset-x-0 bottom-0 z-30 border-t border-slate-200 bg-white/95 pb-[env(safe-area-inset-bottom)] backdrop-blur lg:hidden">
       <div className="grid grid-cols-5">
         {tabs.map((tab) => (
           <NavLink
@@ -26,7 +29,7 @@ export default function BottomNav() {
             }
           >
             <Icon name={tab.icon} className="size-6" />
-            {tab.label}
+            {t(tab.key)}
           </NavLink>
         ))}
       </div>

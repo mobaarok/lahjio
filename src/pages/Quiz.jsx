@@ -5,8 +5,8 @@ import ResultScreen from "../components/ResultScreen";
 import { Alert, PageHeader, Spinner } from "../components/ui";
 import { useAuth } from "../hooks/useAuth";
 import { useContent } from "../hooks/useContent";
+import { useLocale } from "../hooks/useLocale";
 import { useProgress } from "../hooks/useProgress";
-import { bn } from "../lib/format";
 import { XP_CORRECT, XP_WRONG } from "../lib/progress";
 import { makeQuestions } from "../lib/quiz";
 import { buttonClass, cardClass, chipClass } from "../lib/styles";
@@ -19,13 +19,14 @@ export default function Quiz() {
   const { content, loading, error } = useContent();
   const { recordAnswer } = useProgress();
   const { user } = useAuth();
+  const { t, num, localized } = useLocale();
 
   const [categoryId, setCategoryId] = useState("all");
   const [questions, setQuestions] = useState(null); // null = start screen
   const [finalScore, setFinalScore] = useState(null);
 
   if (loading) return <Spinner />;
-  if (error) return <Alert>{error}</Alert>;
+  if (error) return <Alert>{t(error)}</Alert>;
 
   const pool = content.items;
   const topicItems = pool.filter((item) => categoryId === "all" || item.category_ids?.includes(categoryId));
@@ -39,20 +40,20 @@ export default function Quiz() {
     const wrong = questions.length - finalScore;
     return (
       <ResultScreen
-        title="কুইজ শেষ!"
+        title={t("quiz.done")}
         score={finalScore}
         total={questions.length}
         xp={finalScore * XP_CORRECT + wrong * XP_WRONG}
       >
         <button onClick={start} className={buttonClass("primary", "lg")}>
-          আবার খেলো
+          {t("quiz.playAgain")}
         </button>
         <button onClick={() => setQuestions(null)} className={buttonClass("secondary", "lg")}>
-          অন্য বিষয় বেছে নাও
+          {t("quiz.otherTopic")}
         </button>
         {!user && (
           <Link to="/signup" className={buttonClass("ghost", "lg")}>
-            XP আর অগ্রগতি সেভ করতে ফ্রি অ্যাকাউন্ট খোলো
+            {t("quiz.signupToSave")}
           </Link>
         )}
       </ResultScreen>
@@ -65,37 +66,31 @@ export default function Quiz() {
 
   return (
     <div className="mx-auto max-w-xl">
-      <PageHeader title="কুইজ" subtitle={`${bn(QUESTION_COUNT)}টি প্রশ্ন: পড়ে, দেখে আর শুনে উত্তর দাও।`} />
+      <PageHeader title={t("nav.quiz")} subtitle={t("quiz.subtitle", { count: num(QUESTION_COUNT) })} />
 
       <div className={`${cardClass} p-5`}>
-        <p className="mb-3 font-semibold text-slate-800">কোন বিষয়ে?</p>
+        <p className="mb-3 font-semibold text-slate-800">{t("quiz.whichTopic")}</p>
         <div className="flex flex-wrap gap-2">
           <button onClick={() => setCategoryId("all")} className={chipClass(categoryId === "all")}>
-            সব বিষয়
+            {t("filter.allTopics")}
           </button>
           {content.categories.map((c) => (
             <button key={c.id} onClick={() => setCategoryId(c.id)} className={chipClass(categoryId === c.id)}>
-              {c.name_bn}
+              {localized(c, "name")}
             </button>
           ))}
         </div>
 
-        <button
-          onClick={start}
-          disabled={topicItems.length < 2}
-          className={buttonClass("primary", "lg", "mt-6 w-full")}
-        >
-          কুইজ শুরু করো
+        <button onClick={start} disabled={topicItems.length < 2} className={buttonClass("primary", "lg", "mt-6 w-full")}>
+          {t("quiz.start")}
         </button>
-        {topicItems.length < 2 && (
-          <p className="mt-2 text-center text-sm text-slate-500">এই বিষয়ে এখনো যথেষ্ট শব্দ নেই।</p>
-        )}
+        {topicItems.length < 2 && <p className="mt-2 text-center text-sm text-slate-500">{t("quiz.notEnough")}</p>}
       </div>
 
       <p className="mt-6 text-center text-sm text-slate-500">
-        আগে শিখে নিতে চাও?{" "}
+        {t("quiz.learnFirst")}{" "}
         <Link to="/practice" className="font-semibold text-emerald-700 hover:underline">
-          ফ্ল্যাশকার্ড প্র্যাকটিস
+          {t("quiz.practiceLink")}
         </Link>
       </p>
     </div>

@@ -5,10 +5,12 @@ import { auth } from "../firebase";
 import AuthCard from "../components/AuthCard";
 import GoogleButton from "../components/GoogleButton";
 import { Alert, Field } from "../components/ui";
-import { getAuthErrorMessage } from "../lib/authErrors";
+import { useLocale } from "../hooks/useLocale";
+import { authErrorKey } from "../lib/authErrors";
 import { buttonClass, inputClass } from "../lib/styles";
 
 export default function Signup() {
+  const { t } = useLocale();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -22,7 +24,7 @@ export default function Signup() {
     setError("");
 
     if (password !== confirm) {
-      setError("দুটি পাসওয়ার্ড মেলেনি।");
+      setError(t("signup.mismatch"));
       return;
     }
 
@@ -33,14 +35,14 @@ export default function Signup() {
       if (name.trim()) await updateProfile(user, { displayName: name.trim() });
       navigate("/", { replace: true });
     } catch (err) {
-      setError(getAuthErrorMessage(err.code));
+      setError(t(authErrorKey(err.code)));
     } finally {
       setLoading(false);
     }
   }
 
   return (
-    <AuthCard title="ফ্রি অ্যাকাউন্ট খোলো" subtitle="অগ্রগতি সেভ হবে, যেকোনো ডিভাইস থেকে চালিয়ে যেতে পারবে।">
+    <AuthCard title={t("signup.title")} subtitle={t("signup.subtitle")}>
       {error && (
         <div className="mb-4">
           <Alert>{error}</Alert>
@@ -51,36 +53,36 @@ export default function Signup() {
 
       <div className="my-5 flex items-center gap-3 text-sm text-slate-400">
         <span className="h-px flex-1 bg-slate-200" />
-        অথবা ইমেইল দিয়ে
+        {t("auth.orEmail")}
         <span className="h-px flex-1 bg-slate-200" />
       </div>
 
       <form onSubmit={handleSubmit} className="space-y-4">
-        <Field label="তোমার নাম">
+        <Field label={t("account.name")}>
           <input autoComplete="name" value={name} onChange={(e) => setName(e.target.value)} className={inputClass} />
         </Field>
-        <Field label="ইমেইল">
+        <Field label={t("auth.email")}>
           <input type="email" autoComplete="email" value={email} onChange={(e) => setEmail(e.target.value)} required className={inputClass} />
         </Field>
-        <Field label="পাসওয়ার্ড" hint="কমপক্ষে ৬ অক্ষর">
+        <Field label={t("auth.password")} hint={t("signup.passwordHint")}>
           <input type="password" autoComplete="new-password" value={password} onChange={(e) => setPassword(e.target.value)} required minLength={6} className={inputClass} />
         </Field>
-        <Field label="আবার পাসওয়ার্ড">
+        <Field label={t("signup.confirm")}>
           <input type="password" autoComplete="new-password" value={confirm} onChange={(e) => setConfirm(e.target.value)} required className={inputClass} />
         </Field>
         <button type="submit" disabled={loading} className={buttonClass("primary", "lg", "w-full")}>
-          {loading ? "অ্যাকাউন্ট খোলা হচ্ছে..." : "অ্যাকাউন্ট খোলো"}
+          {loading ? t("signup.loading") : t("signup.button")}
         </button>
       </form>
 
       <p className="mt-4 text-center text-xs text-slate-500">
-        অ্যাকাউন্ট খুললে তুমি আমাদের{" "}
-        <Link to="/privacy" className="underline">গোপনীয়তা নীতি</Link> মেনে নিচ্ছো।
+        {t("signup.agree")}{" "}
+        <Link to="/privacy" className="underline">{t("footer.privacy")}</Link>
       </p>
       <p className="mt-4 text-center text-sm text-slate-600">
-        আগেই অ্যাকাউন্ট আছে?{" "}
+        {t("signup.haveAccount")}{" "}
         <Link to="/login" className="font-semibold text-emerald-700 hover:underline">
-          লগইন করো
+          {t("nav.login")}
         </Link>
       </p>
     </AuthCard>

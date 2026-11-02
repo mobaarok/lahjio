@@ -1,9 +1,4 @@
-const banglaDigits = "০১২৩৪৫৬৭৮৯";
-
-// 42 -> ৪২
-export function bn(value) {
-  return String(value).replace(/\d/g, (d) => banglaDigits[d]);
-}
+// Language-aware number formatting lives in useLocale().num
 
 // Local calendar day as "2026-11-03", used for streaks
 export function dayKey(date = new Date()) {

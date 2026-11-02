@@ -4,11 +4,13 @@ import { sendPasswordResetEmail } from "firebase/auth";
 import { auth } from "../firebase";
 import AuthCard from "../components/AuthCard";
 import { Alert, Field } from "../components/ui";
-import { getAuthErrorMessage } from "../lib/authErrors";
+import { useLocale } from "../hooks/useLocale";
+import { authErrorKey } from "../lib/authErrors";
 import { buttonClass, inputClass } from "../lib/styles";
 
 // Firebase emails a link to choose a new password
 export default function ForgotPassword() {
+  const { t } = useLocale();
   const [email, setEmail] = useState("");
   const [sent, setSent] = useState(false);
   const [error, setError] = useState("");
@@ -24,32 +26,30 @@ export default function ForgotPassword() {
     } catch (err) {
       // Don't reveal whether an account exists for this email
       if (err.code === "auth/user-not-found") setSent(true);
-      else setError(getAuthErrorMessage(err.code));
+      else setError(t(authErrorKey(err.code)));
     } finally {
       setLoading(false);
     }
   }
 
   return (
-    <AuthCard title="পাসওয়ার্ড রিসেট" subtitle="তোমার ইমেইলে নতুন পাসওয়ার্ড দেওয়ার লিংক পাঠানো হবে।">
+    <AuthCard title={t("reset.title")} subtitle={t("reset.subtitle")}>
       {sent ? (
-        <Alert tone="success">
-          এই ইমেইলে অ্যাকাউন্ট থাকলে একটি লিংক পাঠানো হয়েছে। ইনবক্স আর স্প্যাম ফোল্ডার দেখো।
-        </Alert>
+        <Alert tone="success">{t("reset.sent")}</Alert>
       ) : (
         <form onSubmit={handleSubmit} className="space-y-4">
           {error && <Alert>{error}</Alert>}
-          <Field label="ইমেইল">
+          <Field label={t("auth.email")}>
             <input type="email" autoComplete="email" value={email} onChange={(e) => setEmail(e.target.value)} required className={inputClass} />
           </Field>
           <button type="submit" disabled={loading} className={buttonClass("primary", "lg", "w-full")}>
-            {loading ? "পাঠানো হচ্ছে..." : "লিংক পাঠাও"}
+            {loading ? t("reset.sending") : t("reset.button")}
           </button>
         </form>
       )}
       <p className="mt-6 text-center text-sm">
         <Link to="/login" className="font-semibold text-emerald-700 hover:underline">
-          ← লগইনে ফিরে যাও
+          ← {t("reset.back")}
         </Link>
       </p>
     </AuthCard>

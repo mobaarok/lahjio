@@ -1,5 +1,11 @@
 // Course helpers: which lessons are open, finished, and what to do next
 
+// Courses made for this interface language. Admins tick the languages on
+// each course; old courses without the field show for everyone.
+export function coursesForLocale(courses, locale) {
+  return courses.filter((c) => c.languages?.includes(locale) ?? true);
+}
+
 const isCompleted = (lessonProgress, lesson) => lessonProgress[lesson.id]?.status === "completed";
 
 // Lessons unlock in order: the first is always open, the rest open once the

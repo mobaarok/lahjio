@@ -1,10 +1,13 @@
 import AudioButton from "./AudioButton";
 import Icon from "./Icon";
 import { Badge } from "./ui";
+import { useLocale } from "../hooks/useLocale";
 import { cardClass } from "../lib/styles";
 
 // One word or phrase in the word list. listView shows a compact row.
 export default function WordCard({ item, categoryLabel, known, listView }) {
+  const { t, meaningOf, pronunciationOf } = useLocale();
+
   return (
     <article
       className={`${cardClass} transition hover:border-emerald-200 ${
@@ -23,15 +26,15 @@ export default function WordCard({ item, categoryLabel, known, listView }) {
       </div>
 
       <div className={listView ? "min-w-0 flex-1" : "mt-3"}>
-        <p className="text-lg font-semibold text-slate-900">{item.bangla}</p>
-        <p className="text-sm text-slate-500">{item.bn_transliteration}</p>
+        <p className="text-lg font-semibold text-slate-900">{meaningOf(item)}</p>
+        <p className="text-sm text-slate-500">{pronunciationOf(item)}</p>
         <div className="mt-2 flex flex-wrap gap-1">
           {categoryLabel && <Badge tone="emerald">{categoryLabel}</Badge>}
-          {item.type === "phrase" && <Badge tone="sky">বাক্যাংশ</Badge>}
+          {item.type === "phrase" && <Badge tone="sky">{t("type.phrase")}</Badge>}
           {known && (
             <Badge tone="amber">
               <Icon name="check" className="size-3" />
-              জানি
+              {t("words.known")}
             </Badge>
           )}
         </div>

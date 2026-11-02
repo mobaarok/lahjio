@@ -5,18 +5,21 @@ import Icon from "../components/Icon";
 import ResultScreen from "../components/ResultScreen";
 import { Alert, PageHeader, ProgressBar, Spinner } from "../components/ui";
 import { useContent } from "../hooks/useContent";
+import { useLocale } from "../hooks/useLocale";
 import { useNow } from "../hooks/useNow";
 import { useProgress } from "../hooks/useProgress";
-import { bn, shuffled } from "../lib/format";
+import { shuffled } from "../lib/format";
 import { isDue, XP_CORRECT, XP_WRONG } from "../lib/progress";
 import { buttonClass, cardClass, chipClass } from "../lib/styles";
 
+const SESSION_SIZE = 20; // short sessions are easier to finish
+
 // Each mode picks which cards go into the deck
 const modes = [
-  { id: "due", title: "আজকের রিভিউ", text: "যেগুলো আবার দেখার সময় হয়েছে", icon: "flame" },
-  { id: "new", title: "নতুন শব্দ", text: "যেগুলো এখনো দেখোনি", icon: "plus" },
-  { id: "hard", title: "কঠিন শব্দ", text: "যেগুলো 'জানি না' দিয়েছো", icon: "x" },
-  { id: "all", title: "সব শব্দ", text: "পুরো তালিকা এলোমেলোভাবে", icon: "shuffle" },
+  { id: "due", icon: "flame" },
+  { id: "new", icon: "plus" },
+  { id: "hard", icon: "x" },
+  { id: "all", icon: "shuffle" },
 ];
 
 function itemsForMode(mode, items, progress, now) {
@@ -36,6 +39,7 @@ export default function Practice() {
   const { content, loading, error } = useContent();
   const progressState = useProgress();
   const { progress, recordAnswer } = progressState;
+  const { t, num, localized } = useLocale();
   const now = useNow();
 
   const [categoryId, setCategoryId] = useState("all");
@@ -45,14 +49,14 @@ export default function Practice() {
   const [results, setResults] = useState({ known: 0, unknown: 0 });
 
   if (loading || progressState.loading) return <Spinner />;
-  if (error) return <Alert>{error}</Alert>;
+  if (error) return <Alert>{t(error)}</Alert>;
 
   const items = content.items.filter((item) => categoryId === "all" || item.category_ids?.includes(categoryId));
 
   function start(mode) {
     let cards = itemsForMode(mode, items, progress, now);
     if (mode !== "due") cards = shuffled(cards);
-    setDeck(cards.slice(0, 20)); // short sessions are easier to finish
+    setDeck(cards.slice(0, SESSION_SIZE));
     setIndex(0);
     setFlipped(false);
     setResults({ known: 0, unknown: 0 });
@@ -68,16 +72,16 @@ export default function Practice() {
   // 1. Pick a mode
   if (!deck) {
     return (
-      <div>
-        <PageHeader title="প্র্যাকটিস" subtitle="কার্ড উল্টে নিজেকে যাচাই করো। প্রতি সেশনে ২০টি কার্ড।" />
+      <div className="mx-auto max-w-3xl">
+        <PageHeader title={t("practice.title")} subtitle={t("practice.subtitle", { count: num(SESSION_SIZE) })} />
 
         <div className="-mx-4 mb-5 flex gap-2 overflow-x-auto px-4 pb-1">
           <button onClick={() => setCategoryId("all")} className={chipClass(categoryId === "all")}>
-            সব বিষয়
+            {t("filter.allTopics")}
           </button>
           {content.categories.map((c) => (
             <button key={c.id} onClick={() => setCategoryId(c.id)} className={chipClass(categoryId === c.id)}>
-              {c.name_bn}
+              {localized(c, "name")}
             </button>
           ))}
         </div>
@@ -96,19 +100,19 @@ export default function Practice() {
                   <Icon name={mode.icon} className="size-6" />
                 </span>
                 <span className="flex-1">
-                  <span className="block font-semibold text-slate-900">{mode.title}</span>
-                  <span className="block text-sm text-slate-500">{mode.text}</span>
+                  <span className="block font-semibold text-slate-900">{t(`practice.mode.${mode.id}`)}</span>
+                  <span className="block text-sm text-slate-500">{t(`practice.mode.${mode.id}Text`)}</span>
                 </span>
-                <span className="text-2xl font-bold text-emerald-700">{bn(count)}</span>
+                <span className="text-2xl font-bold text-emerald-700">{num(count)}</span>
               </button>
             );
           })}
         </div>
 
         <p className="mt-6 text-center text-sm text-slate-500">
-          নিজেকে পরীক্ষা করতে চাও?{" "}
+          {t("practice.quizPrompt")}{" "}
           <Link to="/quiz" className="font-semibold text-emerald-700 hover:underline">
-            কুইজ দাও
+            {t("practice.quizLink")}
           </Link>
         </p>
       </div>
@@ -119,16 +123,16 @@ export default function Practice() {
   if (index >= deck.length) {
     return (
       <ResultScreen
-        title="সেশন শেষ!"
+        title={t("practice.done")}
         score={results.known}
         total={deck.length}
         xp={results.known * XP_CORRECT + results.unknown * XP_WRONG}
       >
         <button onClick={() => setDeck(null)} className={buttonClass("primary", "lg")}>
-          আরেকটি সেশন
+          {t("practice.again")}
         </button>
         <Link to="/" className={buttonClass("secondary", "lg")}>
-          হোমে যাও
+          {t("common.goHome")}
         </Link>
       </ResultScreen>
     );
@@ -139,12 +143,12 @@ export default function Practice() {
   return (
     <div className="mx-auto max-w-md">
       <div className="mb-5 flex items-center gap-3">
-        <button onClick={() => setDeck(null)} aria-label="বন্ধ করো" className="text-slate-500 hover:text-slate-800">
+        <button onClick={() => setDeck(null)} aria-label={t("common.close")} className="text-slate-500 hover:text-slate-800">
           <Icon name="x" />
         </button>
         <ProgressBar value={index} max={deck.length} />
         <span className="shrink-0 text-sm text-slate-500">
-          {bn(index + 1)}/{bn(deck.length)}
+          {num(index + 1)}/{num(deck.length)}
         </span>
       </div>
 
@@ -154,15 +158,15 @@ export default function Practice() {
       {flipped ? (
         <div className="mt-6 grid grid-cols-2 gap-3">
           <button onClick={() => mark(false)} className={buttonClass("danger", "lg")}>
-            জানি না
+            {t("practice.dontKnow")}
           </button>
           <button onClick={() => mark(true)} className={buttonClass("primary", "lg")}>
-            জানি
+            {t("practice.know")}
           </button>
         </div>
       ) : (
         <button onClick={() => setFlipped(true)} className={buttonClass("secondary", "lg", "mt-6 w-full")}>
-          অর্থ দেখো
+          {t("practice.showMeaning")}
         </button>
       )}
     </div>

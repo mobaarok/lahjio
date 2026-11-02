@@ -1,4 +1,5 @@
 import AudioButton from "./AudioButton";
+import { useLocale } from "../hooks/useLocale";
 
 const faceClass =
   "absolute inset-0 flex flex-col items-center justify-center rounded-3xl p-6 shadow-lg backface-hidden";
@@ -6,12 +7,14 @@ const faceClass =
 // A card that flips in 3D: Arabic on the front, the meaning on the back.
 // The parent decides whether it is flipped.
 export default function Flashcard({ word, flipped, onFlip }) {
+  const { t, meaningOf, pronunciationOf } = useLocale();
+
   return (
     <div className="relative mx-auto h-80 w-full max-w-md perspective-distant">
       <button
         type="button"
         onClick={onFlip}
-        aria-label="কার্ড উল্টাও"
+        aria-label={t("flashcard.flip")}
         className={`relative h-full w-full transition-transform duration-500 transform-3d ${
           flipped ? "rotate-y-180" : ""
         }`}
@@ -21,15 +24,14 @@ export default function Flashcard({ word, flipped, onFlip }) {
           <p lang="ar" dir="rtl" className="text-5xl font-bold">
             {word.arabic}
           </p>
-          <p className="mt-3 text-lg text-emerald-50">{word.bn_transliteration}</p>
-          <p className="mt-8 text-sm text-emerald-100">অর্থ দেখতে কার্ডে চাপ দাও</p>
+          <p className="mt-3 text-lg text-emerald-50">{pronunciationOf(word)}</p>
+          <p className="mt-8 text-sm text-emerald-100">{t("flashcard.tapHint")}</p>
         </div>
 
         {/* Back: meaning and pronunciation */}
         <div className={`${faceClass} rotate-y-180 border border-slate-200 bg-white`} aria-hidden={!flipped}>
-          <p className="text-3xl font-bold text-slate-900">{word.bangla}</p>
-          <p className="mt-3 text-lg text-slate-600">{word.bn_transliteration}</p>
-          {word.english && <p className="mt-2 text-sm text-slate-400">{word.english}</p>}
+          <p className="text-3xl font-bold text-slate-900">{meaningOf(word)}</p>
+          <p className="mt-3 text-lg text-slate-600">{pronunciationOf(word)}</p>
         </div>
       </button>
 

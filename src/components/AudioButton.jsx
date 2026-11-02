@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Icon from "./Icon";
+import { useLocale } from "../hooks/useLocale";
 import { playWord } from "../lib/speak";
 
 const sizes = {
@@ -11,6 +12,7 @@ const sizes = {
 // Plays an item's own audio file, or Web Speech when it has none.
 // Turns red if this device has no Arabic voice.
 export default function AudioButton({ item, size = "md", className = "" }) {
+  const { t } = useLocale();
   const [noVoice, setNoVoice] = useState(false);
 
   async function handleClick(event) {
@@ -19,7 +21,7 @@ export default function AudioButton({ item, size = "md", className = "" }) {
     setNoVoice(!played);
   }
 
-  const label = noVoice ? "এই ডিভাইসে আরবি ভয়েস নেই" : "উচ্চারণ শোনো";
+  const label = noVoice ? t("audio.noVoice") : t("audio.listen");
 
   return (
     <button

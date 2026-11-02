@@ -17,6 +17,7 @@ const emptyProgress = { progress: {}, lessonProgress: {}, profile: null };
 
 // Loads the logged-in user's progress once and shares it with every page.
 // Changes show on screen right away and are saved to Firestore in the background.
+// error holds a message key for useLocale().t().
 export function ProgressProvider({ children }) {
   const { user } = useAuth();
   const [data, setData] = useState({ uid: null, ...emptyProgress });
@@ -33,7 +34,7 @@ export function ProgressProvider({ children }) {
       .catch(() => {
         if (ignore) return;
         setData({ uid: user.uid, ...emptyProgress });
-        setError("আগের অগ্রগতি লোড করা যায়নি।");
+        setError("error.progressLoad");
       });
 
     return () => {
@@ -61,7 +62,7 @@ export function ProgressProvider({ children }) {
     try {
       await saveAnswer(user.uid, itemId, entry, data.profile, newProfile, xpGained);
     } catch {
-      setError("অগ্রগতি সেভ করা যায়নি। ইন্টারনেট সংযোগ দেখো।");
+      setError("error.progressSave");
     }
   }
 
@@ -82,7 +83,7 @@ export function ProgressProvider({ children }) {
     try {
       await saveLessonResult(user.uid, courseId, lessonId, bestScore, data.profile, newProfile, XP_LESSON);
     } catch {
-      setError("লেসনের ফলাফল সেভ করা যায়নি।");
+      setError("error.lessonSave");
     }
   }
 
@@ -92,7 +93,7 @@ export function ProgressProvider({ children }) {
     try {
       await saveDailyGoal(user.uid, goal);
     } catch {
-      setError("লক্ষ্য সেভ করা যায়নি।");
+      setError("error.goalSave");
     }
   }
 

@@ -1,12 +1,13 @@
 // Small building blocks shared by every page
 import { cardClass } from "../lib/styles";
-import { bn } from "../lib/format";
+import { useLocale } from "../hooks/useLocale";
 
-export function Spinner({ label = "লোড হচ্ছে..." }) {
+export function Spinner({ label }) {
+  const { t } = useLocale();
   return (
     <div className="flex flex-col items-center justify-center gap-3 py-16 text-slate-500">
       <span className="size-8 animate-spin rounded-full border-4 border-emerald-200 border-t-emerald-600" />
-      <p className="text-sm">{label}</p>
+      <p className="text-sm">{label ?? t("common.loading")}</p>
     </div>
   );
 }
@@ -91,9 +92,7 @@ export function StatCard({ label, value, hint }) {
   return (
     <div className={`${cardClass} p-4`}>
       <p className="text-sm text-slate-500">{label}</p>
-      <p className="mt-1 text-2xl font-bold text-slate-900">
-        {typeof value === "number" ? bn(value) : value}
-      </p>
+      <p className="mt-1 text-2xl font-bold text-slate-900">{value}</p>
       {hint && <p className="mt-1 text-xs text-slate-500">{hint}</p>}
     </div>
   );

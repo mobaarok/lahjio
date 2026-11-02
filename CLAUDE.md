@@ -19,6 +19,7 @@ Live site: https://mobaarok.github.io/lahjio-beta/
 
 - `npm run dev`: dev server on http://localhost:5173, using the real Firebase project
 - `npm run build`, `npx eslint src`
+- `npm run check:i18n`: every text key used in the code exists in every language file
 
 ### Testing logged-in pages safely (local emulators)
 
@@ -44,7 +45,9 @@ The admin test account can open `/admin`. Emulator data disappears when the emul
   - `styles.js`: shared Tailwind class strings (`buttonClass`, `inputClass`, `cardClass`, `chipClass`)
   - `format.js`: Bangla digits (`bn`), `dayKey`, `shuffled`, `normalizeArabic`, `byOrder`
   - `constants.js`: item types, levels, statuses, course types
-- `src/hooks/`: `useAuth` (user, isAdmin), `useProgress` (learner progress and save functions), `useContent` (published content), `useNow` (current time for render)
+- `src/hooks/`: `useAuth` (user, isAdmin), `useProgress` (learner progress and save functions), `useContent` (published content), `useLocale` (language and translation helpers), `useNow` (current time for render)
+- `src/i18n/`: `locales.js` lists the languages; `messages/bn.js` and `messages/en.js` hold all learner text
+- `src/pages/Landing.jsx` is the public home page; `Dashboard.jsx` is home for logged-in learners; `components/landing/` has its pieces
 - `src/context/`: the providers behind `useAuth` and `useProgress`. Context objects live in the hook files so provider files only export components (React Fast Refresh lint rule).
 
 ## Firestore data
@@ -70,10 +73,18 @@ feedback/{id}                uid, email, message, created_at
 Security rules are in `firestore.rules`. They are **not** deployed automatically:
 paste them into Firebase Console > Firestore > Rules and publish after any change.
 
+## Languages (i18n)
+
+- The learner interface is Bangla (default) or English, chosen with the language switcher and saved in localStorage. Hindi is listed but disabled; `src/i18n/locales.js` explains how to switch it on.
+- Never hard-code learner text. Add a key to both `messages/bn.js` and `messages/en.js` and use `const { t } = useLocale()`. Fill values with `t("words.found", { count })`. Run `npm run check:i18n` after adding text, and if a key is built from a variable (``t(`level.${x}`)``), add it to `dynamicKeys` in `scripts/check-i18n.mjs`.
+- Show numbers with `num()`, and word meanings with `meaningOf(item)` / `pronunciationOf(item)` from `useLocale()`. English falls back to Bangla when an item has no English yet.
+- Translated Firestore fields end in `_bn` / `_en`; read them with `localized(object, "title")`.
+- Courses show only for languages ticked on the course (`languages`). Use `coursesForLocale()`.
+- Errors from hooks (`useContent`, `useProgress`) are message keys, shown with `t(error)`.
+
 ## Conventions
 
-- Learner UI text is Bangla; the admin area is English. Code and comments are English.
-- Use `bn()` for numbers shown to learners.
+- The admin area is English only. Code and comments are English.
 - Firestore fields use snake_case.
 - Items 1-42 keep numeric string ids so old saved progress still matches.
 - Never archive by deleting: set `status: "archived"`, because progress and lessons point to items.
