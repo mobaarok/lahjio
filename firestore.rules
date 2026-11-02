@@ -6,6 +6,10 @@ service cloud.firestore {
       return request.auth != null;
     }
 
+    function isOwner(userId) {
+      return signedIn() && request.auth.uid == userId;
+    }
+
     // Admins are added by hand in the Firebase Console, never from the app
     function isAdmin() {
       return signedIn() &&
@@ -14,7 +18,7 @@ service cloud.firestore {
 
     // Each user can only check their own admin document
     match /admins/{userId} {
-      allow read: if signedIn() && request.auth.uid == userId;
+      allow read: if isOwner(userId);
       allow write: if false;
     }
 
@@ -29,15 +33,49 @@ service cloud.firestore {
       allow write: if isAdmin();
     }
 
+    // Courses and their lessons follow the same published/admin rule
+    match /courses/{courseId} {
+      allow read: if resource.data.status == "published" || isAdmin();
+      allow write: if isAdmin();
+
+      match /lessons/{lessonId} {
+        allow read: if resource.data.status == "published" || isAdmin();
+        allow write: if isAdmin();
+      }
+    }
+
     // Content version number for the device cache
     match /meta/{docId} {
       allow read: if true;
       allow write: if isAdmin();
     }
 
-    // Each logged-in user can only read and write their own progress
-    match /users/{userId}/progress/{itemId} {
-      allow read, write: if signedIn() && request.auth.uid == userId;
+    // Profile: streak, XP, daily goal. Users can never set their own plan.
+    match /users/{userId} {
+      allow read, delete: if isOwner(userId);
+      allow create: if isOwner(userId) &&
+        !request.resource.data.keys().hasAny(["plan", "plan_expires_at"]);
+      allow update: if isOwner(userId) &&
+        !request.resource.data.diff(resource.data).affectedKeys().hasAny(["plan", "plan_expires_at"]);
+
+      match /progress/{itemId} {
+        allow read, write: if isOwner(userId);
+      }
+
+      match /lesson_progress/{lessonId} {
+        allow read, write: if isOwner(userId);
+      }
+    }
+
+    // Learners send feedback; only admins read it all
+    match /feedback/{feedbackId} {
+      allow create: if signedIn() &&
+        request.resource.data.uid == request.auth.uid &&
+        request.resource.data.message is string &&
+        request.resource.data.message.size() > 0 &&
+        request.resource.data.message.size() <= 2000;
+      allow read, delete: if isAdmin() ||
+        (signedIn() && resource.data.uid == request.auth.uid);
     }
   }
 }

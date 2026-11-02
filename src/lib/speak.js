@@ -7,7 +7,7 @@ export async function playWord(word) {
   if (currentAudio) currentAudio.pause(); // stop the previous word
   currentAudio = null;
 
-  // 1. Own audio file: used when the word has an "audio" path in words.json
+  // 1. Own audio file: used when the item has an "audio" path or link
   if (word.audio) {
     const audio = new Audio(word.audio);
     currentAudio = audio;

@@ -1,0 +1,14 @@
+{
+  "name": "Lahjio · বাংলায় আরবি শেখো",
+  "short_name": "Lahjio",
+  "description": "বাংলায় সৌদি আরবি শেখো: শব্দ, বাক্য, অডিও, কুইজ আর ফ্ল্যাশকার্ড।",
+  "lang": "bn",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#059669",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

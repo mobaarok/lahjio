@@ -1,9 +1,12 @@
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase";
-import { getAuthErrorMessage } from "../lib/authErrors";
+import AuthCard from "../components/AuthCard";
 import GoogleButton from "../components/GoogleButton";
+import { Alert, Field } from "../components/ui";
+import { getAuthErrorMessage } from "../lib/authErrors";
+import { buttonClass, inputClass } from "../lib/styles";
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -11,6 +14,10 @@ export default function Login() {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
+
+  // ProtectedRoute passes the page the user wanted; go back there after login
+  const redirectTo = location.state?.from ?? "/";
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -19,7 +26,7 @@ export default function Login() {
     try {
       setLoading(true);
       await signInWithEmailAndPassword(auth, email, password);
-      navigate("/words");
+      navigate(redirectTo, { replace: true });
     } catch (err) {
       setError(getAuthErrorMessage(err.code));
     } finally {
@@ -28,49 +35,44 @@ export default function Login() {
   }
 
   return (
-    <div className="mx-auto max-w-md px-4 py-12">
-      <h1 className="mb-6 text-2xl font-bold">Welcome back</h1>
-
+    <AuthCard title="আবার স্বাগতম!" subtitle="লগইন করে শেখা চালিয়ে যাও।">
       {error && (
-        <p className="mb-4 rounded bg-red-100 p-3 text-sm text-red-700">
-          {error}
-        </p>
+        <div className="mb-4">
+          <Alert>{error}</Alert>
+        </div>
       )}
 
+      <GoogleButton onError={setError} redirectTo={redirectTo} />
+
+      <div className="my-5 flex items-center gap-3 text-sm text-slate-400">
+        <span className="h-px flex-1 bg-slate-200" />
+        অথবা ইমেইল দিয়ে
+        <span className="h-px flex-1 bg-slate-200" />
+      </div>
+
       <form onSubmit={handleSubmit} className="space-y-4">
-        <input
-          type="email"
-          placeholder="Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-          className="w-full rounded border border-gray-300 p-3"
-        />
-        <input
-          type="password"
-          placeholder="Password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          required
-          className="w-full rounded border border-gray-300 p-3"
-        />
-        <button
-          type="submit"
-          disabled={loading}
-          className="w-full rounded bg-emerald-600 p-3 font-semibold text-white hover:bg-emerald-700 disabled:opacity-50"
-        >
-          {loading ? "Logging in..." : "Log in"}
+        <Field label="ইমেইল">
+          <input type="email" autoComplete="email" value={email} onChange={(e) => setEmail(e.target.value)} required className={inputClass} />
+        </Field>
+        <Field label="পাসওয়ার্ড">
+          <input type="password" autoComplete="current-password" value={password} onChange={(e) => setPassword(e.target.value)} required className={inputClass} />
+        </Field>
+        <div className="text-right">
+          <Link to="/forgot-password" className="text-sm text-emerald-700 hover:underline">
+            পাসওয়ার্ড ভুলে গেছো?
+          </Link>
+        </div>
+        <button type="submit" disabled={loading} className={buttonClass("primary", "lg", "w-full")}>
+          {loading ? "লগইন হচ্ছে..." : "লগইন"}
         </button>
       </form>
 
-      <GoogleButton onError={setError} />
-
-      <p className="mt-4 text-sm text-gray-600">
-        New here?{" "}
-        <Link to="/signup" className="text-emerald-600 underline">
-          Create an account
+      <p className="mt-6 text-center text-sm text-slate-600">
+        নতুন?{" "}
+        <Link to="/signup" className="font-semibold text-emerald-700 hover:underline">
+          ফ্রি অ্যাকাউন্ট খোলো
         </Link>
       </p>
-    </div>
+    </AuthCard>
   );
 }

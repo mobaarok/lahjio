@@ -3,17 +3,18 @@ import { createRoot } from "react-dom/client";
 import { HashRouter } from "react-router-dom";
 import App from "./App.jsx";
 import { AuthProvider } from "./context/AuthContext";
+import { ProgressProvider } from "./context/ProgressContext";
 import "./index.css";
 
-// to test temporarary
-import "./firebase";
-
+// HashRouter (#/words) because GitHub Pages can't serve other paths on refresh
 createRoot(document.getElementById("root")).render(
-    <StrictMode>
-      <AuthProvider>
+  <StrictMode>
+    <AuthProvider>
+      <ProgressProvider>
         <HashRouter>
           <App />
         </HashRouter>
-      </AuthProvider>
-    </StrictMode>
+      </ProgressProvider>
+    </AuthProvider>
+  </StrictMode>
 );

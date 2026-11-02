@@ -1,27 +1,22 @@
-// auth Error helper function
+// Turns Firebase error codes into friendly Bangla messages
+
+const messages = {
+  "auth/email-already-in-use": "এই ইমেইল দিয়ে আগেই অ্যাকাউন্ট খোলা হয়েছে। লগইন করো।",
+  "auth/invalid-email": "সঠিক ইমেইল ঠিকানা লেখো।",
+  "auth/missing-email": "ইমেইল ঠিকানা লেখো।",
+  "auth/weak-password": "পাসওয়ার্ড কমপক্ষে ৬ অক্ষরের হতে হবে।",
+  "auth/invalid-credential": "ইমেইল বা পাসওয়ার্ড ভুল।",
+  "auth/user-not-found": "ইমেইল বা পাসওয়ার্ড ভুল।",
+  "auth/wrong-password": "ইমেইল বা পাসওয়ার্ড ভুল।",
+  "auth/user-disabled": "এই অ্যাকাউন্টটি বন্ধ করা হয়েছে।",
+  "auth/too-many-requests": "অনেকবার চেষ্টা হয়েছে। একটু পরে আবার চেষ্টা করো।",
+  "auth/network-request-failed": "ইন্টারনেট সংযোগ নেই। সংযোগ দেখে আবার চেষ্টা করো।",
+  "auth/popup-closed-by-user": "Google লগইন বাতিল হয়েছে।",
+  "auth/cancelled-popup-request": "Google লগইন বাতিল হয়েছে।",
+  "auth/popup-blocked": "ব্রাউজার পপআপ আটকে দিয়েছে। পপআপ চালু করে আবার চেষ্টা করো।",
+  "auth/requires-recent-login": "নিরাপত্তার জন্য আবার লগইন করে তারপর চেষ্টা করো।",
+};
 
 export function getAuthErrorMessage(code) {
-  switch (code) {
-    case "auth/email-already-in-use":
-      return "This email is already registered. Try logging in.";
-    case "auth/invalid-email":
-      return "Please enter a valid email address.";
-    case "auth/weak-password":
-      return "Password must be at least 6 characters.";
-    case "auth/invalid-credential":
-    case "auth/user-not-found":
-    case "auth/wrong-password":
-      return "Incorrect email or password.";
-    case "auth/too-many-requests":
-      return "Too many attempts. Please try again later.";
-    case "auth/network-request-failed":
-      return "Network error. Check your connection.";
-    case "auth/popup-closed-by-user":
-    case "auth/cancelled-popup-request":
-      return "Google sign-in was cancelled.";
-    case "auth/popup-blocked":
-      return "Your browser blocked the popup. Please allow popups and try again.";
-    default:
-      return "Something went wrong. Please try again.";
-  }
+  return messages[code] ?? "কিছু একটা সমস্যা হয়েছে। আবার চেষ্টা করো।";
 }
