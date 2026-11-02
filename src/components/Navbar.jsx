@@ -18,8 +18,11 @@ const linkClass = ({ isActive }) =>
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
-  const { user } = useAuth();
+  const { user, isAdmin } = useAuth();
   const navigate = useNavigate();
+
+  // The Admin link only shows for admins
+  const navLinks = isAdmin ? [...links, { to: "/admin", label: "Admin" }] : links;
 
   async function handleLogout() {
     await signOut(auth);
@@ -36,7 +39,7 @@ export default function Navbar() {
 
         {/* Desktop */}
         <div className="hidden items-center gap-1 md:flex">
-          {links.map((l) => (
+          {navLinks.map((l) => (
             <NavLink key={l.to} to={l.to} className={linkClass}>
               {l.label}
             </NavLink>
@@ -74,7 +77,7 @@ export default function Navbar() {
       {/* Mobile menu */}
       {open && (
         <div className="flex flex-col gap-1 border-t px-4 py-3 md:hidden">
-          {links.map((l) => (
+          {navLinks.map((l) => (
             <NavLink key={l.to} to={l.to} className={linkClass} onClick={() => setOpen(false)}>
               {l.label}
             </NavLink>
