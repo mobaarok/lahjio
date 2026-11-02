@@ -76,7 +76,7 @@ export default function Practice() {
             সব বিষয়
           </button>
           {content.categories.map((c) => (
-            <button key={c.id} onClick={() => setCategoryId(c.id)} className={`${chipClass(categoryId === c.id)} shrink-0`}>
+            <button key={c.id} onClick={() => setCategoryId(c.id)} className={chipClass(categoryId === c.id)}>
               {c.name_bn}
             </button>
           ))}

@@ -72,7 +72,7 @@ export default function Words() {
             key={c.id}
             onClick={() => setCategoryId(c.id)}
             aria-pressed={categoryId === c.id}
-            className={`${chipClass(categoryId === c.id)} shrink-0`}
+            className={chipClass(categoryId === c.id)}
           >
             {c.name_bn}
           </button>

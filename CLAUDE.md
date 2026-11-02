@@ -18,8 +18,17 @@ Live site: https://mobaarok.github.io/lahjio-beta/
 ## Commands
 
 - `npm run dev`: dev server on http://localhost:5173, using the real Firebase project
-- `npm run dev:emulators`: dev server against local Firebase emulators (`.env.emulators`); start them with `npx firebase emulators:start --project demo-lahjio` (the Firestore emulator needs Java)
 - `npm run build`, `npx eslint src`
+
+### Testing logged-in pages safely (local emulators)
+
+Fake Firebase on this computer, so tests never touch real users or data:
+
+1. `npx firebase emulators:start --project demo-lahjio`: needs firebase-tools and Java 21 (the Firestore emulator is a Java program)
+2. `npm run seed:emulators`: loads `scripts/seed-data.json` (5 categories, 42 items) and creates the test accounts listed in `scripts/seed-emulators.mjs`
+3. `npm run dev:emulators`: the app with `.env.emulators` (project `demo-lahjio`)
+
+The admin test account can open `/admin`. Emulator data disappears when the emulators stop.
 - `npm run deploy`: publishes the current local code to the live site
 
 ## How the code is organised

@@ -1,0 +1,666 @@
+{
+  "categories": [
+    {
+      "id": "greetings",
+      "name_en": "Greetings",
+      "name_bn": "শুভেচ্ছা",
+      "order": 10
+    },
+    {
+      "id": "numbers",
+      "name_en": "Numbers",
+      "name_bn": "সংখ্যা",
+      "order": 20
+    },
+    {
+      "id": "food",
+      "name_en": "Food",
+      "name_bn": "খাবার",
+      "order": 30
+    },
+    {
+      "id": "shopping",
+      "name_en": "Shopping",
+      "name_bn": "কেনাকাটা",
+      "order": 40
+    },
+    {
+      "id": "daily",
+      "name_en": "Daily",
+      "name_bn": "দৈনন্দিন",
+      "order": 50
+    }
+  ],
+  "items": [
+    {
+      "id": "1",
+      "type": "phrase",
+      "arabic": "السلام عليكم",
+      "bangla": "আপনার ওপর শান্তি বর্ষিত হোক",
+      "english": "Peace be upon you",
+      "bn_transliteration": "আসসালামু আলাইকুম",
+      "en_transliteration": "as-salamu alaykum",
+      "category_ids": [
+        "greetings"
+      ],
+      "level": "beginner",
+      "audio": null,
+      "status": "published"
+    },
+    {
+      "id": "2",
+      "type": "phrase",
+      "arabic": "وعليكم السلام",
+      "bangla": "আপনার ওপরও শান্তি বর্ষিত হোক",
+      "english": "And peace be upon you",
+      "bn_transliteration": "ওয়া আলাইকুমুস সালাম",
+      "en_transliteration": "wa alaykum as-salam",
+      "category_ids": [
+        "greetings"
+      ],
+      "level": "beginner",
+      "audio": null,
+      "status": "published"
+    },
+    {
+      "id": "3",
+      "type": "word",
+      "arabic": "مرحبا",
+      "bangla": "হ্যালো, স্বাগতম",
+      "english": "Hello, welcome",
+      "bn_transliteration": "মারহাবা",
+      "en_transliteration": "marhaba",
+      "category_ids": [
+        "greetings"
+      ],
+      "level": "beginner",
+      "audio": null,
+      "status": "published"
+    },
+    {
+      "id": "4",
+      "type": "phrase",
+      "arabic": "صباح الخير",
+      "bangla": "সুপ্রভাত",
+      "english": "Good morning",
+      "bn_transliteration": "সাবাহ আল-খাইর",
+      "en_transliteration": "sabah al-khayr",
+      "category_ids": [
+        "greetings"
+      ],
+      "level": "beginner",
+      "audio": null,
+      "status": "published"
+    },
+    {
+      "id": "5",
+      "type": "phrase",
+      "arabic": "مساء الخير",
+      "bangla": "শুভ সন্ধ্যা",
+      "english": "Good evening",
+      "bn_transliteration": "মাসা আল-খাইর",
+      "en_transliteration": "masa al-khayr",
+      "category_ids": [
+        "greetings"
+      ],
+      "level": "beginner",
+      "audio": null,
+      "status": "published"
+    },
+    {
+      "id": "6",
+      "type": "phrase",
+      "arabic": "كيف حالك",
+      "bangla": "আপনি কেমন আছেন?",
+      "english": "How are you?",
+      "bn_transliteration": "কাইফা হালাক",
+      "en_transliteration": "kayf halak",
+      "category_ids": [
+        "greetings"
+      ],
+      "level": "beginner",
+      "audio": null,
+      "status": "published"
+    },
+    {
+      "id": "7",
+      "type": "word",
+      "arabic": "شكراً",
+      "bangla": "ধন্যবাদ",
+      "english": "Thank you",
+      "bn_transliteration": "শুকরান",
+      "en_transliteration": "shukran",
+      "category_ids": [
+        "greetings"
+      ],
+      "level": "beginner",
+      "audio": null,
+      "status": "published"
+    },
+    {
+      "id": "8",
+      "type": "word",
+      "arabic": "عفواً",
+      "bangla": "ধন্যবাদের উত্তরে: কোনো ব্যাপার না",
+      "english": "You're welcome",
+      "bn_transliteration": "আফওয়ান",
+      "en_transliteration": "afwan",
+      "category_ids": [
+        "greetings"
+      ],
+      "level": "beginner",
+      "audio": null,
+      "status": "published"
+    },
+    {
+      "id": "9",
+      "type": "phrase",
+      "arabic": "مع السلامة",
+      "bangla": "বিদায়",
+      "english": "Goodbye",
+      "bn_transliteration": "মা'আ সালামা",
+      "en_transliteration": "ma'a as-salama",
+      "category_ids": [
+        "greetings"
+      ],
+      "level": "beginner",
+      "audio": null,
+      "status": "published"
+    },
+    {
+      "id": "10",
+      "type": "word",
+      "arabic": "واحد",
+      "bangla": "এক",
+      "english": "One",
+      "bn_transliteration": "ওয়াহিদ",
+      "en_transliteration": "wahid",
+      "category_ids": [
+        "numbers"
+      ],
+      "level": "beginner",
+      "audio": null,
+      "status": "published"
+    },
+    {
+      "id": "11",
+      "type": "word",
+      "arabic": "اثنين",
+      "bangla": "দুই",
+      "english": "Two",
+      "bn_transliteration": "ইসনাইন",
+      "en_transliteration": "ithnayn",
+      "category_ids": [
+        "numbers"
+      ],
+      "level": "beginner",
+      "audio": null,
+      "status": "published"
+    },
+    {
+      "id": "12",
+      "type": "word",
+      "arabic": "ثلاثة",
+      "bangla": "তিন",
+      "english": "Three",
+      "bn_transliteration": "সালাসা",
+      "en_transliteration": "thalatha",
+      "category_ids": [
+        "numbers"
+      ],
+      "level": "beginner",
+      "audio": null,
+      "status": "published"
+    },
+    {
+      "id": "13",
+      "type": "word",
+      "arabic": "أربعة",
+      "bangla": "চার",
+      "english": "Four",
+      "bn_transliteration": "আরবা'আ",
+      "en_transliteration": "arba'a",
+      "category_ids": [
+        "numbers"
+      ],
+      "level": "beginner",
+      "audio": null,
+      "status": "published"
+    },
+    {
+      "id": "14",
+      "type": "word",
+      "arabic": "خمسة",
+      "bangla": "পাঁচ",
+      "english": "Five",
+      "bn_transliteration": "খামসা",
+      "en_transliteration": "khamsa",
+      "category_ids": [
+        "numbers"
+      ],
+      "level": "beginner",
+      "audio": null,
+      "status": "published"
+    },
+    {
+      "id": "15",
+      "type": "word",
+      "arabic": "ستة",
+      "bangla": "ছয়",
+      "english": "Six",
+      "bn_transliteration": "সিত্তা",
+      "en_transliteration": "sitta",
+      "category_ids": [
+        "numbers"
+      ],
+      "level": "beginner",
+      "audio": null,
+      "status": "published"
+    },
+    {
+      "id": "16",
+      "type": "word",
+      "arabic": "سبعة",
+      "bangla": "সাত",
+      "english": "Seven",
+      "bn_transliteration": "সাব'আ",
+      "en_transliteration": "sab'a",
+      "category_ids": [
+        "numbers"
+      ],
+      "level": "beginner",
+      "audio": null,
+      "status": "published"
+    },
+    {
+      "id": "17",
+      "type": "word",
+      "arabic": "ثمانية",
+      "bangla": "আট",
+      "english": "Eight",
+      "bn_transliteration": "সামানিয়া",
+      "en_transliteration": "thamaniya",
+      "category_ids": [
+        "numbers"
+      ],
+      "level": "beginner",
+      "audio": null,
+      "status": "published"
+    },
+    {
+      "id": "18",
+      "type": "word",
+      "arabic": "تسعة",
+      "bangla": "নয়",
+      "english": "Nine",
+      "bn_transliteration": "তিস'আ",
+      "en_transliteration": "tis'a",
+      "category_ids": [
+        "numbers"
+      ],
+      "level": "beginner",
+      "audio": null,
+      "status": "published"
+    },
+    {
+      "id": "19",
+      "type": "word",
+      "arabic": "عشرة",
+      "bangla": "দশ",
+      "english": "Ten",
+      "bn_transliteration": "আশারা",
+      "en_transliteration": "ashara",
+      "category_ids": [
+        "numbers"
+      ],
+      "level": "beginner",
+      "audio": null,
+      "status": "published"
+    },
+    {
+      "id": "20",
+      "type": "word",
+      "arabic": "موية",
+      "bangla": "পানি",
+      "english": "Water",
+      "bn_transliteration": "মোয়া",
+      "en_transliteration": "moya",
+      "category_ids": [
+        "food"
+      ],
+      "level": "beginner",
+      "audio": null,
+      "status": "published"
+    },
+    {
+      "id": "21",
+      "type": "word",
+      "arabic": "خبز",
+      "bangla": "রুটি",
+      "english": "Bread",
+      "bn_transliteration": "খুবয",
+      "en_transliteration": "khubz",
+      "category_ids": [
+        "food"
+      ],
+      "level": "beginner",
+      "audio": null,
+      "status": "published"
+    },
+    {
+      "id": "22",
+      "type": "word",
+      "arabic": "رز",
+      "bangla": "ভাত",
+      "english": "Rice",
+      "bn_transliteration": "রুয",
+      "en_transliteration": "ruzz",
+      "category_ids": [
+        "food"
+      ],
+      "level": "beginner",
+      "audio": null,
+      "status": "published"
+    },
+    {
+      "id": "23",
+      "type": "word",
+      "arabic": "دجاج",
+      "bangla": "মুরগি",
+      "english": "Chicken",
+      "bn_transliteration": "দাজাজ",
+      "en_transliteration": "dajaj",
+      "category_ids": [
+        "food"
+      ],
+      "level": "beginner",
+      "audio": null,
+      "status": "published"
+    },
+    {
+      "id": "24",
+      "type": "word",
+      "arabic": "لحم",
+      "bangla": "মাংস",
+      "english": "Meat",
+      "bn_transliteration": "লাহম",
+      "en_transliteration": "lahm",
+      "category_ids": [
+        "food"
+      ],
+      "level": "beginner",
+      "audio": null,
+      "status": "published"
+    },
+    {
+      "id": "25",
+      "type": "word",
+      "arabic": "سمك",
+      "bangla": "মাছ",
+      "english": "Fish",
+      "bn_transliteration": "সামাক",
+      "en_transliteration": "samak",
+      "category_ids": [
+        "food"
+      ],
+      "level": "beginner",
+      "audio": null,
+      "status": "published"
+    },
+    {
+      "id": "26",
+      "type": "word",
+      "arabic": "شاي",
+      "bangla": "চা",
+      "english": "Tea",
+      "bn_transliteration": "শাই",
+      "en_transliteration": "shay",
+      "category_ids": [
+        "food"
+      ],
+      "level": "beginner",
+      "audio": null,
+      "status": "published"
+    },
+    {
+      "id": "27",
+      "type": "word",
+      "arabic": "قهوة",
+      "bangla": "কফি",
+      "english": "Coffee",
+      "bn_transliteration": "গাহওয়া",
+      "en_transliteration": "gahwa",
+      "category_ids": [
+        "food"
+      ],
+      "level": "beginner",
+      "audio": null,
+      "status": "published"
+    },
+    {
+      "id": "28",
+      "type": "word",
+      "arabic": "حليب",
+      "bangla": "দুধ",
+      "english": "Milk",
+      "bn_transliteration": "হালিব",
+      "en_transliteration": "haleeb",
+      "category_ids": [
+        "food"
+      ],
+      "level": "beginner",
+      "audio": null,
+      "status": "published"
+    },
+    {
+      "id": "29",
+      "type": "word",
+      "arabic": "أبغى",
+      "bangla": "আমি চাই",
+      "english": "I want",
+      "bn_transliteration": "আবগা",
+      "en_transliteration": "abgha",
+      "category_ids": [
+        "shopping"
+      ],
+      "level": "beginner",
+      "audio": null,
+      "status": "published"
+    },
+    {
+      "id": "30",
+      "type": "phrase",
+      "arabic": "كم السعر",
+      "bangla": "দাম কত?",
+      "english": "How much is it?",
+      "bn_transliteration": "কাম আস-সি'র",
+      "en_transliteration": "kam as-si'r",
+      "category_ids": [
+        "shopping"
+      ],
+      "level": "beginner",
+      "audio": null,
+      "status": "published"
+    },
+    {
+      "id": "31",
+      "type": "word",
+      "arabic": "غالي",
+      "bangla": "দামি",
+      "english": "Expensive",
+      "bn_transliteration": "গালি",
+      "en_transliteration": "ghali",
+      "category_ids": [
+        "shopping"
+      ],
+      "level": "beginner",
+      "audio": null,
+      "status": "published"
+    },
+    {
+      "id": "32",
+      "type": "word",
+      "arabic": "رخيص",
+      "bangla": "সস্তা",
+      "english": "Cheap",
+      "bn_transliteration": "রাখিস",
+      "en_transliteration": "rakhees",
+      "category_ids": [
+        "shopping"
+      ],
+      "level": "beginner",
+      "audio": null,
+      "status": "published"
+    },
+    {
+      "id": "33",
+      "type": "word",
+      "arabic": "فلوس",
+      "bangla": "টাকা",
+      "english": "Money",
+      "bn_transliteration": "ফুলুস",
+      "en_transliteration": "fuloos",
+      "category_ids": [
+        "shopping"
+      ],
+      "level": "beginner",
+      "audio": null,
+      "status": "published"
+    },
+    {
+      "id": "34",
+      "type": "word",
+      "arabic": "أيوه",
+      "bangla": "হ্যাঁ",
+      "english": "Yes",
+      "bn_transliteration": "আইওয়া",
+      "en_transliteration": "aywa",
+      "category_ids": [
+        "daily"
+      ],
+      "level": "beginner",
+      "audio": null,
+      "status": "published"
+    },
+    {
+      "id": "35",
+      "type": "word",
+      "arabic": "لا",
+      "bangla": "না",
+      "english": "No",
+      "bn_transliteration": "লা",
+      "en_transliteration": "la",
+      "category_ids": [
+        "daily"
+      ],
+      "level": "beginner",
+      "audio": null,
+      "status": "published"
+    },
+    {
+      "id": "36",
+      "type": "word",
+      "arabic": "وين",
+      "bangla": "কোথায়",
+      "english": "Where",
+      "bn_transliteration": "ওয়েন",
+      "en_transliteration": "wayn",
+      "category_ids": [
+        "daily"
+      ],
+      "level": "beginner",
+      "audio": null,
+      "status": "published"
+    },
+    {
+      "id": "37",
+      "type": "word",
+      "arabic": "إيش",
+      "bangla": "কী",
+      "english": "What",
+      "bn_transliteration": "ঈশ",
+      "en_transliteration": "eesh",
+      "category_ids": [
+        "daily"
+      ],
+      "level": "beginner",
+      "audio": null,
+      "status": "published"
+    },
+    {
+      "id": "38",
+      "type": "word",
+      "arabic": "زين",
+      "bangla": "ভালো",
+      "english": "Good",
+      "bn_transliteration": "যেইন",
+      "en_transliteration": "zayn",
+      "category_ids": [
+        "daily"
+      ],
+      "level": "beginner",
+      "audio": null,
+      "status": "published"
+    },
+    {
+      "id": "39",
+      "type": "word",
+      "arabic": "يمين",
+      "bangla": "ডান দিক",
+      "english": "Right",
+      "bn_transliteration": "ইয়ামিন",
+      "en_transliteration": "yameen",
+      "category_ids": [
+        "daily"
+      ],
+      "level": "beginner",
+      "audio": null,
+      "status": "published"
+    },
+    {
+      "id": "40",
+      "type": "word",
+      "arabic": "يسار",
+      "bangla": "বাম দিক",
+      "english": "Left",
+      "bn_transliteration": "ইয়াসার",
+      "en_transliteration": "yasar",
+      "category_ids": [
+        "daily"
+      ],
+      "level": "beginner",
+      "audio": null,
+      "status": "published"
+    },
+    {
+      "id": "41",
+      "type": "word",
+      "arabic": "اليوم",
+      "bangla": "আজ",
+      "english": "Today",
+      "bn_transliteration": "আল-ইয়াওম",
+      "en_transliteration": "al-yawm",
+      "category_ids": [
+        "daily"
+      ],
+      "level": "beginner",
+      "audio": null,
+      "status": "published"
+    },
+    {
+      "id": "42",
+      "type": "word",
+      "arabic": "بكرة",
+      "bangla": "আগামীকাল",
+      "english": "Tomorrow",
+      "bn_transliteration": "বুকরা",
+      "en_transliteration": "bukra",
+      "category_ids": [
+        "daily"
+      ],
+      "level": "beginner",
+      "audio": null,
+      "status": "published"
+    }
+  ]
+}

@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { signOut, updateProfile } from "firebase/auth";
+import { deleteUser, signOut, updateProfile } from "firebase/auth";
 import { auth } from "../firebase";
 import Icon from "../components/Icon";
 import { Alert, Field, PageHeader } from "../components/ui";
 import { useAuth } from "../hooks/useAuth";
-import { deleteAccount, sendFeedback } from "../lib/account";
+import { deleteUserData, isRecentLogin, sendFeedback } from "../lib/account";
 import { getAuthErrorMessage } from "../lib/authErrors";
 import { buttonClass, cardClass, inputClass } from "../lib/styles";
 
@@ -52,15 +52,21 @@ export default function Account() {
     );
   }
 
+  // Leave this login-only page first; otherwise the logout sends us to /login
   async function handleLogout() {
-    await signOut(auth);
     navigate("/", { replace: true });
+    await signOut(auth);
   }
 
-  function handleDelete() {
+  async function handleDelete() {
+    if (!isRecentLogin(user)) {
+      setMessage({ tone: "error", text: "নিরাপত্তার জন্য লগআউট করে আবার লগইন করো, তারপর অ্যাকাউন্ট মুছে ফেলো।" });
+      return;
+    }
     run("delete", async () => {
-      await deleteAccount(user);
+      await deleteUserData(user.uid);
       navigate("/", { replace: true });
+      await deleteUser(user);
     });
   }
 

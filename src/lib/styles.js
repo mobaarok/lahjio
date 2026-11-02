@@ -27,7 +27,7 @@ export const cardClass = "rounded-2xl border border-slate-200 bg-white shadow-sm
 
 // Small pill buttons for filters and tabs
 export function chipClass(isActive) {
-  return `rounded-full px-3.5 py-1.5 text-sm font-medium transition ${
+  return `shrink-0 whitespace-nowrap rounded-full px-3.5 py-1.5 text-sm font-medium transition ${
     isActive
       ? "bg-emerald-600 text-white shadow-sm"
       : "border border-slate-200 bg-white text-slate-600 hover:bg-slate-100"
