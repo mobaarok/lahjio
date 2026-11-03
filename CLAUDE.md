@@ -9,7 +9,7 @@ Live site: https://mobaarok.github.io/lahjio-beta/
 
 ## Project status (last updated 2026-11-03)
 
-**Built and live** (`main` and `version1` both at `67cd9c1`):
+**Built and live** (`version1` at `c2a8bb1`, the release of 2026-11-03 with the Everyday Life course, Hindi and Urdu, and analytics):
 
 - **Landing page:** premium design with a phone mockup, real-life phrases with audio, a try-it question, an FAQ and live content numbers
 - **Logged-in dashboard:** streak, XP, daily goal, next lesson and word of the day
