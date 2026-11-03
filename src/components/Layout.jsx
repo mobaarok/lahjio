@@ -1,8 +1,8 @@
 import { Suspense } from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import Navbar from "./Navbar";
 import BottomNav from "./BottomNav";
-import LanguageSwitcher from "./LanguageSwitcher";
+import Footer from "./Footer";
 import { Alert, Spinner } from "./ui";
 import { useLocale } from "../hooks/useLocale";
 import { useProgress } from "../hooks/useProgress";
@@ -35,19 +35,7 @@ export default function Layout() {
         </Suspense>
       </main>
 
-      {/* Extra bottom padding on phones so the tab bar never covers the footer */}
-      <footer className="border-t border-slate-200 bg-white pb-24 lg:pb-0">
-        <div className="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-8 text-sm text-slate-500 sm:flex-row sm:items-center sm:justify-between">
-          <div>
-            <p className="font-semibold text-slate-800">Lahjio</p>
-            <p>{t("footer.tagline")}</p>
-          </div>
-          <LanguageSwitcher />
-          <Link to="/privacy" className="hover:text-slate-800">
-            {t("footer.privacy")}
-          </Link>
-        </div>
-      </footer>
+      <Footer />
 
       <BottomNav />
     </div>
