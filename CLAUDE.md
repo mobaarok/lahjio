@@ -20,7 +20,7 @@ Live site: https://mobaarok.github.io/lahjio-beta/
 - **Progress page:** stats, daily goal setting, mastery levels, progress by topic and hardest words
 - **Account:** edit name, language, feedback, logout and account deletion
 - **Auth:** email and Google login, signup, password reset, privacy page
-- **Admin dashboard (`/admin`):** items (draft, published, archived; duplicate Arabic check), categories, courses and lessons (item picker and ordering), and learner feedback
+- **Admin dashboard (`/admin`):** items (draft, published, archived; duplicate Arabic check), categories, courses and lessons (item picker and ordering), analytics, users, learner feedback and content import
 - **Languages:** Bangla (default), English, Hindi and Urdu (right to left). Hindi and Urdu have their own interface text but see English lessons and meanings, with a notice saying so
 - **PWA manifest:** the app can be added to a phone home screen. There is no offline service worker yet.
 - **Testing setup:** local Firebase emulators with seed data and test accounts
@@ -73,7 +73,13 @@ Fake Firebase on this computer, so tests never touch real users or data:
 2. `npm run seed:emulators`: loads `scripts/seed-data.json` (5 categories, 42 items) and creates the test accounts listed in `scripts/seed-emulators.mjs`
 3. `npm run dev:emulators`: the app with `.env.emulators` (project `demo-lahjio`). `.claude/launch.json` has it as `lahjio-emulators` on port 5180.
 
-The admin test account can open `/admin`. Emulator data disappears when the emulators stop.
+The admin test account can open `/admin`. `npm run seed:learners` adds 8 fake learners with activity and lesson results for Admin > Analytics (import a course first). Emulator data disappears when the emulators stop.
+
+### Analytics
+
+- **Admin > Analytics** and **Admin > Users** read Firestore directly (`src/lib/analytics.js`): every user profile and lesson result on each load, count queries for daily activity, and all saved answers only when "Load word stats" is clicked. Fine on the free plan for a few thousand learners; after that, move the sums to a daily Cloud Function.
+- `VisitTracker` saves a visit when the app opens and a heartbeat every 3 minutes while it's on screen ("online now" = seen in the last 5 minutes). Country comes from the phone's time zone (`src/lib/countries.js`), so it's a good guess, not exact.
+- Google Analytics (`src/lib/googleAnalytics.js`, `PageViewTracker`) covers visitors who don't sign up. It's off until `VITE_FIREBASE_MEASUREMENT_ID` is in `.env`, and always off with the emulators. Its reports are in the Firebase Console, not the admin.
 
 ### Content packs
 
@@ -118,15 +124,18 @@ courses/{courseId}           title_bn/en, description_bn/en, type, level,
 meta/content                 version, bumped on every content change
 admins/{uid}                 exists = admin; added by hand in the Firebase Console
 users/{uid}                  xp, current_streak, longest_streak, last_active_date,
-                             today_key, today_count, daily_goal (never plan from the app)
+                             today_key, today_count, daily_goal (never plan from the app),
+                             name, email, locale, time_zone, signed_up_at, last_seen_at
+                             (written by VisitTracker on every visit, for analytics)
   progress/{itemId}          known, box, times_correct, times_wrong, next_review_at
   lesson_progress/{lessonId} course_id, status, best_score
 feedback/{id}                uid, email, message, created_at
+activity/{uid}_{day}         uid, day: one note per learner per day they open the app
 ```
 
 Security rules are in `firestore.rules`. They are **not** deployed automatically:
 paste them into Firebase Console > Firestore > Rules and publish after any change.
-The published rules matched this file on 2026-11-03.
+The published rules matched this file on 2026-11-03, before the analytics rules were added (admin reads of users, collection-group reads of progress and lesson_progress, and `activity`). Check with the owner whether those are published.
 
 ## Languages (i18n)
 

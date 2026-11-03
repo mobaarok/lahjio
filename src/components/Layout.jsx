@@ -4,6 +4,8 @@ import Navbar from "./Navbar";
 import BottomNav from "./BottomNav";
 import ContentLanguageNotice from "./ContentLanguageNotice";
 import Footer from "./Footer";
+import VisitTracker from "./VisitTracker";
+import PageViewTracker from "./PageViewTracker";
 import { Alert, Spinner } from "./ui";
 import { useLocale } from "../hooks/useLocale";
 import { useProgress } from "../hooks/useProgress";
@@ -17,6 +19,9 @@ export default function Layout() {
   // adding a sideways scrollbar
   return (
     <div className="flex min-h-dvh flex-col overflow-x-clip">
+      {/* Usage tracking for Admin > Analytics and Google Analytics; shows nothing */}
+      <VisitTracker />
+      <PageViewTracker />
       <Navbar />
 
       <main className="mx-auto w-full max-w-6xl flex-1 px-4 pt-6 pb-12">

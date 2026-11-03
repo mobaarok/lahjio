@@ -1,17 +1,17 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { deleteUser, signOut, updateProfile } from "firebase/auth";
+import { signOut, updateProfile } from "firebase/auth";
 import { auth } from "../firebase";
 import Icon from "../components/Icon";
 import LanguageSwitcher from "../components/LanguageSwitcher";
 import { Alert, Field, PageHeader } from "../components/ui";
 import { useAuth } from "../hooks/useAuth";
 import { useLocale } from "../hooks/useLocale";
-import { deleteUserData, isRecentLogin, sendFeedback } from "../lib/account";
+import { sendFeedback } from "../lib/account";
 import { authErrorKey } from "../lib/authErrors";
 import { buttonClass, cardClass, inputClass } from "../lib/styles";
 
-// Profile, language, feedback, logout and account deletion
+// Profile, language, feedback and logout
 export default function Account() {
   const { user, isAdmin } = useAuth();
   const { t } = useLocale();
@@ -19,7 +19,6 @@ export default function Account() {
 
   const [name, setName] = useState(user.displayName ?? "");
   const [feedback, setFeedback] = useState("");
-  const [confirmText, setConfirmText] = useState("");
   const [message, setMessage] = useState({ tone: "", text: "" });
   const [busy, setBusy] = useState("");
 
@@ -59,18 +58,6 @@ export default function Account() {
   async function handleLogout() {
     navigate("/", { replace: true });
     await signOut(auth);
-  }
-
-  async function handleDelete() {
-    if (!isRecentLogin(user)) {
-      setMessage({ tone: "error", text: t("account.deleteRelogin") });
-      return;
-    }
-    run("delete", async () => {
-      await deleteUserData(user.uid);
-      navigate("/", { replace: true });
-      await deleteUser(user);
-    });
   }
 
   const links = [
@@ -129,24 +116,6 @@ export default function Account() {
         <Icon name="logout" />
         {t("account.logout")}
       </button>
-
-      <section className="rounded-2xl border border-red-200 bg-red-50 p-5">
-        <h2 className="font-semibold text-red-800">{t("account.deleteTitle")}</h2>
-        <p className="mt-1 text-sm text-red-700">{t("account.deleteText", { word: t("account.confirmWord") })}</p>
-        <input
-          value={confirmText}
-          onChange={(e) => setConfirmText(e.target.value)}
-          aria-label={t("account.deleteText", { word: t("account.confirmWord") })}
-          className={`${inputClass} mt-3`}
-        />
-        <button
-          onClick={handleDelete}
-          disabled={confirmText.trim() !== t("account.confirmWord") || busy === "delete"}
-          className={buttonClass("danger", "md", "mt-3")}
-        >
-          {busy === "delete" ? t("account.deleting") : t("account.deleteButton")}
-        </button>
-      </section>
     </div>
   );
 }

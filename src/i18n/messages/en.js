@@ -243,13 +243,6 @@ export default {
   "account.send": "Send",
   "account.feedbackSent": "Thank you! We got your message.",
   "account.logout": "Log out",
-  "account.deleteTitle": "Delete account",
-  "account.deleteText":
-    "All your progress, XP and feedback will be deleted forever. This can't be undone. If you're sure, type \"{word}\" below.",
-  "account.confirmWord": "DELETE",
-  "account.deleteButton": "Delete forever",
-  "account.deleting": "Deleting...",
-  "account.deleteRelogin": "For your security, log out and log in again, then delete your account.",
 
   // Login, signup and password reset
   "auth.email": "Email",
@@ -295,15 +288,14 @@ export default {
   "privacy.subtitle": "What we do with your data, in plain words.",
   "privacy.collect": "What we keep",
   "privacy.collectText":
-    "Your name, email, learning progress (which words you know, quiz results, XP, streak) and any feedback you send.",
+    "Your name, email, learning progress (which words you know, quiz results, XP, streak), any feedback you send, and simple usage details: your app language, your phone's time zone (to know roughly which country you're in) and the days you use the app.",
   "privacy.why": "Why we keep it",
-  "privacy.whyText": "So you can log in on any device and keep learning, and so we can make the app better.",
+  "privacy.whyText":
+    "So you can log in on any device and keep learning, and so we can see in summary how the app is used and make the lessons better. We also use Google Analytics to count visits to the website.",
   "privacy.where": "Where it's stored",
   "privacy.whereText": "Data is stored securely in Google's Firebase service. Only you can see your own progress.",
   "privacy.never": "What we never do",
   "privacy.neverText": "We don't sell your data to anyone, and we don't use it for advertising.",
-  "privacy.delete": "Deleting your data",
-  "privacy.deleteText": "You can delete your account at any time from the account page. All your data is deleted with it.",
   "privacy.contact": "Contact",
   "privacy.contactText": "If you have questions, write to us with \"Send feedback\" on the account page.",
   "terms.subtitle": "The rules for using Lahjio, in plain words.",

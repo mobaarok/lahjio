@@ -3,7 +3,7 @@ import { useLocale } from "../hooks/useLocale";
 import { cardClass } from "../lib/styles";
 
 // Plain-language privacy policy. Review it before a public launch.
-const sections = ["collect", "why", "where", "never", "delete", "contact"];
+const sections = ["collect", "why", "where", "never", "contact"];
 
 export default function Privacy() {
   const { t } = useLocale();

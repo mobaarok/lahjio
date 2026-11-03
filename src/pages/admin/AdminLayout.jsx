@@ -8,6 +8,8 @@ const tabs = [
   { to: "/admin", label: "Items", end: true },
   { to: "/admin/categories", label: "Categories" },
   { to: "/admin/courses", label: "Courses" },
+  { to: "/admin/analytics", label: "Analytics" },
+  { to: "/admin/users", label: "Users" },
   { to: "/admin/feedback", label: "Feedback" },
   { to: "/admin/import", label: "Import" },
 ];

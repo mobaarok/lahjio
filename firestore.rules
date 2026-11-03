@@ -52,7 +52,9 @@ service cloud.firestore {
 
     // Profile: streak, XP, daily goal. Users can never set their own plan.
     match /users/{userId} {
-      allow read, delete: if isOwner(userId);
+      // Admins can read every profile for Admin > Analytics
+      allow read: if isOwner(userId) || isAdmin();
+      allow delete: if isOwner(userId);
       allow create: if isOwner(userId) &&
         !request.resource.data.keys().hasAny(["plan", "plan_expires_at"]);
       allow update: if isOwner(userId) &&
@@ -65,6 +67,25 @@ service cloud.firestore {
       match /lesson_progress/{lessonId} {
         allow read, write: if isOwner(userId);
       }
+    }
+
+    // Admin > Analytics reads every learner's progress at once
+    // (collection group queries), but never changes it
+    match /{path=**}/progress/{itemId} {
+      allow read: if isAdmin();
+    }
+    match /{path=**}/lesson_progress/{lessonId} {
+      allow read: if isAdmin();
+    }
+
+    // One note per learner per day they open the app: {uid}_{day}.
+    // Learners can only write their own; admins read them for the charts.
+    match /activity/{activityId} {
+      allow create, update: if signedIn() &&
+        request.resource.data.uid == request.auth.uid &&
+        activityId == (request.auth.uid + "_" + request.resource.data.day);
+      allow read: if isAdmin() || (signedIn() && resource.data.uid == request.auth.uid);
+      allow delete: if signedIn() && resource.data.uid == request.auth.uid;
     }
 
     // Learners send feedback; only admins read it all
