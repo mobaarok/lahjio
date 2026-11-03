@@ -28,6 +28,7 @@ const AdminCourses = lazy(() => import("./pages/admin/AdminCourses"));
 const AdminCourseEdit = lazy(() => import("./pages/admin/AdminCourseEdit"));
 const AdminLessonEdit = lazy(() => import("./pages/admin/AdminLessonEdit"));
 const AdminFeedback = lazy(() => import("./pages/admin/AdminFeedback"));
+const AdminImport = lazy(() => import("./pages/admin/AdminImport"));
 
 // A new key per lesson resets the lesson's state when moving to the next one
 function LessonPage() {
@@ -77,6 +78,7 @@ export default function App() {
           <Route path="courses/:courseId" element={<AdminCourseEdit />} />
           <Route path="courses/:courseId/lessons/:lessonId" element={<AdminLessonEdit />} />
           <Route path="feedback" element={<AdminFeedback />} />
+          <Route path="import" element={<AdminImport />} />
         </Route>
 
         <Route path="*" element={<NotFound />} />

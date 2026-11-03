@@ -9,6 +9,7 @@ const tabs = [
   { to: "/admin/categories", label: "Categories" },
   { to: "/admin/courses", label: "Courses" },
   { to: "/admin/feedback", label: "Feedback" },
+  { to: "/admin/import", label: "Import" },
 ];
 
 export default function AdminLayout() {

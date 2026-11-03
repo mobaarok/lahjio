@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import Icon from "../../components/Icon";
 import { Alert, Badge, Field, Spinner } from "../../components/ui";
-import { getOne, listAll, saveCourse, saveLesson } from "../../lib/admin";
+import { getOne, listAll, publishCourse, saveCourse, saveLesson } from "../../lib/admin";
 import { COURSE_TYPES, LEVELS, STATUSES, labelOf, statusTone } from "../../lib/constants";
 import { byOrder } from "../../lib/format";
 import { buttonClass, cardClass, inputClass } from "../../lib/styles";
@@ -111,6 +111,27 @@ export default function AdminCourseEdit() {
     }
   }
 
+  // One click to make the whole course live: course, lessons and their items
+  async function handlePublishAll() {
+    if (!window.confirm("Publish this course, all its draft lessons and their draft items? Learners will see them.")) {
+      return;
+    }
+    setSaving(true);
+    try {
+      const result = await publishCourse(courseId);
+      setMessage({
+        tone: "success",
+        text: `Published the course, ${result.lessons} lessons and ${result.items} items.`,
+      });
+      update("status", "published");
+      setReloadKey((k) => k + 1);
+    } catch {
+      setMessage({ tone: "error", text: "Couldn't publish everything. Try again; it skips what's already published." });
+    } finally {
+      setSaving(false);
+    }
+  }
+
   // Swaps order numbers with the neighbouring lesson
   async function moveLesson(index, direction) {
     const a = lessons[index];
@@ -191,10 +212,15 @@ export default function AdminCourseEdit() {
           </label>
         </div>
 
-        <div className="sm:col-span-2">
+        <div className="flex flex-wrap gap-2 sm:col-span-2">
           <button type="submit" disabled={saving} className={buttonClass("primary")}>
             {saving ? "Saving..." : "Save course"}
           </button>
+          {!isNew && (
+            <button type="button" onClick={handlePublishAll} disabled={saving} className={buttonClass("secondary")}>
+              Publish everything
+            </button>
+          )}
         </div>
       </form>
 

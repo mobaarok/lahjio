@@ -27,9 +27,9 @@ Live site: https://mobaarok.github.io/lahjio-beta/
 
 **Real Firestore content:**
 
-- 42 published items (35 words, 7 phrases) in 5 categories: greetings, numbers, food, shopping, daily
-- 1 course, "সৌদি আরবি: শুরুর কোর্স" / "Saudi Arabic: Beginner Course", with 5 published lessons, one per category
-- The course has `languages: ["bn"]`, so English learners see "coming soon" until the owner ticks "English learners" in Admin > Courses
+- 213 published items in 12 categories: greetings, numbers, food, shopping, daily, plus (since 2026-11-03) time, work, boss, papers, store, taxi, hospital
+- Course 1, "সৌদি আরবি: শুরুর কোর্স" / "Saudi Arabic: Beginner Course", with 5 published lessons, one per category. It has `languages: ["bn"]`, so English learners see "coming soon" until the owner ticks "English learners" in Admin > Courses
+- Course 2, `everyday-life`, "সৌদি আরবি: দৈনন্দিন জীবন" / "Saudi Arabic: Everyday Life", with 12 published lessons (171 items from `content-packs/everyday-life.json`), for Bangla and English learners. Not yet reviewed by a native speaker.
 - Two admin accounts, including the owner's `mobarokhrsa@gmail.com`. Admins are added by hand in the Firebase Console.
 
 **Known gaps:**
@@ -69,11 +69,15 @@ Agreed roadmap, in order. Ask the owner which step to start; they decide each se
 
 Fake Firebase on this computer, so tests never touch real users or data:
 
-1. `npx firebase emulators:start --project demo-lahjio`: needs firebase-tools and Java 21 (the Firestore emulator is a Java program). Neither is installed system-wide. Earlier sessions unpacked them in a temporary folder, so install again if needed, and ask the owner before downloading.
+1. `npm run emulators` (run it in the background): starts the emulators with the Java 21 and firebase-tools kept in `tools/` (not in git; see `scripts/emulators.mjs`). Android Studio's Java (`C:\Program Files\Android\Android Studio\jbr`) is the backup. Don't download them again; if `tools/` is missing, ask the owner first.
 2. `npm run seed:emulators`: loads `scripts/seed-data.json` (5 categories, 42 items) and creates the test accounts listed in `scripts/seed-emulators.mjs`
 3. `npm run dev:emulators`: the app with `.env.emulators` (project `demo-lahjio`). `.claude/launch.json` has it as `lahjio-emulators` on port 5180.
 
 The admin test account can open `/admin`. Emulator data disappears when the emulators stop.
+
+### Content packs
+
+New content is written as a JSON file in `content-packs/` (categories, items, and one course with lessons). The owner loads it in **Admin > Import**, which adds everything as drafts and skips what already exists (same id or same Arabic). **Publish everything** on a course page publishes the course, its draft lessons and their draft items. Logic: `src/lib/contentPack.js` and `publishCourse()` in `src/lib/admin.js`.
 
 ## How the code is organised
 

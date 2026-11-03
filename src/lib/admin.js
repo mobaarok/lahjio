@@ -12,12 +12,13 @@ import {
   serverTimestamp,
   setDoc,
   updateDoc,
+  writeBatch,
 } from "firebase/firestore";
 import { db } from "../firebase";
 import { refreshContent } from "../hooks/useContent";
 
 // Every content change bumps the version, so learners download fresh content
-async function bumpVersion() {
+export async function bumpVersion() {
   await setDoc(
     doc(db, "meta", "content"),
     { version: increment(1), updated_at: serverTimestamp() },
@@ -72,6 +73,35 @@ async function updateLessonCount(courseId) {
   await updateDoc(doc(db, "courses", courseId), {
     lesson_count: lessons.filter((l) => l.status === "published").length,
   });
+}
+
+// Publishes a course, its draft lessons and the draft items those lessons use.
+// Archived lessons and items stay archived. Returns how many were published.
+export async function publishCourse(courseId) {
+  const [lessons, items] = await Promise.all([listAll("courses", courseId, "lessons"), listAll("items")]);
+  const lessonsToPublish = lessons.filter((l) => l.status === "draft");
+
+  const usedIds = new Set(lessons.filter((l) => l.status !== "archived").flatMap((l) => l.item_ids ?? []));
+  const itemsToPublish = items.filter((i) => usedIds.has(i.id) && i.status === "draft");
+
+  const writes = [
+    ["courses", courseId],
+    ...lessonsToPublish.map((l) => ["courses", courseId, "lessons", l.id]),
+    ...itemsToPublish.map((i) => ["items", i.id]),
+  ];
+
+  // Firestore allows 500 writes per batch; stay well below
+  for (let start = 0; start < writes.length; start += 400) {
+    const batch = writeBatch(db);
+    for (const path of writes.slice(start, start + 400)) {
+      batch.update(doc(db, ...path), { status: "published", updated_at: serverTimestamp() });
+    }
+    await batch.commit();
+  }
+
+  await updateLessonCount(courseId);
+  await bumpVersion();
+  return { lessons: lessonsToPublish.length, items: itemsToPublish.length };
 }
 
 // "Daily Life" -> "daily-life"
