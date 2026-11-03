@@ -4,8 +4,10 @@ import { readdirSync, readFileSync, statSync } from "node:fs";
 import { join } from "node:path";
 import bn from "../src/i18n/messages/bn.js";
 import en from "../src/i18n/messages/en.js";
+import hi from "../src/i18n/messages/hi.js";
+import ur from "../src/i18n/messages/ur.js";
 
-const languages = { bn, en };
+const languages = { bn, en, hi, ur };
 
 // Keys built from variables in the code, e.g. t(`level.${course.level}`)
 const dynamicKeys = [
@@ -49,13 +51,17 @@ for (const [code, messages] of Object.entries(languages)) {
     console.log(`${code}: missing ${missing.length} keys:\n  ${missing.join("\n  ")}`);
   }
 }
+// Every language must have exactly the same keys as English
 const onlyIn = (a, b) => Object.keys(a).filter((key) => !(key in b));
-for (const [name, keys] of [["bn only", onlyIn(bn, en)], ["en only", onlyIn(en, bn)]]) {
-  if (keys.length) {
-    problems += keys.length;
-    console.log(`${name}: ${keys.join(", ")}`);
+for (const [code, messages] of Object.entries(languages)) {
+  if (code === "en") continue;
+  for (const [name, keys] of [[`${code} only`, onlyIn(messages, en)], [`missing in ${code}`, onlyIn(en, messages)]]) {
+    if (keys.length) {
+      problems += keys.length;
+      console.log(`${name}: ${keys.join(", ")}`);
+    }
   }
 }
 
-console.log(problems ? `${problems} problems found.` : `All ${usedKeys.size} keys are translated in ${Object.keys(languages).join(" and ")}.`);
+console.log(problems ? `${problems} problems found.` : `All ${usedKeys.size} keys are translated in ${Object.keys(languages).join(", ")}.`);
 process.exit(problems ? 1 : 0);

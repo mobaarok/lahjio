@@ -3,7 +3,7 @@
 A web app that teaches Saudi Arabic to Bangla-speaking expats in Saudi Arabia.
 Learners study words and phrases, take lessons in courses, practise with
 flashcards and quizzes, and build a daily streak. The interface is Bangla or
-English; an English course for Indian learners and a Hindi interface are planned.
+English, with Hindi and Urdu interfaces that show English lesson content for now.
 
 Live site: https://mobaarok.github.io/lahjio-beta/
 
@@ -21,7 +21,7 @@ Live site: https://mobaarok.github.io/lahjio-beta/
 - **Account:** edit name, language, feedback, logout and account deletion
 - **Auth:** email and Google login, signup, password reset, privacy page
 - **Admin dashboard (`/admin`):** items (draft, published, archived; duplicate Arabic check), categories, courses and lessons (item picker and ordering), and learner feedback
-- **Languages:** Bangla (default) and English, with Hindi shown as coming soon
+- **Languages:** Bangla (default), English, Hindi and Urdu (right to left). Hindi and Urdu have their own interface text but see English lessons and meanings, with a notice saying so
 - **PWA manifest:** the app can be added to a phone home screen. There is no offline service worker yet.
 - **Testing setup:** local Firebase emulators with seed data and test accounts
 
@@ -47,7 +47,7 @@ Agreed roadmap, in order. Ask the owner which step to start; they decide each se
 2. **Phase 2, audio upload:** upload recordings from the admin item form. First check if Firebase Storage needs the paid (Blaze) plan; if the owner won't add a card, compare a free host like Cloudinary.
 3. **Lessons:** add short dialogues and sentence practice to lessons (the `dialogue` field is planned on lessons).
 4. **Phase 5, real-user test:** give the app to 10 to 20 Bangladeshi expats in Riyadh for 2 to 4 weeks. Read feedback in Admin > Feedback, and add simple analytics.
-5. **Hindi and the English course:** follow the steps in `src/i18n/locales.js`, and add Hindi fields to items.
+5. **Hindi and Urdu lessons:** the interfaces exist; add Hindi/Urdu fields to items and follow the steps in `src/i18n/locales.js`.
 6. **Phase 6, business:** free and paid tiers. Payments must update `users.plan` from a secure server (Cloud Functions), never the browser, and paid content needs its own protected documents. Later, a React Native app reusing the same Firebase data.
 
 ## Stack
@@ -130,8 +130,9 @@ The published rules matched this file on 2026-11-03.
 
 ## Languages (i18n)
 
-- The learner interface is Bangla (default) or English, chosen with the language switcher and saved in localStorage. Hindi is listed but disabled; `src/i18n/locales.js` explains how to switch it on.
-- Never hard-code learner text. Add a key to both `messages/bn.js` and `messages/en.js` and use `const { t } = useLocale()`. Fill values with `t("words.found", { count })`.
+- The learner interface is Bangla (default), English, Hindi or Urdu, chosen with the language switcher and saved in localStorage. Each language in `src/i18n/locales.js` has a `content` language: Hindi and Urdu use `"en"`, so `meaningOf`, `localized` and `coursesForLocale` show English content and courses ticked for English learners. `ContentLanguageNotice` tells them. Urdu sets `<html dir="rtl">`.
+- Every key must exist in `messages/bn.js`, `en.js`, `hi.js` and `ur.js`.
+- Never hard-code learner text. Add a key to all four message files (`bn`, `en`, `hi`, `ur`) and use `const { t } = useLocale()`. Fill values with `t("words.found", { count })`.
 - Run `npm run check:i18n` after adding text. If a key is built from a variable, such as ``t(`level.${x}`)``, add it to `dynamicKeys` in `scripts/check-i18n.mjs`.
 - Show numbers with `num()`, and word meanings with `meaningOf(item)` and `pronunciationOf(item)` from `useLocale()`. English falls back to Bangla when an item has no English yet.
 - Translated Firestore fields end in `_bn` / `_en`; read them with `localized(object, "title")`.

@@ -2,6 +2,7 @@ import { Suspense } from "react";
 import { Outlet } from "react-router-dom";
 import Navbar from "./Navbar";
 import BottomNav from "./BottomNav";
+import ContentLanguageNotice from "./ContentLanguageNotice";
 import Footer from "./Footer";
 import { Alert, Spinner } from "./ui";
 import { useLocale } from "../hooks/useLocale";
@@ -30,6 +31,8 @@ export default function Layout() {
             </button>
           </div>
         )}
+        {/* Hindi and Urdu: lessons are in English for now */}
+        <ContentLanguageNotice />
         <Suspense fallback={<Spinner />}>
           <Outlet />
         </Suspense>

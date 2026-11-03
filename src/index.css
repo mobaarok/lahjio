@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Hind Siliguri", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Hind Siliguri", "Hind", ui-sans-serif, system-ui, sans-serif;
   --font-arabic: "Noto Naskh Arabic", "Segoe UI", serif;
 
   /* Gentle up-and-down motion for the landing page phone and badges */
@@ -21,6 +21,11 @@
 @layer base {
   body {
     @apply bg-slate-50 text-slate-800 antialiased;
+  }
+
+  /* Urdu uses the Arabic script, so the whole page uses the Arabic font */
+  html[lang="ur"] body {
+    font-family: var(--font-arabic);
   }
 
   /* Every Arabic text uses the Arabic font */

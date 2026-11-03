@@ -1,9 +1,12 @@
 // Course helpers: which lessons are open, finished, and what to do next
+import { contentLanguage } from "../i18n/locales";
 
 // Courses made for this interface language. Admins tick the languages on
 // each course; old courses without the field show for everyone.
+// Hindi and Urdu see the English courses (see content in i18n/locales.js).
 export function coursesForLocale(courses, locale) {
-  return courses.filter((c) => c.languages?.includes(locale) ?? true);
+  const language = contentLanguage(locale);
+  return courses.filter((c) => c.languages?.includes(language) ?? true);
 }
 
 const isCompleted = (lessonProgress, lesson) => lessonProgress[lesson.id]?.status === "completed";

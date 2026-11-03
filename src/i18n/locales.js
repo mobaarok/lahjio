@@ -1,15 +1,25 @@
 // Languages the app interface can be shown in.
 //
-// To switch on Hindi later:
-// 1. Copy messages/en.js to messages/hi.js and translate the values
-// 2. Import it in messages/index.js
-// 3. Add Hindi meaning fields to items (e.g. "hindi", "hi_transliteration")
+// content: which language lessons and word meanings are shown in. Hindi and
+//   Urdu have their own interface text but no lesson translations yet, so
+//   they use the English content and see courses ticked for English learners.
+// dir: "rtl" for right-to-left scripts (Urdu).
+//
+// To give Hindi or Urdu its own lesson content later:
+// 1. Add meaning fields to items (e.g. "hindi", "hi_transliteration")
 //    and handle them in meaningOf / pronunciationOf in context/LocaleContext.jsx
-// 4. Set enabled: true below
+// 2. Add the language to the course languages in Admin > Courses
+// 3. Set content to the language's own code below
 export const LOCALES = [
-  { code: "bn", label: "বাংলা", short: "বাং", digits: "০১২৩৪৫৬৭৮৯", enabled: true },
-  { code: "en", label: "English", short: "EN", digits: null, enabled: true },
-  { code: "hi", label: "हिन्दी", short: "हि", digits: "०१२३४५६७८९", enabled: false },
+  { code: "bn", label: "বাংলা", short: "বাং", digits: "০১২৩৪৫৬৭৮৯", content: "bn", dir: "ltr", enabled: true },
+  { code: "en", label: "English", short: "EN", digits: null, content: "en", dir: "ltr", enabled: true },
+  { code: "hi", label: "हिन्दी", short: "हि", digits: null, content: "en", dir: "ltr", enabled: true },
+  { code: "ur", label: "اردو", short: "اُر", digits: null, content: "en", dir: "rtl", enabled: true },
 ];
 
 export const DEFAULT_LOCALE = "bn";
+
+// The content language for an interface language, e.g. "hi" -> "en"
+export function contentLanguage(code) {
+  return LOCALES.find((l) => l.code === code)?.content ?? code;
+}

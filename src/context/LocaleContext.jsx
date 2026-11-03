@@ -20,12 +20,16 @@ function savedLocale() {
 export function LocaleProvider({ children }) {
   const [locale, setLocaleState] = useState(savedLocale);
   const current = LOCALES.find((l) => l.code === locale);
+  // Language of lessons and meanings; Hindi and Urdu use English for now
+  const contentLocale = current.content;
 
-  // Keeps <html lang> and the browser tab title in the chosen language
+  // Keeps <html lang>, the text direction and the browser tab title in the
+  // chosen language. Urdu is right to left.
   useEffect(() => {
     document.documentElement.lang = locale;
+    document.documentElement.dir = current.dir;
     document.title = messages[locale]?.["meta.title"] ?? messages.en["meta.title"];
-  }, [locale]);
+  }, [locale, current.dir]);
 
   function setLocale(code) {
     setLocaleState(code);
@@ -49,23 +53,25 @@ export function LocaleProvider({ children }) {
     return String(value).replace(/\d/g, (d) => current.digits[d]);
   }
 
-  // Meaning and pronunciation of a word or phrase in the interface language.
+  // Meaning and pronunciation of a word or phrase in the content language.
   // English falls back to Bangla when an item has no English yet.
   function meaningOf(item) {
-    return locale === "en" ? item.english || item.bangla : item.bangla;
+    return contentLocale === "en" ? item.english || item.bangla : item.bangla;
   }
 
   function pronunciationOf(item) {
-    return locale === "en" ? item.en_transliteration || item.bn_transliteration : item.bn_transliteration;
+    return contentLocale === "en"
+      ? item.en_transliteration || item.bn_transliteration
+      : item.bn_transliteration;
   }
 
-  // Picks a translated field, e.g. localized(course, "title") reads
-  // title_en or title_bn, and falls back to the other one
+  // Picks a translated database field, e.g. localized(course, "title") reads
+  // title_en or title_bn (by content language), and falls back to the other one
   function localized(object, field) {
-    return object?.[`${field}_${locale}`] || object?.[`${field}_bn`] || object?.[`${field}_en`] || "";
+    return object?.[`${field}_${contentLocale}`] || object?.[`${field}_bn`] || object?.[`${field}_en`] || "";
   }
 
-  const value = { locale, setLocale, t, num, meaningOf, pronunciationOf, localized };
+  const value = { locale, contentLocale, setLocale, t, num, meaningOf, pronunciationOf, localized };
 
   return <LocaleContext.Provider value={value}>{children}</LocaleContext.Provider>;
 }

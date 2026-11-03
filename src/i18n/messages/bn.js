@@ -8,6 +8,7 @@ export default {
   "common.goHome": "হোমে যাও",
   "language.label": "ভাষা",
   "language.soon": "শীঘ্রই",
+  "contentLang.notice": "এখন পাঠ আর শব্দের অর্থ ইংরেজিতে আছে। {language} পাঠ শিগগিরই আসছে।",
   "nav.home": "হোম",
   "nav.courses": "কোর্স",
   "nav.words": "শব্দ",

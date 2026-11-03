@@ -9,6 +9,7 @@ export default {
   "common.goHome": "Go home",
   "language.label": "Language",
   "language.soon": "coming soon",
+  "contentLang.notice": "Lessons and word meanings are in English for now. {language} lessons are coming soon.",
   "nav.home": "Home",
   "nav.courses": "Courses",
   "nav.words": "Words",
