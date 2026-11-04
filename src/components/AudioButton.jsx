@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Icon from "./Icon";
 import { useLocale } from "../hooks/useLocale";
 import { playWord } from "../lib/speak";
@@ -11,9 +11,21 @@ const sizes = {
 
 // Plays an item's own audio file, or Web Speech when it has none.
 // Turns red if this device has no Arabic voice.
-export default function AudioButton({ item, size = "md", className = "" }) {
+// autoPlay plays the word once as soon as the button appears.
+export default function AudioButton({ item, size = "md", className = "", autoPlay = false }) {
   const { t } = useLocale();
   const [noVoice, setNoVoice] = useState(false);
+
+  useEffect(() => {
+    if (!autoPlay) return;
+    let ignore = false;
+    playWord(item).then((played) => {
+      if (!ignore) setNoVoice(!played);
+    });
+    return () => {
+      ignore = true;
+    };
+  }, [autoPlay, item]);
 
   async function handleClick(event) {
     event.stopPropagation(); // don't flip a flashcard underneath

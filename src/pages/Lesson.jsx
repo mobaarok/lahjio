@@ -125,10 +125,11 @@ export default function Lesson() {
       <p className="mb-2 text-sm font-medium text-emerald-700">{localized(lesson, "title")} · {t("lesson.learn")}</p>
 
       <div className={`${cardClass} p-8 text-center`}>
-        <p lang="ar" dir="rtl" className="text-5xl font-bold text-emerald-700">{item.arabic}</p>
-        <p className="mt-3 text-lg text-slate-500">{pronunciationOf(item)}</p>
+        {/* Pronunciation first and big, so learners can say it straight away; Arabic below */}
+        <p className="text-4xl font-bold text-emerald-700">{pronunciationOf(item)}</p>
+        <p lang="ar" dir="rtl" className="mt-3 text-2xl text-slate-500">{item.arabic}</p>
         <div className="my-6 flex justify-center">
-          <AudioButton key={item.id} item={item} size="lg" />
+          <AudioButton key={item.id} item={item} size="lg" autoPlay />
         </div>
         <p className="text-2xl font-bold text-slate-900">{meaningOf(item)}</p>
       </div>

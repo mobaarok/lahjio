@@ -18,15 +18,17 @@ export default function QuizRunner({ questions, onAnswer, onFinish }) {
   const answered = selectedId !== null;
   const isRight = selectedId === question.item.id;
 
-  // Listening questions play the word as soon as they appear
+  // Listen and read questions play the word as soon as they appear.
+  // "Pick the Arabic" waits until it's answered, so the sound doesn't give it away.
   useEffect(() => {
-    if (question.type === "listen") playWord(question.item);
+    if (question.type !== "bn-ar") playWord(question.item);
   }, [question]);
 
   function choose(option) {
     if (answered) return;
     const correct = option.id === question.item.id;
     setSelectedId(option.id);
+    if (question.type === "bn-ar") playWord(question.item); // hear the right answer
     if (correct) setScore((s) => s + 1);
     onAnswer?.(question.item.id, correct);
   }
@@ -65,15 +67,21 @@ export default function QuizRunner({ questions, onAnswer, onFinish }) {
         <p className="text-sm font-medium text-slate-500">{t(`quiz.prompt.${question.type}`)}</p>
 
         {question.type === "ar-bn" && (
-          <div className="mt-4 flex items-center justify-center gap-3">
-            <p lang="ar" dir="rtl" className="text-5xl font-bold text-emerald-700">{question.item.arabic}</p>
-            <AudioButton item={question.item} size="sm" />
+          <div className="mt-4 flex flex-col items-center gap-2">
+            {/* Most learners can't read Arabic yet: pronunciation big, Arabic small below */}
+            <div className="flex items-center gap-3">
+              <p className="text-3xl font-bold text-emerald-700">{pronunciationOf(question.item)}</p>
+              <AudioButton item={question.item} size="sm" />
+            </div>
+            <p lang="ar" dir="rtl" className="text-xl text-slate-500">{question.item.arabic}</p>
           </div>
         )}
         {question.type === "bn-ar" && <p className="mt-4 text-3xl font-bold text-slate-900">{meaningOf(question.item)}</p>}
         {question.type === "listen" && (
-          <div className="mt-4 flex justify-center">
+          <div className="mt-4 flex flex-col items-center gap-3">
             <AudioButton item={question.item} size="lg" />
+            {/* The pronunciation helps when the device voice is unclear */}
+            <p className="text-2xl font-bold text-emerald-700">{pronunciationOf(question.item)}</p>
           </div>
         )}
       </div>
@@ -82,7 +90,11 @@ export default function QuizRunner({ questions, onAnswer, onFinish }) {
         {question.options.map((option) => (
           <button key={option.id} type="button" onClick={() => choose(option)} className={optionClass(option)}>
             {showArabicOptions ? (
-              <span lang="ar" dir="rtl" className="block text-right text-2xl">{option.arabic}</span>
+              // Pronunciation first, the Arabic small on the other side
+              <span className="flex items-center justify-between gap-3">
+                <span className="text-lg font-semibold">{pronunciationOf(option)}</span>
+                <span lang="ar" dir="rtl" className="text-lg text-slate-500">{option.arabic}</span>
+              </span>
             ) : (
               meaningOf(option)
             )}
