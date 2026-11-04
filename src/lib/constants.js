@@ -24,6 +24,7 @@ export const COURSE_TYPES = [
   { value: "phrase", label: "Phrase course" },
   { value: "topic", label: "Topic course" },
   { value: "mixed", label: "Mixed course" },
+  { value: "reading", label: "Reading course (Arabic shown big)" },
 ];
 
 // Finds the admin label for a saved value, e.g. labelOf(LEVELS, "beginner")

@@ -1,0 +1,607 @@
+{
+  "name": "Job pack: Drivers",
+  "categories": [
+    {
+      "id": "driving",
+      "name_en": "Driving",
+      "name_bn": "গাড়ি চালানো",
+      "order": 180
+    }
+  ],
+  "items": [
+    {
+      "id": "jd-l1-01",
+      "type": "word",
+      "arabic": "السيارة",
+      "bangla": "গাড়ি",
+      "english": "The car",
+      "bn_transliteration": "আস-সাইয়ারা",
+      "en_transliteration": "as-sayyāra",
+      "category_ids": [
+        "driving"
+      ]
+    },
+    {
+      "id": "jd-l1-02",
+      "type": "word",
+      "arabic": "البنزين",
+      "bangla": "পেট্রোল",
+      "english": "Petrol",
+      "bn_transliteration": "আল-বানযীন",
+      "en_transliteration": "al-banzīn",
+      "category_ids": [
+        "driving"
+      ]
+    },
+    {
+      "id": "jd-l1-03",
+      "type": "phrase",
+      "arabic": "عبها فل",
+      "bangla": "ট্যাংক ফুল করো",
+      "english": "Fill it up",
+      "bn_transliteration": "আব্বিহা ফুল",
+      "en_transliteration": "ʿabbha full",
+      "category_ids": [
+        "driving"
+      ],
+      "note_bn": "পেট্রোল পাম্পে বলুন। নির্দিষ্ট টাকার জন্য: 'বি-খামসীন' (৫০ রিয়ালের)।",
+      "note_en": "Say it at the petrol station. For an amount: bkhamsīn (50 riyals' worth)."
+    },
+    {
+      "id": "jd-l1-04",
+      "type": "word",
+      "arabic": "الكفر",
+      "bangla": "টায়ার",
+      "english": "The tyre",
+      "bn_transliteration": "আল-কাফার",
+      "en_transliteration": "al-kafar",
+      "category_ids": [
+        "driving"
+      ]
+    },
+    {
+      "id": "jd-l1-05",
+      "type": "word",
+      "arabic": "بنشر",
+      "bangla": "টায়ারের দোকান / পাংচার",
+      "english": "Tyre shop, puncture",
+      "bn_transliteration": "বানশার",
+      "en_transliteration": "banshar",
+      "category_ids": [
+        "driving"
+      ],
+      "note_bn": "'বানশার' মানে পাংচার, আবার টায়ার সারাইয়ের দোকানও।",
+      "note_en": "banshar means a puncture, and also the tyre repair shop."
+    },
+    {
+      "id": "jd-l1-06",
+      "type": "word",
+      "arabic": "الزيت",
+      "bangla": "ইঞ্জিন অয়েল",
+      "english": "The oil",
+      "bn_transliteration": "আয-যেইত",
+      "en_transliteration": "az-zēt",
+      "category_ids": [
+        "driving"
+      ]
+    },
+    {
+      "id": "jd-l1-07",
+      "type": "word",
+      "arabic": "ورشة",
+      "bangla": "গ্যারেজ / ওয়ার্কশপ",
+      "english": "Workshop, garage",
+      "bn_transliteration": "ওয়ারশা",
+      "en_transliteration": "warsha",
+      "category_ids": [
+        "driving"
+      ]
+    },
+    {
+      "id": "jd-l1-08",
+      "type": "phrase",
+      "arabic": "غسيل السيارة",
+      "bangla": "গাড়ি ধোয়া",
+      "english": "Car wash",
+      "bn_transliteration": "গাসীল আস-সাইয়ারা",
+      "en_transliteration": "ghasīl as-sayyāra",
+      "category_ids": [
+        "driving"
+      ]
+    },
+    {
+      "id": "jd-l1-09",
+      "type": "word",
+      "arabic": "الشنطة",
+      "bangla": "গাড়ির পেছনের বাক্স (ডিকি)",
+      "english": "The boot (trunk)",
+      "bn_transliteration": "আশ-শানতা",
+      "en_transliteration": "ash-shanṭa",
+      "category_ids": [
+        "driving"
+      ],
+      "note_bn": "'শানতা' মানে ব্যাগও।",
+      "note_en": "shanṭa also means a bag."
+    },
+    {
+      "id": "jd-l1-10",
+      "type": "word",
+      "arabic": "المكيف",
+      "bangla": "এসি",
+      "english": "The air conditioning",
+      "bn_transliteration": "আল-মুকাইয়িফ",
+      "en_transliteration": "al-mukayyif",
+      "category_ids": [
+        "driving"
+      ]
+    },
+    {
+      "id": "jd-l2-01",
+      "type": "word",
+      "arabic": "الطريق",
+      "bangla": "রাস্তা",
+      "english": "The road",
+      "bn_transliteration": "আত-তারীগ",
+      "en_transliteration": "aṭ-ṭarīg",
+      "category_ids": [
+        "driving"
+      ]
+    },
+    {
+      "id": "jd-l2-02",
+      "type": "word",
+      "arabic": "الشارع",
+      "bangla": "রাস্তা / সড়ক",
+      "english": "The street",
+      "bn_transliteration": "আশ-শারি",
+      "en_transliteration": "ash-shāriʿ",
+      "category_ids": [
+        "driving"
+      ]
+    },
+    {
+      "id": "jd-l2-03",
+      "type": "phrase",
+      "arabic": "الخط السريع",
+      "bangla": "হাইওয়ে",
+      "english": "The highway",
+      "bn_transliteration": "আল-খাত্ত আস-সারী",
+      "en_transliteration": "al-khaṭṭ as-sarīʿ",
+      "category_ids": [
+        "driving"
+      ]
+    },
+    {
+      "id": "jd-l2-04",
+      "type": "word",
+      "arabic": "مخرج",
+      "bangla": "এক্সিট",
+      "english": "Exit",
+      "bn_transliteration": "মাখরাজ",
+      "en_transliteration": "makhraj",
+      "category_ids": [
+        "driving"
+      ],
+      "note_bn": "হাইওয়েতে এক্সিটের নম্বর থাকে: 'মাখরাজ খামসা' = এক্সিট ৫।",
+      "note_en": "Highway exits are numbered: makhraj khamsa = exit 5."
+    },
+    {
+      "id": "jd-l2-05",
+      "type": "word",
+      "arabic": "الإشارة",
+      "bangla": "ট্রাফিক সিগন্যাল",
+      "english": "The traffic light",
+      "bn_transliteration": "আল-ইশারা",
+      "en_transliteration": "al-ishāra",
+      "category_ids": [
+        "driving"
+      ]
+    },
+    {
+      "id": "jd-l2-06",
+      "type": "word",
+      "arabic": "يوتيرن",
+      "bangla": "ইউ-টার্ন",
+      "english": "U-turn",
+      "bn_transliteration": "ইউ-টার্ন",
+      "en_transliteration": "yū-tērn",
+      "category_ids": [
+        "driving"
+      ],
+      "note_bn": "সৌদিতে বেশিরভাগ রাস্তায় ডানে না ঘুরে সামনে গিয়ে ইউ-টার্ন নিতে হয়।",
+      "note_en": "On many Saudi roads you go ahead and take a U-turn instead of turning."
+    },
+    {
+      "id": "jd-l2-07",
+      "type": "word",
+      "arabic": "موقف",
+      "bangla": "পার্কিং",
+      "english": "Parking",
+      "bn_transliteration": "মাওগিফ",
+      "en_transliteration": "mawgif",
+      "category_ids": [
+        "driving"
+      ]
+    },
+    {
+      "id": "jd-l2-08",
+      "type": "phrase",
+      "arabic": "ممنوع الوقوف",
+      "bangla": "পার্কিং নিষেধ",
+      "english": "No parking",
+      "bn_transliteration": "মামনূ আল-উগূফ",
+      "en_transliteration": "mamnūʿ al-wugūf",
+      "category_ids": [
+        "driving"
+      ]
+    },
+    {
+      "id": "jd-l2-09",
+      "type": "word",
+      "arabic": "خفف",
+      "bangla": "আস্তে চালাও",
+      "english": "Slow down",
+      "bn_transliteration": "খাফফিফ",
+      "en_transliteration": "khaffif",
+      "category_ids": [
+        "driving"
+      ]
+    },
+    {
+      "id": "jd-l2-10",
+      "type": "word",
+      "arabic": "ساهر",
+      "bangla": "স্পিড ক্যামেরা",
+      "english": "Speed camera (Saher)",
+      "bn_transliteration": "সাহির",
+      "en_transliteration": "sāhir",
+      "category_ids": [
+        "driving"
+      ],
+      "note_bn": "'সাহির' ক্যামেরা জরিমানা পাঠায় — 'আবশির'-এ দেখা যায়।",
+      "note_en": "Saher cameras send fines, which show up in Absher."
+    },
+    {
+      "id": "jd-l3-01",
+      "type": "phrase",
+      "arabic": "وين نروح؟",
+      "bangla": "কোথায় যাব?",
+      "english": "Where are we going?",
+      "bn_transliteration": "ওয়েন নিরূহ?",
+      "en_transliteration": "wēn nrūḥ?",
+      "category_ids": [
+        "driving"
+      ]
+    },
+    {
+      "id": "jd-l3-02",
+      "type": "phrase",
+      "arabic": "انتظرني هنا",
+      "bangla": "এখানে আমার জন্য অপেক্ষা করো",
+      "english": "Wait for me here",
+      "bn_transliteration": "ইনতাদিরনি হিনা",
+      "en_transliteration": "intaẓirni hina",
+      "category_ids": [
+        "driving"
+      ]
+    },
+    {
+      "id": "jd-l3-03",
+      "type": "phrase",
+      "arabic": "أرجع لك بعد ساعة",
+      "bangla": "এক ঘণ্টা পর ফিরব",
+      "english": "I'll be back in an hour",
+      "bn_transliteration": "আরজা লাক বা'দ সাআ",
+      "en_transliteration": "arjaʿ lak baʿd sāʿa",
+      "category_ids": [
+        "driving"
+      ]
+    },
+    {
+      "id": "jd-l3-04",
+      "type": "word",
+      "arabic": "المدرسة",
+      "bangla": "স্কুল",
+      "english": "The school",
+      "bn_transliteration": "আল-মাদরাসা",
+      "en_transliteration": "al-madrasa",
+      "category_ids": [
+        "driving"
+      ]
+    },
+    {
+      "id": "jd-l3-05",
+      "type": "phrase",
+      "arabic": "وصل العيال",
+      "bangla": "বাচ্চাদের পৌঁছে দাও",
+      "english": "Take the kids",
+      "bn_transliteration": "ওয়াসসিল আল-ইয়াল",
+      "en_transliteration": "waṣṣil al-ʿiyāl",
+      "category_ids": [
+        "driving"
+      ],
+      "note_bn": "'ইয়াল' মানে বাচ্চারা — সৌদিতে খুব বলে।",
+      "note_en": "ʿiyāl means the kids, very common in Saudi."
+    },
+    {
+      "id": "jd-l3-06",
+      "type": "word",
+      "arabic": "الأغراض",
+      "bangla": "জিনিসপত্র / বাজার",
+      "english": "The things, the shopping",
+      "bn_transliteration": "আল-আগরাদ",
+      "en_transliteration": "al-aghrāḍ",
+      "category_ids": [
+        "driving"
+      ]
+    },
+    {
+      "id": "jd-l3-07",
+      "type": "phrase",
+      "arabic": "شيل الأغراض",
+      "bangla": "জিনিসপত্র তোলো",
+      "english": "Carry the shopping",
+      "bn_transliteration": "শীল আল-আগরাদ",
+      "en_transliteration": "shīl al-aghrāḍ",
+      "category_ids": [
+        "driving"
+      ]
+    },
+    {
+      "id": "jd-l3-08",
+      "type": "word",
+      "arabic": "المطار",
+      "bangla": "বিমানবন্দর",
+      "english": "The airport",
+      "bn_transliteration": "আল-মাতার",
+      "en_transliteration": "al-maṭār",
+      "category_ids": [
+        "driving"
+      ]
+    },
+    {
+      "id": "jd-l3-09",
+      "type": "word",
+      "arabic": "السوق",
+      "bangla": "মার্কেট",
+      "english": "The market, mall",
+      "bn_transliteration": "আস-সূগ",
+      "en_transliteration": "as-sūg",
+      "category_ids": [
+        "driving"
+      ]
+    },
+    {
+      "id": "jd-l3-10",
+      "type": "word",
+      "arabic": "البيت",
+      "bangla": "বাসা",
+      "english": "The house, home",
+      "bn_transliteration": "আল-বেইত",
+      "en_transliteration": "al-bēt",
+      "category_ids": [
+        "driving"
+      ]
+    },
+    {
+      "id": "jd-l4-01",
+      "type": "word",
+      "arabic": "حادث",
+      "bangla": "দুর্ঘটনা",
+      "english": "Accident",
+      "bn_transliteration": "হাদিস",
+      "en_transliteration": "ḥādith",
+      "category_ids": [
+        "driving"
+      ]
+    },
+    {
+      "id": "jd-l4-02",
+      "type": "word",
+      "arabic": "الشرطة",
+      "bangla": "পুলিশ",
+      "english": "The police",
+      "bn_transliteration": "আশ-শুরতা",
+      "en_transliteration": "ash-shurṭa",
+      "category_ids": [
+        "driving"
+      ]
+    },
+    {
+      "id": "jd-l4-03",
+      "type": "word",
+      "arabic": "المرور",
+      "bangla": "ট্রাফিক পুলিশ",
+      "english": "Traffic police",
+      "bn_transliteration": "আল-মুরূর",
+      "en_transliteration": "al-murūr",
+      "category_ids": [
+        "driving"
+      ]
+    },
+    {
+      "id": "jd-l4-04",
+      "type": "word",
+      "arabic": "نجم",
+      "bangla": "নাজম (দুর্ঘটনা রিপোর্ট)",
+      "english": "Najm (accident reports)",
+      "bn_transliteration": "নাজম",
+      "en_transliteration": "najm",
+      "category_ids": [
+        "driving"
+      ],
+      "note_bn": "ছোট দুর্ঘটনায় 'নাজম' কোম্পানিকে ডাকা হয় (৯২০০০০৫৬০), তারা রিপোর্ট বানায়।",
+      "note_en": "For minor accidents you call Najm (920000560); they write the report."
+    },
+    {
+      "id": "jd-l4-05",
+      "type": "phrase",
+      "arabic": "الرخصة والاستمارة",
+      "bangla": "লাইসেন্স আর গাড়ির কাগজ",
+      "english": "Licence and registration",
+      "bn_transliteration": "আর-রুখসা ওয়াল-ইসতিমারা",
+      "en_transliteration": "ar-rukhṣa wal-istimāra",
+      "category_ids": [
+        "driving"
+      ],
+      "note_bn": "পুলিশ থামালে প্রথমে এটাই চায়।",
+      "note_en": "The first thing police ask for when they stop you."
+    },
+    {
+      "id": "jd-l4-06",
+      "type": "word",
+      "arabic": "هويتك",
+      "bangla": "আপনার আইডি",
+      "english": "Your ID",
+      "bn_transliteration": "হুউইয়্যাতাক",
+      "en_transliteration": "huwiyyatak",
+      "category_ids": [
+        "driving"
+      ]
+    },
+    {
+      "id": "jd-l4-07",
+      "type": "phrase",
+      "arabic": "وقف على جنب",
+      "bangla": "পাশে থামাও",
+      "english": "Pull over",
+      "bn_transliteration": "ওয়াগগিফ আলা জাম্ব",
+      "en_transliteration": "wagguf ʿala janb",
+      "category_ids": [
+        "driving"
+      ]
+    },
+    {
+      "id": "jd-l4-08",
+      "type": "phrase",
+      "arabic": "عليك مخالفة",
+      "bangla": "তোমার জরিমানা হয়েছে",
+      "english": "You have a fine",
+      "bn_transliteration": "আলেইক মুখালাফা",
+      "en_transliteration": "ʿalēk mukhālafa",
+      "category_ids": [
+        "driving"
+      ]
+    },
+    {
+      "id": "jd-l4-09",
+      "type": "phrase",
+      "arabic": "مو غلطي",
+      "bangla": "আমার দোষ না",
+      "english": "It's not my fault",
+      "bn_transliteration": "মু গালাতি",
+      "en_transliteration": "mū ghalaṭi",
+      "category_ids": [
+        "driving"
+      ]
+    },
+    {
+      "id": "jd-l4-10",
+      "type": "phrase",
+      "arabic": "صور الحادث",
+      "bangla": "দুর্ঘটনার ছবি তোলো",
+      "english": "Take photos of the accident",
+      "bn_transliteration": "সাওয়ির আল-হাদিস",
+      "en_transliteration": "ṣawwir al-ḥādith",
+      "category_ids": [
+        "driving"
+      ]
+    }
+  ],
+  "course": {
+    "id": "job-driver",
+    "title_bn": "চাকরির প্যাক: ড্রাইভার",
+    "title_en": "Job pack: Drivers",
+    "description_bn": "পরিবার বা কোম্পানির ড্রাইভারের জন্য: গাড়ি, রাস্তা, যাত্রী আর পুলিশ ও দুর্ঘটনা।",
+    "description_en": "For family and company drivers: the car, the road, passengers, police and accidents.",
+    "type": "topic",
+    "is_free": true,
+    "level": "beginner",
+    "languages": [
+      "bn",
+      "en"
+    ],
+    "lessons": [
+      {
+        "id": "driver-1",
+        "title_bn": "পাঠ ১: গাড়ি",
+        "title_en": "Lesson 1: The car",
+        "category_id": "driving",
+        "item_ids": [
+          "jd-l1-01",
+          "jd-l1-02",
+          "jd-l1-03",
+          "jd-l1-04",
+          "jd-l1-05",
+          "jd-l1-06",
+          "jd-l1-07",
+          "jd-l1-08",
+          "jd-l1-09",
+          "jd-l1-10"
+        ],
+        "order": 10,
+        "is_free": true
+      },
+      {
+        "id": "driver-2",
+        "title_bn": "পাঠ ২: রাস্তা",
+        "title_en": "Lesson 2: The road",
+        "category_id": "driving",
+        "item_ids": [
+          "jd-l2-01",
+          "jd-l2-02",
+          "jd-l2-03",
+          "jd-l2-04",
+          "jd-l2-05",
+          "jd-l2-06",
+          "jd-l2-07",
+          "jd-l2-08",
+          "jd-l2-09",
+          "jd-l2-10"
+        ],
+        "order": 20,
+        "is_free": true
+      },
+      {
+        "id": "driver-3",
+        "title_bn": "পাঠ ৩: যাত্রী ও পরিবার",
+        "title_en": "Lesson 3: Passengers and the family",
+        "category_id": "driving",
+        "item_ids": [
+          "jd-l3-01",
+          "jd-l3-02",
+          "jd-l3-03",
+          "jd-l3-04",
+          "jd-l3-05",
+          "jd-l3-06",
+          "jd-l3-07",
+          "jd-l3-08",
+          "jd-l3-09",
+          "jd-l3-10"
+        ],
+        "order": 30,
+        "is_free": true
+      },
+      {
+        "id": "driver-4",
+        "title_bn": "পাঠ ৪: পুলিশ ও দুর্ঘটনা",
+        "title_en": "Lesson 4: Police and accidents",
+        "category_id": "driving",
+        "item_ids": [
+          "jd-l4-01",
+          "jd-l4-02",
+          "jd-l4-03",
+          "jd-l4-04",
+          "jd-l4-05",
+          "jd-l4-06",
+          "jd-l4-07",
+          "jd-l4-08",
+          "jd-l4-09",
+          "jd-l4-10"
+        ],
+        "order": 40,
+        "is_free": true
+      }
+    ]
+  }
+}

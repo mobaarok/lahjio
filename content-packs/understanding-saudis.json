@@ -1,0 +1,1218 @@
+{
+  "name": "Understanding Saudis",
+  "categories": [
+    {
+      "id": "slang",
+      "name_en": "Slang and fast speech",
+      "name_bn": "সৌদি স্ল্যাং ও দ্রুত কথা",
+      "order": 160
+    },
+    {
+      "id": "polite",
+      "name_en": "Yes, no and thanks",
+      "name_bn": "হ্যাঁ, না ও ধন্যবাদ",
+      "order": 20
+    },
+    {
+      "id": "papers",
+      "name_en": "Salary, leave and iqama",
+      "name_bn": "বেতন, ছুটি ও ইকামা",
+      "order": 170
+    }
+  ],
+  "items": [
+    {
+      "id": "us-l1-01",
+      "type": "word",
+      "arabic": "ليش؟",
+      "bangla": "কেন?",
+      "english": "Why?",
+      "bn_transliteration": "লেইশ?",
+      "en_transliteration": "lēsh?",
+      "category_ids": [
+        "slang"
+      ]
+    },
+    {
+      "id": "us-l1-02",
+      "type": "word",
+      "arabic": "مين؟",
+      "bangla": "কে?",
+      "english": "Who?",
+      "bn_transliteration": "মীন?",
+      "en_transliteration": "mīn?",
+      "category_ids": [
+        "slang"
+      ]
+    },
+    {
+      "id": "us-l1-03",
+      "type": "word",
+      "arabic": "وشلون؟",
+      "bangla": "কীভাবে? / কেমন?",
+      "english": "How?",
+      "bn_transliteration": "উইশলোন?",
+      "en_transliteration": "wishlōn?",
+      "category_ids": [
+        "slang"
+      ],
+      "note_bn": "'কেইফ'-এর মতোই। 'উইশলোনাক?' মানে কেমন আছেন?",
+      "note_en": "Same as kēf. wishlōnak? means 'how are you?'"
+    },
+    {
+      "id": "us-l1-04",
+      "type": "word",
+      "arabic": "كذا",
+      "bangla": "এভাবে / এরকম",
+      "english": "Like this",
+      "bn_transliteration": "কিদা",
+      "en_transliteration": "kidha",
+      "category_ids": [
+        "slang"
+      ]
+    },
+    {
+      "id": "us-l1-05",
+      "type": "word",
+      "arabic": "زين",
+      "bangla": "ভালো / ঠিক আছে",
+      "english": "Good, OK",
+      "bn_transliteration": "যেইন",
+      "en_transliteration": "zēn",
+      "category_ids": [
+        "slang"
+      ],
+      "note_bn": "সৌদিদের সবচেয়ে প্রিয় শব্দগুলোর একটি। 'যেইন?' = ঠিক আছে?",
+      "note_en": "One of the most used Saudi words. zēn? = OK?"
+    },
+    {
+      "id": "us-l1-06",
+      "type": "word",
+      "arabic": "مرة",
+      "bangla": "খুব",
+      "english": "Very",
+      "bn_transliteration": "মাররা",
+      "en_transliteration": "marra",
+      "category_ids": [
+        "slang"
+      ],
+      "note_bn": "'যেইন মাররা' = খুব ভালো। আবার 'মাররা' মানে 'একবার'ও।",
+      "note_en": "zēn marra = very good. marra also means 'once'."
+    },
+    {
+      "id": "us-l1-07",
+      "type": "word",
+      "arabic": "بعد",
+      "bangla": "-ও (আমিও)",
+      "english": "Too, also",
+      "bn_transliteration": "বাআদ",
+      "en_transliteration": "baʿad",
+      "category_ids": [
+        "slang"
+      ],
+      "note_bn": "'ওয়া আনা বাআদ' = আমিও।",
+      "note_en": "w-ana baʿad = me too."
+    },
+    {
+      "id": "us-l1-08",
+      "type": "word",
+      "arabic": "يعني",
+      "bangla": "মানে...",
+      "english": "I mean, like...",
+      "bn_transliteration": "ইয়ানি",
+      "en_transliteration": "yaʿni",
+      "category_ids": [
+        "slang"
+      ],
+      "note_bn": "কথার ফাঁকে ভাবতে ভাবতে সবাই বলে।",
+      "note_en": "Everyone says it while thinking mid-sentence."
+    },
+    {
+      "id": "us-l1-09",
+      "type": "word",
+      "arabic": "عاد",
+      "bangla": "তো / আচ্ছা তাহলে",
+      "english": "So, well then",
+      "bn_transliteration": "আদ",
+      "en_transliteration": "ʿād",
+      "category_ids": [
+        "slang"
+      ],
+      "note_bn": "জোর দিতে: 'খালাস আদ!' = ব্যস, এবার থামো!",
+      "note_en": "For emphasis: khalāṣ ʿād! = OK, enough now!"
+    },
+    {
+      "id": "us-l1-10",
+      "type": "word",
+      "arabic": "ترى",
+      "bangla": "জেনে রাখো / আসলে",
+      "english": "Just so you know",
+      "bn_transliteration": "তারা",
+      "en_transliteration": "tara",
+      "category_ids": [
+        "slang"
+      ],
+      "note_bn": "কিছু জানাতে বা সতর্ক করতে বাক্যের শুরুতে: 'তারা আনা তাবান'।",
+      "note_en": "Starts a sentence to point something out: tara ana taʿbān."
+    },
+    {
+      "id": "us-l1-11",
+      "type": "phrase",
+      "arabic": "يا خي",
+      "bangla": "ভাই রে",
+      "english": "Brother! (come on)",
+      "bn_transliteration": "ইয়া খেই",
+      "en_transliteration": "yā khi",
+      "category_ids": [
+        "slang"
+      ],
+      "note_bn": "বিরক্তি বা বোঝানোর সময় বলে।",
+      "note_en": "Said when explaining or a bit annoyed."
+    },
+    {
+      "id": "us-l1-12",
+      "type": "phrase",
+      "arabic": "يا رجال",
+      "bangla": "আরে ভাই!",
+      "english": "Come on, man!",
+      "bn_transliteration": "ইয়া রাজ্জাল",
+      "en_transliteration": "yā rajjāl",
+      "category_ids": [
+        "slang"
+      ],
+      "note_bn": "অবাক হলে বা 'না না' বোঝাতে।",
+      "note_en": "Said when surprised, or to mean 'no way'."
+    },
+    {
+      "id": "us-l2-01",
+      "type": "phrase",
+      "arabic": "وش السالفة؟",
+      "bangla": "ঘটনা কী?",
+      "english": "What's going on?",
+      "bn_transliteration": "ওশ আস-সালফা?",
+      "en_transliteration": "wesh as-sālfa?",
+      "category_ids": [
+        "slang"
+      ],
+      "note_bn": "'সালফা' মানে ঘটনা বা গল্প।",
+      "note_en": "sālfa means story or situation."
+    },
+    {
+      "id": "us-l2-02",
+      "type": "word",
+      "arabic": "حيل",
+      "bangla": "খুব",
+      "english": "Very, a lot",
+      "bn_transliteration": "হেইল",
+      "en_transliteration": "ḥēl",
+      "category_ids": [
+        "slang"
+      ],
+      "note_bn": "রিয়াদের (নজদি) কথা: 'তাবান হেইল' = খুব ক্লান্ত।",
+      "note_en": "Najdi Riyadh word: taʿbān ḥēl = very tired."
+    },
+    {
+      "id": "us-l2-03",
+      "type": "word",
+      "arabic": "واجد",
+      "bangla": "অনেক",
+      "english": "A lot, many",
+      "bn_transliteration": "ওয়াজিদ",
+      "en_transliteration": "wājid",
+      "category_ids": [
+        "slang"
+      ]
+    },
+    {
+      "id": "us-l2-04",
+      "type": "word",
+      "arabic": "أبد",
+      "bangla": "একদম না / কোনো সমস্যা না",
+      "english": "Not at all",
+      "bn_transliteration": "আবাদ",
+      "en_transliteration": "abad",
+      "category_ids": [
+        "slang"
+      ],
+      "note_bn": "'আবাদ' বললে প্রায়ই মানে 'কোনো ব্যাপার না'।",
+      "note_en": "abad often means 'no problem at all'."
+    },
+    {
+      "id": "us-l2-05",
+      "type": "phrase",
+      "arabic": "ولا يهمك",
+      "bangla": "চিন্তা করবেন না",
+      "english": "Don't worry about it",
+      "bn_transliteration": "ওয়ালা ইহিম্মাক",
+      "en_transliteration": "wala yhimmak",
+      "category_ids": [
+        "slang"
+      ]
+    },
+    {
+      "id": "us-l2-06",
+      "type": "phrase",
+      "arabic": "على كيفك",
+      "bangla": "আপনার ইচ্ছামতো",
+      "english": "As you like",
+      "bn_transliteration": "আলা কেইফাক",
+      "en_transliteration": "ʿala kēfak",
+      "category_ids": [
+        "slang"
+      ]
+    },
+    {
+      "id": "us-l2-07",
+      "type": "word",
+      "arabic": "كفو",
+      "bangla": "সাবাস!",
+      "english": "Well done!",
+      "bn_transliteration": "কাফু",
+      "en_transliteration": "kafu",
+      "category_ids": [
+        "slang"
+      ],
+      "note_bn": "খুব সৌদি প্রশংসা। কেউ ভালো কাজ করলে বলে।",
+      "note_en": "Very Saudi praise for someone who did well."
+    },
+    {
+      "id": "us-l2-08",
+      "type": "phrase",
+      "arabic": "يا حظك",
+      "bangla": "তোমার কপাল ভালো",
+      "english": "Lucky you!",
+      "bn_transliteration": "ইয়া হাযযাক",
+      "en_transliteration": "yā ḥaẓẓak",
+      "category_ids": [
+        "slang"
+      ]
+    },
+    {
+      "id": "us-l2-09",
+      "type": "word",
+      "arabic": "طفشان",
+      "bangla": "বোর হচ্ছি",
+      "english": "Bored",
+      "bn_transliteration": "তাফশান",
+      "en_transliteration": "ṭafshān",
+      "category_ids": [
+        "slang"
+      ],
+      "note_bn": "সৌদি তরুণদের খুব প্রিয় শব্দ।",
+      "note_en": "A favourite word of young Saudis."
+    },
+    {
+      "id": "us-l2-10",
+      "type": "word",
+      "arabic": "مبسوط",
+      "bangla": "খুশি",
+      "english": "Happy",
+      "bn_transliteration": "মাবসূত",
+      "en_transliteration": "mabsūṭ",
+      "category_ids": [
+        "slang"
+      ]
+    },
+    {
+      "id": "us-l2-11",
+      "type": "word",
+      "arabic": "خربان",
+      "bangla": "নষ্ট / খারাপ",
+      "english": "Broken, messed up",
+      "bn_transliteration": "খারবান",
+      "en_transliteration": "kharbān",
+      "category_ids": [
+        "slang"
+      ]
+    },
+    {
+      "id": "us-l2-12",
+      "type": "phrase",
+      "arabic": "تمام التمام",
+      "bangla": "একদম ঠিক",
+      "english": "Perfect",
+      "bn_transliteration": "তামাম আত-তামাম",
+      "en_transliteration": "tamām at-tamām",
+      "category_ids": [
+        "slang"
+      ]
+    },
+    {
+      "id": "us-l3-01",
+      "type": "phrase",
+      "arabic": "الله يحييك",
+      "bangla": "আল্লাহ আপনাকে বাঁচিয়ে রাখুন (উত্তরে)",
+      "english": "God greet you (reply)",
+      "bn_transliteration": "আল্লাহ ইহাইয়িক",
+      "en_transliteration": "allāh yḥayyīk",
+      "category_ids": [
+        "polite"
+      ],
+      "note_bn": "'হাইয়াক আল্লাহ'-র উত্তর।",
+      "note_en": "The reply to ḥayyāk allāh."
+    },
+    {
+      "id": "us-l3-02",
+      "type": "phrase",
+      "arabic": "الله يجزاك خير",
+      "bangla": "আল্লাহ আপনাকে উত্তম প্রতিদান দিন",
+      "english": "God reward you",
+      "bn_transliteration": "আল্লাহ ইয়াজযাক খেইর",
+      "en_transliteration": "allāh yajzāk khēr",
+      "category_ids": [
+        "polite"
+      ],
+      "note_bn": "বড় উপকারের জন্য ধন্যবাদ।",
+      "note_en": "Thanks for a real favour."
+    },
+    {
+      "id": "us-l3-03",
+      "type": "phrase",
+      "arabic": "الله يخليك",
+      "bangla": "প্লিজ / আল্লাহ আপনাকে রাখুন",
+      "english": "Please / Thank you",
+      "bn_transliteration": "আল্লাহ ইখাল্লিক",
+      "en_transliteration": "allāh ykhallīk",
+      "category_ids": [
+        "polite"
+      ],
+      "note_bn": "অনুরোধ করতে ('প্লিজ') আবার ধন্যবাদ দিতেও।",
+      "note_en": "Used both to say please and to say thanks."
+    },
+    {
+      "id": "us-l3-04",
+      "type": "word",
+      "arabic": "تكفى",
+      "bangla": "দয়া করে (অনুরোধ)",
+      "english": "Please, I beg you",
+      "bn_transliteration": "তিকফা",
+      "en_transliteration": "tikfa",
+      "category_ids": [
+        "polite"
+      ],
+      "note_bn": "খুব সৌদি। জোর দিয়ে অনুরোধ করতে। বন্ধুদের মধ্যে বেশি।",
+      "note_en": "Very Saudi. A strong 'please', used more among friends."
+    },
+    {
+      "id": "us-l3-05",
+      "type": "phrase",
+      "arabic": "ما قصرت",
+      "bangla": "অনেক করেছেন, ধন্যবাদ",
+      "english": "Thank you, you did plenty",
+      "bn_transliteration": "মা গাসসারত",
+      "en_transliteration": "mā gaṣṣart",
+      "category_ids": [
+        "polite"
+      ],
+      "note_bn": "কেউ সাহায্য করলে সৌদিরা খুব বলে।",
+      "note_en": "Saudis say this a lot when someone helps them."
+    },
+    {
+      "id": "us-l3-06",
+      "type": "word",
+      "arabic": "سم",
+      "bangla": "জি, বলুন",
+      "english": "Yes? (when called)",
+      "bn_transliteration": "সাম্ম",
+      "en_transliteration": "samm",
+      "category_ids": [
+        "polite"
+      ],
+      "note_bn": "কেউ নাম ধরে ডাকলে ভদ্র উত্তর — 'কী?' না বলে 'সাম্ম' বলুন।",
+      "note_en": "The polite answer when someone calls your name, instead of 'what?'."
+    },
+    {
+      "id": "us-l3-07",
+      "type": "phrase",
+      "arabic": "طال عمرك",
+      "bangla": "আপনার দীর্ঘ জীবন হোক",
+      "english": "Sir (may you live long)",
+      "bn_transliteration": "তাল উমরাক",
+      "en_transliteration": "ṭāl ʿumrak",
+      "category_ids": [
+        "polite"
+      ],
+      "note_bn": "বস, কফিল বা বড়দের সাথে কথায় সম্মান দেখাতে বাক্যে যোগ করুন।",
+      "note_en": "Add it when talking to your boss, sponsor or elders to show respect."
+    },
+    {
+      "id": "us-l3-08",
+      "type": "phrase",
+      "arabic": "الله يرحم والديك",
+      "bangla": "আল্লাহ আপনার বাবা-মাকে রহম করুন",
+      "english": "Please (bless your parents)",
+      "bn_transliteration": "আল্লাহ ইয়ারহাম ওয়ালদেইক",
+      "en_transliteration": "allāh yarḥam wāldēk",
+      "category_ids": [
+        "polite"
+      ],
+      "note_bn": "বিনয়ের সাথে কিছু চাওয়ার সময়, যেমন রাস্তা জানতে।",
+      "note_en": "Used to ask a favour very politely, e.g. for directions."
+    },
+    {
+      "id": "us-l3-09",
+      "type": "phrase",
+      "arabic": "عساك بخير",
+      "bangla": "আশা করি ভালো আছেন",
+      "english": "Hope you're well",
+      "bn_transliteration": "আসাক বিখেইর",
+      "en_transliteration": "ʿasāk bikhēr",
+      "category_ids": [
+        "polite"
+      ]
+    },
+    {
+      "id": "us-l3-10",
+      "type": "word",
+      "arabic": "بالعافية",
+      "bangla": "ভালো করে খান",
+      "english": "Enjoy your meal",
+      "bn_transliteration": "বিল-আফিয়া",
+      "en_transliteration": "bil-ʿāfya",
+      "category_ids": [
+        "polite"
+      ],
+      "note_bn": "কেউ খাচ্ছে দেখলে বলুন। উত্তর: 'আল্লাহ ইআফিক'।",
+      "note_en": "Say it to someone eating. The reply is allāh yʿāfīk."
+    },
+    {
+      "id": "us-l3-11",
+      "type": "phrase",
+      "arabic": "الله يحفظك",
+      "bangla": "আল্লাহ আপনাকে হেফাজত করুন",
+      "english": "God protect you",
+      "bn_transliteration": "আল্লাহ ইয়াহফাযাক",
+      "en_transliteration": "allāh yaḥfaẓak",
+      "category_ids": [
+        "polite"
+      ]
+    },
+    {
+      "id": "us-l4-01",
+      "type": "word",
+      "arabic": "والله؟",
+      "bangla": "সত্যি?",
+      "english": "Really?",
+      "bn_transliteration": "ওয়াল্লাহ?",
+      "en_transliteration": "wallāh?",
+      "category_ids": [
+        "slang"
+      ]
+    },
+    {
+      "id": "us-l4-02",
+      "type": "word",
+      "arabic": "صدق؟",
+      "bangla": "সত্যি বলছেন?",
+      "english": "Seriously?",
+      "bn_transliteration": "সিদগ?",
+      "en_transliteration": "ṣidg?",
+      "category_ids": [
+        "slang"
+      ]
+    },
+    {
+      "id": "us-l4-03",
+      "type": "phrase",
+      "arabic": "لا يكون",
+      "bangla": "অসম্ভব! / হতেই পারে না",
+      "english": "No way!",
+      "bn_transliteration": "লা ইকূন",
+      "en_transliteration": "lā ykūn",
+      "category_ids": [
+        "slang"
+      ]
+    },
+    {
+      "id": "us-l4-04",
+      "type": "phrase",
+      "arabic": "يا ساتر",
+      "bangla": "হায় আল্লাহ",
+      "english": "Oh my God",
+      "bn_transliteration": "ইয়া সাতির",
+      "en_transliteration": "yā sātir",
+      "category_ids": [
+        "slang"
+      ],
+      "note_bn": "ভয় বা অবাক হলে।",
+      "note_en": "Said when shocked or scared."
+    },
+    {
+      "id": "us-l4-05",
+      "type": "phrase",
+      "arabic": "ما شاء الله",
+      "bangla": "মাশাআল্লাহ",
+      "english": "Wonderful (God has willed it)",
+      "bn_transliteration": "মাশাআল্লাহ",
+      "en_transliteration": "mā shāʾ allāh",
+      "category_ids": [
+        "slang"
+      ],
+      "note_bn": "কারো কিছুর প্রশংসা করলে সাথে বলুন — বদনজর থেকে বাঁচাতে।",
+      "note_en": "Say it whenever you praise someone's thing, to avoid the evil eye."
+    },
+    {
+      "id": "us-l4-06",
+      "type": "phrase",
+      "arabic": "سبحان الله",
+      "bangla": "সুবহানাল্লাহ",
+      "english": "Glory be to God (amazing)",
+      "bn_transliteration": "সুবহানাল্লাহ",
+      "en_transliteration": "subḥān allāh",
+      "category_ids": [
+        "slang"
+      ]
+    },
+    {
+      "id": "us-l4-07",
+      "type": "word",
+      "arabic": "تمزح؟",
+      "bangla": "মজা করছেন?",
+      "english": "Are you joking?",
+      "bn_transliteration": "তিমযাহ?",
+      "en_transliteration": "timzaḥ?",
+      "category_ids": [
+        "slang"
+      ]
+    },
+    {
+      "id": "us-l4-08",
+      "type": "phrase",
+      "arabic": "أمزح معك",
+      "bangla": "তোমার সাথে মজা করছি",
+      "english": "I'm joking with you",
+      "bn_transliteration": "আমযাহ মাআক",
+      "en_transliteration": "amzaḥ maʿak",
+      "category_ids": [
+        "slang"
+      ],
+      "note_bn": "সৌদিরা খুব মজা করে। কেউ কড়া কিছু বলে হাসলে বুঝবেন মজা।",
+      "note_en": "Saudis joke a lot. A harsh line with a smile is usually a joke."
+    },
+    {
+      "id": "us-l4-09",
+      "type": "phrase",
+      "arabic": "يا شيخ",
+      "bangla": "আরে যাও!",
+      "english": "Come on! / Oh please",
+      "bn_transliteration": "ইয়া শেইখ",
+      "en_transliteration": "yā shēkh",
+      "category_ids": [
+        "slang"
+      ],
+      "note_bn": "অবিশ্বাস দেখাতে, মজা করে।",
+      "note_en": "Said playfully when you don't believe something."
+    },
+    {
+      "id": "us-l4-10",
+      "type": "phrase",
+      "arabic": "عز الله",
+      "bangla": "একদম সত্যি",
+      "english": "So true",
+      "bn_transliteration": "ইযযাল্লাহ",
+      "en_transliteration": "ʿizz allāh",
+      "category_ids": [
+        "slang"
+      ],
+      "note_bn": "কারো কথায় পুরো একমত হলে।",
+      "note_en": "Said when you completely agree."
+    },
+    {
+      "id": "us-l4-11",
+      "type": "word",
+      "arabic": "ضحكتني",
+      "bangla": "হাসালে আমাকে",
+      "english": "You made me laugh",
+      "bn_transliteration": "দাহহাকতিনি",
+      "en_transliteration": "ḍaḥḥaktni",
+      "category_ids": [
+        "slang"
+      ]
+    },
+    {
+      "id": "us-l5-01",
+      "type": "word",
+      "arabic": "الراتب",
+      "bangla": "বেতন",
+      "english": "The salary",
+      "bn_transliteration": "আর-রাতিব",
+      "en_transliteration": "ar-rātib",
+      "category_ids": [
+        "papers"
+      ],
+      "note_bn": "'আল-মাআশ'-ও বলে।",
+      "note_en": "al-maʿāsh is also used."
+    },
+    {
+      "id": "us-l5-02",
+      "type": "phrase",
+      "arabic": "متى ينزل الراتب؟",
+      "bangla": "বেতন কবে আসবে?",
+      "english": "When does the salary come?",
+      "bn_transliteration": "মাতা ইনযিল আর-রাতিব?",
+      "en_transliteration": "mata yinzil ar-rātib?",
+      "category_ids": [
+        "papers"
+      ]
+    },
+    {
+      "id": "us-l5-03",
+      "type": "phrase",
+      "arabic": "الراتب تأخر",
+      "bangla": "বেতন দেরি হচ্ছে",
+      "english": "The salary is late",
+      "bn_transliteration": "আর-রাতিব তাআখখার",
+      "en_transliteration": "ar-rātib taʾakhkhar",
+      "category_ids": [
+        "papers"
+      ],
+      "note_bn": "বেতন বারবার দেরি হলে 'মুসানিদ' বা 'কিওয়া' অ্যাপে অভিযোগ করা যায়।",
+      "note_en": "If pay is often late, you can complain through the Musaned or Qiwa apps."
+    },
+    {
+      "id": "us-l5-04",
+      "type": "phrase",
+      "arabic": "أبغى زيادة",
+      "bangla": "আমি বেতন বাড়াতে চাই",
+      "english": "I want a raise",
+      "bn_transliteration": "আবগা যিয়াদা",
+      "en_transliteration": "abgha ziyāda",
+      "category_ids": [
+        "papers"
+      ]
+    },
+    {
+      "id": "us-l5-05",
+      "type": "word",
+      "arabic": "سلفة",
+      "bangla": "অগ্রিম টাকা",
+      "english": "Advance on salary",
+      "bn_transliteration": "সুলফা",
+      "en_transliteration": "sulfa",
+      "category_ids": [
+        "papers"
+      ],
+      "note_bn": "বেতনের আগেই কিছু টাকা নেওয়া — পরের বেতন থেকে কেটে নেয়।",
+      "note_en": "Money in advance, taken back from the next salary."
+    },
+    {
+      "id": "us-l5-06",
+      "type": "phrase",
+      "arabic": "خصم من الراتب",
+      "bangla": "বেতন থেকে কাটা",
+      "english": "Deduction from salary",
+      "bn_transliteration": "খাসম মিন আর-রাতিব",
+      "en_transliteration": "khaṣm min ar-rātib",
+      "category_ids": [
+        "papers"
+      ]
+    },
+    {
+      "id": "us-l5-07",
+      "type": "word",
+      "arabic": "إضافي",
+      "bangla": "ওভারটাইম",
+      "english": "Overtime",
+      "bn_transliteration": "ইদাফি",
+      "en_transliteration": "iḍāfi",
+      "category_ids": [
+        "papers"
+      ],
+      "note_bn": "'আওভার তাইম'-ও বলে।",
+      "note_en": "Many also just say 'overtime'."
+    },
+    {
+      "id": "us-l5-08",
+      "type": "phrase",
+      "arabic": "بدل سكن",
+      "bangla": "বাসা ভাতা",
+      "english": "Housing allowance",
+      "bn_transliteration": "বাদাল সাকান",
+      "en_transliteration": "badal sakan",
+      "category_ids": [
+        "papers"
+      ]
+    },
+    {
+      "id": "us-l5-09",
+      "type": "phrase",
+      "arabic": "بدل مواصلات",
+      "bangla": "যাতায়াত ভাতা",
+      "english": "Transport allowance",
+      "bn_transliteration": "বাদাল মুওয়াসালাত",
+      "en_transliteration": "badal muwāṣalāt",
+      "category_ids": [
+        "papers"
+      ]
+    },
+    {
+      "id": "us-l5-10",
+      "type": "phrase",
+      "arabic": "نهاية الخدمة",
+      "bangla": "চাকরি শেষের পাওনা",
+      "english": "End-of-service pay",
+      "bn_transliteration": "নিহায়াত আল-খিদমা",
+      "en_transliteration": "nihāyat al-khidma",
+      "category_ids": [
+        "papers"
+      ],
+      "note_bn": "চাকরি শেষে আইন অনুযায়ী পাওনা টাকা। চুক্তিপত্রে দেখে নিন।",
+      "note_en": "Money owed by law when a job ends. Check your contract."
+    },
+    {
+      "id": "us-l5-11",
+      "type": "word",
+      "arabic": "حقوقي",
+      "bangla": "আমার পাওনা / অধিকার",
+      "english": "My dues, my rights",
+      "bn_transliteration": "হুগূগি",
+      "en_transliteration": "ḥugūgi",
+      "category_ids": [
+        "papers"
+      ]
+    },
+    {
+      "id": "us-l6-01",
+      "type": "word",
+      "arabic": "إجازة",
+      "bangla": "ছুটি",
+      "english": "Leave, holiday",
+      "bn_transliteration": "ইজাযা",
+      "en_transliteration": "ijāza",
+      "category_ids": [
+        "papers"
+      ]
+    },
+    {
+      "id": "us-l6-02",
+      "type": "phrase",
+      "arabic": "أبغى إجازة",
+      "bangla": "আমি ছুটি চাই",
+      "english": "I want leave",
+      "bn_transliteration": "আবগা ইজাযা",
+      "en_transliteration": "abgha ijāza",
+      "category_ids": [
+        "papers"
+      ]
+    },
+    {
+      "id": "us-l6-03",
+      "type": "phrase",
+      "arabic": "إجازة سنوية",
+      "bangla": "বার্ষিক ছুটি",
+      "english": "Annual leave",
+      "bn_transliteration": "ইজাযা সানাউইয়া",
+      "en_transliteration": "ijāza sanawiyya",
+      "category_ids": [
+        "papers"
+      ],
+      "note_bn": "আইনে বছরে কমপক্ষে ২১ দিন বেতনসহ ছুটি।",
+      "note_en": "By law, at least 21 days of paid leave a year."
+    },
+    {
+      "id": "us-l6-04",
+      "type": "phrase",
+      "arabic": "إجازة مرضية",
+      "bangla": "অসুস্থতার ছুটি",
+      "english": "Sick leave",
+      "bn_transliteration": "ইজাযা মারাদিইয়া",
+      "en_transliteration": "ijāza maraḍiyya",
+      "category_ids": [
+        "papers"
+      ]
+    },
+    {
+      "id": "us-l6-05",
+      "type": "phrase",
+      "arabic": "خروج وعودة",
+      "bangla": "এক্সিট রি-এন্ট্রি ভিসা",
+      "english": "Exit re-entry visa",
+      "bn_transliteration": "খুরূজ ওয়া আওদা",
+      "en_transliteration": "khurūj w-ʿawda",
+      "category_ids": [
+        "papers"
+      ],
+      "note_bn": "দেশে ছুটিতে যেতে এই ভিসা লাগে — কফিল 'আবশির' দিয়ে দেয়।",
+      "note_en": "You need it to go home on leave. Your sponsor issues it through Absher."
+    },
+    {
+      "id": "us-l6-06",
+      "type": "word",
+      "arabic": "تذكرة",
+      "bangla": "টিকিট",
+      "english": "Ticket",
+      "bn_transliteration": "তাযকারা",
+      "en_transliteration": "tadhkara",
+      "category_ids": [
+        "papers"
+      ]
+    },
+    {
+      "id": "us-l6-07",
+      "type": "phrase",
+      "arabic": "متى ترجع؟",
+      "bangla": "কবে ফিরবেন?",
+      "english": "When will you come back?",
+      "bn_transliteration": "মাতা তিরজা?",
+      "en_transliteration": "mata tirjaʿ?",
+      "category_ids": [
+        "papers"
+      ]
+    },
+    {
+      "id": "us-l6-08",
+      "type": "phrase",
+      "arabic": "برجع بعد شهرين",
+      "bangla": "দুই মাস পরে ফিরব",
+      "english": "I'll be back in two months",
+      "bn_transliteration": "বারজা বা'দ শাহরেইন",
+      "en_transliteration": "barjaʿ baʿd shahrēn",
+      "category_ids": [
+        "papers"
+      ]
+    },
+    {
+      "id": "us-l6-09",
+      "type": "word",
+      "arabic": "العيد",
+      "bangla": "ঈদ",
+      "english": "Eid",
+      "bn_transliteration": "আল-ঈদ",
+      "en_transliteration": "al-ʿīd",
+      "category_ids": [
+        "papers"
+      ],
+      "note_bn": "ঈদে সরকারি ছুটি থাকে। শুভেচ্ছা: 'ঈদ মুবারাক'।",
+      "note_en": "Eid is a public holiday. Greeting: ʿīd mubārak."
+    },
+    {
+      "id": "us-l6-10",
+      "type": "word",
+      "arabic": "عطلة",
+      "bangla": "সরকারি ছুটির দিন",
+      "english": "Day off, public holiday",
+      "bn_transliteration": "উতলা",
+      "en_transliteration": "ʿuṭla",
+      "category_ids": [
+        "papers"
+      ]
+    },
+    {
+      "id": "us-l7-01",
+      "type": "word",
+      "arabic": "الإقامة",
+      "bangla": "ইকামা",
+      "english": "Iqama (residence permit)",
+      "bn_transliteration": "আল-ইগামা",
+      "en_transliteration": "al-igāma",
+      "category_ids": [
+        "papers"
+      ],
+      "note_bn": "সবসময় সাথে রাখুন — পুলিশ চাইতে পারে।",
+      "note_en": "Always carry it. Police can ask to see it."
+    },
+    {
+      "id": "us-l7-02",
+      "type": "phrase",
+      "arabic": "تجديد الإقامة",
+      "bangla": "ইকামা নবায়ন",
+      "english": "Iqama renewal",
+      "bn_transliteration": "তাজদীদ আল-ইগামা",
+      "en_transliteration": "tajdīd al-igāma",
+      "category_ids": [
+        "papers"
+      ]
+    },
+    {
+      "id": "us-l7-03",
+      "type": "phrase",
+      "arabic": "انتهت الإقامة",
+      "bangla": "ইকামার মেয়াদ শেষ",
+      "english": "The iqama has expired",
+      "bn_transliteration": "ইনতাহাত আল-ইগামা",
+      "en_transliteration": "intahat al-igāma",
+      "category_ids": [
+        "papers"
+      ],
+      "note_bn": "মেয়াদ শেষের আগেই কফিলকে মনে করিয়ে দিন, নইলে জরিমানা।",
+      "note_en": "Remind your sponsor before it expires, or there's a fine."
+    },
+    {
+      "id": "us-l7-04",
+      "type": "word",
+      "arabic": "الكفيل",
+      "bangla": "কফিল (স্পন্সর)",
+      "english": "The sponsor",
+      "bn_transliteration": "আল-কাফীল",
+      "en_transliteration": "al-kafīl",
+      "category_ids": [
+        "papers"
+      ]
+    },
+    {
+      "id": "us-l7-05",
+      "type": "word",
+      "arabic": "الجواز",
+      "bangla": "পাসপোর্ট",
+      "english": "Passport",
+      "bn_transliteration": "আল-জাওয়ায",
+      "en_transliteration": "al-jawāz",
+      "category_ids": [
+        "papers"
+      ]
+    },
+    {
+      "id": "us-l7-06",
+      "type": "word",
+      "arabic": "الجوازات",
+      "bangla": "পাসপোর্ট অফিস",
+      "english": "Passport office (Jawazat)",
+      "bn_transliteration": "আল-জাওয়াযাত",
+      "en_transliteration": "al-jawāzāt",
+      "category_ids": [
+        "papers"
+      ]
+    },
+    {
+      "id": "us-l7-07",
+      "type": "phrase",
+      "arabic": "نقل كفالة",
+      "bangla": "কফিল বদল",
+      "english": "Sponsorship transfer",
+      "bn_transliteration": "নাগল কাফালা",
+      "en_transliteration": "nagl kafāla",
+      "category_ids": [
+        "papers"
+      ]
+    },
+    {
+      "id": "us-l7-08",
+      "type": "word",
+      "arabic": "عقد",
+      "bangla": "চুক্তি",
+      "english": "Contract",
+      "bn_transliteration": "আগদ",
+      "en_transliteration": "ʿagd",
+      "category_ids": [
+        "papers"
+      ]
+    },
+    {
+      "id": "us-l7-09",
+      "type": "phrase",
+      "arabic": "مكتب العمل",
+      "bangla": "শ্রম অফিস",
+      "english": "Labour office",
+      "bn_transliteration": "মাকতাব আল-আমাল",
+      "en_transliteration": "maktab al-ʿamal",
+      "category_ids": [
+        "papers"
+      ],
+      "note_bn": "বেতন বা চুক্তি নিয়ে সমস্যা হলে এখানে অভিযোগ করা যায়।",
+      "note_en": "You can complain here about pay or contract problems."
+    },
+    {
+      "id": "us-l7-10",
+      "type": "word",
+      "arabic": "هروب",
+      "bangla": "পালানোর রিপোর্ট (হুরুব)",
+      "english": "Absconding report (huroob)",
+      "bn_transliteration": "হুরূব",
+      "en_transliteration": "hurūb",
+      "category_ids": [
+        "papers"
+      ],
+      "note_bn": "খুব গুরুত্বপূর্ণ: কাজ ছেড়ে চলে গেলে কফিল 'হুরূব' দিতে পারে। আগে আইনি পরামর্শ নিন।",
+      "note_en": "Important: if you leave your job, the sponsor can file huroob. Get advice first."
+    },
+    {
+      "id": "us-l7-11",
+      "type": "word",
+      "arabic": "مخالفة",
+      "bangla": "জরিমানা",
+      "english": "Fine, violation",
+      "bn_transliteration": "মুখালাফা",
+      "en_transliteration": "mukhālafa",
+      "category_ids": [
+        "papers"
+      ]
+    },
+    {
+      "id": "us-l7-12",
+      "type": "word",
+      "arabic": "رخصة",
+      "bangla": "লাইসেন্স",
+      "english": "Licence",
+      "bn_transliteration": "রুখসা",
+      "en_transliteration": "rukhṣa",
+      "category_ids": [
+        "papers"
+      ]
+    }
+  ],
+  "course": {
+    "id": "understanding-saudis",
+    "title_bn": "সৌদিদের কথা বোঝা",
+    "title_en": "Understanding Saudis",
+    "description_bn": "দ্রুত কথা, সৌদি স্ল্যাং, মজা ও ভদ্রতার কথা, আর বেতন, ছুটি ও ইকামা নিয়ে আলাপ।",
+    "description_en": "Fast speech, common slang, jokes and polite phrases, and conversations about salary, leave and your iqama.",
+    "type": "topic",
+    "level": "intermediate",
+    "is_free": true,
+    "languages": [
+      "bn",
+      "en"
+    ],
+    "lessons": [
+      {
+        "id": "saudis-1",
+        "title_bn": "পাঠ ১: দ্রুত কথার ছোট শব্দ",
+        "title_en": "Lesson 1: Little words in fast speech",
+        "category_id": "slang",
+        "item_ids": [
+          "us-l1-01",
+          "us-l1-02",
+          "us-l1-03",
+          "us-l1-04",
+          "us-l1-05",
+          "us-l1-06",
+          "us-l1-07",
+          "us-l1-08",
+          "us-l1-09",
+          "us-l1-10",
+          "us-l1-11",
+          "us-l1-12"
+        ],
+        "order": 10,
+        "is_free": true
+      },
+      {
+        "id": "saudis-2",
+        "title_bn": "পাঠ ২: সৌদি স্ল্যাং",
+        "title_en": "Lesson 2: Saudi slang",
+        "category_id": "slang",
+        "item_ids": [
+          "us-l2-01",
+          "us-l2-02",
+          "us-l2-03",
+          "us-l2-04",
+          "us-l2-05",
+          "us-l2-06",
+          "us-l2-07",
+          "us-l2-08",
+          "us-l2-09",
+          "us-l2-10",
+          "us-l2-11",
+          "us-l2-12"
+        ],
+        "order": 20,
+        "is_free": true
+      },
+      {
+        "id": "saudis-3",
+        "title_bn": "পাঠ ৩: ভদ্রতার কথা",
+        "title_en": "Lesson 3: Polite phrases",
+        "category_id": "polite",
+        "item_ids": [
+          "us-l3-01",
+          "us-l3-02",
+          "us-l3-03",
+          "us-l3-04",
+          "us-l3-05",
+          "us-l3-06",
+          "us-l3-07",
+          "us-l3-08",
+          "us-l3-09",
+          "us-l3-10",
+          "us-l3-11"
+        ],
+        "order": 30,
+        "is_free": true
+      },
+      {
+        "id": "saudis-4",
+        "title_bn": "পাঠ ৪: মজা ও প্রতিক্রিয়া",
+        "title_en": "Lesson 4: Jokes and reactions",
+        "category_id": "slang",
+        "item_ids": [
+          "us-l4-01",
+          "us-l4-02",
+          "us-l4-03",
+          "us-l4-04",
+          "us-l4-05",
+          "us-l4-06",
+          "us-l4-07",
+          "us-l4-08",
+          "us-l4-09",
+          "us-l4-10",
+          "us-l4-11"
+        ],
+        "order": 40,
+        "is_free": true
+      },
+      {
+        "id": "saudis-5",
+        "title_bn": "পাঠ ৫: বেতনের কথা",
+        "title_en": "Lesson 5: Talking about salary",
+        "category_id": "papers",
+        "item_ids": [
+          "us-l5-01",
+          "us-l5-02",
+          "us-l5-03",
+          "us-l5-04",
+          "us-l5-05",
+          "us-l5-06",
+          "us-l5-07",
+          "us-l5-08",
+          "us-l5-09",
+          "us-l5-10",
+          "us-l5-11"
+        ],
+        "order": 50,
+        "is_free": true
+      },
+      {
+        "id": "saudis-6",
+        "title_bn": "পাঠ ৬: ছুটির কথা",
+        "title_en": "Lesson 6: Talking about leave",
+        "category_id": "papers",
+        "item_ids": [
+          "us-l6-01",
+          "us-l6-02",
+          "us-l6-03",
+          "us-l6-04",
+          "us-l6-05",
+          "us-l6-06",
+          "us-l6-07",
+          "us-l6-08",
+          "us-l6-09",
+          "us-l6-10"
+        ],
+        "order": 60,
+        "is_free": true
+      },
+      {
+        "id": "saudis-7",
+        "title_bn": "পাঠ ৭: ইকামা ও কাগজপত্র",
+        "title_en": "Lesson 7: Iqama and papers",
+        "category_id": "papers",
+        "item_ids": [
+          "us-l7-01",
+          "us-l7-02",
+          "us-l7-03",
+          "us-l7-04",
+          "us-l7-05",
+          "us-l7-06",
+          "us-l7-07",
+          "us-l7-08",
+          "us-l7-09",
+          "us-l7-10",
+          "us-l7-11",
+          "us-l7-12"
+        ],
+        "order": 70,
+        "is_free": true
+      }
+    ]
+  }
+}

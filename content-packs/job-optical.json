@@ -1,0 +1,564 @@
+{
+  "name": "Job pack: Optical shop sales",
+  "categories": [
+    {
+      "id": "optical",
+      "name_en": "Optical shop",
+      "name_bn": "চশমার দোকান",
+      "order": 225
+    }
+  ],
+  "items": [
+    {
+      "id": "jo-l1-01",
+      "type": "word",
+      "arabic": "نظارة",
+      "bangla": "চশমা",
+      "english": "Glasses",
+      "bn_transliteration": "নাদ্দারা",
+      "en_transliteration": "naẓẓāra",
+      "category_ids": [
+        "optical"
+      ]
+    },
+    {
+      "id": "jo-l1-02",
+      "type": "phrase",
+      "arabic": "نظارة شمسية",
+      "bangla": "সানগ্লাস",
+      "english": "Sunglasses",
+      "bn_transliteration": "নাদ্দারা শামসিইয়া",
+      "en_transliteration": "naẓẓāra shamsiyya",
+      "category_ids": [
+        "optical"
+      ]
+    },
+    {
+      "id": "jo-l1-03",
+      "type": "word",
+      "arabic": "إطار",
+      "bangla": "ফ্রেম",
+      "english": "Frame",
+      "bn_transliteration": "ইতার",
+      "en_transliteration": "iṭār",
+      "category_ids": [
+        "optical"
+      ],
+      "note_bn": "অনেকে ইংরেজি 'ফ্রেম'-ও বলে।",
+      "note_en": "Many people also just say 'frame'."
+    },
+    {
+      "id": "jo-l1-04",
+      "type": "word",
+      "arabic": "عدسات",
+      "bangla": "লেন্স",
+      "english": "Lenses",
+      "bn_transliteration": "আদাসাত",
+      "en_transliteration": "ʿadasāt",
+      "category_ids": [
+        "optical"
+      ]
+    },
+    {
+      "id": "jo-l1-05",
+      "type": "phrase",
+      "arabic": "عدسات لاصقة",
+      "bangla": "কন্টাক্ট লেন্স",
+      "english": "Contact lenses",
+      "bn_transliteration": "আদাসাত লাসিগা",
+      "en_transliteration": "ʿadasāt lāṣiga",
+      "category_ids": [
+        "optical"
+      ]
+    },
+    {
+      "id": "jo-l1-06",
+      "type": "word",
+      "arabic": "ماركة",
+      "bangla": "ব্র্যান্ড",
+      "english": "Brand",
+      "bn_transliteration": "মারকা",
+      "en_transliteration": "mārka",
+      "category_ids": [
+        "optical"
+      ]
+    },
+    {
+      "id": "jo-l1-07",
+      "type": "word",
+      "arabic": "معدن",
+      "bangla": "মেটাল",
+      "english": "Metal",
+      "bn_transliteration": "মাদান",
+      "en_transliteration": "maʿdan",
+      "category_ids": [
+        "optical"
+      ]
+    },
+    {
+      "id": "jo-l1-08",
+      "type": "word",
+      "arabic": "بلاستيك",
+      "bangla": "প্লাস্টিক",
+      "english": "Plastic",
+      "bn_transliteration": "বিলাসতীক",
+      "en_transliteration": "blāstīk",
+      "category_ids": [
+        "optical"
+      ]
+    },
+    {
+      "id": "jo-l1-09",
+      "type": "word",
+      "arabic": "خفيف",
+      "bangla": "হালকা",
+      "english": "Light (weight)",
+      "bn_transliteration": "খাফীফ",
+      "en_transliteration": "khafīf",
+      "category_ids": [
+        "optical"
+      ]
+    },
+    {
+      "id": "jo-l1-10",
+      "type": "phrase",
+      "arabic": "جرب هذي",
+      "bangla": "এটা পরে দেখুন",
+      "english": "Try these on",
+      "bn_transliteration": "জাররিব হাযি",
+      "en_transliteration": "jarrib hādhi",
+      "category_ids": [
+        "optical"
+      ],
+      "note_bn": "চশমা স্ত্রীলিঙ্গ, তাই 'হাযি' (এটা)। নারী কাস্টমারকে: 'জাররিবি'।",
+      "note_en": "naẓẓāra is feminine, so hādhi. To a woman: jarribi."
+    },
+    {
+      "id": "jo-l1-11",
+      "type": "word",
+      "arabic": "المراية",
+      "bangla": "আয়না",
+      "english": "The mirror",
+      "bn_transliteration": "আল-মিরাইয়া",
+      "en_transliteration": "al-mirāya",
+      "category_ids": [
+        "optical"
+      ]
+    },
+    {
+      "id": "jo-l2-01",
+      "type": "phrase",
+      "arabic": "فحص النظر",
+      "bangla": "চোখ পরীক্ষা",
+      "english": "Eye test",
+      "bn_transliteration": "ফাহস আন-নাদার",
+      "en_transliteration": "faḥṣ an-naẓar",
+      "category_ids": [
+        "optical"
+      ],
+      "note_bn": "অনেক চশমার দোকানে বিনামূল্যে চোখ পরীক্ষা হয় — কাস্টমারকে বলুন।",
+      "note_en": "Many optical shops test eyes for free; tell the customer."
+    },
+    {
+      "id": "jo-l2-02",
+      "type": "phrase",
+      "arabic": "مقاس النظر",
+      "bangla": "চোখের পাওয়ার",
+      "english": "Eye prescription (power)",
+      "bn_transliteration": "মাগাস আন-নাদার",
+      "en_transliteration": "magās an-naẓar",
+      "category_ids": [
+        "optical"
+      ],
+      "note_bn": "চশমার দোকানে 'মাগাস' মানে চোখের পাওয়ার।",
+      "note_en": "In an optical shop, magās means the eye prescription."
+    },
+    {
+      "id": "jo-l2-03",
+      "type": "phrase",
+      "arabic": "عندك وصفة؟",
+      "bangla": "প্রেসক্রিপশন আছে?",
+      "english": "Do you have a prescription?",
+      "bn_transliteration": "ইনদাক ওয়াসফা?",
+      "en_transliteration": "ʿindak waṣfa?",
+      "category_ids": [
+        "optical"
+      ]
+    },
+    {
+      "id": "jo-l2-04",
+      "type": "phrase",
+      "arabic": "اقرأ هذا السطر",
+      "bangla": "এই লাইনটা পড়ুন",
+      "english": "Read this line",
+      "bn_transliteration": "ইগরা হাদা আস-সাতর",
+      "en_transliteration": "igraʾ hādha s-saṭr",
+      "category_ids": [
+        "optical"
+      ]
+    },
+    {
+      "id": "jo-l2-05",
+      "type": "phrase",
+      "arabic": "تشوف زين؟",
+      "bangla": "ভালো দেখছেন?",
+      "english": "Can you see clearly?",
+      "bn_transliteration": "তিশূফ যেইন?",
+      "en_transliteration": "tishūf zēn?",
+      "category_ids": [
+        "optical"
+      ]
+    },
+    {
+      "id": "jo-l2-06",
+      "type": "phrase",
+      "arabic": "قصر نظر",
+      "bangla": "দূরে ঝাপসা দেখা (মায়োপিয়া)",
+      "english": "Short-sighted",
+      "bn_transliteration": "গিসর নাদার",
+      "en_transliteration": "giṣr naẓar",
+      "category_ids": [
+        "optical"
+      ]
+    },
+    {
+      "id": "jo-l2-07",
+      "type": "phrase",
+      "arabic": "طول نظر",
+      "bangla": "কাছে ঝাপসা দেখা",
+      "english": "Long-sighted",
+      "bn_transliteration": "তূল নাদার",
+      "en_transliteration": "ṭūl naẓar",
+      "category_ids": [
+        "optical"
+      ]
+    },
+    {
+      "id": "jo-l2-08",
+      "type": "word",
+      "arabic": "استجماتيزم",
+      "bangla": "অ্যাস্টিগম্যাটিজম",
+      "english": "Astigmatism",
+      "bn_transliteration": "ইসতিগমাতিযম",
+      "en_transliteration": "astigmatizm",
+      "category_ids": [
+        "optical"
+      ]
+    },
+    {
+      "id": "jo-l2-09",
+      "type": "phrase",
+      "arabic": "العين اليمين",
+      "bangla": "ডান চোখ",
+      "english": "The right eye",
+      "bn_transliteration": "আল-আইন আল-ইয়ামীন",
+      "en_transliteration": "al-ʿēn al-yamīn",
+      "category_ids": [
+        "optical"
+      ]
+    },
+    {
+      "id": "jo-l2-10",
+      "type": "phrase",
+      "arabic": "العين اليسار",
+      "bangla": "বাম চোখ",
+      "english": "The left eye",
+      "bn_transliteration": "আল-আইন আল-ইয়াসার",
+      "en_transliteration": "al-ʿēn al-yasār",
+      "category_ids": [
+        "optical"
+      ]
+    },
+    {
+      "id": "jo-l3-01",
+      "type": "phrase",
+      "arabic": "عدسات طبية",
+      "bangla": "পাওয়ারের লেন্স",
+      "english": "Prescription lenses",
+      "bn_transliteration": "আদাসাত তিব্বিইয়া",
+      "en_transliteration": "ʿadasāt ṭibbiyya",
+      "category_ids": [
+        "optical"
+      ]
+    },
+    {
+      "id": "jo-l3-02",
+      "type": "phrase",
+      "arabic": "ضد الأشعة الزرقاء",
+      "bangla": "ব্লু-কাট (নীল আলো থেকে রক্ষা)",
+      "english": "Blue light filter",
+      "bn_transliteration": "দিদ্দ আল-আশিআ আয-যারগা",
+      "en_transliteration": "ḍidd al-ashiʿʿa az-zargāʾ",
+      "category_ids": [
+        "optical"
+      ],
+      "note_bn": "মোবাইল-কম্পিউটারে বেশি সময় কাটানো কাস্টমারকে সাজেস্ট করুন।",
+      "note_en": "Suggest it to customers who spend long hours on screens."
+    },
+    {
+      "id": "jo-l3-03",
+      "type": "phrase",
+      "arabic": "تتغير مع الشمس",
+      "bangla": "রোদে রং বদলায় (ফটোক্রোমিক)",
+      "english": "Darkens in the sun (photochromic)",
+      "bn_transliteration": "তিতগাইয়ার মাআ আশ-শামস",
+      "en_transliteration": "titghayyar maʿ ash-shams",
+      "category_ids": [
+        "optical"
+      ]
+    },
+    {
+      "id": "jo-l3-04",
+      "type": "word",
+      "arabic": "ملتي فوكال",
+      "bangla": "মাল্টিফোকাল (প্রগ্রেসিভ)",
+      "english": "Multifocal (progressive)",
+      "bn_transliteration": "মালতি ফোকাল",
+      "en_transliteration": "multi fōkal",
+      "category_ids": [
+        "optical"
+      ],
+      "note_bn": "কাছে ও দূরে দুটোর জন্য এক লেন্স — বয়স্ক কাস্টমারদের জন্য।",
+      "note_en": "One lens for near and far, usually for older customers."
+    },
+    {
+      "id": "jo-l3-05",
+      "type": "phrase",
+      "arabic": "للقراءة",
+      "bangla": "পড়ার জন্য",
+      "english": "For reading",
+      "bn_transliteration": "লিল-গিরাআ",
+      "en_transliteration": "lil-girāʾa",
+      "category_ids": [
+        "optical"
+      ]
+    },
+    {
+      "id": "jo-l3-06",
+      "type": "word",
+      "arabic": "رفيعة",
+      "bangla": "পাতলা",
+      "english": "Thin",
+      "bn_transliteration": "রাফীআ",
+      "en_transliteration": "rafīʿa",
+      "category_ids": [
+        "optical"
+      ]
+    },
+    {
+      "id": "jo-l3-07",
+      "type": "phrase",
+      "arabic": "ضد الخدش",
+      "bangla": "স্ক্র্যাচ প্রতিরোধী",
+      "english": "Scratch-resistant",
+      "bn_transliteration": "দিদ্দ আল-খাদশ",
+      "en_transliteration": "ḍidd al-khadsh",
+      "category_ids": [
+        "optical"
+      ]
+    },
+    {
+      "id": "jo-l3-08",
+      "type": "word",
+      "arabic": "ضمان سنة",
+      "bangla": "এক বছরের ওয়ারেন্টি",
+      "english": "One-year warranty",
+      "bn_transliteration": "দামান সানা",
+      "en_transliteration": "ḍamān sana",
+      "category_ids": [
+        "optical"
+      ]
+    },
+    {
+      "id": "jo-l4-01",
+      "type": "phrase",
+      "arabic": "تجهز بعد يومين",
+      "bangla": "দুই দিনে রেডি হবে",
+      "english": "Ready in two days",
+      "bn_transliteration": "তিজহায বা'দ ইয়োমেইন",
+      "en_transliteration": "tijhaz baʿd yōmēn",
+      "category_ids": [
+        "optical"
+      ]
+    },
+    {
+      "id": "jo-l4-02",
+      "type": "phrase",
+      "arabic": "نتصل عليك إذا جهزت",
+      "bangla": "রেডি হলে আপনাকে ফোন করব",
+      "english": "We'll call you when they're ready",
+      "bn_transliteration": "নিত্তাসিল আলেইক ইযা জাহাযাত",
+      "en_transliteration": "nittaṣil ʿalēk idha jahzat",
+      "category_ids": [
+        "optical"
+      ]
+    },
+    {
+      "id": "jo-l4-03",
+      "type": "word",
+      "arabic": "عربون",
+      "bangla": "অগ্রিম টাকা",
+      "english": "Deposit",
+      "bn_transliteration": "আরবূন",
+      "en_transliteration": "ʿarbūn",
+      "category_ids": [
+        "optical"
+      ],
+      "note_bn": "লেন্স বানাতে পাঠানোর আগে অনেক দোকান 'আরবূন' নেয়।",
+      "note_en": "Many shops take a deposit before sending lenses to be made."
+    },
+    {
+      "id": "jo-l4-04",
+      "type": "phrase",
+      "arabic": "الباقي عند الاستلام",
+      "bangla": "বাকি টাকা নেওয়ার সময়",
+      "english": "The rest when you collect",
+      "bn_transliteration": "আল-বাগি ইনদ আল-ইসতিলাম",
+      "en_transliteration": "al-bāgi ʿind al-istilām",
+      "category_ids": [
+        "optical"
+      ]
+    },
+    {
+      "id": "jo-l4-05",
+      "type": "phrase",
+      "arabic": "نظبط لك النظارة",
+      "bangla": "চশমাটা ঠিকমতো বসিয়ে দিচ্ছি",
+      "english": "Let me adjust the glasses for you",
+      "bn_transliteration": "নিদাব্বিত লাক আন-নাদ্দারা",
+      "en_transliteration": "niḍabbiṭ lak an-naẓẓāra",
+      "category_ids": [
+        "optical"
+      ]
+    },
+    {
+      "id": "jo-l4-06",
+      "type": "phrase",
+      "arabic": "مرتاحة؟",
+      "bangla": "আরামদায়ক লাগছে?",
+      "english": "Are they comfortable?",
+      "bn_transliteration": "মুরতাহা?",
+      "en_transliteration": "murtāḥa?",
+      "category_ids": [
+        "optical"
+      ]
+    },
+    {
+      "id": "jo-l4-07",
+      "type": "phrase",
+      "arabic": "علبة ومنديل",
+      "bangla": "কেস আর মোছার কাপড়",
+      "english": "Case and cleaning cloth",
+      "bn_transliteration": "উলবা ওয়া মিনদীল",
+      "en_transliteration": "ʿulba w-mindīl",
+      "category_ids": [
+        "optical"
+      ]
+    },
+    {
+      "id": "jo-l4-08",
+      "type": "phrase",
+      "arabic": "نظفها بالمنديل بس",
+      "bangla": "শুধু এই কাপড় দিয়ে মুছবেন",
+      "english": "Only clean them with the cloth",
+      "bn_transliteration": "নাদ্দিফহা বিল-মিনদীল বাস",
+      "en_transliteration": "naẓẓifha bil-mindīl bass",
+      "category_ids": [
+        "optical"
+      ]
+    }
+  ],
+  "course": {
+    "id": "job-optical",
+    "title_bn": "চাকরির প্যাক: চশমার দোকানের সেলসম্যান",
+    "title_en": "Job pack: Optical shop sales",
+    "description_bn": "চশমার দোকানের জন্য: চশমা ও ফ্রেম, চোখের পরীক্ষা ও পাওয়ার, লেন্সের ধরন, আর অর্ডার ও ডেলিভারি।",
+    "description_en": "For optical shop staff: glasses and frames, eye tests and prescriptions, lens types, and orders and pickup.",
+    "type": "topic",
+    "is_free": true,
+    "level": "beginner",
+    "languages": [
+      "bn",
+      "en"
+    ],
+    "lessons": [
+      {
+        "id": "optical-1",
+        "title_bn": "পাঠ ১: চশমা ও ফ্রেম",
+        "title_en": "Lesson 1: Glasses and frames",
+        "category_id": "optical",
+        "item_ids": [
+          "jo-l1-01",
+          "jo-l1-02",
+          "jo-l1-03",
+          "jo-l1-04",
+          "jo-l1-05",
+          "jo-l1-06",
+          "jo-l1-07",
+          "jo-l1-08",
+          "jo-l1-09",
+          "jo-l1-10",
+          "jo-l1-11"
+        ],
+        "order": 10,
+        "is_free": true
+      },
+      {
+        "id": "optical-2",
+        "title_bn": "পাঠ ২: চোখ পরীক্ষা ও পাওয়ার",
+        "title_en": "Lesson 2: Eye test and prescription",
+        "category_id": "optical",
+        "item_ids": [
+          "jo-l2-01",
+          "jo-l2-02",
+          "jo-l2-03",
+          "jo-l2-04",
+          "jo-l2-05",
+          "jo-l2-06",
+          "jo-l2-07",
+          "jo-l2-08",
+          "jo-l2-09",
+          "jo-l2-10"
+        ],
+        "order": 20,
+        "is_free": true
+      },
+      {
+        "id": "optical-3",
+        "title_bn": "পাঠ ৩: লেন্সের ধরন",
+        "title_en": "Lesson 3: Lens types",
+        "category_id": "optical",
+        "item_ids": [
+          "jo-l3-01",
+          "jo-l3-02",
+          "jo-l3-03",
+          "jo-l3-04",
+          "jo-l3-05",
+          "jo-l3-06",
+          "jo-l3-07",
+          "jo-l3-08"
+        ],
+        "order": 30,
+        "is_free": true
+      },
+      {
+        "id": "optical-4",
+        "title_bn": "পাঠ ৪: অর্ডার ও ডেলিভারি",
+        "title_en": "Lesson 4: Orders and pickup",
+        "category_id": "optical",
+        "item_ids": [
+          "jo-l4-01",
+          "jo-l4-02",
+          "jo-l4-03",
+          "jo-l4-04",
+          "jo-l4-05",
+          "jo-l4-06",
+          "jo-l4-07",
+          "jo-l4-08"
+        ],
+        "order": 40,
+        "is_free": true
+      }
+    ]
+  }
+}

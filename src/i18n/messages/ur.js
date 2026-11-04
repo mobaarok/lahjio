@@ -43,6 +43,7 @@ export default {
   "courseType.phrase": "جملوں کا کورس",
   "courseType.topic": "موضوعاتی کورس",
   "courseType.mixed": "ملا جلا کورس",
+  "courseType.reading": "پڑھنا سیکھنے کا کورس",
   "audio.listen": "تلفظ سنیں",
   "audio.noVoice": "اس ڈیوائس میں عربی آواز نہیں ہے",
   "error.contentLoad": "اسباق لوڈ نہیں ہو سکے۔ انٹرنیٹ کنکشن چیک کریں اور دوبارہ کوشش کریں۔",

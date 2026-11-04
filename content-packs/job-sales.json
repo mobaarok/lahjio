@@ -1,0 +1,543 @@
+{
+  "name": "Job pack: Sales staff",
+  "categories": [
+    {
+      "id": "sales",
+      "name_en": "Sales",
+      "name_bn": "বিক্রি ও সেলস",
+      "order": 220
+    }
+  ],
+  "items": [
+    {
+      "id": "jsl-l1-01",
+      "type": "phrase",
+      "arabic": "أساعدك؟",
+      "bangla": "আপনাকে সাহায্য করতে পারি?",
+      "english": "Can I help you?",
+      "bn_transliteration": "আসাইদাক?",
+      "en_transliteration": "asāʿdak?",
+      "category_ids": [
+        "sales"
+      ]
+    },
+    {
+      "id": "jsl-l1-02",
+      "type": "phrase",
+      "arabic": "تفضل شوف",
+      "bangla": "দেখুন, প্লিজ",
+      "english": "Please, have a look",
+      "bn_transliteration": "তাফাদ্দাল শূফ",
+      "en_transliteration": "tfaḍḍal shūf",
+      "category_ids": [
+        "sales"
+      ]
+    },
+    {
+      "id": "jsl-l1-03",
+      "type": "phrase",
+      "arabic": "تبي تجرب؟",
+      "bangla": "ট্রাই করে দেখবেন?",
+      "english": "Would you like to try it?",
+      "bn_transliteration": "তিবি তিজাররিব?",
+      "en_transliteration": "tibi tjarrib?",
+      "category_ids": [
+        "sales"
+      ]
+    },
+    {
+      "id": "jsl-l1-04",
+      "type": "phrase",
+      "arabic": "غرفة القياس",
+      "bangla": "ট্রায়াল রুম",
+      "english": "Fitting room",
+      "bn_transliteration": "গুরফাত আল-গিয়াস",
+      "en_transliteration": "ghurfat al-giyās",
+      "category_ids": [
+        "sales"
+      ]
+    },
+    {
+      "id": "jsl-l1-05",
+      "type": "phrase",
+      "arabic": "وش مقاسك؟",
+      "bangla": "আপনার সাইজ কত?",
+      "english": "What's your size?",
+      "bn_transliteration": "ওশ মাগাসাক?",
+      "en_transliteration": "wesh magāsak?",
+      "category_ids": [
+        "sales"
+      ]
+    },
+    {
+      "id": "jsl-l1-06",
+      "type": "phrase",
+      "arabic": "عندنا ألوان ثانية",
+      "bangla": "অন্য রংও আছে",
+      "english": "We have other colours",
+      "bn_transliteration": "ইনদানা আলওয়ান সানিয়া",
+      "en_transliteration": "ʿindana alwān thānya",
+      "category_ids": [
+        "sales"
+      ]
+    },
+    {
+      "id": "jsl-l1-07",
+      "type": "phrase",
+      "arabic": "هذا الموديل الجديد",
+      "bangla": "এটা নতুন মডেল",
+      "english": "This is the new model",
+      "bn_transliteration": "হাদা আল-মোদেল আল-জিদীদ",
+      "en_transliteration": "hādha l-mōdēl al-jdīd",
+      "category_ids": [
+        "sales"
+      ]
+    },
+    {
+      "id": "jsl-l1-08",
+      "type": "word",
+      "arabic": "يناسبك",
+      "bangla": "আপনাকে মানাবে",
+      "english": "It suits you",
+      "bn_transliteration": "ইনাসবাক",
+      "en_transliteration": "ynāsbak",
+      "category_ids": [
+        "sales"
+      ]
+    },
+    {
+      "id": "jsl-l1-09",
+      "type": "phrase",
+      "arabic": "على ذوقك",
+      "bangla": "আপনার পছন্দমতো",
+      "english": "Whatever you like",
+      "bn_transliteration": "আলা যোগাক",
+      "en_transliteration": "ʿala dhōgak",
+      "category_ids": [
+        "sales"
+      ]
+    },
+    {
+      "id": "jsl-l2-01",
+      "type": "phrase",
+      "arabic": "العرض لين متى؟",
+      "bangla": "অফার কতদিন?",
+      "english": "Until when is the offer?",
+      "bn_transliteration": "আল-আরদ লেইন মাতা?",
+      "en_transliteration": "al-ʿarḍ lēn mata?",
+      "category_ids": [
+        "sales"
+      ]
+    },
+    {
+      "id": "jsl-l2-02",
+      "type": "phrase",
+      "arabic": "حبتين بسعر حبة",
+      "bangla": "একটার দামে দুটো",
+      "english": "Two for the price of one",
+      "bn_transliteration": "হাব্বাতেইন বিসির হাব্বা",
+      "en_transliteration": "ḥabbtēn bsiʿr ḥabba",
+      "category_ids": [
+        "sales"
+      ]
+    },
+    {
+      "id": "jsl-l2-03",
+      "type": "word",
+      "arabic": "ببلاش",
+      "bangla": "ফ্রি",
+      "english": "Free",
+      "bn_transliteration": "বিবালাশ",
+      "en_transliteration": "bbalāsh",
+      "category_ids": [
+        "sales"
+      ],
+      "note_bn": "সৌদিরা ফ্রিকে বলে 'বিবালাশ'। লেখায় দেখবেন 'مجاناً'।",
+      "note_en": "Saudis say bbalāsh for free; signs say مجاناً."
+    },
+    {
+      "id": "jsl-l2-04",
+      "type": "phrase",
+      "arabic": "هذا آخر واحد",
+      "bangla": "এটাই শেষটা",
+      "english": "This is the last one",
+      "bn_transliteration": "হাদা আখির ওয়াহিদ",
+      "en_transliteration": "hādha ākhir wāḥid",
+      "category_ids": [
+        "sales"
+      ]
+    },
+    {
+      "id": "jsl-l2-05",
+      "type": "word",
+      "arabic": "أصلي",
+      "bangla": "আসল",
+      "english": "Original, genuine",
+      "bn_transliteration": "আসলি",
+      "en_transliteration": "aṣli",
+      "category_ids": [
+        "sales"
+      ]
+    },
+    {
+      "id": "jsl-l2-06",
+      "type": "word",
+      "arabic": "تقليد",
+      "bangla": "নকল",
+      "english": "Copy, fake",
+      "bn_transliteration": "তাগলীদ",
+      "en_transliteration": "taglīd",
+      "category_ids": [
+        "sales"
+      ]
+    },
+    {
+      "id": "jsl-l2-07",
+      "type": "phrase",
+      "arabic": "سعره حلو",
+      "bangla": "দাম ভালো",
+      "english": "It's a good price",
+      "bn_transliteration": "সিরাহ হিলু",
+      "en_transliteration": "siʿrah ḥilw",
+      "category_ids": [
+        "sales"
+      ]
+    },
+    {
+      "id": "jsl-l2-08",
+      "type": "word",
+      "arabic": "يستاهل",
+      "bangla": "এর যোগ্য / দাম ঠিক আছে",
+      "english": "It's worth it",
+      "bn_transliteration": "ইসতাহাল",
+      "en_transliteration": "yistāhal",
+      "category_ids": [
+        "sales"
+      ]
+    },
+    {
+      "id": "jsl-l2-09",
+      "type": "phrase",
+      "arabic": "جودة عالية",
+      "bangla": "উন্নত মান",
+      "english": "High quality",
+      "bn_transliteration": "জোদা আলিয়া",
+      "en_transliteration": "jōda ʿālya",
+      "category_ids": [
+        "sales"
+      ]
+    },
+    {
+      "id": "jsl-l3-01",
+      "type": "phrase",
+      "arabic": "تبي كيس؟",
+      "bangla": "ব্যাগ লাগবে?",
+      "english": "Do you want a bag?",
+      "bn_transliteration": "তিবি কীস?",
+      "en_transliteration": "tibi kīs?",
+      "category_ids": [
+        "sales"
+      ]
+    },
+    {
+      "id": "jsl-l3-02",
+      "type": "word",
+      "arabic": "الاسترجاع",
+      "bangla": "রিফান্ড / ফেরত",
+      "english": "Refund, return",
+      "bn_transliteration": "আল-ইসতিরজা",
+      "en_transliteration": "al-istirjāʿ",
+      "category_ids": [
+        "sales"
+      ]
+    },
+    {
+      "id": "jsl-l3-03",
+      "type": "word",
+      "arabic": "الاستبدال",
+      "bangla": "বদল",
+      "english": "Exchange",
+      "bn_transliteration": "আল-ইসতিবদাল",
+      "en_transliteration": "al-istibdāl",
+      "category_ids": [
+        "sales"
+      ]
+    },
+    {
+      "id": "jsl-l3-04",
+      "type": "phrase",
+      "arabic": "خلال سبعة أيام",
+      "bangla": "সাত দিনের মধ্যে",
+      "english": "Within seven days",
+      "bn_transliteration": "খিলাল সাবআত আইয়াম",
+      "en_transliteration": "khilāl sabʿat ayyām",
+      "category_ids": [
+        "sales"
+      ]
+    },
+    {
+      "id": "jsl-l3-05",
+      "type": "phrase",
+      "arabic": "لازم الفاتورة",
+      "bangla": "রসিদ লাগবে",
+      "english": "You need the receipt",
+      "bn_transliteration": "লাযিম আল-ফাতূরা",
+      "en_transliteration": "lāzim al-fatūra",
+      "category_ids": [
+        "sales"
+      ]
+    },
+    {
+      "id": "jsl-l3-06",
+      "type": "word",
+      "arabic": "نقاط",
+      "bangla": "পয়েন্ট",
+      "english": "Loyalty points",
+      "bn_transliteration": "নুগাত",
+      "en_transliteration": "nugāṭ",
+      "category_ids": [
+        "sales"
+      ]
+    },
+    {
+      "id": "jsl-l3-07",
+      "type": "phrase",
+      "arabic": "رقم جوالك؟",
+      "bangla": "আপনার মোবাইল নাম্বার?",
+      "english": "Your mobile number?",
+      "bn_transliteration": "রাগম জাওয়ালাক?",
+      "en_transliteration": "ragm jawwālak?",
+      "category_ids": [
+        "sales"
+      ]
+    },
+    {
+      "id": "jsl-l3-08",
+      "type": "word",
+      "arabic": "الضريبة",
+      "bangla": "ভ্যাট",
+      "english": "VAT",
+      "bn_transliteration": "আদ-দারীবা",
+      "en_transliteration": "aḍ-ḍarība",
+      "category_ids": [
+        "sales"
+      ],
+      "note_bn": "সৌদিতে ভ্যাট ১৫%।",
+      "note_en": "VAT in Saudi is 15%."
+    },
+    {
+      "id": "jsl-l3-09",
+      "type": "phrase",
+      "arabic": "شامل الضريبة",
+      "bangla": "ভ্যাটসহ",
+      "english": "Including VAT",
+      "bn_transliteration": "শামিল আদ-দারীবা",
+      "en_transliteration": "shāmil aḍ-ḍarība",
+      "category_ids": [
+        "sales"
+      ]
+    },
+    {
+      "id": "jsl-l4-01",
+      "type": "word",
+      "arabic": "المستودع",
+      "bangla": "গুদাম / স্টোররুম",
+      "english": "The stockroom",
+      "bn_transliteration": "আল-মুসতাওদা",
+      "en_transliteration": "al-mustawdaʿ",
+      "category_ids": [
+        "sales"
+      ]
+    },
+    {
+      "id": "jsl-l4-02",
+      "type": "word",
+      "arabic": "الرف",
+      "bangla": "তাক",
+      "english": "The shelf",
+      "bn_transliteration": "আর-রাফ্ফ",
+      "en_transliteration": "ar-raff",
+      "category_ids": [
+        "sales"
+      ]
+    },
+    {
+      "id": "jsl-l4-03",
+      "type": "phrase",
+      "arabic": "رتب الرفوف",
+      "bangla": "তাক গোছাও",
+      "english": "Tidy the shelves",
+      "bn_transliteration": "রাত্তিব আর-রুফূফ",
+      "en_transliteration": "rattib ar-rufūf",
+      "category_ids": [
+        "sales"
+      ]
+    },
+    {
+      "id": "jsl-l4-04",
+      "type": "word",
+      "arabic": "جرد",
+      "bangla": "স্টক গণনা",
+      "english": "Stocktake",
+      "bn_transliteration": "জারদ",
+      "en_transliteration": "jard",
+      "category_ids": [
+        "sales"
+      ],
+      "note_bn": "মাসের শেষে বা বছরে একবার সব জিনিস গোনা হয়।",
+      "note_en": "All items are counted, monthly or once a year."
+    },
+    {
+      "id": "jsl-l4-05",
+      "type": "word",
+      "arabic": "الكمية",
+      "bangla": "পরিমাণ",
+      "english": "The quantity",
+      "bn_transliteration": "আল-কাম্মিইয়া",
+      "en_transliteration": "al-kammiyya",
+      "category_ids": [
+        "sales"
+      ]
+    },
+    {
+      "id": "jsl-l4-06",
+      "type": "phrase",
+      "arabic": "خلص من المستودع",
+      "bangla": "গুদামেও শেষ",
+      "english": "Out of stock in the store room too",
+      "bn_transliteration": "খিলাস মিন আল-মুসতাওদা",
+      "en_transliteration": "khiliṣ min al-mustawdaʿ",
+      "category_ids": [
+        "sales"
+      ]
+    },
+    {
+      "id": "jsl-l4-07",
+      "type": "word",
+      "arabic": "التارقت",
+      "bangla": "টার্গেট",
+      "english": "The (sales) target",
+      "bn_transliteration": "আত-তারগেত",
+      "en_transliteration": "at-target",
+      "category_ids": [
+        "sales"
+      ]
+    },
+    {
+      "id": "jsl-l4-08",
+      "type": "word",
+      "arabic": "المبيعات",
+      "bangla": "বিক্রি",
+      "english": "Sales",
+      "bn_transliteration": "আল-মাবীআত",
+      "en_transliteration": "al-mabīʿāt",
+      "category_ids": [
+        "sales"
+      ]
+    },
+    {
+      "id": "jsl-l4-09",
+      "type": "word",
+      "arabic": "العمولة",
+      "bangla": "কমিশন",
+      "english": "Commission",
+      "bn_transliteration": "আল-উমূলা",
+      "en_transliteration": "al-ʿumūla",
+      "category_ids": [
+        "sales"
+      ]
+    }
+  ],
+  "course": {
+    "id": "job-sales",
+    "title_bn": "চাকরির প্যাক: সেলসম্যান",
+    "title_en": "Job pack: Sales staff",
+    "description_bn": "দোকান ও শোরুমের সেলসম্যানদের জন্য: কাস্টমারকে সাহায্য, অফার বোঝানো, পেমেন্ট ও রিটার্ন, আর স্টক।",
+    "description_en": "For shop and showroom sales staff: helping customers, explaining offers, payment and returns, and stock.",
+    "type": "topic",
+    "is_free": true,
+    "level": "beginner",
+    "languages": [
+      "bn",
+      "en"
+    ],
+    "lessons": [
+      {
+        "id": "sales-1",
+        "title_bn": "পাঠ ১: কাস্টমারকে সাহায্য",
+        "title_en": "Lesson 1: Helping customers",
+        "category_id": "sales",
+        "item_ids": [
+          "jsl-l1-01",
+          "jsl-l1-02",
+          "jsl-l1-03",
+          "jsl-l1-04",
+          "jsl-l1-05",
+          "jsl-l1-06",
+          "jsl-l1-07",
+          "jsl-l1-08",
+          "jsl-l1-09"
+        ],
+        "order": 10,
+        "is_free": true
+      },
+      {
+        "id": "sales-2",
+        "title_bn": "পাঠ ২: অফার বোঝানো",
+        "title_en": "Lesson 2: Explaining offers",
+        "category_id": "sales",
+        "item_ids": [
+          "jsl-l2-01",
+          "jsl-l2-02",
+          "jsl-l2-03",
+          "jsl-l2-04",
+          "jsl-l2-05",
+          "jsl-l2-06",
+          "jsl-l2-07",
+          "jsl-l2-08",
+          "jsl-l2-09"
+        ],
+        "order": 20,
+        "is_free": true
+      },
+      {
+        "id": "sales-3",
+        "title_bn": "পাঠ ৩: পেমেন্ট ও রিটার্ন",
+        "title_en": "Lesson 3: Payment and returns",
+        "category_id": "sales",
+        "item_ids": [
+          "jsl-l3-01",
+          "jsl-l3-02",
+          "jsl-l3-03",
+          "jsl-l3-04",
+          "jsl-l3-05",
+          "jsl-l3-06",
+          "jsl-l3-07",
+          "jsl-l3-08",
+          "jsl-l3-09"
+        ],
+        "order": 30,
+        "is_free": true
+      },
+      {
+        "id": "sales-4",
+        "title_bn": "পাঠ ৪: স্টক ও টার্গেট",
+        "title_en": "Lesson 4: Stock and targets",
+        "category_id": "sales",
+        "item_ids": [
+          "jsl-l4-01",
+          "jsl-l4-02",
+          "jsl-l4-03",
+          "jsl-l4-04",
+          "jsl-l4-05",
+          "jsl-l4-06",
+          "jsl-l4-07",
+          "jsl-l4-08",
+          "jsl-l4-09"
+        ],
+        "order": 40,
+        "is_free": true
+      }
+    ]
+  }
+}

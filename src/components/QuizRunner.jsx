@@ -8,7 +8,8 @@ import { buttonClass, cardClass } from "../lib/styles";
 // Shows one multiple-choice question at a time.
 // questions come from lib/quiz.js makeQuestions().
 // onAnswer(itemId, correct) runs after every answer; onFinish(score) at the end.
-export default function QuizRunner({ questions, onAnswer, onFinish }) {
+// arabicFirst (reading courses) shows only the Arabic, so learners practise reading it.
+export default function QuizRunner({ questions, onAnswer, onFinish, arabicFirst = false }) {
   const { t, num, meaningOf, pronunciationOf } = useLocale();
   const [index, setIndex] = useState(0);
   const [selectedId, setSelectedId] = useState(null);
@@ -69,11 +70,20 @@ export default function QuizRunner({ questions, onAnswer, onFinish }) {
         {question.type === "ar-bn" && (
           <div className="mt-4 flex flex-col items-center gap-2">
             {/* Most learners can't read Arabic yet: pronunciation big, Arabic small below */}
-            <div className="flex items-center gap-3">
-              <p className="text-3xl font-bold text-emerald-700">{pronunciationOf(question.item)}</p>
-              <AudioButton item={question.item} size="sm" />
-            </div>
-            <p lang="ar" dir="rtl" className="text-xl text-slate-500">{question.item.arabic}</p>
+            {arabicFirst ? (
+              <div className="flex items-center gap-3">
+                <p lang="ar" dir="rtl" className="text-5xl font-bold text-emerald-700">{question.item.arabic}</p>
+                <AudioButton item={question.item} size="sm" />
+              </div>
+            ) : (
+              <>
+                <div className="flex items-center gap-3">
+                  <p className="text-3xl font-bold text-emerald-700">{pronunciationOf(question.item)}</p>
+                  <AudioButton item={question.item} size="sm" />
+                </div>
+                <p lang="ar" dir="rtl" className="text-xl text-slate-500">{question.item.arabic}</p>
+              </>
+            )}
           </div>
         )}
         {question.type === "bn-ar" && <p className="mt-4 text-3xl font-bold text-slate-900">{meaningOf(question.item)}</p>}
@@ -89,7 +99,9 @@ export default function QuizRunner({ questions, onAnswer, onFinish }) {
       <div className="mt-4 grid gap-2">
         {question.options.map((option) => (
           <button key={option.id} type="button" onClick={() => choose(option)} className={optionClass(option)}>
-            {showArabicOptions ? (
+            {showArabicOptions && arabicFirst ? (
+              <span lang="ar" dir="rtl" className="block text-right text-2xl">{option.arabic}</span>
+            ) : showArabicOptions ? (
               // Pronunciation first, the Arabic small on the other side
               <span className="flex items-center justify-between gap-3">
                 <span className="text-lg font-semibold">{pronunciationOf(option)}</span>

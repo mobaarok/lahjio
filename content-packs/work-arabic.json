@@ -1,0 +1,1539 @@
+{
+  "name": "Work Arabic",
+  "categories": [
+    {
+      "id": "boss",
+      "name_en": "Boss and instructions",
+      "name_bn": "বস ও নির্দেশ",
+      "order": 70
+    },
+    {
+      "id": "customers",
+      "name_en": "Customers",
+      "name_bn": "কাস্টমার",
+      "order": 80
+    },
+    {
+      "id": "problems",
+      "name_en": "Problems and complaints",
+      "name_bn": "সমস্যা ও অভিযোগ",
+      "order": 100
+    },
+    {
+      "id": "time",
+      "name_en": "Time and waiting",
+      "name_bn": "সময় ও অপেক্ষা",
+      "order": 90
+    }
+  ],
+  "items": [
+    {
+      "id": "wk-l1-01",
+      "type": "word",
+      "arabic": "تعال",
+      "bangla": "আসো / এদিকে আসো",
+      "english": "Come here",
+      "bn_transliteration": "তাআল",
+      "en_transliteration": "taʿāl",
+      "category_ids": [
+        "boss"
+      ],
+      "note_bn": "বস সবচেয়ে বেশি বলে। নারীকে বললে: 'তাআলি'।",
+      "note_en": "The word bosses use most. To a woman: taʿāli."
+    },
+    {
+      "id": "wk-l1-02",
+      "type": "word",
+      "arabic": "روح",
+      "bangla": "যাও",
+      "english": "Go",
+      "bn_transliteration": "রূহ",
+      "en_transliteration": "rūḥ",
+      "category_ids": [
+        "boss"
+      ]
+    },
+    {
+      "id": "wk-l1-03",
+      "type": "word",
+      "arabic": "يلا",
+      "bangla": "চলো / তাড়াতাড়ি করো",
+      "english": "Come on, let's go",
+      "bn_transliteration": "ইয়াল্লা",
+      "en_transliteration": "yalla",
+      "category_ids": [
+        "boss"
+      ],
+      "note_bn": "তাড়া দিতে বা 'শুরু করো' বোঝাতে বলে। রাগ না, সাধারণ কথা।",
+      "note_en": "Used to hurry someone or say 'let's start'. It isn't rude."
+    },
+    {
+      "id": "wk-l1-04",
+      "type": "word",
+      "arabic": "خذ",
+      "bangla": "নাও",
+      "english": "Take",
+      "bn_transliteration": "খুদ",
+      "en_transliteration": "khudh",
+      "category_ids": [
+        "boss"
+      ]
+    },
+    {
+      "id": "wk-l1-05",
+      "type": "phrase",
+      "arabic": "حط هنا",
+      "bangla": "এখানে রাখো",
+      "english": "Put it here",
+      "bn_transliteration": "হুত্ত হিনা",
+      "en_transliteration": "ḥuṭṭ hina",
+      "category_ids": [
+        "boss"
+      ],
+      "note_bn": "'হুত্ত' মানে রাখো — সৌদিতে খুব বলে।",
+      "note_en": "ḥuṭṭ means 'put' and is very common."
+    },
+    {
+      "id": "wk-l1-06",
+      "type": "phrase",
+      "arabic": "شيل هذا",
+      "bangla": "এটা তোলো / সরাও",
+      "english": "Lift this / Take this away",
+      "bn_transliteration": "শীল হাদা",
+      "en_transliteration": "shīl hādha",
+      "category_ids": [
+        "boss"
+      ],
+      "note_bn": "'শীল' মানে তোলা বা সরানো দুটোই।",
+      "note_en": "shīl means both 'lift' and 'take away'."
+    },
+    {
+      "id": "wk-l1-07",
+      "type": "phrase",
+      "arabic": "نظف المكان",
+      "bangla": "জায়গাটা পরিষ্কার করো",
+      "english": "Clean the place",
+      "bn_transliteration": "নাদ্দিফ আল-মাকান",
+      "en_transliteration": "naẓẓif al-makān",
+      "category_ids": [
+        "boss"
+      ]
+    },
+    {
+      "id": "wk-l1-08",
+      "type": "word",
+      "arabic": "رتب",
+      "bangla": "সাজাও / গুছিয়ে রাখো",
+      "english": "Arrange it, tidy it",
+      "bn_transliteration": "রাত্তিব",
+      "en_transliteration": "rattib",
+      "category_ids": [
+        "boss"
+      ]
+    },
+    {
+      "id": "wk-l1-09",
+      "type": "word",
+      "arabic": "بسرعة",
+      "bangla": "তাড়াতাড়ি",
+      "english": "Quickly",
+      "bn_transliteration": "বিসুরআ",
+      "en_transliteration": "bsurʿa",
+      "category_ids": [
+        "boss"
+      ]
+    },
+    {
+      "id": "wk-l1-10",
+      "type": "word",
+      "arabic": "اسمع",
+      "bangla": "শোনো",
+      "english": "Listen",
+      "bn_transliteration": "ইসমা",
+      "en_transliteration": "ismaʿ",
+      "category_ids": [
+        "boss"
+      ]
+    },
+    {
+      "id": "wk-l1-11",
+      "type": "word",
+      "arabic": "شوف",
+      "bangla": "দেখো",
+      "english": "Look",
+      "bn_transliteration": "শূফ",
+      "en_transliteration": "shūf",
+      "category_ids": [
+        "boss"
+      ],
+      "note_bn": "'শূফ' দিয়ে কথা শুরু করলে মানে 'দেখো, ব্যাপারটা হলো...'।",
+      "note_en": "At the start of a sentence, shūf means 'look, the thing is...'."
+    },
+    {
+      "id": "wk-l1-12",
+      "type": "phrase",
+      "arabic": "لا تلمس",
+      "bangla": "ছুঁয়ো না",
+      "english": "Don't touch",
+      "bn_transliteration": "লা তিলমিস",
+      "en_transliteration": "lā tilmis",
+      "category_ids": [
+        "boss"
+      ]
+    },
+    {
+      "id": "wk-l1-13",
+      "type": "word",
+      "arabic": "انتبه",
+      "bangla": "সাবধান",
+      "english": "Be careful",
+      "bn_transliteration": "ইনতাবিহ",
+      "en_transliteration": "intabih",
+      "category_ids": [
+        "boss"
+      ]
+    },
+    {
+      "id": "wk-l2-01",
+      "type": "word",
+      "arabic": "الشغل",
+      "bangla": "কাজ",
+      "english": "The work",
+      "bn_transliteration": "আশ-শুগুল",
+      "en_transliteration": "ash-shughul",
+      "category_ids": [
+        "boss"
+      ],
+      "note_bn": "সৌদিরা কাজকে 'শুগুল' বলে, বইয়ের 'আমাল' কম শোনা যায়।",
+      "note_en": "Saudis say shughul for work; the textbook ʿamal is heard less."
+    },
+    {
+      "id": "wk-l2-02",
+      "type": "word",
+      "arabic": "الدوام",
+      "bangla": "ডিউটি / অফিসের সময়",
+      "english": "Working hours, shift",
+      "bn_transliteration": "আদ-দাওয়াম",
+      "en_transliteration": "ad-dawām",
+      "category_ids": [
+        "boss"
+      ],
+      "note_bn": "'দাওয়াম কাম সাআ?' মানে ডিউটি কত ঘণ্টা?",
+      "note_en": "dawām kam sāʿa? means 'how many hours is the shift?'"
+    },
+    {
+      "id": "wk-l2-03",
+      "type": "word",
+      "arabic": "ابدأ",
+      "bangla": "শুরু করো",
+      "english": "Start",
+      "bn_transliteration": "ইবদা",
+      "en_transliteration": "ibda",
+      "category_ids": [
+        "boss"
+      ]
+    },
+    {
+      "id": "wk-l2-04",
+      "type": "word",
+      "arabic": "كمل",
+      "bangla": "চালিয়ে যাও / শেষ করো",
+      "english": "Carry on, finish it",
+      "bn_transliteration": "কাম্মিল",
+      "en_transliteration": "kammil",
+      "category_ids": [
+        "boss"
+      ]
+    },
+    {
+      "id": "wk-l2-05",
+      "type": "word",
+      "arabic": "وقف",
+      "bangla": "থামো",
+      "english": "Stop",
+      "bn_transliteration": "ওয়াগগিফ",
+      "en_transliteration": "wagguf",
+      "category_ids": [
+        "boss"
+      ]
+    },
+    {
+      "id": "wk-l2-06",
+      "type": "word",
+      "arabic": "ارجع",
+      "bangla": "ফিরে আসো",
+      "english": "Come back",
+      "bn_transliteration": "ইরজা",
+      "en_transliteration": "irjaʿ",
+      "category_ids": [
+        "boss"
+      ]
+    },
+    {
+      "id": "wk-l2-07",
+      "type": "word",
+      "arabic": "جيب",
+      "bangla": "নিয়ে আসো",
+      "english": "Bring",
+      "bn_transliteration": "জীব",
+      "en_transliteration": "jīb",
+      "category_ids": [
+        "boss"
+      ]
+    },
+    {
+      "id": "wk-l2-08",
+      "type": "phrase",
+      "arabic": "جيب لي الكرتون",
+      "bangla": "আমাকে কার্টনটা এনে দাও",
+      "english": "Bring me the box",
+      "bn_transliteration": "জীব লি আল-কারতূন",
+      "en_transliteration": "jīb li l-kartūn",
+      "category_ids": [
+        "boss"
+      ]
+    },
+    {
+      "id": "wk-l2-09",
+      "type": "phrase",
+      "arabic": "وين المفتاح؟",
+      "bangla": "চাবি কোথায়?",
+      "english": "Where is the key?",
+      "bn_transliteration": "ওয়েন আল-মিফতাহ?",
+      "en_transliteration": "wēn al-miftāḥ?",
+      "category_ids": [
+        "boss"
+      ]
+    },
+    {
+      "id": "wk-l2-10",
+      "type": "phrase",
+      "arabic": "سكر الباب",
+      "bangla": "দরজা বন্ধ করো",
+      "english": "Close the door",
+      "bn_transliteration": "সাক্কির আল-বাব",
+      "en_transliteration": "sakkir al-bāb",
+      "category_ids": [
+        "boss"
+      ],
+      "note_bn": "সৌদিতে 'বন্ধ করো' = 'সাক্কির'। খোলো = 'ইফতাহ'।",
+      "note_en": "In Saudi, 'close' is sakkir. 'Open' is iftaḥ."
+    },
+    {
+      "id": "wk-l2-11",
+      "type": "word",
+      "arabic": "افتح",
+      "bangla": "খোলো",
+      "english": "Open",
+      "bn_transliteration": "ইফতাহ",
+      "en_transliteration": "iftaḥ",
+      "category_ids": [
+        "boss"
+      ]
+    },
+    {
+      "id": "wk-l2-12",
+      "type": "phrase",
+      "arabic": "بكرة الصبح",
+      "bangla": "আগামীকাল সকালে",
+      "english": "Tomorrow morning",
+      "bn_transliteration": "বুকরা আস-সুবহ",
+      "en_transliteration": "bukra aṣ-ṣubḥ",
+      "category_ids": [
+        "boss"
+      ]
+    },
+    {
+      "id": "wk-l2-13",
+      "type": "phrase",
+      "arabic": "اليوم الشغل كثير",
+      "bangla": "আজ কাজ অনেক",
+      "english": "There's a lot of work today",
+      "bn_transliteration": "আল-ইয়োম আশ-শুগুল কাসীর",
+      "en_transliteration": "al-yōm ash-shughul kathīr",
+      "category_ids": [
+        "boss"
+      ]
+    },
+    {
+      "id": "wk-l3-01",
+      "type": "word",
+      "arabic": "حاضر",
+      "bangla": "জি, এখনই",
+      "english": "Yes, right away",
+      "bn_transliteration": "হাদির",
+      "en_transliteration": "ḥāḍir",
+      "category_ids": [
+        "boss"
+      ],
+      "note_bn": "বস ডাকলে বা কিছু বললে ভদ্র উত্তর। 'আবশির'-এর মতোই।",
+      "note_en": "A polite answer when your boss calls or asks. Like abshir."
+    },
+    {
+      "id": "wk-l3-02",
+      "type": "phrase",
+      "arabic": "على راسي",
+      "bangla": "মাথায় তুলে নিলাম (অবশ্যই করব)",
+      "english": "With pleasure (on my head)",
+      "bn_transliteration": "আলা রাসি",
+      "en_transliteration": "ʿala rāsi",
+      "category_ids": [
+        "boss"
+      ],
+      "note_bn": "খুব সম্মান দেখিয়ে 'অবশ্যই করব' বলা।",
+      "note_en": "A very respectful 'of course I'll do it'."
+    },
+    {
+      "id": "wk-l3-03",
+      "type": "word",
+      "arabic": "خلاص",
+      "bangla": "শেষ / ব্যস",
+      "english": "Done, that's it",
+      "bn_transliteration": "খালাস",
+      "en_transliteration": "khalāṣ",
+      "category_ids": [
+        "boss"
+      ],
+      "note_bn": "মানে 'শেষ হয়েছে' বা 'ব্যস, আর না'। সুর শুনে বুঝুন।",
+      "note_en": "Means 'finished' or 'enough, stop'. Listen to the tone."
+    },
+    {
+      "id": "wk-l3-04",
+      "type": "word",
+      "arabic": "خلصت",
+      "bangla": "আমি শেষ করেছি",
+      "english": "I've finished",
+      "bn_transliteration": "খাল্লাসত",
+      "en_transliteration": "khallaṣt",
+      "category_ids": [
+        "boss"
+      ]
+    },
+    {
+      "id": "wk-l3-05",
+      "type": "phrase",
+      "arabic": "باقي شوي",
+      "bangla": "আর একটু বাকি",
+      "english": "Just a little left",
+      "bn_transliteration": "বাগি শুওয়াই",
+      "en_transliteration": "bāgi shway",
+      "category_ids": [
+        "boss"
+      ]
+    },
+    {
+      "id": "wk-l3-06",
+      "type": "word",
+      "arabic": "الحين",
+      "bangla": "এখন",
+      "english": "Now",
+      "bn_transliteration": "আল-হীন",
+      "en_transliteration": "al-ḥīn",
+      "category_ids": [
+        "boss"
+      ],
+      "note_bn": "'আল-হীন' মানে এখন — সৌদিতে খুব প্রচলিত।",
+      "note_en": "al-ḥīn is the everyday Saudi word for 'now'."
+    },
+    {
+      "id": "wk-l3-07",
+      "type": "word",
+      "arabic": "دقيقة",
+      "bangla": "এক মিনিট",
+      "english": "One minute",
+      "bn_transliteration": "দাগীগা",
+      "en_transliteration": "dagīga",
+      "category_ids": [
+        "boss"
+      ]
+    },
+    {
+      "id": "wk-l3-08",
+      "type": "word",
+      "arabic": "انتظر",
+      "bangla": "অপেক্ষা করো",
+      "english": "Wait",
+      "bn_transliteration": "ইনতাদির",
+      "en_transliteration": "intaẓir",
+      "category_ids": [
+        "boss"
+      ]
+    },
+    {
+      "id": "wk-l3-09",
+      "type": "phrase",
+      "arabic": "اصبر شوي",
+      "bangla": "একটু অপেক্ষা করুন",
+      "english": "Wait a little",
+      "bn_transliteration": "ইসবির শুওয়াই",
+      "en_transliteration": "iṣbir shway",
+      "category_ids": [
+        "boss"
+      ],
+      "note_bn": "'ইনতাদির'-এর চেয়ে নরম ও বেশি শোনা যায়।",
+      "note_en": "Softer than intaẓir, and heard more."
+    },
+    {
+      "id": "wk-l3-10",
+      "type": "phrase",
+      "arabic": "بشوف",
+      "bangla": "আমি দেখছি / চেক করছি",
+      "english": "I'll check",
+      "bn_transliteration": "বাশূফ",
+      "en_transliteration": "bashūf",
+      "category_ids": [
+        "boss"
+      ],
+      "note_bn": "'বা-' মানে 'আমি করব'। বাশূফ = আমি দেখব।",
+      "note_en": "The ba- means 'I will'. bashūf = I'll look."
+    },
+    {
+      "id": "wk-l3-11",
+      "type": "phrase",
+      "arabic": "بسأل",
+      "bangla": "আমি জিজ্ঞেস করে দেখি",
+      "english": "I'll ask",
+      "bn_transliteration": "বাসআল",
+      "en_transliteration": "basʾal",
+      "category_ids": [
+        "boss"
+      ]
+    },
+    {
+      "id": "wk-l3-12",
+      "type": "phrase",
+      "arabic": "ما أقدر",
+      "bangla": "আমি পারব না",
+      "english": "I can't",
+      "bn_transliteration": "মা আগদার",
+      "en_transliteration": "mā agdar",
+      "category_ids": [
+        "boss"
+      ],
+      "note_bn": "সৌদিতে 'ق' এখানে 'গ': আগদার। পারব = 'আগদার'।",
+      "note_en": "The qāf sounds like g. 'I can' is agdar."
+    },
+    {
+      "id": "wk-l3-13",
+      "type": "word",
+      "arabic": "أقدر",
+      "bangla": "আমি পারব",
+      "english": "I can",
+      "bn_transliteration": "আগদার",
+      "en_transliteration": "agdar",
+      "category_ids": [
+        "boss"
+      ]
+    },
+    {
+      "id": "wk-l3-14",
+      "type": "phrase",
+      "arabic": "ما عندي خبر",
+      "bangla": "আমি জানি না / আমাকে বলা হয়নি",
+      "english": "I didn't know about it",
+      "bn_transliteration": "মা ইনদি খাবার",
+      "en_transliteration": "mā ʿindi khabar",
+      "category_ids": [
+        "boss"
+      ]
+    },
+    {
+      "id": "wk-l4-01",
+      "type": "phrase",
+      "arabic": "أهلين، وش تبغى؟",
+      "bangla": "স্বাগতম, কী চান?",
+      "english": "Welcome, what would you like?",
+      "bn_transliteration": "আহলেইন, ওশ তাবগা?",
+      "en_transliteration": "ahlēn, wesh tabgha?",
+      "category_ids": [
+        "customers"
+      ],
+      "note_bn": "কাস্টমার এলে প্রথম কথা। নারী কাস্টমারকে: 'ওশ তাবগিন?'",
+      "note_en": "The first thing to say to a customer. To a woman: wesh tabghīn?"
+    },
+    {
+      "id": "wk-l4-02",
+      "type": "phrase",
+      "arabic": "كيف أخدمك؟",
+      "bangla": "আপনাকে কীভাবে সাহায্য করতে পারি?",
+      "english": "How can I help you?",
+      "bn_transliteration": "কেইফ আখদিমাক?",
+      "en_transliteration": "kēf akhdimak?",
+      "category_ids": [
+        "customers"
+      ]
+    },
+    {
+      "id": "wk-l4-03",
+      "type": "phrase",
+      "arabic": "حياك الله",
+      "bangla": "আসুন, স্বাগতম",
+      "english": "Welcome (God greet you)",
+      "bn_transliteration": "হাইয়াক আল্লাহ",
+      "en_transliteration": "ḥayyāk allāh",
+      "category_ids": [
+        "customers"
+      ],
+      "note_bn": "দোকানে কাস্টমারকে স্বাগত জানাতে খুব বলে। উত্তরে: 'আল্লাহ ইহাইয়িক'।",
+      "note_en": "Very common to welcome customers. The reply is allāh yḥayyīk."
+    },
+    {
+      "id": "wk-l4-04",
+      "type": "word",
+      "arabic": "موجود",
+      "bangla": "আছে",
+      "english": "Available, we have it",
+      "bn_transliteration": "মাওজূদ",
+      "en_transliteration": "mawjūd",
+      "category_ids": [
+        "customers"
+      ]
+    },
+    {
+      "id": "wk-l4-05",
+      "type": "phrase",
+      "arabic": "مو موجود",
+      "bangla": "নেই",
+      "english": "Not available",
+      "bn_transliteration": "মু মাওজূদ",
+      "en_transliteration": "mū mawjūd",
+      "category_ids": [
+        "customers"
+      ],
+      "note_bn": "'মু' মানে 'না' (বিশেষণের আগে)। মু জেইন = ভালো না।",
+      "note_en": "mū means 'not'. mū zēn = not good."
+    },
+    {
+      "id": "wk-l4-06",
+      "type": "word",
+      "arabic": "خلص",
+      "bangla": "শেষ হয়ে গেছে (স্টক নেই)",
+      "english": "Sold out, it's finished",
+      "bn_transliteration": "খিলাস",
+      "en_transliteration": "khiliṣ",
+      "category_ids": [
+        "customers"
+      ]
+    },
+    {
+      "id": "wk-l4-07",
+      "type": "phrase",
+      "arabic": "بيجي بكرة",
+      "bangla": "কাল আসবে",
+      "english": "It will come tomorrow",
+      "bn_transliteration": "বিইজি বুকরা",
+      "en_transliteration": "bījī bukra",
+      "category_ids": [
+        "customers"
+      ]
+    },
+    {
+      "id": "wk-l4-08",
+      "type": "word",
+      "arabic": "لحظة",
+      "bangla": "এক মুহূর্ত",
+      "english": "One moment",
+      "bn_transliteration": "লাহদা",
+      "en_transliteration": "laḥẓa",
+      "category_ids": [
+        "customers"
+      ]
+    },
+    {
+      "id": "wk-l4-09",
+      "type": "phrase",
+      "arabic": "أي خدمة ثانية؟",
+      "bangla": "আর কিছু লাগবে?",
+      "english": "Anything else?",
+      "bn_transliteration": "আই খিদমা সানিয়া?",
+      "en_transliteration": "ay khidma thānya?",
+      "category_ids": [
+        "customers"
+      ]
+    },
+    {
+      "id": "wk-l4-10",
+      "type": "word",
+      "arabic": "الزبون",
+      "bangla": "কাস্টমার",
+      "english": "The customer",
+      "bn_transliteration": "আয-যিবূন",
+      "en_transliteration": "az-zibūn",
+      "category_ids": [
+        "customers"
+      ],
+      "note_bn": "'আল-আমীল'-ও বলে, বিশেষ করে বড় দোকান ও কোম্পানিতে।",
+      "note_en": "al-ʿamīl is also used, especially in big shops and companies."
+    },
+    {
+      "id": "wk-l4-11",
+      "type": "word",
+      "arabic": "الطلب",
+      "bangla": "অর্ডার",
+      "english": "The order",
+      "bn_transliteration": "আত-তালাব",
+      "en_transliteration": "aṭ-ṭalab",
+      "category_ids": [
+        "customers"
+      ]
+    },
+    {
+      "id": "wk-l4-12",
+      "type": "phrase",
+      "arabic": "نورتنا",
+      "bangla": "আপনি এসে আমাদের আলোকিত করলেন",
+      "english": "Thanks for coming (you lit up our place)",
+      "bn_transliteration": "নাওয়ারতানা",
+      "en_transliteration": "nawwartana",
+      "category_ids": [
+        "customers"
+      ],
+      "note_bn": "কাস্টমার বিদায় নেওয়ার সময় খুব ভদ্র কথা।",
+      "note_en": "A very polite thing to say as a customer leaves."
+    },
+    {
+      "id": "wk-l5-01",
+      "type": "word",
+      "arabic": "السعر",
+      "bangla": "দাম",
+      "english": "The price",
+      "bn_transliteration": "আস-সির",
+      "en_transliteration": "as-siʿr",
+      "category_ids": [
+        "customers"
+      ]
+    },
+    {
+      "id": "wk-l5-02",
+      "type": "word",
+      "arabic": "الفاتورة",
+      "bangla": "বিল / রসিদ",
+      "english": "The bill, receipt",
+      "bn_transliteration": "আল-ফাতূরা",
+      "en_transliteration": "al-fatūra",
+      "category_ids": [
+        "customers"
+      ]
+    },
+    {
+      "id": "wk-l5-03",
+      "type": "word",
+      "arabic": "عرض",
+      "bangla": "অফার",
+      "english": "Offer, deal",
+      "bn_transliteration": "আরদ",
+      "en_transliteration": "ʿarḍ",
+      "category_ids": [
+        "customers"
+      ],
+      "note_bn": "দোকানে 'عرض' লেখা থাকলে মানে অফার চলছে।",
+      "note_en": "A sign saying عرض means there's an offer on."
+    },
+    {
+      "id": "wk-l5-04",
+      "type": "word",
+      "arabic": "خصم",
+      "bangla": "ছাড়",
+      "english": "Discount",
+      "bn_transliteration": "খাসম",
+      "en_transliteration": "khaṣm",
+      "category_ids": [
+        "customers"
+      ]
+    },
+    {
+      "id": "wk-l5-05",
+      "type": "word",
+      "arabic": "حبة",
+      "bangla": "একটা (পিস)",
+      "english": "One piece",
+      "bn_transliteration": "হাব্বা",
+      "en_transliteration": "ḥabba",
+      "category_ids": [
+        "customers"
+      ],
+      "note_bn": "যেকোনো জিনিস গুনতে বলে: 'হাব্বাতেইন' = দুই পিস।",
+      "note_en": "Used to count any item: ḥabbatēn = two pieces."
+    },
+    {
+      "id": "wk-l5-06",
+      "type": "word",
+      "arabic": "كرتون",
+      "bangla": "কার্টন / বাক্স",
+      "english": "Box, carton",
+      "bn_transliteration": "কারতূন",
+      "en_transliteration": "kartūn",
+      "category_ids": [
+        "customers"
+      ]
+    },
+    {
+      "id": "wk-l5-07",
+      "type": "word",
+      "arabic": "كيلو",
+      "bangla": "কেজি",
+      "english": "Kilo",
+      "bn_transliteration": "কীলো",
+      "en_transliteration": "kīlo",
+      "category_ids": [
+        "customers"
+      ]
+    },
+    {
+      "id": "wk-l5-08",
+      "type": "phrase",
+      "arabic": "نص كيلو",
+      "bangla": "আধা কেজি",
+      "english": "Half a kilo",
+      "bn_transliteration": "নুস কীলো",
+      "en_transliteration": "nuṣṣ kīlo",
+      "category_ids": [
+        "customers"
+      ]
+    },
+    {
+      "id": "wk-l5-09",
+      "type": "word",
+      "arabic": "المقاس",
+      "bangla": "সাইজ",
+      "english": "The size",
+      "bn_transliteration": "আল-মাগাস",
+      "en_transliteration": "al-magās",
+      "category_ids": [
+        "customers"
+      ]
+    },
+    {
+      "id": "wk-l5-10",
+      "type": "word",
+      "arabic": "لون",
+      "bangla": "রং",
+      "english": "Colour",
+      "bn_transliteration": "লোন",
+      "en_transliteration": "lōn",
+      "category_ids": [
+        "customers"
+      ]
+    },
+    {
+      "id": "wk-l5-11",
+      "type": "word",
+      "arabic": "كبير",
+      "bangla": "বড়",
+      "english": "Big",
+      "bn_transliteration": "কাবীর",
+      "en_transliteration": "kabīr",
+      "category_ids": [
+        "customers"
+      ]
+    },
+    {
+      "id": "wk-l5-12",
+      "type": "word",
+      "arabic": "صغير",
+      "bangla": "ছোট",
+      "english": "Small",
+      "bn_transliteration": "সাগীর",
+      "en_transliteration": "ṣaghīr",
+      "category_ids": [
+        "customers"
+      ]
+    },
+    {
+      "id": "wk-l5-13",
+      "type": "word",
+      "arabic": "جديد",
+      "bangla": "নতুন",
+      "english": "New",
+      "bn_transliteration": "জিদীদ",
+      "en_transliteration": "jdīd",
+      "category_ids": [
+        "customers"
+      ]
+    },
+    {
+      "id": "wk-l5-14",
+      "type": "word",
+      "arabic": "الضمان",
+      "bangla": "ওয়ারেন্টি",
+      "english": "The warranty",
+      "bn_transliteration": "আদ-দামান",
+      "en_transliteration": "aḍ-ḍamān",
+      "category_ids": [
+        "customers"
+      ],
+      "note_bn": "কাস্টমার জিজ্ঞেস করে: 'ফি দামান?' — ওয়ারেন্টি আছে?",
+      "note_en": "Customers ask fīh ḍamān? — is there a warranty?"
+    },
+    {
+      "id": "wk-l6-01",
+      "type": "phrase",
+      "arabic": "فيه مشكلة",
+      "bangla": "একটা সমস্যা আছে",
+      "english": "There's a problem",
+      "bn_transliteration": "ফি মুশকিলা",
+      "en_transliteration": "fīh mushkila",
+      "category_ids": [
+        "problems"
+      ]
+    },
+    {
+      "id": "wk-l6-02",
+      "type": "word",
+      "arabic": "خربان",
+      "bangla": "নষ্ট",
+      "english": "Broken",
+      "bn_transliteration": "খারবান",
+      "en_transliteration": "kharbān",
+      "category_ids": [
+        "problems"
+      ]
+    },
+    {
+      "id": "wk-l6-03",
+      "type": "phrase",
+      "arabic": "ما يشتغل",
+      "bangla": "কাজ করছে না",
+      "english": "It doesn't work",
+      "bn_transliteration": "মা ইশতাগিল",
+      "en_transliteration": "mā yishtaghil",
+      "category_ids": [
+        "problems"
+      ]
+    },
+    {
+      "id": "wk-l6-04",
+      "type": "word",
+      "arabic": "غلط",
+      "bangla": "ভুল",
+      "english": "Wrong, a mistake",
+      "bn_transliteration": "গালাত",
+      "en_transliteration": "ghalaṭ",
+      "category_ids": [
+        "problems"
+      ]
+    },
+    {
+      "id": "wk-l6-05",
+      "type": "phrase",
+      "arabic": "أبغى أرجعه",
+      "bangla": "আমি এটা ফেরত দিতে চাই",
+      "english": "I want to return it",
+      "bn_transliteration": "আবগা আরাজ্জিআহ",
+      "en_transliteration": "abgha arajjʿah",
+      "category_ids": [
+        "problems"
+      ]
+    },
+    {
+      "id": "wk-l6-06",
+      "type": "phrase",
+      "arabic": "أبغى أبدله",
+      "bangla": "আমি এটা বদলাতে চাই",
+      "english": "I want to exchange it",
+      "bn_transliteration": "আবগা আবাদ্দিলাহ",
+      "en_transliteration": "abgha abaddlah",
+      "category_ids": [
+        "problems"
+      ]
+    },
+    {
+      "id": "wk-l6-07",
+      "type": "word",
+      "arabic": "ناقص",
+      "bangla": "কম আছে / বাকি",
+      "english": "Missing, short",
+      "bn_transliteration": "নাগিস",
+      "en_transliteration": "nāgiṣ",
+      "category_ids": [
+        "problems"
+      ]
+    },
+    {
+      "id": "wk-l6-08",
+      "type": "word",
+      "arabic": "زعلان",
+      "bangla": "রাগ / মন খারাপ",
+      "english": "Upset",
+      "bn_transliteration": "যালান",
+      "en_transliteration": "zaʿlān",
+      "category_ids": [
+        "problems"
+      ]
+    },
+    {
+      "id": "wk-l6-09",
+      "type": "phrase",
+      "arabic": "لا تزعل",
+      "bangla": "রাগ করবেন না",
+      "english": "Please don't be upset",
+      "bn_transliteration": "লা তিযাল",
+      "en_transliteration": "lā tizʿal",
+      "category_ids": [
+        "problems"
+      ],
+      "note_bn": "রাগী কাস্টমারকে শান্ত করতে। সাথে 'হাক্কাক আলেইনা' (আপনি ঠিক বলছেন)।",
+      "note_en": "To calm an angry customer. Add ḥaggak ʿalēna (you're right)."
+    },
+    {
+      "id": "wk-l6-10",
+      "type": "word",
+      "arabic": "آسفين",
+      "bangla": "আমরা দুঃখিত",
+      "english": "We're sorry",
+      "bn_transliteration": "আসফীন",
+      "en_transliteration": "āsfīn",
+      "category_ids": [
+        "problems"
+      ]
+    },
+    {
+      "id": "wk-l6-11",
+      "type": "phrase",
+      "arabic": "بنحلها",
+      "bangla": "আমরা সমাধান করে দেব",
+      "english": "We'll sort it out",
+      "bn_transliteration": "বিনহিল্লাহা",
+      "en_transliteration": "binḥillha",
+      "category_ids": [
+        "problems"
+      ]
+    },
+    {
+      "id": "wk-l6-12",
+      "type": "phrase",
+      "arabic": "كلم المدير",
+      "bangla": "ম্যানেজারের সাথে কথা বলুন",
+      "english": "Talk to the manager",
+      "bn_transliteration": "কাল্লিম আল-মুদীর",
+      "en_transliteration": "kallim al-mudīr",
+      "category_ids": [
+        "problems"
+      ]
+    },
+    {
+      "id": "wk-l6-13",
+      "type": "word",
+      "arabic": "تأخر",
+      "bangla": "দেরি হয়েছে",
+      "english": "It's late, delayed",
+      "bn_transliteration": "তাআখখার",
+      "en_transliteration": "taʾakhkhar",
+      "category_ids": [
+        "problems"
+      ]
+    },
+    {
+      "id": "wk-l7-01",
+      "type": "word",
+      "arabic": "اليوم",
+      "bangla": "আজ",
+      "english": "Today",
+      "bn_transliteration": "আল-ইয়োম",
+      "en_transliteration": "al-yōm",
+      "category_ids": [
+        "time"
+      ]
+    },
+    {
+      "id": "wk-l7-02",
+      "type": "word",
+      "arabic": "بكرة",
+      "bangla": "আগামীকাল",
+      "english": "Tomorrow",
+      "bn_transliteration": "বুকরা",
+      "en_transliteration": "bukra",
+      "category_ids": [
+        "time"
+      ],
+      "note_bn": "বইয়ে 'গাদান', কিন্তু সৌদিরা বলে 'বুকরা'।",
+      "note_en": "Books say ghadan, but Saudis say bukra."
+    },
+    {
+      "id": "wk-l7-03",
+      "type": "word",
+      "arabic": "أمس",
+      "bangla": "গতকাল",
+      "english": "Yesterday",
+      "bn_transliteration": "আমস",
+      "en_transliteration": "ams",
+      "category_ids": [
+        "time"
+      ]
+    },
+    {
+      "id": "wk-l7-04",
+      "type": "word",
+      "arabic": "بعدين",
+      "bangla": "পরে",
+      "english": "Later",
+      "bn_transliteration": "বা'দেইন",
+      "en_transliteration": "baʿdēn",
+      "category_ids": [
+        "time"
+      ],
+      "note_bn": "সাবধান: 'বা'দেইন' কখনো মানে 'হবে না'।",
+      "note_en": "Careful: sometimes baʿdēn politely means 'not happening'."
+    },
+    {
+      "id": "wk-l7-05",
+      "type": "word",
+      "arabic": "متى؟",
+      "bangla": "কখন?",
+      "english": "When?",
+      "bn_transliteration": "মাতা?",
+      "en_transliteration": "mata?",
+      "category_ids": [
+        "time"
+      ]
+    },
+    {
+      "id": "wk-l7-06",
+      "type": "phrase",
+      "arabic": "الساعة كم؟",
+      "bangla": "কয়টা বাজে?",
+      "english": "What time is it?",
+      "bn_transliteration": "আস-সাআ কাম?",
+      "en_transliteration": "as-sāʿa kam?",
+      "category_ids": [
+        "time"
+      ]
+    },
+    {
+      "id": "wk-l7-07",
+      "type": "phrase",
+      "arabic": "الساعة ثلاث",
+      "bangla": "তিনটা বাজে",
+      "english": "It's three o'clock",
+      "bn_transliteration": "আস-সাআ সালাস",
+      "en_transliteration": "as-sāʿa thalāth",
+      "category_ids": [
+        "time"
+      ],
+      "note_bn": "সময় বলতে সংখ্যার শেষের 'আ' বাদ: সালাসা → সালাস।",
+      "note_en": "For clock times drop the final -a: thalātha → thalāth."
+    },
+    {
+      "id": "wk-l7-08",
+      "type": "phrase",
+      "arabic": "نص ساعة",
+      "bangla": "আধা ঘণ্টা",
+      "english": "Half an hour",
+      "bn_transliteration": "নুস সাআ",
+      "en_transliteration": "nuṣṣ sāʿa",
+      "category_ids": [
+        "time"
+      ]
+    },
+    {
+      "id": "wk-l7-09",
+      "type": "phrase",
+      "arabic": "ربع ساعة",
+      "bangla": "পনেরো মিনিট",
+      "english": "A quarter of an hour",
+      "bn_transliteration": "রুব সাআ",
+      "en_transliteration": "rubʿ sāʿa",
+      "category_ids": [
+        "time"
+      ]
+    },
+    {
+      "id": "wk-l7-10",
+      "type": "word",
+      "arabic": "الصبح",
+      "bangla": "সকাল",
+      "english": "Morning",
+      "bn_transliteration": "আস-সুবহ",
+      "en_transliteration": "aṣ-ṣubḥ",
+      "category_ids": [
+        "time"
+      ]
+    },
+    {
+      "id": "wk-l7-11",
+      "type": "word",
+      "arabic": "الظهر",
+      "bangla": "দুপুর (যোহর)",
+      "english": "Noon",
+      "bn_transliteration": "আদ-দুহর",
+      "en_transliteration": "aḍ-ḍuhr",
+      "category_ids": [
+        "time"
+      ]
+    },
+    {
+      "id": "wk-l7-12",
+      "type": "word",
+      "arabic": "العصر",
+      "bangla": "বিকেল (আসর)",
+      "english": "Afternoon",
+      "bn_transliteration": "আল-আসর",
+      "en_transliteration": "al-ʿaṣr",
+      "category_ids": [
+        "time"
+      ]
+    },
+    {
+      "id": "wk-l7-13",
+      "type": "word",
+      "arabic": "الليل",
+      "bangla": "রাত",
+      "english": "Night",
+      "bn_transliteration": "আল-লেইল",
+      "en_transliteration": "al-lēl",
+      "category_ids": [
+        "time"
+      ]
+    },
+    {
+      "id": "wk-l7-14",
+      "type": "phrase",
+      "arabic": "وقت الصلاة",
+      "bangla": "নামাজের সময়",
+      "english": "Prayer time",
+      "bn_transliteration": "ওয়াগত আস-সালাহ",
+      "en_transliteration": "wagt aṣ-ṣalāh",
+      "category_ids": [
+        "time"
+      ],
+      "note_bn": "নামাজের সময় অনেক দোকান ১৫-২০ মিনিট বন্ধ থাকে।",
+      "note_en": "Many shops close for 15 to 20 minutes at prayer time."
+    },
+    {
+      "id": "wk-l8-01",
+      "type": "phrase",
+      "arabic": "وش صار؟",
+      "bangla": "কী হয়েছে?",
+      "english": "What happened?",
+      "bn_transliteration": "ওশ সার?",
+      "en_transliteration": "wesh ṣār?",
+      "category_ids": [
+        "boss"
+      ]
+    },
+    {
+      "id": "wk-l8-02",
+      "type": "phrase",
+      "arabic": "وش أسوي؟",
+      "bangla": "আমি কী করব?",
+      "english": "What should I do?",
+      "bn_transliteration": "ওশ আসাওয়ি?",
+      "en_transliteration": "wesh asawwi?",
+      "category_ids": [
+        "boss"
+      ],
+      "note_bn": "'সাওয়া' মানে করা — সৌদিতে খুব বলে।",
+      "note_en": "sawwa means 'to do', very common in Saudi."
+    },
+    {
+      "id": "wk-l8-03",
+      "type": "word",
+      "arabic": "ساعدني",
+      "bangla": "আমাকে সাহায্য করো",
+      "english": "Help me",
+      "bn_transliteration": "সাইদনি",
+      "en_transliteration": "sāʿidni",
+      "category_ids": [
+        "boss"
+      ]
+    },
+    {
+      "id": "wk-l8-04",
+      "type": "phrase",
+      "arabic": "مين المسؤول؟",
+      "bangla": "দায়িত্বে কে?",
+      "english": "Who is in charge?",
+      "bn_transliteration": "মীন আল-মাসউল?",
+      "en_transliteration": "mīn al-masʾūl?",
+      "category_ids": [
+        "boss"
+      ]
+    },
+    {
+      "id": "wk-l8-05",
+      "type": "phrase",
+      "arabic": "أنا تعبان",
+      "bangla": "আমি ক্লান্ত / অসুস্থ",
+      "english": "I'm tired / unwell",
+      "bn_transliteration": "আনা তাবান",
+      "en_transliteration": "ana taʿbān",
+      "category_ids": [
+        "boss"
+      ],
+      "note_bn": "'তাবান' মানে ক্লান্ত, আবার অসুস্থও।",
+      "note_en": "taʿbān means tired, and also sick."
+    },
+    {
+      "id": "wk-l8-06",
+      "type": "word",
+      "arabic": "استراحة",
+      "bangla": "বিরতি",
+      "english": "Break",
+      "bn_transliteration": "ইসতিরাহা",
+      "en_transliteration": "istirāḥa",
+      "category_ids": [
+        "boss"
+      ]
+    },
+    {
+      "id": "wk-l8-07",
+      "type": "phrase",
+      "arabic": "بروح أتغدى",
+      "bangla": "আমি দুপুরের খাবার খেতে যাচ্ছি",
+      "english": "I'm going for lunch",
+      "bn_transliteration": "বারূহ আতগাদ্দা",
+      "en_transliteration": "barūḥ atghadda",
+      "category_ids": [
+        "boss"
+      ]
+    },
+    {
+      "id": "wk-l8-08",
+      "type": "phrase",
+      "arabic": "ممكن أصلي؟",
+      "bangla": "আমি কি নামাজ পড়তে পারি?",
+      "english": "May I go and pray?",
+      "bn_transliteration": "মুমকিন আসাল্লি?",
+      "en_transliteration": "mumkin aṣalli?",
+      "category_ids": [
+        "boss"
+      ]
+    },
+    {
+      "id": "wk-l8-09",
+      "type": "phrase",
+      "arabic": "مين معي؟",
+      "bangla": "আমার সাথে কে (কাজ করবে)?",
+      "english": "Who's working with me?",
+      "bn_transliteration": "মীন মাঈ?",
+      "en_transliteration": "mīn maʿi?",
+      "category_ids": [
+        "boss"
+      ]
+    },
+    {
+      "id": "wk-l8-10",
+      "type": "phrase",
+      "arabic": "الشغل خلص",
+      "bangla": "কাজ শেষ",
+      "english": "The work is finished",
+      "bn_transliteration": "আশ-শুগুল খিলাস",
+      "en_transliteration": "ash-shughul khiliṣ",
+      "category_ids": [
+        "boss"
+      ]
+    },
+    {
+      "id": "wk-l8-11",
+      "type": "phrase",
+      "arabic": "نشوفك بكرة",
+      "bangla": "কাল দেখা হবে",
+      "english": "See you tomorrow",
+      "bn_transliteration": "নিশূফাক বুকরা",
+      "en_transliteration": "nishūfak bukra",
+      "category_ids": [
+        "boss"
+      ]
+    }
+  ],
+  "course": {
+    "id": "work-arabic",
+    "title_bn": "কাজের আরবি",
+    "title_en": "Work Arabic",
+    "description_bn": "বসের নির্দেশ বোঝা, কাস্টমার সামলানো, দাম ও পণ্য, অভিযোগ, 'অপেক্ষা করুন', 'শেষ', 'আমি দেখছি' — কাজে যা রোজ লাগে।",
+    "description_en": "Understand your boss's instructions, serve customers, talk prices and products, handle complaints, and say \"wait\", \"finished\" and \"I'll check\".",
+    "type": "topic",
+    "is_free": true,
+    "level": "beginner",
+    "languages": [
+      "bn",
+      "en"
+    ],
+    "lessons": [
+      {
+        "id": "work-1",
+        "title_bn": "পাঠ ১: বসের নির্দেশ",
+        "title_en": "Lesson 1: Your boss's instructions",
+        "category_id": "boss",
+        "item_ids": [
+          "wk-l1-01",
+          "wk-l1-02",
+          "wk-l1-03",
+          "wk-l1-04",
+          "wk-l1-05",
+          "wk-l1-06",
+          "wk-l1-07",
+          "wk-l1-08",
+          "wk-l1-09",
+          "wk-l1-10",
+          "wk-l1-11",
+          "wk-l1-12",
+          "wk-l1-13"
+        ],
+        "order": 10,
+        "is_free": true
+      },
+      {
+        "id": "work-2",
+        "title_bn": "পাঠ ২: কাজের কথা",
+        "title_en": "Lesson 2: Talking about the work",
+        "category_id": "boss",
+        "item_ids": [
+          "wk-l2-01",
+          "wk-l2-02",
+          "wk-l2-03",
+          "wk-l2-04",
+          "wk-l2-05",
+          "wk-l2-06",
+          "wk-l2-07",
+          "wk-l2-08",
+          "wk-l2-09",
+          "wk-l2-10",
+          "wk-l2-11",
+          "wk-l2-12",
+          "wk-l2-13"
+        ],
+        "order": 20,
+        "is_free": true
+      },
+      {
+        "id": "work-3",
+        "title_bn": "পাঠ ৩: বসকে উত্তর দেওয়া",
+        "title_en": "Lesson 3: Answering your boss",
+        "category_id": "boss",
+        "item_ids": [
+          "wk-l3-01",
+          "wk-l3-02",
+          "wk-l3-03",
+          "wk-l3-04",
+          "wk-l3-05",
+          "wk-l3-06",
+          "wk-l3-07",
+          "wk-l3-08",
+          "wk-l3-09",
+          "wk-l3-10",
+          "wk-l3-11",
+          "wk-l3-12",
+          "wk-l3-13",
+          "wk-l3-14"
+        ],
+        "order": 30,
+        "is_free": true
+      },
+      {
+        "id": "work-4",
+        "title_bn": "পাঠ ৪: কাস্টমারের সাথে",
+        "title_en": "Lesson 4: With customers",
+        "category_id": "customers",
+        "item_ids": [
+          "wk-l4-01",
+          "wk-l4-02",
+          "wk-l4-03",
+          "wk-l4-04",
+          "wk-l4-05",
+          "wk-l4-06",
+          "wk-l4-07",
+          "wk-l4-08",
+          "wk-l4-09",
+          "wk-l4-10",
+          "wk-l4-11",
+          "wk-l4-12"
+        ],
+        "order": 40,
+        "is_free": true
+      },
+      {
+        "id": "work-5",
+        "title_bn": "পাঠ ৫: দাম ও পণ্য",
+        "title_en": "Lesson 5: Prices and products",
+        "category_id": "customers",
+        "item_ids": [
+          "wk-l5-01",
+          "wk-l5-02",
+          "wk-l5-03",
+          "wk-l5-04",
+          "wk-l5-05",
+          "wk-l5-06",
+          "wk-l5-07",
+          "wk-l5-08",
+          "wk-l5-09",
+          "wk-l5-10",
+          "wk-l5-11",
+          "wk-l5-12",
+          "wk-l5-13",
+          "wk-l5-14"
+        ],
+        "order": 50,
+        "is_free": true
+      },
+      {
+        "id": "work-6",
+        "title_bn": "পাঠ ৬: অভিযোগ সামলানো",
+        "title_en": "Lesson 6: Handling complaints",
+        "category_id": "problems",
+        "item_ids": [
+          "wk-l6-01",
+          "wk-l6-02",
+          "wk-l6-03",
+          "wk-l6-04",
+          "wk-l6-05",
+          "wk-l6-06",
+          "wk-l6-07",
+          "wk-l6-08",
+          "wk-l6-09",
+          "wk-l6-10",
+          "wk-l6-11",
+          "wk-l6-12",
+          "wk-l6-13"
+        ],
+        "order": 60,
+        "is_free": true
+      },
+      {
+        "id": "work-7",
+        "title_bn": "পাঠ ৭: সময় ও অপেক্ষা",
+        "title_en": "Lesson 7: Time and waiting",
+        "category_id": "time",
+        "item_ids": [
+          "wk-l7-01",
+          "wk-l7-02",
+          "wk-l7-03",
+          "wk-l7-04",
+          "wk-l7-05",
+          "wk-l7-06",
+          "wk-l7-07",
+          "wk-l7-08",
+          "wk-l7-09",
+          "wk-l7-10",
+          "wk-l7-11",
+          "wk-l7-12",
+          "wk-l7-13",
+          "wk-l7-14"
+        ],
+        "order": 70,
+        "is_free": true
+      },
+      {
+        "id": "work-8",
+        "title_bn": "পাঠ ৮: সহকর্মীর সাথে",
+        "title_en": "Lesson 8: With coworkers",
+        "category_id": "boss",
+        "item_ids": [
+          "wk-l8-01",
+          "wk-l8-02",
+          "wk-l8-03",
+          "wk-l8-04",
+          "wk-l8-05",
+          "wk-l8-06",
+          "wk-l8-07",
+          "wk-l8-08",
+          "wk-l8-09",
+          "wk-l8-10",
+          "wk-l8-11"
+        ],
+        "order": 80,
+        "is_free": true
+      }
+    ]
+  }
+}

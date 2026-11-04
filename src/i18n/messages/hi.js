@@ -43,6 +43,7 @@ export default {
   "courseType.phrase": "वाक्य कोर्स",
   "courseType.topic": "विषय कोर्स",
   "courseType.mixed": "मिश्रित कोर्स",
+  "courseType.reading": "पढ़ना सीखने का कोर्स",
   "audio.listen": "उच्चारण सुनें",
   "audio.noVoice": "इस डिवाइस में अरबी आवाज़ नहीं है",
   "error.contentLoad": "पाठ लोड नहीं हो सके। इंटरनेट कनेक्शन जाँचें और फिर कोशिश करें।",

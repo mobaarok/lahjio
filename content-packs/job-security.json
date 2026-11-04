@@ -1,0 +1,500 @@
+{
+  "name": "Job pack: Security guards",
+  "categories": [
+    {
+      "id": "security",
+      "name_en": "Security",
+      "name_bn": "সিকিউরিটি",
+      "order": 210
+    }
+  ],
+  "items": [
+    {
+      "id": "js-l1-01",
+      "type": "phrase",
+      "arabic": "هويتك لو سمحت",
+      "bangla": "আপনার আইডি, প্লিজ",
+      "english": "Your ID, please",
+      "bn_transliteration": "হুউইয়্যাতাক লাও সামাহত",
+      "en_transliteration": "huwiyyatak law samaḥt",
+      "category_ids": [
+        "security"
+      ]
+    },
+    {
+      "id": "js-l1-02",
+      "type": "phrase",
+      "arabic": "مين تبي؟",
+      "bangla": "কার কাছে এসেছেন?",
+      "english": "Who are you here to see?",
+      "bn_transliteration": "মীন তিবি?",
+      "en_transliteration": "mīn tibi?",
+      "category_ids": [
+        "security"
+      ]
+    },
+    {
+      "id": "js-l1-03",
+      "type": "phrase",
+      "arabic": "عندك موعد؟",
+      "bangla": "অ্যাপয়েন্টমেন্ট আছে?",
+      "english": "Do you have an appointment?",
+      "bn_transliteration": "ইনদাক মাওইদ?",
+      "en_transliteration": "ʿindak mawʿid?",
+      "category_ids": [
+        "security"
+      ]
+    },
+    {
+      "id": "js-l1-04",
+      "type": "phrase",
+      "arabic": "سجل اسمك",
+      "bangla": "নাম লিখুন",
+      "english": "Sign in with your name",
+      "bn_transliteration": "সাজ্জিল ইসমাক",
+      "en_transliteration": "sajjil ismak",
+      "category_ids": [
+        "security"
+      ]
+    },
+    {
+      "id": "js-l1-05",
+      "type": "phrase",
+      "arabic": "للموظفين بس",
+      "bangla": "শুধু কর্মীদের জন্য",
+      "english": "Staff only",
+      "bn_transliteration": "লিল-মুওয়াযযাফীন বাস",
+      "en_transliteration": "lil-muwaẓẓafīn bass",
+      "category_ids": [
+        "security"
+      ]
+    },
+    {
+      "id": "js-l1-06",
+      "type": "phrase",
+      "arabic": "انتظر هنا",
+      "bangla": "এখানে অপেক্ষা করুন",
+      "english": "Wait here",
+      "bn_transliteration": "ইনতাদির হিনা",
+      "en_transliteration": "intaẓir hina",
+      "category_ids": [
+        "security"
+      ]
+    },
+    {
+      "id": "js-l1-07",
+      "type": "phrase",
+      "arabic": "تفضل ادخل",
+      "bangla": "ভেতরে আসুন",
+      "english": "Please go in",
+      "bn_transliteration": "তাফাদ্দাল উদখুল",
+      "en_transliteration": "tfaḍḍal udkhul",
+      "category_ids": [
+        "security"
+      ]
+    },
+    {
+      "id": "js-l1-08",
+      "type": "phrase",
+      "arabic": "الدخول من هنا",
+      "bangla": "ঢোকার পথ এদিকে",
+      "english": "The entrance is this way",
+      "bn_transliteration": "আদ-দুখূল মিন হিনা",
+      "en_transliteration": "ad-dukhūl min hina",
+      "category_ids": [
+        "security"
+      ]
+    },
+    {
+      "id": "js-l2-01",
+      "type": "phrase",
+      "arabic": "الموقف مليان",
+      "bangla": "পার্কিং ভরা",
+      "english": "The car park is full",
+      "bn_transliteration": "আল-মাওগিফ মালইয়ান",
+      "en_transliteration": "al-mawgif malyān",
+      "category_ids": [
+        "security"
+      ]
+    },
+    {
+      "id": "js-l2-02",
+      "type": "phrase",
+      "arabic": "وقف هناك",
+      "bangla": "ওখানে পার্ক করুন",
+      "english": "Park over there",
+      "bn_transliteration": "ওয়াগগিফ হিনাক",
+      "en_transliteration": "wagguf hnāk",
+      "category_ids": [
+        "security"
+      ]
+    },
+    {
+      "id": "js-l2-03",
+      "type": "phrase",
+      "arabic": "لوحة السيارة",
+      "bangla": "গাড়ির নাম্বার প্লেট",
+      "english": "Number plate",
+      "bn_transliteration": "লোহাত আস-সাইয়ারা",
+      "en_transliteration": "lōḥat as-sayyāra",
+      "category_ids": [
+        "security"
+      ]
+    },
+    {
+      "id": "js-l2-04",
+      "type": "phrase",
+      "arabic": "افتح الشنطة",
+      "bangla": "ডিকি খুলুন",
+      "english": "Open the boot",
+      "bn_transliteration": "ইফতাহ আশ-শানতা",
+      "en_transliteration": "iftaḥ ash-shanṭa",
+      "category_ids": [
+        "security"
+      ]
+    },
+    {
+      "id": "js-l2-05",
+      "type": "phrase",
+      "arabic": "البوابة مسكرة",
+      "bangla": "গেট বন্ধ",
+      "english": "The gate is closed",
+      "bn_transliteration": "আল-বাওয়াবা মুসাক্কারা",
+      "en_transliteration": "al-bawwāba msakkara",
+      "category_ids": [
+        "security"
+      ]
+    },
+    {
+      "id": "js-l2-06",
+      "type": "word",
+      "arabic": "الكرت",
+      "bangla": "কার্ড (অ্যাক্সেস)",
+      "english": "The access card",
+      "bn_transliteration": "আল-কারত",
+      "en_transliteration": "al-kart",
+      "category_ids": [
+        "security"
+      ]
+    },
+    {
+      "id": "js-l2-07",
+      "type": "phrase",
+      "arabic": "ممنوع الوقوف هنا",
+      "bangla": "এখানে দাঁড়ানো নিষেধ",
+      "english": "No stopping here",
+      "bn_transliteration": "মামনূ আল-উগূফ হিনা",
+      "en_transliteration": "mamnūʿ al-wugūf hina",
+      "category_ids": [
+        "security"
+      ]
+    },
+    {
+      "id": "js-l3-01",
+      "type": "word",
+      "arabic": "المناوبة",
+      "bangla": "শিফট / ডিউটি",
+      "english": "The shift",
+      "bn_transliteration": "আল-মুনাওয়াবা",
+      "en_transliteration": "al-munāwaba",
+      "category_ids": [
+        "security"
+      ]
+    },
+    {
+      "id": "js-l3-02",
+      "type": "phrase",
+      "arabic": "مناوبة ليل",
+      "bangla": "রাতের শিফট",
+      "english": "Night shift",
+      "bn_transliteration": "মুনাওয়াবাত লেইল",
+      "en_transliteration": "munāwabat lēl",
+      "category_ids": [
+        "security"
+      ]
+    },
+    {
+      "id": "js-l3-03",
+      "type": "word",
+      "arabic": "استلم",
+      "bangla": "দায়িত্ব নাও",
+      "english": "Take over (the shift)",
+      "bn_transliteration": "ইসতিলিম",
+      "en_transliteration": "istilim",
+      "category_ids": [
+        "security"
+      ]
+    },
+    {
+      "id": "js-l3-04",
+      "type": "phrase",
+      "arabic": "سلم المناوبة",
+      "bangla": "শিফট বুঝিয়ে দাও",
+      "english": "Hand over the shift",
+      "bn_transliteration": "সাল্লিম আল-মুনাওয়াবা",
+      "en_transliteration": "sallim al-munāwaba",
+      "category_ids": [
+        "security"
+      ]
+    },
+    {
+      "id": "js-l3-05",
+      "type": "word",
+      "arabic": "التقرير",
+      "bangla": "রিপোর্ট",
+      "english": "The report",
+      "bn_transliteration": "আত-তাগরীর",
+      "en_transliteration": "at-tagrīr",
+      "category_ids": [
+        "security"
+      ]
+    },
+    {
+      "id": "js-l3-06",
+      "type": "word",
+      "arabic": "الكاميرات",
+      "bangla": "ক্যামেরা",
+      "english": "The cameras",
+      "bn_transliteration": "আল-কামিরাত",
+      "en_transliteration": "al-kāmirāt",
+      "category_ids": [
+        "security"
+      ]
+    },
+    {
+      "id": "js-l3-07",
+      "type": "phrase",
+      "arabic": "كل شي تمام",
+      "bangla": "সব ঠিক আছে",
+      "english": "Everything's fine",
+      "bn_transliteration": "কিল্ল শাই তামাম",
+      "en_transliteration": "kill shay tamām",
+      "category_ids": [
+        "security"
+      ]
+    },
+    {
+      "id": "js-l3-08",
+      "type": "phrase",
+      "arabic": "صار شي؟",
+      "bangla": "কিছু হয়েছে?",
+      "english": "Did anything happen?",
+      "bn_transliteration": "সার শাই?",
+      "en_transliteration": "ṣār shay?",
+      "category_ids": [
+        "security"
+      ]
+    },
+    {
+      "id": "js-l3-09",
+      "type": "phrase",
+      "arabic": "أحد دخل؟",
+      "bangla": "কেউ ঢুকেছে?",
+      "english": "Did anyone come in?",
+      "bn_transliteration": "আহাদ দাখাল?",
+      "en_transliteration": "aḥad dakhal?",
+      "category_ids": [
+        "security"
+      ]
+    },
+    {
+      "id": "js-l3-10",
+      "type": "word",
+      "arabic": "المشرف",
+      "bangla": "সুপারভাইজার",
+      "english": "The supervisor",
+      "bn_transliteration": "আল-মুশরিফ",
+      "en_transliteration": "al-mushrif",
+      "category_ids": [
+        "security"
+      ]
+    },
+    {
+      "id": "js-l4-01",
+      "type": "word",
+      "arabic": "حريق",
+      "bangla": "আগুন",
+      "english": "Fire",
+      "bn_transliteration": "হারীগ",
+      "en_transliteration": "ḥarīg",
+      "category_ids": [
+        "security"
+      ]
+    },
+    {
+      "id": "js-l4-02",
+      "type": "phrase",
+      "arabic": "اطلعوا برا",
+      "bangla": "সবাই বাইরে যান",
+      "english": "Everyone get out",
+      "bn_transliteration": "ইতলাউ বাররা",
+      "en_transliteration": "iṭlaʿu barra",
+      "category_ids": [
+        "security"
+      ]
+    },
+    {
+      "id": "js-l4-03",
+      "type": "phrase",
+      "arabic": "الدفاع المدني",
+      "bangla": "সিভিল ডিফেন্স (ফায়ার সার্ভিস)",
+      "english": "Civil Defence (fire service)",
+      "bn_transliteration": "আদ-দিফা আল-মাদানি",
+      "en_transliteration": "ad-difāʿ al-madani",
+      "category_ids": [
+        "security"
+      ],
+      "note_bn": "ফায়ার সার্ভিস: ৯৯৮। পুলিশ: ৯৯৯। সব জরুরি: ৯১১।",
+      "note_en": "Fire: 998. Police: 999. Any emergency: 911."
+    },
+    {
+      "id": "js-l4-04",
+      "type": "phrase",
+      "arabic": "اتصل بالشرطة",
+      "bangla": "পুলিশকে ফোন করো",
+      "english": "Call the police",
+      "bn_transliteration": "ইত্তাসিল বিশ-শুরতা",
+      "en_transliteration": "ittaṣil bish-shurṭa",
+      "category_ids": [
+        "security"
+      ]
+    },
+    {
+      "id": "js-l4-05",
+      "type": "word",
+      "arabic": "حرامي",
+      "bangla": "চোর",
+      "english": "Thief",
+      "bn_transliteration": "হারামি",
+      "en_transliteration": "ḥarāmi",
+      "category_ids": [
+        "security"
+      ]
+    },
+    {
+      "id": "js-l4-06",
+      "type": "phrase",
+      "arabic": "فيه أحد تعبان",
+      "bangla": "একজন অসুস্থ হয়ে পড়েছে",
+      "english": "Someone is unwell",
+      "bn_transliteration": "ফি আহাদ তাবান",
+      "en_transliteration": "fīh aḥad taʿbān",
+      "category_ids": [
+        "security"
+      ]
+    },
+    {
+      "id": "js-l4-07",
+      "type": "phrase",
+      "arabic": "لا تخاف",
+      "bangla": "ভয় পাবেন না",
+      "english": "Don't be afraid",
+      "bn_transliteration": "লা তিখাফ",
+      "en_transliteration": "lā tkhāf",
+      "category_ids": [
+        "security"
+      ]
+    },
+    {
+      "id": "js-l4-08",
+      "type": "word",
+      "arabic": "اهدأ",
+      "bangla": "শান্ত হোন",
+      "english": "Calm down",
+      "bn_transliteration": "ইহদা",
+      "en_transliteration": "ihdaʾ",
+      "category_ids": [
+        "security"
+      ]
+    }
+  ],
+  "course": {
+    "id": "job-security",
+    "title_bn": "চাকরির প্যাক: সিকিউরিটি গার্ড",
+    "title_en": "Job pack: Security guards",
+    "description_bn": "গেট ও বিল্ডিংয়ের গার্ডদের জন্য: লোক চেক করা, গাড়ি ও পার্কিং, ডিউটি বদল আর জরুরি অবস্থা।",
+    "description_en": "For gate and building guards: checking people, cars and parking, shift handover and emergencies.",
+    "type": "topic",
+    "is_free": true,
+    "level": "beginner",
+    "languages": [
+      "bn",
+      "en"
+    ],
+    "lessons": [
+      {
+        "id": "security-1",
+        "title_bn": "পাঠ ১: গেটে চেক করা",
+        "title_en": "Lesson 1: Checking people at the gate",
+        "category_id": "security",
+        "item_ids": [
+          "js-l1-01",
+          "js-l1-02",
+          "js-l1-03",
+          "js-l1-04",
+          "js-l1-05",
+          "js-l1-06",
+          "js-l1-07",
+          "js-l1-08"
+        ],
+        "order": 10,
+        "is_free": true
+      },
+      {
+        "id": "security-2",
+        "title_bn": "পাঠ ২: গাড়ি ও পার্কিং",
+        "title_en": "Lesson 2: Cars and parking",
+        "category_id": "security",
+        "item_ids": [
+          "js-l2-01",
+          "js-l2-02",
+          "js-l2-03",
+          "js-l2-04",
+          "js-l2-05",
+          "js-l2-06",
+          "js-l2-07"
+        ],
+        "order": 20,
+        "is_free": true
+      },
+      {
+        "id": "security-3",
+        "title_bn": "পাঠ ৩: ডিউটি ও রিপোর্ট",
+        "title_en": "Lesson 3: Shifts and reports",
+        "category_id": "security",
+        "item_ids": [
+          "js-l3-01",
+          "js-l3-02",
+          "js-l3-03",
+          "js-l3-04",
+          "js-l3-05",
+          "js-l3-06",
+          "js-l3-07",
+          "js-l3-08",
+          "js-l3-09",
+          "js-l3-10"
+        ],
+        "order": 30,
+        "is_free": true
+      },
+      {
+        "id": "security-4",
+        "title_bn": "পাঠ ৪: জরুরি অবস্থা",
+        "title_en": "Lesson 4: Emergencies",
+        "category_id": "security",
+        "item_ids": [
+          "js-l4-01",
+          "js-l4-02",
+          "js-l4-03",
+          "js-l4-04",
+          "js-l4-05",
+          "js-l4-06",
+          "js-l4-07",
+          "js-l4-08"
+        ],
+        "order": 40,
+        "is_free": true
+      }
+    ]
+  }
+}

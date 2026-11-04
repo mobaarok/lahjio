@@ -1,0 +1,1530 @@
+{
+  "name": "Daily Life Arabic",
+  "categories": [
+    {
+      "id": "transport",
+      "name_en": "Taxi and delivery",
+      "name_bn": "ট্যাক্সি ও ডেলিভারি",
+      "order": 110
+    },
+    {
+      "id": "shopping",
+      "name_en": "Shopping and market",
+      "name_bn": "বাজার ও কেনাকাটা",
+      "order": 120
+    },
+    {
+      "id": "food",
+      "name_en": "Restaurant and food",
+      "name_bn": "রেস্টুরেন্ট ও খাবার",
+      "order": 130
+    },
+    {
+      "id": "health",
+      "name_en": "Pharmacy and clinic",
+      "name_bn": "ফার্মেসি ও ক্লিনিক",
+      "order": 140
+    },
+    {
+      "id": "phone-bank",
+      "name_en": "Phone, bank and transfers",
+      "name_bn": "ফোন, ব্যাংক ও টাকা পাঠানো",
+      "order": 150
+    }
+  ],
+  "items": [
+    {
+      "id": "dl-l1-01",
+      "type": "phrase",
+      "arabic": "وين تبي؟",
+      "bangla": "কোথায় যাবেন?",
+      "english": "Where do you want to go?",
+      "bn_transliteration": "ওয়েন তিবি?",
+      "en_transliteration": "wēn tibi?",
+      "category_ids": [
+        "transport"
+      ],
+      "note_bn": "ড্রাইভারের প্রথম প্রশ্ন। 'তিবি' = 'তাবগা' (চান) — দুটোই সৌদি।",
+      "note_en": "The driver's first question. tibi and tabgha both mean 'you want'."
+    },
+    {
+      "id": "dl-l1-02",
+      "type": "phrase",
+      "arabic": "ودني هنا",
+      "bangla": "আমাকে এখানে নিয়ে চলুন",
+      "english": "Take me here",
+      "bn_transliteration": "ওয়াদ্দিনি হিনা",
+      "en_transliteration": "waddini hina",
+      "category_ids": [
+        "transport"
+      ],
+      "note_bn": "ফোনে ম্যাপ দেখিয়ে বলুন।",
+      "note_en": "Say it while showing the map on your phone."
+    },
+    {
+      "id": "dl-l1-03",
+      "type": "phrase",
+      "arabic": "كم توصلني؟",
+      "bangla": "নিয়ে যেতে কত নেবেন?",
+      "english": "How much to take me?",
+      "bn_transliteration": "কাম তিওয়াসসিলনি?",
+      "en_transliteration": "kam tiwaṣṣilni?",
+      "category_ids": [
+        "transport"
+      ],
+      "note_bn": "মিটার না থাকলে ওঠার আগেই দাম ঠিক করুন।",
+      "note_en": "If there's no meter, agree the price before you get in."
+    },
+    {
+      "id": "dl-l1-04",
+      "type": "phrase",
+      "arabic": "شغل العداد",
+      "bangla": "মিটার চালু করুন",
+      "english": "Turn on the meter",
+      "bn_transliteration": "শাগগিল আল-আদ্দাদ",
+      "en_transliteration": "shaghghil al-ʿaddād",
+      "category_ids": [
+        "transport"
+      ]
+    },
+    {
+      "id": "dl-l1-05",
+      "type": "word",
+      "arabic": "اللوكيشن",
+      "bangla": "লোকেশন",
+      "english": "The location (pin)",
+      "bn_transliteration": "আল-লোকেশন",
+      "en_transliteration": "al-lokēshen",
+      "category_ids": [
+        "transport"
+      ],
+      "note_bn": "সৌদিরা ইংরেজি 'লোকেশন' শব্দই বলে।",
+      "note_en": "Saudis use the English word 'location'."
+    },
+    {
+      "id": "dl-l1-06",
+      "type": "phrase",
+      "arabic": "أرسل لي اللوكيشن",
+      "bangla": "আমাকে লোকেশন পাঠান",
+      "english": "Send me the location",
+      "bn_transliteration": "আরসিল লি আল-লোকেশন",
+      "en_transliteration": "arsil li l-lokēshen",
+      "category_ids": [
+        "transport"
+      ]
+    },
+    {
+      "id": "dl-l1-07",
+      "type": "phrase",
+      "arabic": "نزلني هنا",
+      "bangla": "আমাকে এখানে নামিয়ে দিন",
+      "english": "Drop me here",
+      "bn_transliteration": "নাযযিলনি হিনা",
+      "en_transliteration": "nazzilni hina",
+      "category_ids": [
+        "transport"
+      ]
+    },
+    {
+      "id": "dl-l1-08",
+      "type": "phrase",
+      "arabic": "على جنب",
+      "bangla": "পাশে (রাস্তার ধারে)",
+      "english": "To the side",
+      "bn_transliteration": "আলা জাম্ব",
+      "en_transliteration": "ʿala janb",
+      "category_ids": [
+        "transport"
+      ]
+    },
+    {
+      "id": "dl-l1-09",
+      "type": "word",
+      "arabic": "زحمة",
+      "bangla": "জ্যাম / ভিড়",
+      "english": "Traffic, crowded",
+      "bn_transliteration": "যাহমা",
+      "en_transliteration": "zaḥma",
+      "category_ids": [
+        "transport"
+      ],
+      "note_bn": "রিয়াদে সকাল ৭-৯টা ও বিকেল ৪-৭টা খুব জ্যাম।",
+      "note_en": "Riyadh traffic is worst around 7 to 9 am and 4 to 7 pm."
+    },
+    {
+      "id": "dl-l1-10",
+      "type": "word",
+      "arabic": "المشوار",
+      "bangla": "যাত্রা / ট্রিপ",
+      "english": "The trip, ride",
+      "bn_transliteration": "আল-মিশওয়ার",
+      "en_transliteration": "al-mishwār",
+      "category_ids": [
+        "transport"
+      ]
+    },
+    {
+      "id": "dl-l1-11",
+      "type": "phrase",
+      "arabic": "كم باقي؟",
+      "bangla": "আর কতক্ষণ বাকি?",
+      "english": "How much longer?",
+      "bn_transliteration": "কাম বাগি?",
+      "en_transliteration": "kam bāgi?",
+      "category_ids": [
+        "transport"
+      ]
+    },
+    {
+      "id": "dl-l2-01",
+      "type": "phrase",
+      "arabic": "الطلب وصل",
+      "bangla": "অর্ডার এসে গেছে",
+      "english": "The order has arrived",
+      "bn_transliteration": "আত-তালাব উইসিল",
+      "en_transliteration": "aṭ-ṭalab wiṣil",
+      "category_ids": [
+        "transport"
+      ]
+    },
+    {
+      "id": "dl-l2-02",
+      "type": "phrase",
+      "arabic": "أنا عند الباب",
+      "bangla": "আমি দরজার সামনে",
+      "english": "I'm at the door",
+      "bn_transliteration": "আনা ইনদ আল-বাব",
+      "en_transliteration": "ana ʿind al-bāb",
+      "category_ids": [
+        "transport"
+      ]
+    },
+    {
+      "id": "dl-l2-03",
+      "type": "phrase",
+      "arabic": "أنا تحت",
+      "bangla": "আমি নিচে",
+      "english": "I'm downstairs",
+      "bn_transliteration": "আনা তাহত",
+      "en_transliteration": "ana taḥt",
+      "category_ids": [
+        "transport"
+      ]
+    },
+    {
+      "id": "dl-l2-04",
+      "type": "word",
+      "arabic": "انزل",
+      "bangla": "নিচে আসুন",
+      "english": "Come down",
+      "bn_transliteration": "ইনযিল",
+      "en_transliteration": "inzil",
+      "category_ids": [
+        "transport"
+      ]
+    },
+    {
+      "id": "dl-l2-05",
+      "type": "phrase",
+      "arabic": "كم الدور؟",
+      "bangla": "কয় তলা?",
+      "english": "Which floor?",
+      "bn_transliteration": "কাম আদ-দোর?",
+      "en_transliteration": "kam ad-dōr?",
+      "category_ids": [
+        "transport"
+      ],
+      "note_bn": "'দোর' মানে তলা। নিচতলা = 'আরদি'।",
+      "note_en": "dōr means floor. Ground floor is arḍi."
+    },
+    {
+      "id": "dl-l2-06",
+      "type": "word",
+      "arabic": "الشقة",
+      "bangla": "ফ্ল্যাট",
+      "english": "The flat",
+      "bn_transliteration": "আশ-শাগগা",
+      "en_transliteration": "ash-shagga",
+      "category_ids": [
+        "transport"
+      ]
+    },
+    {
+      "id": "dl-l2-07",
+      "type": "word",
+      "arabic": "العمارة",
+      "bangla": "বিল্ডিং",
+      "english": "The building",
+      "bn_transliteration": "আল-ইমারা",
+      "en_transliteration": "al-ʿimāra",
+      "category_ids": [
+        "transport"
+      ]
+    },
+    {
+      "id": "dl-l2-08",
+      "type": "word",
+      "arabic": "البوابة",
+      "bangla": "গেট",
+      "english": "The gate",
+      "bn_transliteration": "আল-বাওয়াবা",
+      "en_transliteration": "al-bawwāba",
+      "category_ids": [
+        "transport"
+      ]
+    },
+    {
+      "id": "dl-l2-09",
+      "type": "word",
+      "arabic": "الحي",
+      "bangla": "এলাকা / মহল্লা",
+      "english": "The district, neighbourhood",
+      "bn_transliteration": "আল-হাই",
+      "en_transliteration": "al-ḥayy",
+      "category_ids": [
+        "transport"
+      ],
+      "note_bn": "রিয়াদ ও জেদ্দার ঠিকানা 'হাই' দিয়ে বলে, যেমন হাই আল-মালাজ।",
+      "note_en": "Addresses go by district, like ḥayy al-malaz."
+    },
+    {
+      "id": "dl-l2-10",
+      "type": "phrase",
+      "arabic": "جنب المسجد",
+      "bangla": "মসজিদের পাশে",
+      "english": "Next to the mosque",
+      "bn_transliteration": "জাম্ব আল-মাসজিদ",
+      "en_transliteration": "janb al-masjid",
+      "category_ids": [
+        "transport"
+      ],
+      "note_bn": "ঠিকানা বোঝাতে সৌদিরা মসজিদ বা দোকানের নাম বলে।",
+      "note_en": "Saudis give directions by nearby mosques and shops."
+    },
+    {
+      "id": "dl-l2-11",
+      "type": "phrase",
+      "arabic": "اتصل علي",
+      "bangla": "আমাকে ফোন করুন",
+      "english": "Call me",
+      "bn_transliteration": "ইত্তাসিল আলাই",
+      "en_transliteration": "ittaṣil ʿalayy",
+      "category_ids": [
+        "transport"
+      ]
+    },
+    {
+      "id": "dl-l2-12",
+      "type": "phrase",
+      "arabic": "ما رد",
+      "bangla": "ফোন ধরেনি",
+      "english": "He didn't answer",
+      "bn_transliteration": "মা রাদ্দ",
+      "en_transliteration": "mā radd",
+      "category_ids": [
+        "transport"
+      ]
+    },
+    {
+      "id": "dl-l3-01",
+      "type": "word",
+      "arabic": "بقالة",
+      "bangla": "মুদি দোকান",
+      "english": "Grocery shop",
+      "bn_transliteration": "বাগালা",
+      "en_transliteration": "bagāla",
+      "category_ids": [
+        "shopping"
+      ],
+      "note_bn": "পাড়ার ছোট দোকান। অনেক বাঙালি এখানে কাজ করে।",
+      "note_en": "The small corner shop. Many Bangladeshis work in one."
+    },
+    {
+      "id": "dl-l3-02",
+      "type": "word",
+      "arabic": "خضار",
+      "bangla": "সবজি",
+      "english": "Vegetables",
+      "bn_transliteration": "খুদার",
+      "en_transliteration": "khuḍār",
+      "category_ids": [
+        "shopping"
+      ]
+    },
+    {
+      "id": "dl-l3-03",
+      "type": "word",
+      "arabic": "فواكه",
+      "bangla": "ফল",
+      "english": "Fruit",
+      "bn_transliteration": "ফাওয়াকিহ",
+      "en_transliteration": "fawākih",
+      "category_ids": [
+        "shopping"
+      ]
+    },
+    {
+      "id": "dl-l3-04",
+      "type": "word",
+      "arabic": "طماط",
+      "bangla": "টমেটো",
+      "english": "Tomatoes",
+      "bn_transliteration": "তামাত",
+      "en_transliteration": "ṭamāṭ",
+      "category_ids": [
+        "shopping"
+      ]
+    },
+    {
+      "id": "dl-l3-05",
+      "type": "word",
+      "arabic": "بصل",
+      "bangla": "পেঁয়াজ",
+      "english": "Onions",
+      "bn_transliteration": "বাসাল",
+      "en_transliteration": "baṣal",
+      "category_ids": [
+        "shopping"
+      ]
+    },
+    {
+      "id": "dl-l3-06",
+      "type": "word",
+      "arabic": "بطاطس",
+      "bangla": "আলু",
+      "english": "Potatoes",
+      "bn_transliteration": "বাতাতিস",
+      "en_transliteration": "baṭāṭis",
+      "category_ids": [
+        "shopping"
+      ]
+    },
+    {
+      "id": "dl-l3-07",
+      "type": "word",
+      "arabic": "رز",
+      "bangla": "চাল / ভাত",
+      "english": "Rice",
+      "bn_transliteration": "রুয",
+      "en_transliteration": "ruzz",
+      "category_ids": [
+        "shopping"
+      ]
+    },
+    {
+      "id": "dl-l3-08",
+      "type": "word",
+      "arabic": "خبز",
+      "bangla": "রুটি",
+      "english": "Bread",
+      "bn_transliteration": "খুবয",
+      "en_transliteration": "khubz",
+      "category_ids": [
+        "shopping"
+      ],
+      "note_bn": "সৌদিতে 'তামিস' নামে বড় রুটিও খুব জনপ্রিয়।",
+      "note_en": "Big tamīs flatbread is also very popular."
+    },
+    {
+      "id": "dl-l3-09",
+      "type": "word",
+      "arabic": "حليب",
+      "bangla": "দুধ",
+      "english": "Milk",
+      "bn_transliteration": "হালীব",
+      "en_transliteration": "ḥalīb",
+      "category_ids": [
+        "shopping"
+      ]
+    },
+    {
+      "id": "dl-l3-10",
+      "type": "word",
+      "arabic": "بيض",
+      "bangla": "ডিম",
+      "english": "Eggs",
+      "bn_transliteration": "বেইদ",
+      "en_transliteration": "bēḍ",
+      "category_ids": [
+        "shopping"
+      ]
+    },
+    {
+      "id": "dl-l3-11",
+      "type": "word",
+      "arabic": "لحم",
+      "bangla": "মাংস",
+      "english": "Meat",
+      "bn_transliteration": "লাহাম",
+      "en_transliteration": "laḥam",
+      "category_ids": [
+        "shopping"
+      ]
+    },
+    {
+      "id": "dl-l3-12",
+      "type": "word",
+      "arabic": "دجاج",
+      "bangla": "মুরগি",
+      "english": "Chicken",
+      "bn_transliteration": "দাজাজ",
+      "en_transliteration": "dajāj",
+      "category_ids": [
+        "shopping"
+      ]
+    },
+    {
+      "id": "dl-l3-13",
+      "type": "word",
+      "arabic": "سمك",
+      "bangla": "মাছ",
+      "english": "Fish",
+      "bn_transliteration": "সামাক",
+      "en_transliteration": "samak",
+      "category_ids": [
+        "shopping"
+      ]
+    },
+    {
+      "id": "dl-l3-14",
+      "type": "word",
+      "arabic": "موية",
+      "bangla": "পানি",
+      "english": "Water",
+      "bn_transliteration": "মোইয়া",
+      "en_transliteration": "mōya",
+      "category_ids": [
+        "shopping"
+      ],
+      "note_bn": "বইয়ে 'মা', কিন্তু সৌদিরা বলে 'মোইয়া'।",
+      "note_en": "Books say māʾ, but Saudis say mōya."
+    },
+    {
+      "id": "dl-l3-15",
+      "type": "word",
+      "arabic": "كيس",
+      "bangla": "ব্যাগ / প্যাকেট",
+      "english": "Bag",
+      "bn_transliteration": "কীস",
+      "en_transliteration": "kīs",
+      "category_ids": [
+        "shopping"
+      ]
+    },
+    {
+      "id": "dl-l4-01",
+      "type": "phrase",
+      "arabic": "الكيلو بكم؟",
+      "bangla": "কেজি কত?",
+      "english": "How much per kilo?",
+      "bn_transliteration": "আল-কীলো বিকাম?",
+      "en_transliteration": "al-kīlo bikam?",
+      "category_ids": [
+        "shopping"
+      ]
+    },
+    {
+      "id": "dl-l4-02",
+      "type": "phrase",
+      "arabic": "عطني كيلو",
+      "bangla": "এক কেজি দিন",
+      "english": "Give me a kilo",
+      "bn_transliteration": "আতিনি কীলো",
+      "en_transliteration": "ʿaṭni kīlo",
+      "category_ids": [
+        "shopping"
+      ],
+      "note_bn": "'আতিনি' = আমাকে দিন। সৌদিরা ছোট করে 'আতনি' বলে।",
+      "note_en": "ʿaṭni means 'give me'."
+    },
+    {
+      "id": "dl-l4-03",
+      "type": "phrase",
+      "arabic": "عطني ثنتين",
+      "bangla": "দুইটা দিন",
+      "english": "Give me two",
+      "bn_transliteration": "আতিনি সিনতেইন",
+      "en_transliteration": "ʿaṭni thintēn",
+      "category_ids": [
+        "shopping"
+      ],
+      "note_bn": "স্ত্রীলিঙ্গ জিনিসে 'সিনতেইন', পুংলিঙ্গে 'ইসনেইন'। দুটোই বুঝবে।",
+      "note_en": "thintēn for feminine things, ithnēn for masculine. Both are understood."
+    },
+    {
+      "id": "dl-l4-04",
+      "type": "word",
+      "arabic": "زيادة",
+      "bangla": "আরও / বেশি",
+      "english": "More, extra",
+      "bn_transliteration": "যিয়াদা",
+      "en_transliteration": "ziyāda",
+      "category_ids": [
+        "shopping"
+      ]
+    },
+    {
+      "id": "dl-l4-05",
+      "type": "word",
+      "arabic": "بس",
+      "bangla": "শুধু / ব্যস",
+      "english": "Only / That's enough",
+      "bn_transliteration": "বাস",
+      "en_transliteration": "bass",
+      "category_ids": [
+        "shopping"
+      ],
+      "note_bn": "'বাস' মানে 'ব্যস, আর লাগবে না' বা 'শুধু'।",
+      "note_en": "bass means 'that's all' or 'only'."
+    },
+    {
+      "id": "dl-l4-06",
+      "type": "phrase",
+      "arabic": "كذا زين",
+      "bangla": "এভাবেই ঠিক আছে",
+      "english": "That's fine like this",
+      "bn_transliteration": "কিদা যেইন",
+      "en_transliteration": "kidha zēn",
+      "category_ids": [
+        "shopping"
+      ]
+    },
+    {
+      "id": "dl-l4-07",
+      "type": "phrase",
+      "arabic": "لا والله غالي",
+      "bangla": "না ভাই, খুব দামি",
+      "english": "No, honestly, it's expensive",
+      "bn_transliteration": "লা ওয়াল্লাহ গালি",
+      "en_transliteration": "lā wallāh ghāli",
+      "category_ids": [
+        "shopping"
+      ],
+      "note_bn": "'ওয়াল্লাহ' কথায় জোর দেয় — দরদামে খুব বলে।",
+      "note_en": "wallāh adds emphasis, very common when bargaining."
+    },
+    {
+      "id": "dl-l4-08",
+      "type": "phrase",
+      "arabic": "عطني بخمسين",
+      "bangla": "পঞ্চাশে দিন",
+      "english": "Give it to me for fifty",
+      "bn_transliteration": "আতিনি বিখামসীন",
+      "en_transliteration": "ʿaṭni bkhamsīn",
+      "category_ids": [
+        "shopping"
+      ]
+    },
+    {
+      "id": "dl-l4-09",
+      "type": "phrase",
+      "arabic": "خلاص اتفقنا",
+      "bangla": "ঠিক আছে, রাজি",
+      "english": "OK, deal",
+      "bn_transliteration": "খালাস ইত্তাফাগনা",
+      "en_transliteration": "khalāṣ ittafagna",
+      "category_ids": [
+        "shopping"
+      ]
+    },
+    {
+      "id": "dl-l4-10",
+      "type": "phrase",
+      "arabic": "مو لازم",
+      "bangla": "দরকার নেই",
+      "english": "No need",
+      "bn_transliteration": "মু লাযিম",
+      "en_transliteration": "mū lāzim",
+      "category_ids": [
+        "shopping"
+      ]
+    },
+    {
+      "id": "dl-l5-01",
+      "type": "word",
+      "arabic": "المنيو",
+      "bangla": "মেনু",
+      "english": "The menu",
+      "bn_transliteration": "আল-মেনিউ",
+      "en_transliteration": "al-menyu",
+      "category_ids": [
+        "food"
+      ]
+    },
+    {
+      "id": "dl-l5-02",
+      "type": "phrase",
+      "arabic": "أبغى أطلب",
+      "bangla": "আমি অর্ডার দিতে চাই",
+      "english": "I want to order",
+      "bn_transliteration": "আবগা আতলুব",
+      "en_transliteration": "abgha aṭlub",
+      "category_ids": [
+        "food"
+      ]
+    },
+    {
+      "id": "dl-l5-03",
+      "type": "phrase",
+      "arabic": "وش عندكم؟",
+      "bangla": "আপনাদের কী আছে?",
+      "english": "What do you have?",
+      "bn_transliteration": "ওশ ইনদাকুম?",
+      "en_transliteration": "wesh ʿindakum?",
+      "category_ids": [
+        "food"
+      ]
+    },
+    {
+      "id": "dl-l5-04",
+      "type": "phrase",
+      "arabic": "سفري ولا محلي؟",
+      "bangla": "নিয়ে যাবেন নাকি এখানে খাবেন?",
+      "english": "Takeaway or eat in?",
+      "bn_transliteration": "সাফারি ওয়াল্লা মাহাল্লি?",
+      "en_transliteration": "safari walla maḥalli?",
+      "category_ids": [
+        "food"
+      ],
+      "note_bn": "ক্যাশিয়ার সবসময় জিজ্ঞেস করে। নিয়ে যেতে 'সাফারি', বসে খেতে 'মাহাল্লি'।",
+      "note_en": "Cashiers always ask. safari = takeaway, maḥalli = eat in."
+    },
+    {
+      "id": "dl-l5-05",
+      "type": "word",
+      "arabic": "سفري",
+      "bangla": "নিয়ে যাব (পার্সেল)",
+      "english": "Takeaway",
+      "bn_transliteration": "সাফারি",
+      "en_transliteration": "safari",
+      "category_ids": [
+        "food"
+      ]
+    },
+    {
+      "id": "dl-l5-06",
+      "type": "word",
+      "arabic": "بدون",
+      "bangla": "ছাড়া",
+      "english": "Without",
+      "bn_transliteration": "বিদূন",
+      "en_transliteration": "bidūn",
+      "category_ids": [
+        "food"
+      ]
+    },
+    {
+      "id": "dl-l5-07",
+      "type": "phrase",
+      "arabic": "بدون بصل",
+      "bangla": "পেঁয়াজ ছাড়া",
+      "english": "No onions",
+      "bn_transliteration": "বিদূন বাসাল",
+      "en_transliteration": "bidūn baṣal",
+      "category_ids": [
+        "food"
+      ]
+    },
+    {
+      "id": "dl-l5-08",
+      "type": "word",
+      "arabic": "حار",
+      "bangla": "ঝাল",
+      "english": "Spicy",
+      "bn_transliteration": "হার",
+      "en_transliteration": "ḥārr",
+      "category_ids": [
+        "food"
+      ]
+    },
+    {
+      "id": "dl-l5-09",
+      "type": "word",
+      "arabic": "شاي",
+      "bangla": "চা",
+      "english": "Tea",
+      "bn_transliteration": "শাই",
+      "en_transliteration": "shāy",
+      "category_ids": [
+        "food"
+      ]
+    },
+    {
+      "id": "dl-l5-10",
+      "type": "word",
+      "arabic": "قهوة",
+      "bangla": "কফি",
+      "english": "Coffee",
+      "bn_transliteration": "গাহওয়া",
+      "en_transliteration": "gahwa",
+      "category_ids": [
+        "food"
+      ],
+      "note_bn": "সৌদি 'গাহওয়া' হালকা হলুদ, এলাচ দেওয়া, ছোট কাপে খেজুরের সাথে।",
+      "note_en": "Saudi gahwa is light, with cardamom, served in small cups with dates."
+    },
+    {
+      "id": "dl-l5-11",
+      "type": "word",
+      "arabic": "عصير",
+      "bangla": "জুস",
+      "english": "Juice",
+      "bn_transliteration": "আসীর",
+      "en_transliteration": "ʿaṣīr",
+      "category_ids": [
+        "food"
+      ]
+    },
+    {
+      "id": "dl-l5-12",
+      "type": "word",
+      "arabic": "شاورما",
+      "bangla": "শাওয়ারমা",
+      "english": "Shawarma",
+      "bn_transliteration": "শাওয়ারমা",
+      "en_transliteration": "shāwarma",
+      "category_ids": [
+        "food"
+      ]
+    },
+    {
+      "id": "dl-l5-13",
+      "type": "word",
+      "arabic": "بروستد",
+      "bangla": "ব্রোস্টেড চিকেন",
+      "english": "Broasted chicken",
+      "bn_transliteration": "ব্রোস্টিদ",
+      "en_transliteration": "brōstid",
+      "category_ids": [
+        "food"
+      ],
+      "note_bn": "ভাজা মুরগি — সৌদিদের খুব প্রিয়।",
+      "note_en": "Fried chicken — a Saudi favourite."
+    },
+    {
+      "id": "dl-l5-14",
+      "type": "phrase",
+      "arabic": "الحساب لو سمحت",
+      "bangla": "বিলটা দিন, প্লিজ",
+      "english": "The bill, please",
+      "bn_transliteration": "আল-হিসাব লাও সামাহত",
+      "en_transliteration": "al-ḥisāb law samaḥt",
+      "category_ids": [
+        "food"
+      ]
+    },
+    {
+      "id": "dl-l6-01",
+      "type": "word",
+      "arabic": "صيدلية",
+      "bangla": "ফার্মেসি",
+      "english": "Pharmacy",
+      "bn_transliteration": "সাইদালিইয়া",
+      "en_transliteration": "ṣaydaliyya",
+      "category_ids": [
+        "health"
+      ]
+    },
+    {
+      "id": "dl-l6-02",
+      "type": "word",
+      "arabic": "مستشفى",
+      "bangla": "হাসপাতাল",
+      "english": "Hospital",
+      "bn_transliteration": "মুসতাশফা",
+      "en_transliteration": "mustashfa",
+      "category_ids": [
+        "health"
+      ]
+    },
+    {
+      "id": "dl-l6-03",
+      "type": "word",
+      "arabic": "مستوصف",
+      "bangla": "ক্লিনিক",
+      "english": "Clinic",
+      "bn_transliteration": "মুসতাওসাফ",
+      "en_transliteration": "mustawṣaf",
+      "category_ids": [
+        "health"
+      ],
+      "note_bn": "ছোট প্রাইভেট ক্লিনিক — শ্রমিকেরা সাধারণত এখানে যায়, ইন্স্যুরেন্স কার্ডে।",
+      "note_en": "A small private clinic. Workers usually go here with their insurance card."
+    },
+    {
+      "id": "dl-l6-04",
+      "type": "word",
+      "arabic": "دكتور",
+      "bangla": "ডাক্তার",
+      "english": "Doctor",
+      "bn_transliteration": "দিকতোর",
+      "en_transliteration": "diktōr",
+      "category_ids": [
+        "health"
+      ]
+    },
+    {
+      "id": "dl-l6-05",
+      "type": "phrase",
+      "arabic": "عندي موعد",
+      "bangla": "আমার অ্যাপয়েন্টমেন্ট আছে",
+      "english": "I have an appointment",
+      "bn_transliteration": "ইনদি মাওইদ",
+      "en_transliteration": "ʿindi mawʿid",
+      "category_ids": [
+        "health"
+      ]
+    },
+    {
+      "id": "dl-l6-06",
+      "type": "phrase",
+      "arabic": "أنا مريض",
+      "bangla": "আমি অসুস্থ",
+      "english": "I'm sick",
+      "bn_transliteration": "আনা মারীদ",
+      "en_transliteration": "ana marīḍ",
+      "category_ids": [
+        "health"
+      ]
+    },
+    {
+      "id": "dl-l6-07",
+      "type": "phrase",
+      "arabic": "يوجعني راسي",
+      "bangla": "মাথা ব্যথা করছে",
+      "english": "My head hurts",
+      "bn_transliteration": "ইউজানি রাসি",
+      "en_transliteration": "yōjaʿni rāsi",
+      "category_ids": [
+        "health"
+      ],
+      "note_bn": "শরীরের যেকোনো অংশ বদলে বলুন: 'ইউজানি বাতনি' = পেট ব্যথা।",
+      "note_en": "Swap in any body part: yōjaʿni baṭni = my stomach hurts."
+    },
+    {
+      "id": "dl-l6-08",
+      "type": "phrase",
+      "arabic": "بطني يوجعني",
+      "bangla": "পেট ব্যথা করছে",
+      "english": "My stomach hurts",
+      "bn_transliteration": "বাতনি ইউজানি",
+      "en_transliteration": "baṭni yōjaʿni",
+      "category_ids": [
+        "health"
+      ]
+    },
+    {
+      "id": "dl-l6-09",
+      "type": "phrase",
+      "arabic": "عندي حرارة",
+      "bangla": "আমার জ্বর",
+      "english": "I have a fever",
+      "bn_transliteration": "ইনদি হারারা",
+      "en_transliteration": "ʿindi ḥarāra",
+      "category_ids": [
+        "health"
+      ]
+    },
+    {
+      "id": "dl-l6-10",
+      "type": "word",
+      "arabic": "كحة",
+      "bangla": "কাশি",
+      "english": "Cough",
+      "bn_transliteration": "কুহহা",
+      "en_transliteration": "kuḥḥa",
+      "category_ids": [
+        "health"
+      ]
+    },
+    {
+      "id": "dl-l6-11",
+      "type": "word",
+      "arabic": "زكام",
+      "bangla": "সর্দি",
+      "english": "A cold",
+      "bn_transliteration": "যুকাম",
+      "en_transliteration": "zukām",
+      "category_ids": [
+        "health"
+      ]
+    },
+    {
+      "id": "dl-l6-12",
+      "type": "word",
+      "arabic": "دوا",
+      "bangla": "ওষুধ",
+      "english": "Medicine",
+      "bn_transliteration": "দাওয়া",
+      "en_transliteration": "dawa",
+      "category_ids": [
+        "health"
+      ]
+    },
+    {
+      "id": "dl-l6-13",
+      "type": "word",
+      "arabic": "حبوب",
+      "bangla": "ট্যাবলেট",
+      "english": "Pills, tablets",
+      "bn_transliteration": "হুবূব",
+      "en_transliteration": "ḥubūb",
+      "category_ids": [
+        "health"
+      ]
+    },
+    {
+      "id": "dl-l6-14",
+      "type": "word",
+      "arabic": "وصفة",
+      "bangla": "প্রেসক্রিপশন",
+      "english": "Prescription",
+      "bn_transliteration": "ওয়াসফা",
+      "en_transliteration": "waṣfa",
+      "category_ids": [
+        "health"
+      ]
+    },
+    {
+      "id": "dl-l6-15",
+      "type": "word",
+      "arabic": "التأمين",
+      "bangla": "ইন্স্যুরেন্স",
+      "english": "Insurance",
+      "bn_transliteration": "আত-তা'মীন",
+      "en_transliteration": "at-taʾmīn",
+      "category_ids": [
+        "health"
+      ],
+      "note_bn": "ইকামার সাথে স্বাস্থ্য বীমা থাকে। ক্লিনিকে কার্ড বা ইকামা দেখান।",
+      "note_en": "Your iqama comes with health insurance. Show the card or iqama at the clinic."
+    },
+    {
+      "id": "dl-l6-16",
+      "type": "word",
+      "arabic": "الطوارئ",
+      "bangla": "জরুরি বিভাগ",
+      "english": "Emergency",
+      "bn_transliteration": "আত-তাওয়ারি",
+      "en_transliteration": "aṭ-ṭawāriʾ",
+      "category_ids": [
+        "health"
+      ],
+      "note_bn": "অ্যাম্বুলেন্স: ৯৯৭।",
+      "note_en": "Ambulance: 997."
+    },
+    {
+      "id": "dl-l7-01",
+      "type": "word",
+      "arabic": "شريحة",
+      "bangla": "সিম কার্ড",
+      "english": "SIM card",
+      "bn_transliteration": "শারীহা",
+      "en_transliteration": "sharīḥa",
+      "category_ids": [
+        "phone-bank"
+      ]
+    },
+    {
+      "id": "dl-l7-02",
+      "type": "phrase",
+      "arabic": "أبغى شريحة جديدة",
+      "bangla": "আমি নতুন সিম চাই",
+      "english": "I want a new SIM",
+      "bn_transliteration": "আবগা শারীহা জিদীদা",
+      "en_transliteration": "abgha sharīḥa jdīda",
+      "category_ids": [
+        "phone-bank"
+      ],
+      "note_bn": "সিম কিনতে ইকামা আর আঙুলের ছাপ (বাসমা) লাগে।",
+      "note_en": "You need your iqama and a fingerprint (baṣma) to buy a SIM."
+    },
+    {
+      "id": "dl-l7-03",
+      "type": "word",
+      "arabic": "بصمة",
+      "bangla": "আঙুলের ছাপ",
+      "english": "Fingerprint",
+      "bn_transliteration": "বাসমা",
+      "en_transliteration": "baṣma",
+      "category_ids": [
+        "phone-bank"
+      ]
+    },
+    {
+      "id": "dl-l7-04",
+      "type": "word",
+      "arabic": "شحن",
+      "bangla": "রিচার্জ",
+      "english": "Top-up, recharge",
+      "bn_transliteration": "শাহন",
+      "en_transliteration": "shaḥn",
+      "category_ids": [
+        "phone-bank"
+      ]
+    },
+    {
+      "id": "dl-l7-05",
+      "type": "phrase",
+      "arabic": "أبغى أشحن بعشرين",
+      "bangla": "বিশ রিয়াল রিচার্জ করতে চাই",
+      "english": "I want to top up twenty",
+      "bn_transliteration": "আবগা আশহান বি-ইশরীন",
+      "en_transliteration": "abgha ashḥan bʿishrīn",
+      "category_ids": [
+        "phone-bank"
+      ]
+    },
+    {
+      "id": "dl-l7-06",
+      "type": "word",
+      "arabic": "باقة",
+      "bangla": "প্যাকেজ",
+      "english": "Package, bundle",
+      "bn_transliteration": "বাগা",
+      "en_transliteration": "bāga",
+      "category_ids": [
+        "phone-bank"
+      ]
+    },
+    {
+      "id": "dl-l7-07",
+      "type": "word",
+      "arabic": "نت",
+      "bangla": "ইন্টারনেট",
+      "english": "Internet, data",
+      "bn_transliteration": "নেত",
+      "en_transliteration": "net",
+      "category_ids": [
+        "phone-bank"
+      ]
+    },
+    {
+      "id": "dl-l7-08",
+      "type": "word",
+      "arabic": "الرصيد",
+      "bangla": "ব্যালেন্স",
+      "english": "Balance (credit)",
+      "bn_transliteration": "আর-রাসীদ",
+      "en_transliteration": "ar-raṣīd",
+      "category_ids": [
+        "phone-bank"
+      ]
+    },
+    {
+      "id": "dl-l7-09",
+      "type": "word",
+      "arabic": "الجوال",
+      "bangla": "মোবাইল ফোন",
+      "english": "Mobile phone",
+      "bn_transliteration": "আল-জাওয়াল",
+      "en_transliteration": "al-jawwāl",
+      "category_ids": [
+        "phone-bank"
+      ],
+      "note_bn": "সৌদিতে মোবাইলকে 'জাওয়াল' বলে।",
+      "note_en": "In Saudi a mobile phone is called a jawwāl."
+    },
+    {
+      "id": "dl-l7-10",
+      "type": "phrase",
+      "arabic": "رقمك كم؟",
+      "bangla": "আপনার নাম্বার কত?",
+      "english": "What's your number?",
+      "bn_transliteration": "রাগমাক কাম?",
+      "en_transliteration": "ragmak kam?",
+      "category_ids": [
+        "phone-bank"
+      ]
+    },
+    {
+      "id": "dl-l7-11",
+      "type": "phrase",
+      "arabic": "ما فيه شبكة",
+      "bangla": "নেটওয়ার্ক নেই",
+      "english": "There's no signal",
+      "bn_transliteration": "মা ফি শাবাকা",
+      "en_transliteration": "mā fīh shabaka",
+      "category_ids": [
+        "phone-bank"
+      ],
+      "note_bn": "'শাবাকা' মানে নেটওয়ার্ক, আবার কার্ড মেশিনও।",
+      "note_en": "shabaka means network, and also the card machine."
+    },
+    {
+      "id": "dl-l7-12",
+      "type": "word",
+      "arabic": "الشاحن",
+      "bangla": "চার্জার",
+      "english": "The charger",
+      "bn_transliteration": "আশ-শাহিন",
+      "en_transliteration": "ash-shāḥin",
+      "category_ids": [
+        "phone-bank"
+      ]
+    },
+    {
+      "id": "dl-l8-01",
+      "type": "word",
+      "arabic": "بنك",
+      "bangla": "ব্যাংক",
+      "english": "Bank",
+      "bn_transliteration": "বাংক",
+      "en_transliteration": "bank",
+      "category_ids": [
+        "phone-bank"
+      ]
+    },
+    {
+      "id": "dl-l8-02",
+      "type": "word",
+      "arabic": "حساب",
+      "bangla": "অ্যাকাউন্ট",
+      "english": "Account",
+      "bn_transliteration": "হিসাব",
+      "en_transliteration": "ḥisāb",
+      "category_ids": [
+        "phone-bank"
+      ]
+    },
+    {
+      "id": "dl-l8-03",
+      "type": "word",
+      "arabic": "فلوس",
+      "bangla": "টাকা",
+      "english": "Money",
+      "bn_transliteration": "ফুলূস",
+      "en_transliteration": "flūs",
+      "category_ids": [
+        "phone-bank"
+      ]
+    },
+    {
+      "id": "dl-l8-04",
+      "type": "phrase",
+      "arabic": "أبغى أحول فلوس",
+      "bangla": "আমি টাকা পাঠাতে চাই",
+      "english": "I want to send money",
+      "bn_transliteration": "আবগা আহাওয়িল ফুলূস",
+      "en_transliteration": "abgha aḥawwil flūs",
+      "category_ids": [
+        "phone-bank"
+      ]
+    },
+    {
+      "id": "dl-l8-05",
+      "type": "word",
+      "arabic": "تحويل",
+      "bangla": "ট্রান্সফার",
+      "english": "Transfer",
+      "bn_transliteration": "তাহবীল",
+      "en_transliteration": "taḥwīl",
+      "category_ids": [
+        "phone-bank"
+      ]
+    },
+    {
+      "id": "dl-l8-06",
+      "type": "phrase",
+      "arabic": "أحول لبنغلاديش",
+      "bangla": "বাংলাদেশে পাঠাব",
+      "english": "I'll send to Bangladesh",
+      "bn_transliteration": "আহাওয়িল লি-বাংলাদেশ",
+      "en_transliteration": "aḥawwil li-banglādēsh",
+      "category_ids": [
+        "phone-bank"
+      ]
+    },
+    {
+      "id": "dl-l8-07",
+      "type": "phrase",
+      "arabic": "كم سعر الصرف؟",
+      "bangla": "রেট কত?",
+      "english": "What's the exchange rate?",
+      "bn_transliteration": "কাম সির আস-সারফ?",
+      "en_transliteration": "kam siʿr aṣ-ṣarf?",
+      "category_ids": [
+        "phone-bank"
+      ],
+      "note_bn": "পাঠানোর আগে কয়েক জায়গায় রেট ও ফি মিলিয়ে নিন।",
+      "note_en": "Compare the rate and fees at a few places before sending."
+    },
+    {
+      "id": "dl-l8-08",
+      "type": "word",
+      "arabic": "رسوم",
+      "bangla": "ফি / চার্জ",
+      "english": "Fees",
+      "bn_transliteration": "রুসূম",
+      "en_transliteration": "rusūm",
+      "category_ids": [
+        "phone-bank"
+      ]
+    },
+    {
+      "id": "dl-l8-09",
+      "type": "word",
+      "arabic": "الصراف",
+      "bangla": "এটিএম",
+      "english": "ATM",
+      "bn_transliteration": "আস-সাররাফ",
+      "en_transliteration": "aṣ-ṣarrāf",
+      "category_ids": [
+        "phone-bank"
+      ],
+      "note_bn": "'সাররাফ' মানে এটিএম মেশিন, আবার টাকা বদলের লোকও।",
+      "note_en": "ṣarrāf is the ATM, and also a money changer."
+    },
+    {
+      "id": "dl-l8-10",
+      "type": "word",
+      "arabic": "بطاقة",
+      "bangla": "কার্ড",
+      "english": "Card",
+      "bn_transliteration": "বিতাগা",
+      "en_transliteration": "biṭāga",
+      "category_ids": [
+        "phone-bank"
+      ]
+    },
+    {
+      "id": "dl-l8-11",
+      "type": "phrase",
+      "arabic": "الراتب نزل",
+      "bangla": "বেতন এসেছে",
+      "english": "The salary came in",
+      "bn_transliteration": "আর-রাতিব নিযিল",
+      "en_transliteration": "ar-rātib nizil",
+      "category_ids": [
+        "phone-bank"
+      ]
+    },
+    {
+      "id": "dl-l8-12",
+      "type": "word",
+      "arabic": "الإيصال",
+      "bangla": "রসিদ",
+      "english": "The receipt",
+      "bn_transliteration": "আল-ঈসাল",
+      "en_transliteration": "al-īṣāl",
+      "category_ids": [
+        "phone-bank"
+      ],
+      "note_bn": "টাকা পাঠানোর রসিদ সবসময় রেখে দিন।",
+      "note_en": "Always keep the receipt when you send money."
+    },
+    {
+      "id": "dl-l8-13",
+      "type": "phrase",
+      "arabic": "الرقم السري",
+      "bangla": "পিন নাম্বার",
+      "english": "PIN number",
+      "bn_transliteration": "আর-রাগম আস-সিররি",
+      "en_transliteration": "ar-ragm as-sirri",
+      "category_ids": [
+        "phone-bank"
+      ],
+      "note_bn": "কাউকে বলবেন না — ব্যাংক কখনো ফোনে পিন চায় না।",
+      "note_en": "Never tell anyone. A bank never asks for your PIN on the phone."
+    }
+  ],
+  "course": {
+    "id": "daily-life-arabic",
+    "title_bn": "দৈনন্দিন জীবনের আরবি",
+    "title_en": "Daily Life Arabic",
+    "description_bn": "ট্যাক্সি ও ডেলিভারি, বাজার ও দরদাম, রেস্টুরেন্ট, ফার্মেসি ও ক্লিনিক, সিম ও মোবাইল, ব্যাংক ও দেশে টাকা পাঠানো।",
+    "description_en": "Taxi and delivery, grocery shopping and bargaining, restaurants, pharmacy and clinic, SIM and phone, bank and sending money home.",
+    "type": "topic",
+    "is_free": true,
+    "level": "beginner",
+    "languages": [
+      "bn",
+      "en"
+    ],
+    "lessons": [
+      {
+        "id": "daily-1",
+        "title_bn": "পাঠ ১: ট্যাক্সি",
+        "title_en": "Lesson 1: Taxi",
+        "category_id": "transport",
+        "item_ids": [
+          "dl-l1-01",
+          "dl-l1-02",
+          "dl-l1-03",
+          "dl-l1-04",
+          "dl-l1-05",
+          "dl-l1-06",
+          "dl-l1-07",
+          "dl-l1-08",
+          "dl-l1-09",
+          "dl-l1-10",
+          "dl-l1-11"
+        ],
+        "order": 10,
+        "is_free": true
+      },
+      {
+        "id": "daily-2",
+        "title_bn": "পাঠ ২: ডেলিভারি নেওয়া",
+        "title_en": "Lesson 2: Getting a delivery",
+        "category_id": "transport",
+        "item_ids": [
+          "dl-l2-01",
+          "dl-l2-02",
+          "dl-l2-03",
+          "dl-l2-04",
+          "dl-l2-05",
+          "dl-l2-06",
+          "dl-l2-07",
+          "dl-l2-08",
+          "dl-l2-09",
+          "dl-l2-10",
+          "dl-l2-11",
+          "dl-l2-12"
+        ],
+        "order": 20,
+        "is_free": true
+      },
+      {
+        "id": "daily-3",
+        "title_bn": "পাঠ ৩: বাজার ও মুদি দোকান",
+        "title_en": "Lesson 3: Grocery shopping",
+        "category_id": "shopping",
+        "item_ids": [
+          "dl-l3-01",
+          "dl-l3-02",
+          "dl-l3-03",
+          "dl-l3-04",
+          "dl-l3-05",
+          "dl-l3-06",
+          "dl-l3-07",
+          "dl-l3-08",
+          "dl-l3-09",
+          "dl-l3-10",
+          "dl-l3-11",
+          "dl-l3-12",
+          "dl-l3-13",
+          "dl-l3-14",
+          "dl-l3-15"
+        ],
+        "order": 30,
+        "is_free": true
+      },
+      {
+        "id": "daily-4",
+        "title_bn": "পাঠ ৪: দরদাম",
+        "title_en": "Lesson 4: Bargaining",
+        "category_id": "shopping",
+        "item_ids": [
+          "dl-l4-01",
+          "dl-l4-02",
+          "dl-l4-03",
+          "dl-l4-04",
+          "dl-l4-05",
+          "dl-l4-06",
+          "dl-l4-07",
+          "dl-l4-08",
+          "dl-l4-09",
+          "dl-l4-10"
+        ],
+        "order": 40,
+        "is_free": true
+      },
+      {
+        "id": "daily-5",
+        "title_bn": "পাঠ ৫: রেস্টুরেন্টে",
+        "title_en": "Lesson 5: At a restaurant",
+        "category_id": "food",
+        "item_ids": [
+          "dl-l5-01",
+          "dl-l5-02",
+          "dl-l5-03",
+          "dl-l5-04",
+          "dl-l5-05",
+          "dl-l5-06",
+          "dl-l5-07",
+          "dl-l5-08",
+          "dl-l5-09",
+          "dl-l5-10",
+          "dl-l5-11",
+          "dl-l5-12",
+          "dl-l5-13",
+          "dl-l5-14"
+        ],
+        "order": 50,
+        "is_free": true
+      },
+      {
+        "id": "daily-6",
+        "title_bn": "পাঠ ৬: ফার্মেসি ও ক্লিনিক",
+        "title_en": "Lesson 6: Pharmacy and clinic",
+        "category_id": "health",
+        "item_ids": [
+          "dl-l6-01",
+          "dl-l6-02",
+          "dl-l6-03",
+          "dl-l6-04",
+          "dl-l6-05",
+          "dl-l6-06",
+          "dl-l6-07",
+          "dl-l6-08",
+          "dl-l6-09",
+          "dl-l6-10",
+          "dl-l6-11",
+          "dl-l6-12",
+          "dl-l6-13",
+          "dl-l6-14",
+          "dl-l6-15",
+          "dl-l6-16"
+        ],
+        "order": 60,
+        "is_free": true
+      },
+      {
+        "id": "daily-7",
+        "title_bn": "পাঠ ৭: সিম ও মোবাইল",
+        "title_en": "Lesson 7: SIM and phone",
+        "category_id": "phone-bank",
+        "item_ids": [
+          "dl-l7-01",
+          "dl-l7-02",
+          "dl-l7-03",
+          "dl-l7-04",
+          "dl-l7-05",
+          "dl-l7-06",
+          "dl-l7-07",
+          "dl-l7-08",
+          "dl-l7-09",
+          "dl-l7-10",
+          "dl-l7-11",
+          "dl-l7-12"
+        ],
+        "order": 70,
+        "is_free": true
+      },
+      {
+        "id": "daily-8",
+        "title_bn": "পাঠ ৮: ব্যাংক ও টাকা পাঠানো",
+        "title_en": "Lesson 8: Bank and money transfer",
+        "category_id": "phone-bank",
+        "item_ids": [
+          "dl-l8-01",
+          "dl-l8-02",
+          "dl-l8-03",
+          "dl-l8-04",
+          "dl-l8-05",
+          "dl-l8-06",
+          "dl-l8-07",
+          "dl-l8-08",
+          "dl-l8-09",
+          "dl-l8-10",
+          "dl-l8-11",
+          "dl-l8-12",
+          "dl-l8-13"
+        ],
+        "order": 80,
+        "is_free": true
+      }
+    ]
+  }
+}

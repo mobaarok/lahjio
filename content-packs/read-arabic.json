@@ -1,0 +1,1233 @@
+{
+  "name": "Read Arabic in 10 days",
+  "categories": [
+    {
+      "id": "letters",
+      "name_en": "Arabic letters",
+      "name_bn": "আরবি অক্ষর",
+      "order": 230
+    },
+    {
+      "id": "signs",
+      "name_en": "Signs and menus",
+      "name_bn": "সাইন ও মেনু",
+      "order": 240
+    }
+  ],
+  "items": [
+    {
+      "id": "rd-l1-01",
+      "type": "word",
+      "arabic": "ا",
+      "bangla": "উচ্চারণ: আ (লম্বা)",
+      "english": "Sound: a, long ā",
+      "bn_transliteration": "আলিফ",
+      "en_transliteration": "alif",
+      "category_ids": [
+        "letters"
+      ],
+      "note_bn": "আরবি ডান থেকে বামে পড়ে। পরের অক্ষরের সাথে জোড়া লাগে না। শুরু, মাঝ ও শেষে: ا ـا।",
+      "note_en": "Arabic is read right to left. Never joins to the letter after it. Start, middle, end: ا ـا."
+    },
+    {
+      "id": "rd-l1-02",
+      "type": "word",
+      "arabic": "ب",
+      "bangla": "উচ্চারণ: ব",
+      "english": "Sound: b",
+      "bn_transliteration": "বা",
+      "en_transliteration": "bā",
+      "category_ids": [
+        "letters"
+      ],
+      "note_bn": "নিচে এক ফোঁটা। শুরু, মাঝ ও শেষে: بـ ـبـ ـب।",
+      "note_en": "One dot below. Start, middle, end: بـ ـبـ ـب."
+    },
+    {
+      "id": "rd-l1-03",
+      "type": "word",
+      "arabic": "ت",
+      "bangla": "উচ্চারণ: ত",
+      "english": "Sound: t",
+      "bn_transliteration": "তা",
+      "en_transliteration": "tā",
+      "category_ids": [
+        "letters"
+      ],
+      "note_bn": "ওপরে দুই ফোঁটা। শুরু, মাঝ ও শেষে: تـ ـتـ ـت।",
+      "note_en": "Two dots above. Start, middle, end: تـ ـتـ ـت."
+    },
+    {
+      "id": "rd-l1-04",
+      "type": "word",
+      "arabic": "ث",
+      "bangla": "উচ্চারণ: স (জিভ দাঁতে, ইংরেজি think-এর th)",
+      "english": "Sound: th as in 'think'",
+      "bn_transliteration": "সা",
+      "en_transliteration": "thā",
+      "category_ids": [
+        "letters"
+      ],
+      "note_bn": "ওপরে তিন ফোঁটা। সৌদি কথায় অনেকে 'ত' বা 'স' বলে। শুরু, মাঝ ও শেষে: ثـ ـثـ ـث।",
+      "note_en": "Three dots above. Many Saudis say it as t or s. Start, middle, end: ثـ ـثـ ـث."
+    },
+    {
+      "id": "rd-l1-05",
+      "type": "word",
+      "arabic": "باب",
+      "bangla": "দরজা",
+      "english": "Door",
+      "bn_transliteration": "বাব",
+      "en_transliteration": "bāb",
+      "category_ids": [
+        "letters"
+      ],
+      "note_bn": "প্রথম শব্দ পড়া! ب + ا + ب = বাব।",
+      "note_en": "Your first word! ب + ا + ب = bāb."
+    },
+    {
+      "id": "rd-l1-06",
+      "type": "word",
+      "arabic": "بات",
+      "bangla": "রাত কাটাল",
+      "english": "He stayed the night",
+      "bn_transliteration": "বাত",
+      "en_transliteration": "bāt",
+      "category_ids": [
+        "letters"
+      ],
+      "note_bn": "ب + ا + ت। শুধু পড়ার অনুশীলন।",
+      "note_en": "ب + ا + ت. Just reading practice."
+    },
+    {
+      "id": "rd-l2-01",
+      "type": "word",
+      "arabic": "ج",
+      "bangla": "উচ্চারণ: জ",
+      "english": "Sound: j",
+      "bn_transliteration": "জীম",
+      "en_transliteration": "jīm",
+      "category_ids": [
+        "letters"
+      ],
+      "note_bn": "নিচে এক ফোঁটা। শুরু, মাঝ ও শেষে: جـ ـجـ ـج।",
+      "note_en": "One dot below. Start, middle, end: جـ ـجـ ـج."
+    },
+    {
+      "id": "rd-l2-02",
+      "type": "word",
+      "arabic": "ح",
+      "bangla": "উচ্চারণ: হ (গলা চেপে, জোরে)",
+      "english": "Sound: ḥ, a strong breathy h",
+      "bn_transliteration": "হা (গলার)",
+      "en_transliteration": "ḥā",
+      "category_ids": [
+        "letters"
+      ],
+      "note_bn": "কোনো ফোঁটা নেই। সাধারণ 'হ'-এর চেয়ে গলা থেকে জোরে বের হয়। শুরু, মাঝ ও শেষে: حـ ـحـ ـح।",
+      "note_en": "No dots. Breathed hard from the throat. Start, middle, end: حـ ـحـ ـح."
+    },
+    {
+      "id": "rd-l2-03",
+      "type": "word",
+      "arabic": "خ",
+      "bangla": "উচ্চারণ: খ (গলার খসখসে)",
+      "english": "Sound: kh, like Scottish 'loch'",
+      "bn_transliteration": "খা",
+      "en_transliteration": "khā",
+      "category_ids": [
+        "letters"
+      ],
+      "note_bn": "ওপরে এক ফোঁটা। শুরু, মাঝ ও শেষে: خـ ـخـ ـخ।",
+      "note_en": "One dot above. Start, middle, end: خـ ـخـ ـخ."
+    },
+    {
+      "id": "rd-l2-04",
+      "type": "word",
+      "arabic": "تاج",
+      "bangla": "মুকুট",
+      "english": "Crown",
+      "bn_transliteration": "তাজ",
+      "en_transliteration": "tāj",
+      "category_ids": [
+        "letters"
+      ],
+      "note_bn": "ت + ا + ج।",
+      "note_en": "ت + ا + ج."
+    },
+    {
+      "id": "rd-l2-05",
+      "type": "word",
+      "arabic": "حب",
+      "bangla": "ভালোবাসা / দানা",
+      "english": "Love; grain",
+      "bn_transliteration": "হুব্ব",
+      "en_transliteration": "ḥubb",
+      "category_ids": [
+        "letters"
+      ],
+      "note_bn": "ح + ب।",
+      "note_en": "ح + ب."
+    },
+    {
+      "id": "rd-l2-06",
+      "type": "word",
+      "arabic": "خبز",
+      "bangla": "রুটি",
+      "english": "Bread",
+      "bn_transliteration": "খুবয",
+      "en_transliteration": "khubz",
+      "category_ids": [
+        "letters"
+      ],
+      "note_bn": "খ + ব + য। দোকানের সাইনে দেখবেন।",
+      "note_en": "خ + ب + ز. You'll see it on bakery signs."
+    },
+    {
+      "id": "rd-l3-01",
+      "type": "word",
+      "arabic": "د",
+      "bangla": "উচ্চারণ: দ",
+      "english": "Sound: d",
+      "bn_transliteration": "দাল",
+      "en_transliteration": "dāl",
+      "category_ids": [
+        "letters"
+      ],
+      "note_bn": "পরের অক্ষরের সাথে জোড়া লাগে না। শুরু, মাঝ ও শেষে: د ـد।",
+      "note_en": "Never joins to the letter after it. Start, middle, end: د ـد."
+    },
+    {
+      "id": "rd-l3-02",
+      "type": "word",
+      "arabic": "ذ",
+      "bangla": "উচ্চারণ: য (জিভ দাঁতে, ইংরেজি this-এর th)",
+      "english": "Sound: dh, the 'th' in 'this'",
+      "bn_transliteration": "যাল",
+      "en_transliteration": "dhāl",
+      "category_ids": [
+        "letters"
+      ],
+      "note_bn": "ওপরে এক ফোঁটা। সৌদি কথায় প্রায়ই 'দ' শোনায়। পরের অক্ষরের সাথে জোড়া লাগে না। শুরু, মাঝ ও শেষে: ذ ـذ।",
+      "note_en": "One dot above. Often sounds like d in Saudi speech. Never joins to the letter after it. Start, middle, end: ذ ـذ."
+    },
+    {
+      "id": "rd-l3-03",
+      "type": "word",
+      "arabic": "ر",
+      "bangla": "উচ্চারণ: র",
+      "english": "Sound: r (rolled)",
+      "bn_transliteration": "রা",
+      "en_transliteration": "rā",
+      "category_ids": [
+        "letters"
+      ],
+      "note_bn": "পরের অক্ষরের সাথে জোড়া লাগে না। শুরু, মাঝ ও শেষে: ر ـر।",
+      "note_en": "Never joins to the letter after it. Start, middle, end: ر ـر."
+    },
+    {
+      "id": "rd-l3-04",
+      "type": "word",
+      "arabic": "ز",
+      "bangla": "উচ্চারণ: য (ইংরেজি z)",
+      "english": "Sound: z",
+      "bn_transliteration": "যা",
+      "en_transliteration": "zāy",
+      "category_ids": [
+        "letters"
+      ],
+      "note_bn": "ر-এর মতো, ওপরে এক ফোঁটা। পরের অক্ষরের সাথে জোড়া লাগে না। শুরু, মাঝ ও শেষে: ز ـز।",
+      "note_en": "Like ر with a dot above. Never joins to the letter after it. Start, middle, end: ز ـز."
+    },
+    {
+      "id": "rd-l3-05",
+      "type": "word",
+      "arabic": "دجاج",
+      "bangla": "মুরগি",
+      "english": "Chicken",
+      "bn_transliteration": "দাজাজ",
+      "en_transliteration": "dajāj",
+      "category_ids": [
+        "letters"
+      ],
+      "note_bn": "د + ج + ا + ج।",
+      "note_en": "د + ج + ا + ج."
+    },
+    {
+      "id": "rd-l3-06",
+      "type": "word",
+      "arabic": "رز",
+      "bangla": "চাল / ভাত",
+      "english": "Rice",
+      "bn_transliteration": "রুয",
+      "en_transliteration": "ruzz",
+      "category_ids": [
+        "letters"
+      ],
+      "note_bn": "ر + ز — দুটোই জোড়া লাগে না, তাই আলাদা দেখায়।",
+      "note_en": "ر + ز. Neither joins, so they stand apart."
+    },
+    {
+      "id": "rd-l4-01",
+      "type": "word",
+      "arabic": "س",
+      "bangla": "উচ্চারণ: স",
+      "english": "Sound: s",
+      "bn_transliteration": "সীন",
+      "en_transliteration": "sīn",
+      "category_ids": [
+        "letters"
+      ],
+      "note_bn": "তিনটা ছোট দাঁত। শুরু, মাঝ ও শেষে: سـ ـسـ ـس।",
+      "note_en": "Three small teeth. Start, middle, end: سـ ـسـ ـس."
+    },
+    {
+      "id": "rd-l4-02",
+      "type": "word",
+      "arabic": "ش",
+      "bangla": "উচ্চারণ: শ",
+      "english": "Sound: sh",
+      "bn_transliteration": "শীন",
+      "en_transliteration": "shīn",
+      "category_ids": [
+        "letters"
+      ],
+      "note_bn": "س-এর ওপরে তিন ফোঁটা। শুরু, মাঝ ও শেষে: شـ ـشـ ـش।",
+      "note_en": "Like س with three dots above. Start, middle, end: شـ ـشـ ـش."
+    },
+    {
+      "id": "rd-l4-03",
+      "type": "word",
+      "arabic": "ص",
+      "bangla": "উচ্চারণ: স (ভারী, মুখ গোল করে)",
+      "english": "Sound: ṣ, a heavy s",
+      "bn_transliteration": "সোয়াদ",
+      "en_transliteration": "ṣād",
+      "category_ids": [
+        "letters"
+      ],
+      "note_bn": "শুরু, মাঝ ও শেষে: صـ ـصـ ـص।",
+      "note_en": "Start, middle, end: صـ ـصـ ـص."
+    },
+    {
+      "id": "rd-l4-04",
+      "type": "word",
+      "arabic": "ض",
+      "bangla": "উচ্চারণ: দ (ভারী)",
+      "english": "Sound: ḍ, a heavy d",
+      "bn_transliteration": "দোয়াদ",
+      "en_transliteration": "ḍād",
+      "category_ids": [
+        "letters"
+      ],
+      "note_bn": "ص-এর ওপরে এক ফোঁটা। শুরু, মাঝ ও শেষে: ضـ ـضـ ـض।",
+      "note_en": "Like ص with a dot above. Start, middle, end: ضـ ـضـ ـض."
+    },
+    {
+      "id": "rd-l4-05",
+      "type": "word",
+      "arabic": "شارع",
+      "bangla": "রাস্তা",
+      "english": "Street",
+      "bn_transliteration": "শারি",
+      "en_transliteration": "shāriʿ",
+      "category_ids": [
+        "letters"
+      ],
+      "note_bn": "রাস্তার নামের বোর্ডে সবসময় থাকে।",
+      "note_en": "On every street sign."
+    },
+    {
+      "id": "rd-l4-06",
+      "type": "word",
+      "arabic": "صيدلية",
+      "bangla": "ফার্মেসি",
+      "english": "Pharmacy",
+      "bn_transliteration": "সাইদালিইয়া",
+      "en_transliteration": "ṣaydaliyya",
+      "category_ids": [
+        "letters"
+      ],
+      "note_bn": "ফার্মেসির সাইনবোর্ডে দেখবেন।",
+      "note_en": "You'll see it on pharmacy signs."
+    },
+    {
+      "id": "rd-l5-01",
+      "type": "word",
+      "arabic": "ط",
+      "bangla": "উচ্চারণ: ত (ভারী)",
+      "english": "Sound: ṭ, a heavy t",
+      "bn_transliteration": "তোয়া",
+      "en_transliteration": "ṭā",
+      "category_ids": [
+        "letters"
+      ],
+      "note_bn": "শুরু, মাঝ ও শেষে: طـ ـطـ ـط।",
+      "note_en": "Start, middle, end: طـ ـطـ ـط."
+    },
+    {
+      "id": "rd-l5-02",
+      "type": "word",
+      "arabic": "ظ",
+      "bangla": "উচ্চারণ: য (ভারী)",
+      "english": "Sound: ẓ, a heavy dh",
+      "bn_transliteration": "যোয়া",
+      "en_transliteration": "ẓā",
+      "category_ids": [
+        "letters"
+      ],
+      "note_bn": "ط-এর ওপরে এক ফোঁটা। শুরু, মাঝ ও শেষে: ظـ ـظـ ـظ।",
+      "note_en": "Like ط with a dot above. Start, middle, end: ظـ ـظـ ـظ."
+    },
+    {
+      "id": "rd-l5-03",
+      "type": "word",
+      "arabic": "ع",
+      "bangla": "উচ্চারণ: আ (গলা চেপে)",
+      "english": "Sound: ʿ, a tight throat sound",
+      "bn_transliteration": "আইন",
+      "en_transliteration": "ʿayn",
+      "category_ids": [
+        "letters"
+      ],
+      "note_bn": "বাংলায় নেই — গলা চেপে 'আ'। অডিও শুনে শুনে শিখুন। শুরু, মাঝ ও শেষে: عـ ـعـ ـع।",
+      "note_en": "Not in English: a tight 'a' from the throat. Learn it by listening. Start, middle, end: عـ ـعـ ـع."
+    },
+    {
+      "id": "rd-l5-04",
+      "type": "word",
+      "arabic": "غ",
+      "bangla": "উচ্চারণ: গ (গলার, খসখসে)",
+      "english": "Sound: gh, like a French r",
+      "bn_transliteration": "গাইন",
+      "en_transliteration": "ghayn",
+      "category_ids": [
+        "letters"
+      ],
+      "note_bn": "ع-এর ওপরে এক ফোঁটা। শুরু, মাঝ ও শেষে: غـ ـغـ ـغ।",
+      "note_en": "Like ع with a dot above. Start, middle, end: غـ ـغـ ـغ."
+    },
+    {
+      "id": "rd-l5-05",
+      "type": "word",
+      "arabic": "مطعم",
+      "bangla": "রেস্টুরেন্ট",
+      "english": "Restaurant",
+      "bn_transliteration": "মাতআম",
+      "en_transliteration": "maṭʿam",
+      "category_ids": [
+        "letters"
+      ],
+      "note_bn": "রেস্টুরেন্টের সাইনে থাকে।",
+      "note_en": "On restaurant signs."
+    },
+    {
+      "id": "rd-l5-06",
+      "type": "word",
+      "arabic": "عصير",
+      "bangla": "জুস",
+      "english": "Juice",
+      "bn_transliteration": "আসীর",
+      "en_transliteration": "ʿaṣīr",
+      "category_ids": [
+        "letters"
+      ]
+    },
+    {
+      "id": "rd-l6-01",
+      "type": "word",
+      "arabic": "ف",
+      "bangla": "উচ্চারণ: ফ",
+      "english": "Sound: f",
+      "bn_transliteration": "ফা",
+      "en_transliteration": "fā",
+      "category_ids": [
+        "letters"
+      ],
+      "note_bn": "ওপরে এক ফোঁটা। শুরু, মাঝ ও শেষে: فـ ـفـ ـف।",
+      "note_en": "One dot above. Start, middle, end: فـ ـفـ ـف."
+    },
+    {
+      "id": "rd-l6-02",
+      "type": "word",
+      "arabic": "ق",
+      "bangla": "উচ্চারণ: ক (গলার গভীর থেকে)",
+      "english": "Sound: q, a deep k",
+      "bn_transliteration": "ক্বাফ",
+      "en_transliteration": "qāf",
+      "category_ids": [
+        "letters"
+      ],
+      "note_bn": "ওপরে দুই ফোঁটা। সৌদি কথায় প্রায়ই 'গ' শোনায়। শুরু, মাঝ ও শেষে: قـ ـقـ ـق।",
+      "note_en": "Two dots above. Often sounds like g in Saudi speech. Start, middle, end: قـ ـقـ ـق."
+    },
+    {
+      "id": "rd-l6-03",
+      "type": "word",
+      "arabic": "ك",
+      "bangla": "উচ্চারণ: ক",
+      "english": "Sound: k",
+      "bn_transliteration": "কাফ",
+      "en_transliteration": "kāf",
+      "category_ids": [
+        "letters"
+      ],
+      "note_bn": "শুরু, মাঝ ও শেষে: كـ ـكـ ـك।",
+      "note_en": "Start, middle, end: كـ ـكـ ـك."
+    },
+    {
+      "id": "rd-l6-04",
+      "type": "word",
+      "arabic": "ل",
+      "bangla": "উচ্চারণ: ল",
+      "english": "Sound: l",
+      "bn_transliteration": "লাম",
+      "en_transliteration": "lām",
+      "category_ids": [
+        "letters"
+      ],
+      "note_bn": "ل আর ا পাশাপাশি এলে একসাথে 'لا' (লা) লেখা হয়। শুরু, মাঝ ও শেষে: لـ ـلـ ـل।",
+      "note_en": "When ل meets ا they're written together as لا (lā). Start, middle, end: لـ ـلـ ـل."
+    },
+    {
+      "id": "rd-l6-05",
+      "type": "word",
+      "arabic": "قهوة",
+      "bangla": "কফি",
+      "english": "Coffee",
+      "bn_transliteration": "গাহওয়া",
+      "en_transliteration": "gahwa",
+      "category_ids": [
+        "letters"
+      ],
+      "note_bn": "ক্যাফের সাইনে দেখবেন।",
+      "note_en": "You'll see it on café signs."
+    },
+    {
+      "id": "rd-l6-06",
+      "type": "word",
+      "arabic": "كلب",
+      "bangla": "কুকুর",
+      "english": "Dog",
+      "bn_transliteration": "কালব",
+      "en_transliteration": "kalb",
+      "category_ids": [
+        "letters"
+      ]
+    },
+    {
+      "id": "rd-l7-01",
+      "type": "word",
+      "arabic": "م",
+      "bangla": "উচ্চারণ: ম",
+      "english": "Sound: m",
+      "bn_transliteration": "মীম",
+      "en_transliteration": "mīm",
+      "category_ids": [
+        "letters"
+      ],
+      "note_bn": "শুরু, মাঝ ও শেষে: مـ ـمـ ـم।",
+      "note_en": "Start, middle, end: مـ ـمـ ـم."
+    },
+    {
+      "id": "rd-l7-02",
+      "type": "word",
+      "arabic": "ن",
+      "bangla": "উচ্চারণ: ন",
+      "english": "Sound: n",
+      "bn_transliteration": "নূন",
+      "en_transliteration": "nūn",
+      "category_ids": [
+        "letters"
+      ],
+      "note_bn": "ওপরে এক ফোঁটা। শুরু, মাঝ ও শেষে: نـ ـنـ ـن।",
+      "note_en": "One dot above. Start, middle, end: نـ ـنـ ـن."
+    },
+    {
+      "id": "rd-l7-03",
+      "type": "word",
+      "arabic": "ه",
+      "bangla": "উচ্চারণ: হ (সাধারণ)",
+      "english": "Sound: h",
+      "bn_transliteration": "হা",
+      "en_transliteration": "hā",
+      "category_ids": [
+        "letters"
+      ],
+      "note_bn": "শুরু, মাঝ ও শেষে: هـ ـهـ ـه।",
+      "note_en": "Start, middle, end: هـ ـهـ ـه."
+    },
+    {
+      "id": "rd-l7-04",
+      "type": "word",
+      "arabic": "و",
+      "bangla": "উচ্চারণ: ও / উ (লম্বা)",
+      "english": "Sound: w, long ū",
+      "bn_transliteration": "ওয়াও",
+      "en_transliteration": "wāw",
+      "category_ids": [
+        "letters"
+      ],
+      "note_bn": "পরের অক্ষরের সাথে জোড়া লাগে না। শুরু, মাঝ ও শেষে: و ـو।",
+      "note_en": "Never joins to the letter after it. Start, middle, end: و ـو."
+    },
+    {
+      "id": "rd-l7-05",
+      "type": "word",
+      "arabic": "ي",
+      "bangla": "উচ্চারণ: ই / য়",
+      "english": "Sound: y, long ī",
+      "bn_transliteration": "ইয়া",
+      "en_transliteration": "yā",
+      "category_ids": [
+        "letters"
+      ],
+      "note_bn": "নিচে দুই ফোঁটা। শুরু, মাঝ ও শেষে: يـ ـيـ ـي।",
+      "note_en": "Two dots below. Start, middle, end: يـ ـيـ ـي."
+    },
+    {
+      "id": "rd-l7-06",
+      "type": "word",
+      "arabic": "بيت",
+      "bangla": "বাসা",
+      "english": "House",
+      "bn_transliteration": "বেইত",
+      "en_transliteration": "bēt",
+      "category_ids": [
+        "letters"
+      ],
+      "note_bn": "ب + ي + ت।",
+      "note_en": "ب + ي + ت."
+    },
+    {
+      "id": "rd-l7-07",
+      "type": "word",
+      "arabic": "يمين",
+      "bangla": "ডানে",
+      "english": "Right",
+      "bn_transliteration": "ইয়ামীন",
+      "en_transliteration": "yamīn",
+      "category_ids": [
+        "letters"
+      ]
+    },
+    {
+      "id": "rd-l8-01",
+      "type": "word",
+      "arabic": "ة",
+      "bangla": "উচ্চারণ: শেষে 'আ' (তা মারবুতা)",
+      "english": "Sound: a final -a (tā marbūṭa)",
+      "bn_transliteration": "তা মারবুতা",
+      "en_transliteration": "tā marbūṭa",
+      "category_ids": [
+        "letters"
+      ],
+      "note_bn": "শুধু শব্দের শেষে আসে, যেমন سيارة (সাইয়ারা)।",
+      "note_en": "Only at the end of words, as in سيارة (sayyāra)."
+    },
+    {
+      "id": "rd-l8-02",
+      "type": "word",
+      "arabic": "ال",
+      "bangla": "উচ্চারণ: আল (ইংরেজি the)",
+      "english": "Sound: al- ('the')",
+      "bn_transliteration": "আলিফ লাম",
+      "en_transliteration": "alif lām",
+      "category_ids": [
+        "letters"
+      ],
+      "note_bn": "শব্দের শুরুতে 'ال' মানে নির্দিষ্ট: باب = দরজা, الباب = দরজাটা।",
+      "note_en": "ال at the start means 'the': باب = a door, الباب = the door."
+    },
+    {
+      "id": "rd-l8-03",
+      "type": "word",
+      "arabic": "ى",
+      "bangla": "উচ্চারণ: শেষে 'আ' (আলিফ মাকসূরা)",
+      "english": "Sound: a final -a (alif maqṣūra)",
+      "bn_transliteration": "আলিফ মাকসূরা",
+      "en_transliteration": "alif maqṣūra",
+      "category_ids": [
+        "letters"
+      ],
+      "note_bn": "ي-এর মতো দেখতে কিন্তু ফোঁটা নেই, আর পড়তে 'আ'। যেমন مستشفى।",
+      "note_en": "Looks like ي without dots and reads -a, as in مستشفى."
+    },
+    {
+      "id": "rd-l8-04",
+      "type": "word",
+      "arabic": "ء",
+      "bangla": "উচ্চারণ: ছোট থামা (হামজা)",
+      "english": "Sound: a short stop (hamza)",
+      "bn_transliteration": "হামজা",
+      "en_transliteration": "hamza",
+      "category_ids": [
+        "letters"
+      ],
+      "note_bn": "প্রায়ই ا-এর ওপরে-নিচে বসে: أ إ।",
+      "note_en": "Often sits on alif: أ إ."
+    },
+    {
+      "id": "rd-l8-05",
+      "type": "word",
+      "arabic": "سيارة",
+      "bangla": "গাড়ি",
+      "english": "Car",
+      "bn_transliteration": "সাইয়ারা",
+      "en_transliteration": "sayyāra",
+      "category_ids": [
+        "letters"
+      ],
+      "note_bn": "শেষে ة = 'আ'।",
+      "note_en": "The final ة reads -a."
+    },
+    {
+      "id": "rd-l8-06",
+      "type": "word",
+      "arabic": "ولد",
+      "bangla": "ছেলে",
+      "english": "Boy",
+      "bn_transliteration": "ওয়ালাদ",
+      "en_transliteration": "walad",
+      "category_ids": [
+        "letters"
+      ]
+    },
+    {
+      "id": "rd-l8-07",
+      "type": "word",
+      "arabic": "بنت",
+      "bangla": "মেয়ে",
+      "english": "Girl",
+      "bn_transliteration": "বিনত",
+      "en_transliteration": "bint",
+      "category_ids": [
+        "letters"
+      ]
+    },
+    {
+      "id": "rd-l8-08",
+      "type": "word",
+      "arabic": "كتاب",
+      "bangla": "বই",
+      "english": "Book",
+      "bn_transliteration": "কিতাব",
+      "en_transliteration": "kitāb",
+      "category_ids": [
+        "letters"
+      ]
+    },
+    {
+      "id": "rd-l9-01",
+      "type": "word",
+      "arabic": "دخول",
+      "bangla": "প্রবেশ",
+      "english": "Entrance",
+      "bn_transliteration": "দুখূল",
+      "en_transliteration": "dukhūl",
+      "category_ids": [
+        "signs"
+      ]
+    },
+    {
+      "id": "rd-l9-02",
+      "type": "word",
+      "arabic": "خروج",
+      "bangla": "বের হওয়ার পথ",
+      "english": "Exit (way out)",
+      "bn_transliteration": "খুরূজ",
+      "en_transliteration": "khurūj",
+      "category_ids": [
+        "signs"
+      ]
+    },
+    {
+      "id": "rd-l9-03",
+      "type": "word",
+      "arabic": "مدخل",
+      "bangla": "প্রবেশপথ",
+      "english": "Entrance (door, gate)",
+      "bn_transliteration": "মাদখাল",
+      "en_transliteration": "madkhal",
+      "category_ids": [
+        "signs"
+      ]
+    },
+    {
+      "id": "rd-l9-04",
+      "type": "word",
+      "arabic": "مغلق",
+      "bangla": "বন্ধ",
+      "english": "Closed",
+      "bn_transliteration": "মুগলাগ",
+      "en_transliteration": "mughlaq",
+      "category_ids": [
+        "signs"
+      ]
+    },
+    {
+      "id": "rd-l9-05",
+      "type": "word",
+      "arabic": "مفتوح",
+      "bangla": "খোলা",
+      "english": "Open",
+      "bn_transliteration": "মাফতূহ",
+      "en_transliteration": "maftūḥ",
+      "category_ids": [
+        "signs"
+      ]
+    },
+    {
+      "id": "rd-l9-06",
+      "type": "word",
+      "arabic": "سحب",
+      "bangla": "টানুন",
+      "english": "Pull",
+      "bn_transliteration": "সাহব",
+      "en_transliteration": "saḥb",
+      "category_ids": [
+        "signs"
+      ],
+      "note_bn": "দরজায় লেখা থাকে।",
+      "note_en": "Written on doors."
+    },
+    {
+      "id": "rd-l9-07",
+      "type": "word",
+      "arabic": "دفع",
+      "bangla": "ঠেলুন",
+      "english": "Push",
+      "bn_transliteration": "দাফ",
+      "en_transliteration": "dafʿ",
+      "category_ids": [
+        "signs"
+      ],
+      "note_bn": "দরজায় লেখা থাকে। আবার 'দাফ' মানে পেমেন্টও।",
+      "note_en": "Written on doors. dafʿ also means payment."
+    },
+    {
+      "id": "rd-l9-08",
+      "type": "word",
+      "arabic": "رجال",
+      "bangla": "পুরুষ",
+      "english": "Men",
+      "bn_transliteration": "রিজাল",
+      "en_transliteration": "rijāl",
+      "category_ids": [
+        "signs"
+      ],
+      "note_bn": "টয়লেট বা নামাজের জায়গার দরজায় দেখবেন।",
+      "note_en": "On toilet and prayer room doors."
+    },
+    {
+      "id": "rd-l9-09",
+      "type": "word",
+      "arabic": "نساء",
+      "bangla": "মহিলা",
+      "english": "Women",
+      "bn_transliteration": "নিসা",
+      "en_transliteration": "nisāʾ",
+      "category_ids": [
+        "signs"
+      ]
+    },
+    {
+      "id": "rd-l9-10",
+      "type": "word",
+      "arabic": "عوائل",
+      "bangla": "পরিবার",
+      "english": "Families",
+      "bn_transliteration": "আওয়াইল",
+      "en_transliteration": "ʿawāʾil",
+      "category_ids": [
+        "signs"
+      ],
+      "note_bn": "রেস্টুরেন্টে পরিবারের জায়গা।",
+      "note_en": "The family section in restaurants."
+    },
+    {
+      "id": "rd-l9-11",
+      "type": "word",
+      "arabic": "مصلى",
+      "bangla": "নামাজের ঘর",
+      "english": "Prayer room",
+      "bn_transliteration": "মুসাল্লা",
+      "en_transliteration": "muṣalla",
+      "category_ids": [
+        "signs"
+      ]
+    },
+    {
+      "id": "rd-l9-12",
+      "type": "phrase",
+      "arabic": "دورات المياه",
+      "bangla": "টয়লেট",
+      "english": "Toilets",
+      "bn_transliteration": "দাওরাত আল-মিয়াহ",
+      "en_transliteration": "dawrāt al-miyāh",
+      "category_ids": [
+        "signs"
+      ]
+    },
+    {
+      "id": "rd-l9-13",
+      "type": "phrase",
+      "arabic": "ممنوع التدخين",
+      "bangla": "ধূমপান নিষেধ",
+      "english": "No smoking",
+      "bn_transliteration": "মামনূ আত-তাদখীন",
+      "en_transliteration": "mamnūʿ at-tadkhīn",
+      "category_ids": [
+        "signs"
+      ]
+    },
+    {
+      "id": "rd-l9-14",
+      "type": "word",
+      "arabic": "قف",
+      "bangla": "থামুন (স্টপ)",
+      "english": "Stop",
+      "bn_transliteration": "গিফ",
+      "en_transliteration": "qif",
+      "category_ids": [
+        "signs"
+      ],
+      "note_bn": "লাল অষ্টভুজ ট্রাফিক সাইনে লেখা।",
+      "note_en": "On the red octagonal road sign."
+    },
+    {
+      "id": "rd-l10-01",
+      "type": "word",
+      "arabic": "ر.س",
+      "bangla": "সৌদি রিয়াল (লেখায়)",
+      "english": "SAR, Saudi riyal (written)",
+      "bn_transliteration": "রিয়াল সাউদি",
+      "en_transliteration": "riyāl saʿūdi",
+      "category_ids": [
+        "signs"
+      ],
+      "note_bn": "দামের পাশে 'ر.س' বা নতুন রিয়াল চিহ্ন দেখবেন।",
+      "note_en": "Prices show ر.س or the new riyal symbol."
+    },
+    {
+      "id": "rd-l10-02",
+      "type": "phrase",
+      "arabic": "١٥ ر.س",
+      "bangla": "১৫ রিয়াল",
+      "english": "15 riyals",
+      "bn_transliteration": "খামাস্তাশ রিয়াল",
+      "en_transliteration": "khamasṭaʿsh riyāl",
+      "category_ids": [
+        "signs"
+      ],
+      "note_bn": "আরবি অঙ্ক বাম থেকে ডানে পড়ে: ١٥ = ১৫।",
+      "note_en": "Arabic digits read left to right: ١٥ = 15."
+    },
+    {
+      "id": "rd-l10-03",
+      "type": "phrase",
+      "arabic": "٢٥٠ ر.س",
+      "bangla": "২৫০ রিয়াল",
+      "english": "250 riyals",
+      "bn_transliteration": "মিতেইন ওয়া খামসীন রিয়াল",
+      "en_transliteration": "mitēn w-khamsīn riyāl",
+      "category_ids": [
+        "signs"
+      ]
+    },
+    {
+      "id": "rd-l10-04",
+      "type": "word",
+      "arabic": "السعر",
+      "bangla": "দাম",
+      "english": "Price",
+      "bn_transliteration": "আস-সির",
+      "en_transliteration": "as-siʿr",
+      "category_ids": [
+        "signs"
+      ]
+    },
+    {
+      "id": "rd-l10-05",
+      "type": "word",
+      "arabic": "قائمة",
+      "bangla": "মেনু / তালিকা",
+      "english": "Menu, list",
+      "bn_transliteration": "গাইমা",
+      "en_transliteration": "qāʾima",
+      "category_ids": [
+        "signs"
+      ],
+      "note_bn": "অনেক মেনুর ওপরে 'قائمة الطعام' লেখা থাকে।",
+      "note_en": "Many menus are headed قائمة الطعام."
+    },
+    {
+      "id": "rd-l10-06",
+      "type": "word",
+      "arabic": "كبسة",
+      "bangla": "কাবসা (ভাত-মাংস)",
+      "english": "Kabsa (rice and meat)",
+      "bn_transliteration": "কাবসা",
+      "en_transliteration": "kabsa",
+      "category_ids": [
+        "signs"
+      ],
+      "note_bn": "সৌদির জাতীয় খাবার।",
+      "note_en": "The Saudi national dish."
+    },
+    {
+      "id": "rd-l10-07",
+      "type": "word",
+      "arabic": "مشويات",
+      "bangla": "গ্রিল আইটেম",
+      "english": "Grills",
+      "bn_transliteration": "মাশউইয়াত",
+      "en_transliteration": "mashwiyyāt",
+      "category_ids": [
+        "signs"
+      ]
+    },
+    {
+      "id": "rd-l10-08",
+      "type": "word",
+      "arabic": "حلويات",
+      "bangla": "মিষ্টি",
+      "english": "Sweets, desserts",
+      "bn_transliteration": "হালাউইয়াত",
+      "en_transliteration": "ḥalawiyyāt",
+      "category_ids": [
+        "signs"
+      ]
+    },
+    {
+      "id": "rd-l10-09",
+      "type": "word",
+      "arabic": "ماء",
+      "bangla": "পানি (লেখায়)",
+      "english": "Water (written)",
+      "bn_transliteration": "মা",
+      "en_transliteration": "māʾ",
+      "category_ids": [
+        "signs"
+      ],
+      "note_bn": "লেখায় 'ماء', কিন্তু মুখে বলে 'মোইয়া'।",
+      "note_en": "Written ماء, but said mōya."
+    },
+    {
+      "id": "rd-l10-10",
+      "type": "phrase",
+      "arabic": "عرض خاص",
+      "bangla": "স্পেশাল অফার",
+      "english": "Special offer",
+      "bn_transliteration": "আরদ খাস",
+      "en_transliteration": "ʿarḍ khāṣṣ",
+      "category_ids": [
+        "signs"
+      ]
+    },
+    {
+      "id": "rd-l10-11",
+      "type": "word",
+      "arabic": "مجاناً",
+      "bangla": "ফ্রি",
+      "english": "Free",
+      "bn_transliteration": "মাজ্জানান",
+      "en_transliteration": "majjānan",
+      "category_ids": [
+        "signs"
+      ]
+    }
+  ],
+  "course": {
+    "id": "read-arabic",
+    "title_bn": "১০ দিনে আরবি পড়া",
+    "title_en": "Read Arabic in 10 days",
+    "description_bn": "আরবি অক্ষর চেনা, সাইনবোর্ড পড়া, আর দাম ও মেনু পড়া — প্রতিদিন একটু করে।",
+    "description_en": "Learn the Arabic letters, then read signs, prices and menus, a little each day.",
+    "type": "reading",
+    "is_free": true,
+    "level": "beginner",
+    "languages": [
+      "bn",
+      "en"
+    ],
+    "lessons": [
+      {
+        "id": "read-1",
+        "title_bn": "দিন ১: ا ب ت ث",
+        "title_en": "Day 1: ا ب ت ث",
+        "category_id": "letters",
+        "item_ids": [
+          "rd-l1-01",
+          "rd-l1-02",
+          "rd-l1-03",
+          "rd-l1-04",
+          "rd-l1-05",
+          "rd-l1-06"
+        ],
+        "order": 10,
+        "is_free": true
+      },
+      {
+        "id": "read-2",
+        "title_bn": "দিন ২: ج ح خ",
+        "title_en": "Day 2: ج ح خ",
+        "category_id": "letters",
+        "item_ids": [
+          "rd-l2-01",
+          "rd-l2-02",
+          "rd-l2-03",
+          "rd-l2-04",
+          "rd-l2-05",
+          "rd-l2-06"
+        ],
+        "order": 20,
+        "is_free": true
+      },
+      {
+        "id": "read-3",
+        "title_bn": "দিন ৩: د ذ ر ز",
+        "title_en": "Day 3: د ذ ر ز",
+        "category_id": "letters",
+        "item_ids": [
+          "rd-l3-01",
+          "rd-l3-02",
+          "rd-l3-03",
+          "rd-l3-04",
+          "rd-l3-05",
+          "rd-l3-06"
+        ],
+        "order": 30,
+        "is_free": true
+      },
+      {
+        "id": "read-4",
+        "title_bn": "দিন ৪: س ش ص ض",
+        "title_en": "Day 4: س ش ص ض",
+        "category_id": "letters",
+        "item_ids": [
+          "rd-l4-01",
+          "rd-l4-02",
+          "rd-l4-03",
+          "rd-l4-04",
+          "rd-l4-05",
+          "rd-l4-06"
+        ],
+        "order": 40,
+        "is_free": true
+      },
+      {
+        "id": "read-5",
+        "title_bn": "দিন ৫: ط ظ ع غ",
+        "title_en": "Day 5: ط ظ ع غ",
+        "category_id": "letters",
+        "item_ids": [
+          "rd-l5-01",
+          "rd-l5-02",
+          "rd-l5-03",
+          "rd-l5-04",
+          "rd-l5-05",
+          "rd-l5-06"
+        ],
+        "order": 50,
+        "is_free": true
+      },
+      {
+        "id": "read-6",
+        "title_bn": "দিন ৬: ف ق ك ل",
+        "title_en": "Day 6: ف ق ك ل",
+        "category_id": "letters",
+        "item_ids": [
+          "rd-l6-01",
+          "rd-l6-02",
+          "rd-l6-03",
+          "rd-l6-04",
+          "rd-l6-05",
+          "rd-l6-06"
+        ],
+        "order": 60,
+        "is_free": true
+      },
+      {
+        "id": "read-7",
+        "title_bn": "দিন ৭: م ن ه و ي",
+        "title_en": "Day 7: م ن ه و ي",
+        "category_id": "letters",
+        "item_ids": [
+          "rd-l7-01",
+          "rd-l7-02",
+          "rd-l7-03",
+          "rd-l7-04",
+          "rd-l7-05",
+          "rd-l7-06",
+          "rd-l7-07"
+        ],
+        "order": 70,
+        "is_free": true
+      },
+      {
+        "id": "read-8",
+        "title_bn": "দিন ৮: বিশেষ চিহ্ন ও প্রথম শব্দ",
+        "title_en": "Day 8: Special marks and first words",
+        "category_id": "letters",
+        "item_ids": [
+          "rd-l8-01",
+          "rd-l8-02",
+          "rd-l8-03",
+          "rd-l8-04",
+          "rd-l8-05",
+          "rd-l8-06",
+          "rd-l8-07",
+          "rd-l8-08"
+        ],
+        "order": 80,
+        "is_free": true
+      },
+      {
+        "id": "read-9",
+        "title_bn": "দিন ৯: সাইনবোর্ড পড়া",
+        "title_en": "Day 9: Reading signs",
+        "category_id": "signs",
+        "item_ids": [
+          "rd-l9-01",
+          "rd-l9-02",
+          "rd-l9-03",
+          "rd-l9-04",
+          "rd-l9-05",
+          "rd-l9-06",
+          "rd-l9-07",
+          "rd-l9-08",
+          "rd-l9-09",
+          "rd-l9-10",
+          "rd-l9-11",
+          "rd-l9-12",
+          "rd-l9-13",
+          "rd-l9-14"
+        ],
+        "order": 90,
+        "is_free": true
+      },
+      {
+        "id": "read-10",
+        "title_bn": "দিন ১০: দাম ও মেনু পড়া",
+        "title_en": "Day 10: Reading prices and menus",
+        "category_id": "signs",
+        "item_ids": [
+          "rd-l10-01",
+          "rd-l10-02",
+          "rd-l10-03",
+          "rd-l10-04",
+          "rd-l10-05",
+          "rd-l10-06",
+          "rd-l10-07",
+          "rd-l10-08",
+          "rd-l10-09",
+          "rd-l10-10",
+          "rd-l10-11"
+        ],
+        "order": 100,
+        "is_free": true
+      }
+    ]
+  }
+}

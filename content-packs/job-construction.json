@@ -1,0 +1,601 @@
+{
+  "name": "Job pack: Construction",
+  "categories": [
+    {
+      "id": "construction",
+      "name_en": "Construction",
+      "name_bn": "নির্মাণ কাজ",
+      "order": 190
+    }
+  ],
+  "items": [
+    {
+      "id": "jc-l1-01",
+      "type": "word",
+      "arabic": "مطرقة",
+      "bangla": "হাতুড়ি",
+      "english": "Hammer",
+      "bn_transliteration": "মাতরাগা",
+      "en_transliteration": "maṭraga",
+      "category_ids": [
+        "construction"
+      ]
+    },
+    {
+      "id": "jc-l1-02",
+      "type": "word",
+      "arabic": "مفك",
+      "bangla": "স্ক্রু ড্রাইভার",
+      "english": "Screwdriver",
+      "bn_transliteration": "মিফাক্ক",
+      "en_transliteration": "mifakk",
+      "category_ids": [
+        "construction"
+      ]
+    },
+    {
+      "id": "jc-l1-03",
+      "type": "word",
+      "arabic": "دريل",
+      "bangla": "ড্রিল মেশিন",
+      "english": "Drill",
+      "bn_transliteration": "দ্রিল",
+      "en_transliteration": "drill",
+      "category_ids": [
+        "construction"
+      ]
+    },
+    {
+      "id": "jc-l1-04",
+      "type": "word",
+      "arabic": "سلم",
+      "bangla": "মই",
+      "english": "Ladder",
+      "bn_transliteration": "সুল্লাম",
+      "en_transliteration": "sullam",
+      "category_ids": [
+        "construction"
+      ]
+    },
+    {
+      "id": "jc-l1-05",
+      "type": "word",
+      "arabic": "منشار",
+      "bangla": "করাত",
+      "english": "Saw",
+      "bn_transliteration": "মিনশার",
+      "en_transliteration": "minshār",
+      "category_ids": [
+        "construction"
+      ]
+    },
+    {
+      "id": "jc-l1-06",
+      "type": "word",
+      "arabic": "متر",
+      "bangla": "মাপার ফিতা",
+      "english": "Tape measure, metre",
+      "bn_transliteration": "মিতির",
+      "en_transliteration": "mitir",
+      "category_ids": [
+        "construction"
+      ]
+    },
+    {
+      "id": "jc-l1-07",
+      "type": "word",
+      "arabic": "مسمار",
+      "bangla": "পেরেক",
+      "english": "Nail",
+      "bn_transliteration": "মিসমার",
+      "en_transliteration": "mismār",
+      "category_ids": [
+        "construction"
+      ]
+    },
+    {
+      "id": "jc-l1-08",
+      "type": "word",
+      "arabic": "براغي",
+      "bangla": "স্ক্রু",
+      "english": "Screws",
+      "bn_transliteration": "বারাগি",
+      "en_transliteration": "barāghi",
+      "category_ids": [
+        "construction"
+      ]
+    },
+    {
+      "id": "jc-l1-09",
+      "type": "word",
+      "arabic": "عربية",
+      "bangla": "ঠেলাগাড়ি",
+      "english": "Wheelbarrow",
+      "bn_transliteration": "আরাবিইয়া",
+      "en_transliteration": "ʿarabiyya",
+      "category_ids": [
+        "construction"
+      ],
+      "note_bn": "সাইটে 'আরাবিইয়া' মানে ঠেলাগাড়ি।",
+      "note_en": "On site, ʿarabiyya means a wheelbarrow."
+    },
+    {
+      "id": "jc-l1-10",
+      "type": "word",
+      "arabic": "مسحاة",
+      "bangla": "বেলচা",
+      "english": "Shovel",
+      "bn_transliteration": "মিসহা",
+      "en_transliteration": "misḥāh",
+      "category_ids": [
+        "construction"
+      ]
+    },
+    {
+      "id": "jc-l2-01",
+      "type": "word",
+      "arabic": "إسمنت",
+      "bangla": "সিমেন্ট",
+      "english": "Cement",
+      "bn_transliteration": "ইসমানত",
+      "en_transliteration": "ismant",
+      "category_ids": [
+        "construction"
+      ]
+    },
+    {
+      "id": "jc-l2-02",
+      "type": "word",
+      "arabic": "رمل",
+      "bangla": "বালু",
+      "english": "Sand",
+      "bn_transliteration": "রামল",
+      "en_transliteration": "raml",
+      "category_ids": [
+        "construction"
+      ]
+    },
+    {
+      "id": "jc-l2-03",
+      "type": "word",
+      "arabic": "بلك",
+      "bangla": "ব্লক ইট",
+      "english": "Concrete blocks",
+      "bn_transliteration": "বিলক",
+      "en_transliteration": "blok",
+      "category_ids": [
+        "construction"
+      ],
+      "note_bn": "সৌদিতে বেশিরভাগ দেয়াল সিমেন্টের ব্লক দিয়ে বানায়।",
+      "note_en": "Most Saudi walls are built from concrete blocks."
+    },
+    {
+      "id": "jc-l2-04",
+      "type": "word",
+      "arabic": "حديد",
+      "bangla": "রড",
+      "english": "Steel, rebar",
+      "bn_transliteration": "হাদীদ",
+      "en_transliteration": "ḥadīd",
+      "category_ids": [
+        "construction"
+      ]
+    },
+    {
+      "id": "jc-l2-05",
+      "type": "word",
+      "arabic": "خشب",
+      "bangla": "কাঠ",
+      "english": "Wood",
+      "bn_transliteration": "খাশাব",
+      "en_transliteration": "khashab",
+      "category_ids": [
+        "construction"
+      ]
+    },
+    {
+      "id": "jc-l2-06",
+      "type": "word",
+      "arabic": "بلاط",
+      "bangla": "টাইলস",
+      "english": "Tiles",
+      "bn_transliteration": "বালাত",
+      "en_transliteration": "balāṭ",
+      "category_ids": [
+        "construction"
+      ]
+    },
+    {
+      "id": "jc-l2-07",
+      "type": "word",
+      "arabic": "صبغ",
+      "bangla": "রং",
+      "english": "Paint",
+      "bn_transliteration": "সাবগ",
+      "en_transliteration": "ṣabgh",
+      "category_ids": [
+        "construction"
+      ],
+      "note_bn": "সৌদিরা রংকে 'সাবগ' বলে, 'বুয়া' কম।",
+      "note_en": "Saudis say ṣabgh for paint."
+    },
+    {
+      "id": "jc-l2-08",
+      "type": "word",
+      "arabic": "خلطة",
+      "bangla": "মশলা (সিমেন্টের মিক্স)",
+      "english": "The mix",
+      "bn_transliteration": "খালতা",
+      "en_transliteration": "khalṭa",
+      "category_ids": [
+        "construction"
+      ]
+    },
+    {
+      "id": "jc-l2-09",
+      "type": "word",
+      "arabic": "أسلاك",
+      "bangla": "তার",
+      "english": "Wires",
+      "bn_transliteration": "আসলাক",
+      "en_transliteration": "aslāk",
+      "category_ids": [
+        "construction"
+      ]
+    },
+    {
+      "id": "jc-l2-10",
+      "type": "word",
+      "arabic": "مواسير",
+      "bangla": "পাইপ",
+      "english": "Pipes",
+      "bn_transliteration": "মাওয়াসীর",
+      "en_transliteration": "mawāsīr",
+      "category_ids": [
+        "construction"
+      ]
+    },
+    {
+      "id": "jc-l3-01",
+      "type": "phrase",
+      "arabic": "اخلط الإسمنت",
+      "bangla": "সিমেন্ট মেশাও",
+      "english": "Mix the cement",
+      "bn_transliteration": "ইখলিত আল-ইসমানত",
+      "en_transliteration": "ikhliṭ al-ismant",
+      "category_ids": [
+        "construction"
+      ]
+    },
+    {
+      "id": "jc-l3-02",
+      "type": "phrase",
+      "arabic": "شيل البلك",
+      "bangla": "ব্লক তোলো",
+      "english": "Carry the blocks",
+      "bn_transliteration": "শীল আল-বিলক",
+      "en_transliteration": "shīl al-blok",
+      "category_ids": [
+        "construction"
+      ]
+    },
+    {
+      "id": "jc-l3-03",
+      "type": "phrase",
+      "arabic": "اطلع فوق",
+      "bangla": "ওপরে ওঠো",
+      "english": "Go up",
+      "bn_transliteration": "ইতলা ফোগ",
+      "en_transliteration": "iṭlaʿ fōg",
+      "category_ids": [
+        "construction"
+      ]
+    },
+    {
+      "id": "jc-l3-04",
+      "type": "phrase",
+      "arabic": "انزل تحت",
+      "bangla": "নিচে নামো",
+      "english": "Come down",
+      "bn_transliteration": "ইনযিল তাহত",
+      "en_transliteration": "inzil taḥt",
+      "category_ids": [
+        "construction"
+      ]
+    },
+    {
+      "id": "jc-l3-05",
+      "type": "word",
+      "arabic": "قيس",
+      "bangla": "মাপো",
+      "english": "Measure",
+      "bn_transliteration": "গীস",
+      "en_transliteration": "gīs",
+      "category_ids": [
+        "construction"
+      ]
+    },
+    {
+      "id": "jc-l3-06",
+      "type": "word",
+      "arabic": "اقطع",
+      "bangla": "কাটো",
+      "english": "Cut",
+      "bn_transliteration": "ইগতা",
+      "en_transliteration": "igṭaʿ",
+      "category_ids": [
+        "construction"
+      ]
+    },
+    {
+      "id": "jc-l3-07",
+      "type": "word",
+      "arabic": "ركب",
+      "bangla": "লাগাও / ফিট করো",
+      "english": "Install, fit",
+      "bn_transliteration": "রাক্কিব",
+      "en_transliteration": "rakkib",
+      "category_ids": [
+        "construction"
+      ]
+    },
+    {
+      "id": "jc-l3-08",
+      "type": "word",
+      "arabic": "فك",
+      "bangla": "খোলো (খুলে ফেলো)",
+      "english": "Take it apart, unscrew",
+      "bn_transliteration": "ফুক্ক",
+      "en_transliteration": "fukk",
+      "category_ids": [
+        "construction"
+      ]
+    },
+    {
+      "id": "jc-l3-09",
+      "type": "word",
+      "arabic": "صب",
+      "bangla": "ঢালো",
+      "english": "Pour",
+      "bn_transliteration": "সুব্ব",
+      "en_transliteration": "ṣubb",
+      "category_ids": [
+        "construction"
+      ]
+    },
+    {
+      "id": "jc-l3-10",
+      "type": "phrase",
+      "arabic": "سو كذا",
+      "bangla": "এভাবে করো",
+      "english": "Do it like this",
+      "bn_transliteration": "সাওয়ি কিদা",
+      "en_transliteration": "sawwi kidha",
+      "category_ids": [
+        "construction"
+      ],
+      "note_bn": "ফোরম্যান দেখিয়ে দিয়ে বলে। না বুঝলে আবার দেখাতে বলুন।",
+      "note_en": "The foreman shows you and says this. Ask again if unsure."
+    },
+    {
+      "id": "jc-l3-11",
+      "type": "phrase",
+      "arabic": "مو كذا",
+      "bangla": "এভাবে না",
+      "english": "Not like this",
+      "bn_transliteration": "মু কিদা",
+      "en_transliteration": "mū kidha",
+      "category_ids": [
+        "construction"
+      ]
+    },
+    {
+      "id": "jc-l4-01",
+      "type": "phrase",
+      "arabic": "البس الخوذة",
+      "bangla": "হেলমেট পরো",
+      "english": "Wear your helmet",
+      "bn_transliteration": "ইলবাস আল-খূযা",
+      "en_transliteration": "ilbas al-khūdha",
+      "category_ids": [
+        "construction"
+      ]
+    },
+    {
+      "id": "jc-l4-02",
+      "type": "word",
+      "arabic": "الجوانتي",
+      "bangla": "হাতমোজা",
+      "english": "Gloves",
+      "bn_transliteration": "আল-গুয়ান্তি",
+      "en_transliteration": "al-gwanti",
+      "category_ids": [
+        "construction"
+      ]
+    },
+    {
+      "id": "jc-l4-03",
+      "type": "phrase",
+      "arabic": "انتبه تطيح",
+      "bangla": "সাবধান, পড়ে যাবে",
+      "english": "Careful, you'll fall",
+      "bn_transliteration": "ইনতাবিহ তিতীহ",
+      "en_transliteration": "intabih tṭīḥ",
+      "category_ids": [
+        "construction"
+      ]
+    },
+    {
+      "id": "jc-l4-04",
+      "type": "word",
+      "arabic": "خطر",
+      "bangla": "বিপদ",
+      "english": "Danger",
+      "bn_transliteration": "খাতার",
+      "en_transliteration": "khaṭar",
+      "category_ids": [
+        "construction"
+      ]
+    },
+    {
+      "id": "jc-l4-05",
+      "type": "phrase",
+      "arabic": "ممنوع الدخول",
+      "bangla": "প্রবেশ নিষেধ",
+      "english": "No entry",
+      "bn_transliteration": "মামনূ আদ-দুখূল",
+      "en_transliteration": "mamnūʿ ad-dukhūl",
+      "category_ids": [
+        "construction"
+      ]
+    },
+    {
+      "id": "jc-l4-06",
+      "type": "word",
+      "arabic": "إسعاف",
+      "bangla": "অ্যাম্বুলেন্স",
+      "english": "Ambulance",
+      "bn_transliteration": "ইসআফ",
+      "en_transliteration": "isʿāf",
+      "category_ids": [
+        "construction"
+      ],
+      "note_bn": "অ্যাম্বুলেন্স নাম্বার: ৯৯৭।",
+      "note_en": "Ambulance number: 997."
+    },
+    {
+      "id": "jc-l4-07",
+      "type": "word",
+      "arabic": "انجرحت",
+      "bangla": "আমি আঘাত পেয়েছি",
+      "english": "I got hurt",
+      "bn_transliteration": "ইনজারাহত",
+      "en_transliteration": "injaraḥt",
+      "category_ids": [
+        "construction"
+      ]
+    },
+    {
+      "id": "jc-l4-08",
+      "type": "phrase",
+      "arabic": "الحر شديد",
+      "bangla": "খুব গরম",
+      "english": "It's very hot",
+      "bn_transliteration": "আল-হার্র শাদীদ",
+      "en_transliteration": "al-ḥarr shadīd",
+      "category_ids": [
+        "construction"
+      ],
+      "note_bn": "গ্রীষ্মে (১৫ জুন – ১৫ সেপ্টেম্বর) দুপুর ১২টা-৩টা রোদে কাজ নিষেধ।",
+      "note_en": "In summer (15 June to 15 September) outdoor work from 12 to 3 pm is banned."
+    },
+    {
+      "id": "jc-l4-09",
+      "type": "phrase",
+      "arabic": "اشرب موية",
+      "bangla": "পানি খাও",
+      "english": "Drink water",
+      "bn_transliteration": "ইশরাব মোইয়া",
+      "en_transliteration": "ishrab mōya",
+      "category_ids": [
+        "construction"
+      ]
+    }
+  ],
+  "course": {
+    "id": "job-construction",
+    "title_bn": "চাকরির প্যাক: নির্মাণ শ্রমিক",
+    "title_en": "Job pack: Construction",
+    "description_bn": "সাইটের কাজের জন্য: যন্ত্রপাতি, মালামাল, ফোরম্যানের নির্দেশ আর নিরাপত্তা।",
+    "description_en": "For site work: tools, materials, the foreman's instructions and safety.",
+    "type": "topic",
+    "is_free": true,
+    "level": "beginner",
+    "languages": [
+      "bn",
+      "en"
+    ],
+    "lessons": [
+      {
+        "id": "construction-1",
+        "title_bn": "পাঠ ১: যন্ত্রপাতি",
+        "title_en": "Lesson 1: Tools",
+        "category_id": "construction",
+        "item_ids": [
+          "jc-l1-01",
+          "jc-l1-02",
+          "jc-l1-03",
+          "jc-l1-04",
+          "jc-l1-05",
+          "jc-l1-06",
+          "jc-l1-07",
+          "jc-l1-08",
+          "jc-l1-09",
+          "jc-l1-10"
+        ],
+        "order": 10,
+        "is_free": true
+      },
+      {
+        "id": "construction-2",
+        "title_bn": "পাঠ ২: মালামাল",
+        "title_en": "Lesson 2: Materials",
+        "category_id": "construction",
+        "item_ids": [
+          "jc-l2-01",
+          "jc-l2-02",
+          "jc-l2-03",
+          "jc-l2-04",
+          "jc-l2-05",
+          "jc-l2-06",
+          "jc-l2-07",
+          "jc-l2-08",
+          "jc-l2-09",
+          "jc-l2-10"
+        ],
+        "order": 20,
+        "is_free": true
+      },
+      {
+        "id": "construction-3",
+        "title_bn": "পাঠ ৩: ফোরম্যানের নির্দেশ",
+        "title_en": "Lesson 3: The foreman's instructions",
+        "category_id": "construction",
+        "item_ids": [
+          "jc-l3-01",
+          "jc-l3-02",
+          "jc-l3-03",
+          "jc-l3-04",
+          "jc-l3-05",
+          "jc-l3-06",
+          "jc-l3-07",
+          "jc-l3-08",
+          "jc-l3-09",
+          "jc-l3-10",
+          "jc-l3-11"
+        ],
+        "order": 30,
+        "is_free": true
+      },
+      {
+        "id": "construction-4",
+        "title_bn": "পাঠ ৪: নিরাপত্তা",
+        "title_en": "Lesson 4: Safety",
+        "category_id": "construction",
+        "item_ids": [
+          "jc-l4-01",
+          "jc-l4-02",
+          "jc-l4-03",
+          "jc-l4-04",
+          "jc-l4-05",
+          "jc-l4-06",
+          "jc-l4-07",
+          "jc-l4-08",
+          "jc-l4-09"
+        ],
+        "order": 40,
+        "is_free": true
+      }
+    ]
+  }
+}

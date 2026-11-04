@@ -1,0 +1,555 @@
+{
+  "name": "Job pack: Delivery riders",
+  "categories": [
+    {
+      "id": "transport",
+      "name_en": "Taxi and delivery",
+      "name_bn": "ট্যাক্সি ও ডেলিভারি",
+      "order": 110
+    },
+    {
+      "id": "problems",
+      "name_en": "Problems and complaints",
+      "name_bn": "সমস্যা ও অভিযোগ",
+      "order": 100
+    }
+  ],
+  "items": [
+    {
+      "id": "jr-l1-01",
+      "type": "word",
+      "arabic": "التطبيق",
+      "bangla": "অ্যাপ",
+      "english": "The app",
+      "bn_transliteration": "আত-তাতবীগ",
+      "en_transliteration": "at-taṭbīg",
+      "category_ids": [
+        "transport"
+      ]
+    },
+    {
+      "id": "jr-l1-02",
+      "type": "phrase",
+      "arabic": "الطلب جاهز؟",
+      "bangla": "অর্ডার রেডি?",
+      "english": "Is the order ready?",
+      "bn_transliteration": "আত-তালাব জাহিয?",
+      "en_transliteration": "aṭ-ṭalab jāhiz?",
+      "category_ids": [
+        "transport"
+      ]
+    },
+    {
+      "id": "jr-l1-03",
+      "type": "phrase",
+      "arabic": "الطلب مو جاهز",
+      "bangla": "অর্ডার এখনো রেডি না",
+      "english": "The order isn't ready",
+      "bn_transliteration": "আত-তালাব মু জাহিয",
+      "en_transliteration": "aṭ-ṭalab mū jāhiz",
+      "category_ids": [
+        "transport"
+      ]
+    },
+    {
+      "id": "jr-l1-04",
+      "type": "phrase",
+      "arabic": "رقم الطلب",
+      "bangla": "অর্ডার নাম্বার",
+      "english": "Order number",
+      "bn_transliteration": "রাগম আত-তালাব",
+      "en_transliteration": "ragm aṭ-ṭalab",
+      "category_ids": [
+        "transport"
+      ],
+      "note_bn": "রেস্টুরেন্টে নাম না বলে অর্ডার নাম্বার বলুন।",
+      "note_en": "At the restaurant give the order number, not the name."
+    },
+    {
+      "id": "jr-l1-05",
+      "type": "phrase",
+      "arabic": "اسم العميل",
+      "bangla": "কাস্টমারের নাম",
+      "english": "The customer's name",
+      "bn_transliteration": "ইসম আল-আমীল",
+      "en_transliteration": "ism al-ʿamīl",
+      "category_ids": [
+        "transport"
+      ]
+    },
+    {
+      "id": "jr-l1-06",
+      "type": "word",
+      "arabic": "المطعم",
+      "bangla": "রেস্টুরেন্ট",
+      "english": "The restaurant",
+      "bn_transliteration": "আল-মাতআম",
+      "en_transliteration": "al-maṭʿam",
+      "category_ids": [
+        "transport"
+      ]
+    },
+    {
+      "id": "jr-l1-07",
+      "type": "phrase",
+      "arabic": "أنتظر الطلب",
+      "bangla": "অর্ডারের জন্য অপেক্ষা করছি",
+      "english": "I'm waiting for the order",
+      "bn_transliteration": "আনতাদির আত-তালাব",
+      "en_transliteration": "antaẓir aṭ-ṭalab",
+      "category_ids": [
+        "transport"
+      ]
+    },
+    {
+      "id": "jr-l1-08",
+      "type": "phrase",
+      "arabic": "الطلب ناقص",
+      "bangla": "অর্ডারে কিছু কম আছে",
+      "english": "Something is missing from the order",
+      "bn_transliteration": "আত-তালাব নাগিস",
+      "en_transliteration": "aṭ-ṭalab nāgiṣ",
+      "category_ids": [
+        "transport"
+      ],
+      "note_bn": "নেওয়ার আগে ব্যাগ চেক করুন — পরে কাস্টমার রাইডারকে দোষ দেয়।",
+      "note_en": "Check the bag before you leave; customers blame the rider later."
+    },
+    {
+      "id": "jr-l1-09",
+      "type": "phrase",
+      "arabic": "ألغي الطلب",
+      "bangla": "অর্ডার বাতিল করো",
+      "english": "Cancel the order",
+      "bn_transliteration": "আলগি আত-তালাব",
+      "en_transliteration": "alghi aṭ-ṭalab",
+      "category_ids": [
+        "transport"
+      ]
+    },
+    {
+      "id": "jr-l2-01",
+      "type": "phrase",
+      "arabic": "العنوان غلط",
+      "bangla": "ঠিকানা ভুল",
+      "english": "The address is wrong",
+      "bn_transliteration": "আল-উনওয়ান গালাত",
+      "en_transliteration": "al-ʿunwān ghalaṭ",
+      "category_ids": [
+        "transport"
+      ]
+    },
+    {
+      "id": "jr-l2-02",
+      "type": "phrase",
+      "arabic": "اللوكيشن مو واضح",
+      "bangla": "লোকেশন পরিষ্কার না",
+      "english": "The location isn't clear",
+      "bn_transliteration": "আল-লোকেশন মু ওয়াদিহ",
+      "en_transliteration": "al-lokēshen mū wāḍiḥ",
+      "category_ids": [
+        "transport"
+      ]
+    },
+    {
+      "id": "jr-l2-03",
+      "type": "phrase",
+      "arabic": "وش اسم الشارع؟",
+      "bangla": "রাস্তার নাম কী?",
+      "english": "What's the street name?",
+      "bn_transliteration": "ওশ ইসম আশ-শারি?",
+      "en_transliteration": "wesh ism ash-shāriʿ?",
+      "category_ids": [
+        "transport"
+      ]
+    },
+    {
+      "id": "jr-l2-04",
+      "type": "phrase",
+      "arabic": "أي عمارة؟",
+      "bangla": "কোন বিল্ডিং?",
+      "english": "Which building?",
+      "bn_transliteration": "আই ইমারা?",
+      "en_transliteration": "ay ʿimāra?",
+      "category_ids": [
+        "transport"
+      ]
+    },
+    {
+      "id": "jr-l2-05",
+      "type": "phrase",
+      "arabic": "لون الباب وش؟",
+      "bangla": "দরজার রং কী?",
+      "english": "What colour is the door?",
+      "bn_transliteration": "লোন আল-বাব ওশ?",
+      "en_transliteration": "lōn al-bāb wesh?",
+      "category_ids": [
+        "transport"
+      ],
+      "note_bn": "অনেক বাসার নাম্বার থাকে না — রং বা পাশের দোকান জিজ্ঞেস করুন।",
+      "note_en": "Many houses have no number, so ask about colours or nearby shops."
+    },
+    {
+      "id": "jr-l2-06",
+      "type": "phrase",
+      "arabic": "أنا قريب",
+      "bangla": "আমি কাছে আছি",
+      "english": "I'm close",
+      "bn_transliteration": "আনা গারীব",
+      "en_transliteration": "ana garīb",
+      "category_ids": [
+        "transport"
+      ]
+    },
+    {
+      "id": "jr-l2-07",
+      "type": "word",
+      "arabic": "وصلت",
+      "bangla": "পৌঁছে গেছি",
+      "english": "I've arrived",
+      "bn_transliteration": "উসালত",
+      "en_transliteration": "wṣalt",
+      "category_ids": [
+        "transport"
+      ]
+    },
+    {
+      "id": "jr-l2-08",
+      "type": "phrase",
+      "arabic": "ما لقيت البيت",
+      "bangla": "বাসা খুঁজে পাচ্ছি না",
+      "english": "I can't find the house",
+      "bn_transliteration": "মা লাগেইত আল-বেইত",
+      "en_transliteration": "mā lgēt al-bēt",
+      "category_ids": [
+        "transport"
+      ]
+    },
+    {
+      "id": "jr-l2-09",
+      "type": "phrase",
+      "arabic": "أرسل لي صورة البيت",
+      "bangla": "বাসার ছবি পাঠান",
+      "english": "Send me a photo of the house",
+      "bn_transliteration": "আরসিল লি সূরাত আল-বেইত",
+      "en_transliteration": "arsil li ṣūrat al-bēt",
+      "category_ids": [
+        "transport"
+      ]
+    },
+    {
+      "id": "jr-l2-10",
+      "type": "phrase",
+      "arabic": "الباب الثاني",
+      "bangla": "অন্য দরজা",
+      "english": "The other door",
+      "bn_transliteration": "আল-বাব আস-সানি",
+      "en_transliteration": "al-bāb ath-thāni",
+      "category_ids": [
+        "transport"
+      ]
+    },
+    {
+      "id": "jr-l3-01",
+      "type": "phrase",
+      "arabic": "تفضل طلبك",
+      "bangla": "আপনার অর্ডার, নিন",
+      "english": "Here's your order",
+      "bn_transliteration": "তাফাদ্দাল তালাবাক",
+      "en_transliteration": "tfaḍḍal ṭalabak",
+      "category_ids": [
+        "transport"
+      ]
+    },
+    {
+      "id": "jr-l3-02",
+      "type": "phrase",
+      "arabic": "كاش ولا مدفوع؟",
+      "bangla": "নগদ নাকি আগেই পেমেন্ট করা?",
+      "english": "Cash or already paid?",
+      "bn_transliteration": "কাশ ওয়াল্লা মাদফূ?",
+      "en_transliteration": "kāsh walla madfūʿ?",
+      "category_ids": [
+        "transport"
+      ]
+    },
+    {
+      "id": "jr-l3-03",
+      "type": "word",
+      "arabic": "مدفوع",
+      "bangla": "টাকা দেওয়া হয়ে গেছে",
+      "english": "Paid",
+      "bn_transliteration": "মাদফূ",
+      "en_transliteration": "madfūʿ",
+      "category_ids": [
+        "transport"
+      ]
+    },
+    {
+      "id": "jr-l3-04",
+      "type": "word",
+      "arabic": "الباقي",
+      "bangla": "বাকি টাকা / ফেরত",
+      "english": "The change",
+      "bn_transliteration": "আল-বাগি",
+      "en_transliteration": "al-bāgi",
+      "category_ids": [
+        "transport"
+      ]
+    },
+    {
+      "id": "jr-l3-05",
+      "type": "phrase",
+      "arabic": "ما عندي صرف",
+      "bangla": "আমার কাছে ভাংতি নেই",
+      "english": "I don't have change",
+      "bn_transliteration": "মা ইনদি সারফ",
+      "en_transliteration": "mā ʿindi ṣarf",
+      "category_ids": [
+        "transport"
+      ],
+      "note_bn": "'সারফ' আর 'ফাক্কা' দুটোই ভাংতি।",
+      "note_en": "ṣarf and fakka both mean small change."
+    },
+    {
+      "id": "jr-l3-06",
+      "type": "phrase",
+      "arabic": "قيمني لو سمحت",
+      "bangla": "প্লিজ আমাকে রেটিং দিন",
+      "english": "Please rate me",
+      "bn_transliteration": "গাইয়িমনি লাও সামাহত",
+      "en_transliteration": "gayyimni law samaḥt",
+      "category_ids": [
+        "transport"
+      ],
+      "note_bn": "রেটিং ভালো থাকলে বেশি অর্ডার পাবেন।",
+      "note_en": "Good ratings bring more orders."
+    },
+    {
+      "id": "jr-l3-07",
+      "type": "phrase",
+      "arabic": "أتركه عند الباب؟",
+      "bangla": "দরজার সামনে রেখে যাব?",
+      "english": "Shall I leave it at the door?",
+      "bn_transliteration": "আতরুকাহ ইনদ আল-বাব?",
+      "en_transliteration": "atrukah ʿind al-bāb?",
+      "category_ids": [
+        "transport"
+      ]
+    },
+    {
+      "id": "jr-l3-08",
+      "type": "word",
+      "arabic": "الحارس",
+      "bangla": "দারোয়ান / গার্ড",
+      "english": "The guard",
+      "bn_transliteration": "আল-হারিস",
+      "en_transliteration": "al-ḥāris",
+      "category_ids": [
+        "transport"
+      ]
+    },
+    {
+      "id": "jr-l4-01",
+      "type": "phrase",
+      "arabic": "الأكل برد",
+      "bangla": "খাবার ঠান্ডা হয়ে গেছে",
+      "english": "The food got cold",
+      "bn_transliteration": "আল-আকিল বিরিদ",
+      "en_transliteration": "al-akil birid",
+      "category_ids": [
+        "problems"
+      ]
+    },
+    {
+      "id": "jr-l4-02",
+      "type": "word",
+      "arabic": "انكب",
+      "bangla": "পড়ে গেছে / ছড়িয়ে গেছে",
+      "english": "It spilled",
+      "bn_transliteration": "ইনকাব্ব",
+      "en_transliteration": "inkabb",
+      "category_ids": [
+        "problems"
+      ]
+    },
+    {
+      "id": "jr-l4-03",
+      "type": "phrase",
+      "arabic": "تأخرت، آسف",
+      "bangla": "দেরি হয়েছে, দুঃখিত",
+      "english": "Sorry I'm late",
+      "bn_transliteration": "তাআখখারত, আসিফ",
+      "en_transliteration": "taʾakhkhart, āsif",
+      "category_ids": [
+        "problems"
+      ]
+    },
+    {
+      "id": "jr-l4-04",
+      "type": "phrase",
+      "arabic": "الزحمة شديدة",
+      "bangla": "খুব জ্যাম",
+      "english": "The traffic is terrible",
+      "bn_transliteration": "আয-যাহমা শাদীদা",
+      "en_transliteration": "az-zaḥma shadīda",
+      "category_ids": [
+        "problems"
+      ]
+    },
+    {
+      "id": "jr-l4-05",
+      "type": "phrase",
+      "arabic": "البطارية خلصت",
+      "bangla": "চার্জ শেষ",
+      "english": "The battery is dead",
+      "bn_transliteration": "আল-বাত্তারিইয়া খিলসাত",
+      "en_transliteration": "al-baṭṭāriyya khilṣat",
+      "category_ids": [
+        "problems"
+      ]
+    },
+    {
+      "id": "jr-l4-06",
+      "type": "phrase",
+      "arabic": "الجوال طافي",
+      "bangla": "ফোন বন্ধ",
+      "english": "The phone is off",
+      "bn_transliteration": "আল-জাওয়াল তাফি",
+      "en_transliteration": "al-jawwāl ṭāfi",
+      "category_ids": [
+        "problems"
+      ]
+    },
+    {
+      "id": "jr-l4-07",
+      "type": "phrase",
+      "arabic": "العميل ما يرد",
+      "bangla": "কাস্টমার ফোন ধরছে না",
+      "english": "The customer isn't answering",
+      "bn_transliteration": "আল-আমীল মা ইরুদ্দ",
+      "en_transliteration": "al-ʿamīl mā yrudd",
+      "category_ids": [
+        "problems"
+      ]
+    },
+    {
+      "id": "jr-l4-08",
+      "type": "word",
+      "arabic": "الدباب",
+      "bangla": "মোটরসাইকেল",
+      "english": "The motorbike",
+      "bn_transliteration": "আদ-দাব্বাব",
+      "en_transliteration": "ad-dabbāb",
+      "category_ids": [
+        "problems"
+      ],
+      "note_bn": "সৌদিতে মোটরসাইকেলকে 'দাব্বাব' বলে।",
+      "note_en": "In Saudi a motorbike is a dabbāb."
+    },
+    {
+      "id": "jr-l4-09",
+      "type": "word",
+      "arabic": "المطر",
+      "bangla": "বৃষ্টি",
+      "english": "The rain",
+      "bn_transliteration": "আল-মাতার",
+      "en_transliteration": "al-maṭar",
+      "category_ids": [
+        "problems"
+      ]
+    }
+  ],
+  "course": {
+    "id": "job-delivery",
+    "title_bn": "চাকরির প্যাক: ডেলিভারি রাইডার",
+    "title_en": "Job pack: Delivery riders",
+    "description_bn": "ডেলিভারি অ্যাপের রাইডারদের জন্য: অর্ডার নেওয়া, ঠিকানা খোঁজা, হাতে দেওয়া আর সমস্যা।",
+    "description_en": "For delivery app riders: picking up orders, finding addresses, handing over and problems.",
+    "type": "topic",
+    "is_free": true,
+    "level": "beginner",
+    "languages": [
+      "bn",
+      "en"
+    ],
+    "lessons": [
+      {
+        "id": "delivery-1",
+        "title_bn": "পাঠ ১: অর্ডার নেওয়া",
+        "title_en": "Lesson 1: Picking up the order",
+        "category_id": "transport",
+        "item_ids": [
+          "jr-l1-01",
+          "jr-l1-02",
+          "jr-l1-03",
+          "jr-l1-04",
+          "jr-l1-05",
+          "jr-l1-06",
+          "jr-l1-07",
+          "jr-l1-08",
+          "jr-l1-09"
+        ],
+        "order": 10,
+        "is_free": true
+      },
+      {
+        "id": "delivery-2",
+        "title_bn": "পাঠ ২: ঠিকানা খোঁজা",
+        "title_en": "Lesson 2: Finding the address",
+        "category_id": "transport",
+        "item_ids": [
+          "jr-l2-01",
+          "jr-l2-02",
+          "jr-l2-03",
+          "jr-l2-04",
+          "jr-l2-05",
+          "jr-l2-06",
+          "jr-l2-07",
+          "jr-l2-08",
+          "jr-l2-09",
+          "jr-l2-10"
+        ],
+        "order": 20,
+        "is_free": true
+      },
+      {
+        "id": "delivery-3",
+        "title_bn": "পাঠ ৩: হাতে দেওয়া ও টাকা",
+        "title_en": "Lesson 3: Handing over and payment",
+        "category_id": "transport",
+        "item_ids": [
+          "jr-l3-01",
+          "jr-l3-02",
+          "jr-l3-03",
+          "jr-l3-04",
+          "jr-l3-05",
+          "jr-l3-06",
+          "jr-l3-07",
+          "jr-l3-08"
+        ],
+        "order": 30,
+        "is_free": true
+      },
+      {
+        "id": "delivery-4",
+        "title_bn": "পাঠ ৪: রাস্তার সমস্যা",
+        "title_en": "Lesson 4: Problems on the way",
+        "category_id": "problems",
+        "item_ids": [
+          "jr-l4-01",
+          "jr-l4-02",
+          "jr-l4-03",
+          "jr-l4-04",
+          "jr-l4-05",
+          "jr-l4-06",
+          "jr-l4-07",
+          "jr-l4-08",
+          "jr-l4-09"
+        ],
+        "order": 40,
+        "is_free": true
+      }
+    ]
+  }
+}

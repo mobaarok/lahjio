@@ -1,0 +1,601 @@
+{
+  "name": "Job pack: Restaurant staff",
+  "categories": [
+    {
+      "id": "food",
+      "name_en": "Restaurant and food",
+      "name_bn": "রেস্টুরেন্ট ও খাবার",
+      "order": 130
+    },
+    {
+      "id": "customers",
+      "name_en": "Customers",
+      "name_bn": "কাস্টমার",
+      "order": 80
+    }
+  ],
+  "items": [
+    {
+      "id": "jf-l1-01",
+      "type": "word",
+      "arabic": "المطبخ",
+      "bangla": "রান্নাঘর",
+      "english": "The kitchen",
+      "bn_transliteration": "আল-মাতবাখ",
+      "en_transliteration": "al-maṭbakh",
+      "category_ids": [
+        "food"
+      ]
+    },
+    {
+      "id": "jf-l1-02",
+      "type": "word",
+      "arabic": "الثلاجة",
+      "bangla": "ফ্রিজ",
+      "english": "The fridge",
+      "bn_transliteration": "আস-সাল্লাজা",
+      "en_transliteration": "ath-thallāja",
+      "category_ids": [
+        "food"
+      ]
+    },
+    {
+      "id": "jf-l1-03",
+      "type": "word",
+      "arabic": "الفرن",
+      "bangla": "ওভেন",
+      "english": "The oven",
+      "bn_transliteration": "আল-ফুরন",
+      "en_transliteration": "al-furn",
+      "category_ids": [
+        "food"
+      ]
+    },
+    {
+      "id": "jf-l1-04",
+      "type": "word",
+      "arabic": "صحن",
+      "bangla": "প্লেট",
+      "english": "Plate",
+      "bn_transliteration": "সাহন",
+      "en_transliteration": "ṣaḥn",
+      "category_ids": [
+        "food"
+      ]
+    },
+    {
+      "id": "jf-l1-05",
+      "type": "word",
+      "arabic": "ملعقة",
+      "bangla": "চামচ",
+      "english": "Spoon",
+      "bn_transliteration": "মালআগা",
+      "en_transliteration": "malʿaga",
+      "category_ids": [
+        "food"
+      ]
+    },
+    {
+      "id": "jf-l1-06",
+      "type": "word",
+      "arabic": "سكين",
+      "bangla": "ছুরি",
+      "english": "Knife",
+      "bn_transliteration": "সিক্কীন",
+      "en_transliteration": "sikkīn",
+      "category_ids": [
+        "food"
+      ]
+    },
+    {
+      "id": "jf-l1-07",
+      "type": "word",
+      "arabic": "كوب",
+      "bangla": "কাপ / গ্লাস",
+      "english": "Cup, glass",
+      "bn_transliteration": "কূব",
+      "en_transliteration": "kūb",
+      "category_ids": [
+        "food"
+      ]
+    },
+    {
+      "id": "jf-l1-08",
+      "type": "word",
+      "arabic": "قدر",
+      "bangla": "হাঁড়ি",
+      "english": "Pot",
+      "bn_transliteration": "গিদর",
+      "en_transliteration": "gidr",
+      "category_ids": [
+        "food"
+      ]
+    },
+    {
+      "id": "jf-l1-09",
+      "type": "word",
+      "arabic": "صينية",
+      "bangla": "ট্রে",
+      "english": "Tray",
+      "bn_transliteration": "সেইনিইয়া",
+      "en_transliteration": "ṣēniyya",
+      "category_ids": [
+        "food"
+      ]
+    },
+    {
+      "id": "jf-l1-10",
+      "type": "word",
+      "arabic": "ملح",
+      "bangla": "লবণ",
+      "english": "Salt",
+      "bn_transliteration": "মিলহ",
+      "en_transliteration": "milḥ",
+      "category_ids": [
+        "food"
+      ]
+    },
+    {
+      "id": "jf-l1-11",
+      "type": "word",
+      "arabic": "زيت",
+      "bangla": "তেল",
+      "english": "Oil",
+      "bn_transliteration": "যেইত",
+      "en_transliteration": "zēt",
+      "category_ids": [
+        "food"
+      ]
+    },
+    {
+      "id": "jf-l2-01",
+      "type": "phrase",
+      "arabic": "وش تطلب؟",
+      "bangla": "কী অর্ডার করবেন?",
+      "english": "What would you like to order?",
+      "bn_transliteration": "ওশ তাতলুব?",
+      "en_transliteration": "wesh taṭlub?",
+      "category_ids": [
+        "food"
+      ]
+    },
+    {
+      "id": "jf-l2-02",
+      "type": "phrase",
+      "arabic": "كم شخص؟",
+      "bangla": "কয়জন?",
+      "english": "How many people?",
+      "bn_transliteration": "কাম শাখস?",
+      "en_transliteration": "kam shakhṣ?",
+      "category_ids": [
+        "food"
+      ]
+    },
+    {
+      "id": "jf-l2-03",
+      "type": "phrase",
+      "arabic": "طاولة لأربعة",
+      "bangla": "চারজনের টেবিল",
+      "english": "A table for four",
+      "bn_transliteration": "তাওলা লি-আরবাআ",
+      "en_transliteration": "ṭāwla li-arbaʿa",
+      "category_ids": [
+        "food"
+      ]
+    },
+    {
+      "id": "jf-l2-04",
+      "type": "word",
+      "arabic": "قسم العوائل",
+      "bangla": "ফ্যামিলি সেকশন",
+      "english": "Family section",
+      "bn_transliteration": "গিসম আল-আওয়াইল",
+      "en_transliteration": "gism al-ʿawāʾil",
+      "category_ids": [
+        "food"
+      ],
+      "note_bn": "অনেক রেস্টুরেন্টে পরিবারের জন্য আলাদা জায়গা থাকে।",
+      "note_en": "Many restaurants have a separate area for families."
+    },
+    {
+      "id": "jf-l2-05",
+      "type": "word",
+      "arabic": "وجبة",
+      "bangla": "মিল / কম্বো",
+      "english": "Meal, combo",
+      "bn_transliteration": "ওয়াজবা",
+      "en_transliteration": "wajba",
+      "category_ids": [
+        "food"
+      ]
+    },
+    {
+      "id": "jf-l2-06",
+      "type": "word",
+      "arabic": "سندويتش",
+      "bangla": "স্যান্ডউইচ",
+      "english": "Sandwich",
+      "bn_transliteration": "সান্দাউইতশ",
+      "en_transliteration": "sandawitsh",
+      "category_ids": [
+        "food"
+      ]
+    },
+    {
+      "id": "jf-l2-07",
+      "type": "word",
+      "arabic": "مشروب",
+      "bangla": "পানীয়",
+      "english": "Drink",
+      "bn_transliteration": "মাশরূব",
+      "en_transliteration": "mashrūb",
+      "category_ids": [
+        "food"
+      ]
+    },
+    {
+      "id": "jf-l2-08",
+      "type": "phrase",
+      "arabic": "كبير ولا صغير؟",
+      "bangla": "বড় নাকি ছোট?",
+      "english": "Large or small?",
+      "bn_transliteration": "কাবীর ওয়াল্লা সাগীর?",
+      "en_transliteration": "kabīr walla ṣaghīr?",
+      "category_ids": [
+        "food"
+      ]
+    },
+    {
+      "id": "jf-l2-09",
+      "type": "phrase",
+      "arabic": "تبي شي ثاني؟",
+      "bangla": "আর কিছু লাগবে?",
+      "english": "Anything else?",
+      "bn_transliteration": "তিবি শাই সানি?",
+      "en_transliteration": "tibi shay thāni?",
+      "category_ids": [
+        "food"
+      ]
+    },
+    {
+      "id": "jf-l2-10",
+      "type": "phrase",
+      "arabic": "دقايق ويجهز",
+      "bangla": "কয়েক মিনিটে রেডি হবে",
+      "english": "Ready in a few minutes",
+      "bn_transliteration": "দাগায়িগ ওয়া ইজহায",
+      "en_transliteration": "dagāyig w-yijhaz",
+      "category_ids": [
+        "food"
+      ]
+    },
+    {
+      "id": "jf-l3-01",
+      "type": "word",
+      "arabic": "اطبخ",
+      "bangla": "রান্না করো",
+      "english": "Cook",
+      "bn_transliteration": "ইতবুখ",
+      "en_transliteration": "iṭbukh",
+      "category_ids": [
+        "food"
+      ]
+    },
+    {
+      "id": "jf-l3-02",
+      "type": "word",
+      "arabic": "اقلي",
+      "bangla": "ভাজো",
+      "english": "Fry",
+      "bn_transliteration": "ইগলি",
+      "en_transliteration": "igli",
+      "category_ids": [
+        "food"
+      ]
+    },
+    {
+      "id": "jf-l3-03",
+      "type": "word",
+      "arabic": "اشوي",
+      "bangla": "গ্রিল করো",
+      "english": "Grill",
+      "bn_transliteration": "ইশউই",
+      "en_transliteration": "ishwi",
+      "category_ids": [
+        "food"
+      ]
+    },
+    {
+      "id": "jf-l3-04",
+      "type": "word",
+      "arabic": "سخن",
+      "bangla": "গরম করো",
+      "english": "Heat it up",
+      "bn_transliteration": "সাখখিন",
+      "en_transliteration": "sakhkhin",
+      "category_ids": [
+        "food"
+      ]
+    },
+    {
+      "id": "jf-l3-05",
+      "type": "phrase",
+      "arabic": "قطع البصل",
+      "bangla": "পেঁয়াজ কাটো",
+      "english": "Chop the onions",
+      "bn_transliteration": "গাত্তি আল-বাসাল",
+      "en_transliteration": "gaṭṭiʿ al-baṣal",
+      "category_ids": [
+        "food"
+      ]
+    },
+    {
+      "id": "jf-l3-06",
+      "type": "phrase",
+      "arabic": "اغسل الصحون",
+      "bangla": "প্লেট ধোও",
+      "english": "Wash the dishes",
+      "bn_transliteration": "ইগসিল আস-সুহূন",
+      "en_transliteration": "ighsil aṣ-ṣuḥūn",
+      "category_ids": [
+        "food"
+      ]
+    },
+    {
+      "id": "jf-l3-07",
+      "type": "phrase",
+      "arabic": "نظف الطاولة",
+      "bangla": "টেবিল পরিষ্কার করো",
+      "english": "Clean the table",
+      "bn_transliteration": "নাদ্দিফ আত-তাওলা",
+      "en_transliteration": "naẓẓif aṭ-ṭāwla",
+      "category_ids": [
+        "food"
+      ]
+    },
+    {
+      "id": "jf-l3-08",
+      "type": "phrase",
+      "arabic": "حطه في الثلاجة",
+      "bangla": "ফ্রিজে রাখো",
+      "english": "Put it in the fridge",
+      "bn_transliteration": "হুত্তাহ ফি আস-সাল্লাজা",
+      "en_transliteration": "ḥuṭṭah fi th-thallāja",
+      "category_ids": [
+        "food"
+      ]
+    },
+    {
+      "id": "jf-l3-09",
+      "type": "word",
+      "arabic": "مستوي",
+      "bangla": "সেদ্ধ / রান্না হয়েছে",
+      "english": "Cooked, done",
+      "bn_transliteration": "মিসতিউই",
+      "en_transliteration": "mistiwi",
+      "category_ids": [
+        "food"
+      ],
+      "note_bn": "'মু মিসতিউই' = এখনো কাঁচা, রান্না হয়নি।",
+      "note_en": "mū mistiwi = not cooked yet."
+    },
+    {
+      "id": "jf-l3-10",
+      "type": "word",
+      "arabic": "محروق",
+      "bangla": "পুড়ে গেছে",
+      "english": "Burnt",
+      "bn_transliteration": "মাহরূগ",
+      "en_transliteration": "maḥrūg",
+      "category_ids": [
+        "food"
+      ]
+    },
+    {
+      "id": "jf-l4-01",
+      "type": "word",
+      "arabic": "مناديل",
+      "bangla": "টিস্যু",
+      "english": "Napkins, tissues",
+      "bn_transliteration": "মানাদীল",
+      "en_transliteration": "manādīl",
+      "category_ids": [
+        "customers"
+      ]
+    },
+    {
+      "id": "jf-l4-02",
+      "type": "word",
+      "arabic": "كاتشب",
+      "bangla": "কেচাপ",
+      "english": "Ketchup",
+      "bn_transliteration": "কাতশাব",
+      "en_transliteration": "kātshab",
+      "category_ids": [
+        "customers"
+      ]
+    },
+    {
+      "id": "jf-l4-03",
+      "type": "word",
+      "arabic": "ثلج",
+      "bangla": "বরফ",
+      "english": "Ice",
+      "bn_transliteration": "সালজ",
+      "en_transliteration": "thalj",
+      "category_ids": [
+        "customers"
+      ]
+    },
+    {
+      "id": "jf-l4-04",
+      "type": "word",
+      "arabic": "بارد",
+      "bangla": "ঠান্ডা",
+      "english": "Cold",
+      "bn_transliteration": "বারিদ",
+      "en_transliteration": "bārid",
+      "category_ids": [
+        "customers"
+      ]
+    },
+    {
+      "id": "jf-l4-05",
+      "type": "word",
+      "arabic": "حامي",
+      "bangla": "গরম",
+      "english": "Hot (temperature)",
+      "bn_transliteration": "হামি",
+      "en_transliteration": "ḥāmi",
+      "category_ids": [
+        "customers"
+      ],
+      "note_bn": "'হামি' মানে গরম তাপমাত্রা, 'হার' মানে ঝাল।",
+      "note_en": "ḥāmi is hot in temperature, ḥārr is spicy."
+    },
+    {
+      "id": "jf-l4-06",
+      "type": "word",
+      "arabic": "نظيف",
+      "bangla": "পরিষ্কার",
+      "english": "Clean",
+      "bn_transliteration": "নাদীফ",
+      "en_transliteration": "naẓīf",
+      "category_ids": [
+        "customers"
+      ]
+    },
+    {
+      "id": "jf-l4-07",
+      "type": "word",
+      "arabic": "وسخ",
+      "bangla": "নোংরা",
+      "english": "Dirty",
+      "bn_transliteration": "ওয়াসিখ",
+      "en_transliteration": "wasikh",
+      "category_ids": [
+        "customers"
+      ]
+    },
+    {
+      "id": "jf-l4-08",
+      "type": "phrase",
+      "arabic": "العميل اشتكى",
+      "bangla": "কাস্টমার অভিযোগ করেছে",
+      "english": "The customer complained",
+      "bn_transliteration": "আল-আমীল ইশতাকা",
+      "en_transliteration": "al-ʿamīl ishtaka",
+      "category_ids": [
+        "customers"
+      ]
+    },
+    {
+      "id": "jf-l4-09",
+      "type": "phrase",
+      "arabic": "خلص الدجاج",
+      "bangla": "মুরগি শেষ",
+      "english": "We're out of chicken",
+      "bn_transliteration": "খিলাস আদ-দাজাজ",
+      "en_transliteration": "khiliṣ ad-dajāj",
+      "category_ids": [
+        "customers"
+      ]
+    }
+  ],
+  "course": {
+    "id": "job-restaurant",
+    "title_bn": "চাকরির প্যাক: রেস্টুরেন্ট স্টাফ",
+    "title_en": "Job pack: Restaurant staff",
+    "description_bn": "রান্নাঘর ও সার্ভিসের জন্য: কিচেনের জিনিস, অর্ডার নেওয়া, রান্নার নির্দেশ আর কাস্টমার।",
+    "description_en": "For the kitchen and service: kitchen things, taking orders, cooking instructions and customers.",
+    "type": "topic",
+    "is_free": true,
+    "level": "beginner",
+    "languages": [
+      "bn",
+      "en"
+    ],
+    "lessons": [
+      {
+        "id": "restaurant-1",
+        "title_bn": "পাঠ ১: রান্নাঘর",
+        "title_en": "Lesson 1: The kitchen",
+        "category_id": "food",
+        "item_ids": [
+          "jf-l1-01",
+          "jf-l1-02",
+          "jf-l1-03",
+          "jf-l1-04",
+          "jf-l1-05",
+          "jf-l1-06",
+          "jf-l1-07",
+          "jf-l1-08",
+          "jf-l1-09",
+          "jf-l1-10",
+          "jf-l1-11"
+        ],
+        "order": 10,
+        "is_free": true
+      },
+      {
+        "id": "restaurant-2",
+        "title_bn": "পাঠ ২: অর্ডার নেওয়া",
+        "title_en": "Lesson 2: Taking orders",
+        "category_id": "food",
+        "item_ids": [
+          "jf-l2-01",
+          "jf-l2-02",
+          "jf-l2-03",
+          "jf-l2-04",
+          "jf-l2-05",
+          "jf-l2-06",
+          "jf-l2-07",
+          "jf-l2-08",
+          "jf-l2-09",
+          "jf-l2-10"
+        ],
+        "order": 20,
+        "is_free": true
+      },
+      {
+        "id": "restaurant-3",
+        "title_bn": "পাঠ ৩: রান্নার নির্দেশ",
+        "title_en": "Lesson 3: Cooking instructions",
+        "category_id": "food",
+        "item_ids": [
+          "jf-l3-01",
+          "jf-l3-02",
+          "jf-l3-03",
+          "jf-l3-04",
+          "jf-l3-05",
+          "jf-l3-06",
+          "jf-l3-07",
+          "jf-l3-08",
+          "jf-l3-09",
+          "jf-l3-10"
+        ],
+        "order": 30,
+        "is_free": true
+      },
+      {
+        "id": "restaurant-4",
+        "title_bn": "পাঠ ৪: খাবার পরিবেশন",
+        "title_en": "Lesson 4: Serving customers",
+        "category_id": "customers",
+        "item_ids": [
+          "jf-l4-01",
+          "jf-l4-02",
+          "jf-l4-03",
+          "jf-l4-04",
+          "jf-l4-05",
+          "jf-l4-06",
+          "jf-l4-07",
+          "jf-l4-08",
+          "jf-l4-09"
+        ],
+        "order": 40,
+        "is_free": true
+      }
+    ]
+  }
+}

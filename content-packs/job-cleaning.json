@@ -1,0 +1,571 @@
+{
+  "name": "Job pack: Cleaners",
+  "categories": [
+    {
+      "id": "cleaning",
+      "name_en": "Cleaning",
+      "name_bn": "পরিষ্কারের কাজ",
+      "order": 200
+    }
+  ],
+  "items": [
+    {
+      "id": "jn-l1-01",
+      "type": "word",
+      "arabic": "مكنسة",
+      "bangla": "ঝাড়ু",
+      "english": "Broom",
+      "bn_transliteration": "মাকনাসা",
+      "en_transliteration": "maknasa",
+      "category_ids": [
+        "cleaning"
+      ]
+    },
+    {
+      "id": "jn-l1-02",
+      "type": "phrase",
+      "arabic": "مكنسة كهربائية",
+      "bangla": "ভ্যাকুয়াম ক্লিনার",
+      "english": "Vacuum cleaner",
+      "bn_transliteration": "মাকনাসা কাহরাবাইইয়া",
+      "en_transliteration": "maknasa kahrabāʾiyya",
+      "category_ids": [
+        "cleaning"
+      ]
+    },
+    {
+      "id": "jn-l1-03",
+      "type": "word",
+      "arabic": "ممسحة",
+      "bangla": "মোছার ঝাড়ু (মপ)",
+      "english": "Mop",
+      "bn_transliteration": "মামসাহা",
+      "en_transliteration": "mamsaḥa",
+      "category_ids": [
+        "cleaning"
+      ]
+    },
+    {
+      "id": "jn-l1-04",
+      "type": "word",
+      "arabic": "سطل",
+      "bangla": "বালতি",
+      "english": "Bucket",
+      "bn_transliteration": "সাতল",
+      "en_transliteration": "saṭl",
+      "category_ids": [
+        "cleaning"
+      ]
+    },
+    {
+      "id": "jn-l1-05",
+      "type": "word",
+      "arabic": "كلوركس",
+      "bangla": "ব্লিচ",
+      "english": "Bleach",
+      "bn_transliteration": "ক্লোরক্স",
+      "en_transliteration": "klōrks",
+      "category_ids": [
+        "cleaning"
+      ],
+      "note_bn": "ব্লিচকে সবাই ব্র্যান্ডের নামে 'ক্লোরক্স' বলে। অন্য কেমিক্যালের সাথে মেশাবেন না।",
+      "note_en": "Everyone calls bleach 'Clorox'. Never mix it with other cleaners."
+    },
+    {
+      "id": "jn-l1-06",
+      "type": "word",
+      "arabic": "صابون",
+      "bangla": "সাবান",
+      "english": "Soap",
+      "bn_transliteration": "সাবূন",
+      "en_transliteration": "ṣābūn",
+      "category_ids": [
+        "cleaning"
+      ]
+    },
+    {
+      "id": "jn-l1-07",
+      "type": "word",
+      "arabic": "منظف",
+      "bangla": "ক্লিনার / ডিটারজেন্ট",
+      "english": "Cleaning liquid",
+      "bn_transliteration": "মুনাদ্দিফ",
+      "en_transliteration": "munaẓẓif",
+      "category_ids": [
+        "cleaning"
+      ]
+    },
+    {
+      "id": "jn-l1-08",
+      "type": "word",
+      "arabic": "فوطة",
+      "bangla": "কাপড় / তোয়ালে",
+      "english": "Cloth, towel",
+      "bn_transliteration": "ফূতা",
+      "en_transliteration": "fūṭa",
+      "category_ids": [
+        "cleaning"
+      ]
+    },
+    {
+      "id": "jn-l1-09",
+      "type": "word",
+      "arabic": "زبالة",
+      "bangla": "ময়লা",
+      "english": "Rubbish",
+      "bn_transliteration": "যিবালা",
+      "en_transliteration": "zbāla",
+      "category_ids": [
+        "cleaning"
+      ]
+    },
+    {
+      "id": "jn-l1-10",
+      "type": "phrase",
+      "arabic": "كيس زبالة",
+      "bangla": "ময়লার ব্যাগ",
+      "english": "Bin bag",
+      "bn_transliteration": "কীস যিবালা",
+      "en_transliteration": "kīs zbāla",
+      "category_ids": [
+        "cleaning"
+      ]
+    },
+    {
+      "id": "jn-l2-01",
+      "type": "word",
+      "arabic": "اكنس",
+      "bangla": "ঝাড়ু দাও",
+      "english": "Sweep",
+      "bn_transliteration": "ইকনিস",
+      "en_transliteration": "iknis",
+      "category_ids": [
+        "cleaning"
+      ]
+    },
+    {
+      "id": "jn-l2-02",
+      "type": "phrase",
+      "arabic": "امسح الأرض",
+      "bangla": "মেঝে মোছো",
+      "english": "Mop the floor",
+      "bn_transliteration": "ইমসাহ আল-আরদ",
+      "en_transliteration": "imsaḥ al-arḍ",
+      "category_ids": [
+        "cleaning"
+      ]
+    },
+    {
+      "id": "jn-l2-03",
+      "type": "phrase",
+      "arabic": "نظف الحمام",
+      "bangla": "বাথরুম পরিষ্কার করো",
+      "english": "Clean the bathroom",
+      "bn_transliteration": "নাদ্দিফ আল-হাম্মাম",
+      "en_transliteration": "naẓẓif al-ḥammām",
+      "category_ids": [
+        "cleaning"
+      ]
+    },
+    {
+      "id": "jn-l2-04",
+      "type": "phrase",
+      "arabic": "شيل الزبالة",
+      "bangla": "ময়লা ফেলো",
+      "english": "Take out the rubbish",
+      "bn_transliteration": "শীল আয-যিবালা",
+      "en_transliteration": "shīl az-zbāla",
+      "category_ids": [
+        "cleaning"
+      ]
+    },
+    {
+      "id": "jn-l2-05",
+      "type": "phrase",
+      "arabic": "رتب الغرفة",
+      "bangla": "রুম গোছাও",
+      "english": "Tidy the room",
+      "bn_transliteration": "রাত্তিব আল-গুরফা",
+      "en_transliteration": "rattib al-ghurfa",
+      "category_ids": [
+        "cleaning"
+      ]
+    },
+    {
+      "id": "jn-l2-06",
+      "type": "phrase",
+      "arabic": "اغسل الملابس",
+      "bangla": "কাপড় ধোও",
+      "english": "Wash the clothes",
+      "bn_transliteration": "ইগসিল আল-মালাবিস",
+      "en_transliteration": "ighsil al-malābis",
+      "category_ids": [
+        "cleaning"
+      ]
+    },
+    {
+      "id": "jn-l2-07",
+      "type": "phrase",
+      "arabic": "انشر الغسيل",
+      "bangla": "কাপড় শুকাতে দাও",
+      "english": "Hang out the washing",
+      "bn_transliteration": "উনশুর আল-গাসীল",
+      "en_transliteration": "inshur al-ghasīl",
+      "category_ids": [
+        "cleaning"
+      ]
+    },
+    {
+      "id": "jn-l2-08",
+      "type": "word",
+      "arabic": "اكوي",
+      "bangla": "ইস্ত্রি করো",
+      "english": "Iron (the clothes)",
+      "bn_transliteration": "ইকউই",
+      "en_transliteration": "ikwi",
+      "category_ids": [
+        "cleaning"
+      ]
+    },
+    {
+      "id": "jn-l2-09",
+      "type": "word",
+      "arabic": "لمع",
+      "bangla": "চকচকে করো",
+      "english": "Polish, shine",
+      "bn_transliteration": "লাম্মি",
+      "en_transliteration": "lammiʿ",
+      "category_ids": [
+        "cleaning"
+      ]
+    },
+    {
+      "id": "jn-l2-10",
+      "type": "word",
+      "arabic": "الزجاج",
+      "bangla": "কাচ / জানালা",
+      "english": "The glass, windows",
+      "bn_transliteration": "আয-যুজাজ",
+      "en_transliteration": "az-zujāj",
+      "category_ids": [
+        "cleaning"
+      ]
+    },
+    {
+      "id": "jn-l3-01",
+      "type": "word",
+      "arabic": "الغرفة",
+      "bangla": "রুম",
+      "english": "The room",
+      "bn_transliteration": "আল-গুরফা",
+      "en_transliteration": "al-ghurfa",
+      "category_ids": [
+        "cleaning"
+      ]
+    },
+    {
+      "id": "jn-l3-02",
+      "type": "word",
+      "arabic": "الصالة",
+      "bangla": "বসার ঘর",
+      "english": "The living room",
+      "bn_transliteration": "আস-সালা",
+      "en_transliteration": "aṣ-ṣāla",
+      "category_ids": [
+        "cleaning"
+      ]
+    },
+    {
+      "id": "jn-l3-03",
+      "type": "word",
+      "arabic": "المجلس",
+      "bangla": "অতিথিদের বসার ঘর",
+      "english": "The guest room (majlis)",
+      "bn_transliteration": "আল-মাজলিস",
+      "en_transliteration": "al-majlis",
+      "category_ids": [
+        "cleaning"
+      ],
+      "note_bn": "সৌদি বাসায় অতিথিদের জন্য আলাদা ঘর। পুরুষ ও নারীর মাজলিস আলাদা হতে পারে।",
+      "note_en": "Saudi homes have a separate guest room; men's and women's may be separate."
+    },
+    {
+      "id": "jn-l3-04",
+      "type": "word",
+      "arabic": "الحوش",
+      "bangla": "উঠান",
+      "english": "The yard",
+      "bn_transliteration": "আল-হোশ",
+      "en_transliteration": "al-ḥōsh",
+      "category_ids": [
+        "cleaning"
+      ]
+    },
+    {
+      "id": "jn-l3-05",
+      "type": "word",
+      "arabic": "السطح",
+      "bangla": "ছাদ",
+      "english": "The roof",
+      "bn_transliteration": "আস-সাতহ",
+      "en_transliteration": "as-saṭḥ",
+      "category_ids": [
+        "cleaning"
+      ]
+    },
+    {
+      "id": "jn-l3-06",
+      "type": "word",
+      "arabic": "الدرج",
+      "bangla": "সিঁড়ি",
+      "english": "The stairs",
+      "bn_transliteration": "আদ-দারাজ",
+      "en_transliteration": "ad-daraj",
+      "category_ids": [
+        "cleaning"
+      ]
+    },
+    {
+      "id": "jn-l3-07",
+      "type": "word",
+      "arabic": "الكنب",
+      "bangla": "সোফা",
+      "english": "The sofa",
+      "bn_transliteration": "আল-কানাব",
+      "en_transliteration": "al-kanab",
+      "category_ids": [
+        "cleaning"
+      ]
+    },
+    {
+      "id": "jn-l3-08",
+      "type": "word",
+      "arabic": "السرير",
+      "bangla": "খাট",
+      "english": "The bed",
+      "bn_transliteration": "আস-সারীর",
+      "en_transliteration": "as-sarīr",
+      "category_ids": [
+        "cleaning"
+      ]
+    },
+    {
+      "id": "jn-l3-09",
+      "type": "word",
+      "arabic": "الموكيت",
+      "bangla": "কার্পেট",
+      "english": "The fitted carpet",
+      "bn_transliteration": "আল-মোকেত",
+      "en_transliteration": "al-mōkēt",
+      "category_ids": [
+        "cleaning"
+      ]
+    },
+    {
+      "id": "jn-l3-10",
+      "type": "word",
+      "arabic": "الدولاب",
+      "bangla": "আলমারি",
+      "english": "The wardrobe",
+      "bn_transliteration": "আদ-দূলাব",
+      "en_transliteration": "ad-dūlāb",
+      "category_ids": [
+        "cleaning"
+      ]
+    },
+    {
+      "id": "jn-l4-01",
+      "type": "word",
+      "arabic": "المدام",
+      "bangla": "বাসার ম্যাডাম",
+      "english": "The lady of the house",
+      "bn_transliteration": "আল-মাদাম",
+      "en_transliteration": "al-madām",
+      "category_ids": [
+        "cleaning"
+      ]
+    },
+    {
+      "id": "jn-l4-02",
+      "type": "phrase",
+      "arabic": "خلصت التنظيف",
+      "bangla": "পরিষ্কার শেষ করেছি",
+      "english": "I've finished cleaning",
+      "bn_transliteration": "খাল্লাসত আত-তানদীফ",
+      "en_transliteration": "khallaṣt at-tanẓīf",
+      "category_ids": [
+        "cleaning"
+      ]
+    },
+    {
+      "id": "jn-l4-03",
+      "type": "phrase",
+      "arabic": "وش أنظف بعد؟",
+      "bangla": "এরপর কী পরিষ্কার করব?",
+      "english": "What should I clean next?",
+      "bn_transliteration": "ওশ আনাদ্দিফ বাআদ?",
+      "en_transliteration": "wesh anaẓẓif baʿad?",
+      "category_ids": [
+        "cleaning"
+      ]
+    },
+    {
+      "id": "jn-l4-04",
+      "type": "phrase",
+      "arabic": "لا تدخل هنا",
+      "bangla": "এখানে ঢুকবে না",
+      "english": "Don't go in here",
+      "bn_transliteration": "লা তিদখিল হিনা",
+      "en_transliteration": "lā tidkhil hina",
+      "category_ids": [
+        "cleaning"
+      ]
+    },
+    {
+      "id": "jn-l4-05",
+      "type": "phrase",
+      "arabic": "العيال نايمين",
+      "bangla": "বাচ্চারা ঘুমাচ্ছে",
+      "english": "The kids are asleep",
+      "bn_transliteration": "আল-ইয়াল নাইমীন",
+      "en_transliteration": "al-ʿiyāl nāymīn",
+      "category_ids": [
+        "cleaning"
+      ]
+    },
+    {
+      "id": "jn-l4-06",
+      "type": "phrase",
+      "arabic": "انكسر الكاس",
+      "bangla": "গ্লাস ভেঙে গেছে",
+      "english": "The glass broke",
+      "bn_transliteration": "ইনকাসার আল-কাস",
+      "en_transliteration": "inkasar al-kās",
+      "category_ids": [
+        "cleaning"
+      ]
+    },
+    {
+      "id": "jn-l4-07",
+      "type": "phrase",
+      "arabic": "ما قصدت",
+      "bangla": "ইচ্ছা করে করিনি",
+      "english": "I didn't mean to",
+      "bn_transliteration": "মা গাসাদত",
+      "en_transliteration": "mā gaṣadt",
+      "category_ids": [
+        "cleaning"
+      ],
+      "note_bn": "কিছু ভাঙলে লুকাবেন না — সাথে সাথে বলুন: 'আসিফ, মা গাসাদত'।",
+      "note_en": "If something breaks, don't hide it; say āsif, mā gaṣadt straight away."
+    },
+    {
+      "id": "jn-l4-08",
+      "type": "phrase",
+      "arabic": "تبين شي؟",
+      "bangla": "আপনার কিছু লাগবে? (নারীকে)",
+      "english": "Do you need anything? (to a woman)",
+      "bn_transliteration": "তাবীন শাই?",
+      "en_transliteration": "tabīn shay?",
+      "category_ids": [
+        "cleaning"
+      ],
+      "note_bn": "পুরুষকে: 'তিবি শাই?'",
+      "note_en": "To a man: tibi shay?"
+    }
+  ],
+  "course": {
+    "id": "job-cleaning",
+    "title_bn": "চাকরির প্যাক: ক্লিনার ও গৃহকর্মী",
+    "title_en": "Job pack: Cleaners",
+    "description_bn": "অফিস, বাসা ও বিল্ডিং পরিষ্কারের কাজের জন্য: জিনিসপত্র, নির্দেশ, ঘরের নাম আর পরিবারের সাথে কথা।",
+    "description_en": "For office, home and building cleaners: supplies, instructions, rooms and talking with the family.",
+    "type": "topic",
+    "is_free": true,
+    "level": "beginner",
+    "languages": [
+      "bn",
+      "en"
+    ],
+    "lessons": [
+      {
+        "id": "cleaning-1",
+        "title_bn": "পাঠ ১: পরিষ্কারের জিনিস",
+        "title_en": "Lesson 1: Cleaning supplies",
+        "category_id": "cleaning",
+        "item_ids": [
+          "jn-l1-01",
+          "jn-l1-02",
+          "jn-l1-03",
+          "jn-l1-04",
+          "jn-l1-05",
+          "jn-l1-06",
+          "jn-l1-07",
+          "jn-l1-08",
+          "jn-l1-09",
+          "jn-l1-10"
+        ],
+        "order": 10,
+        "is_free": true
+      },
+      {
+        "id": "cleaning-2",
+        "title_bn": "পাঠ ২: কাজের নির্দেশ",
+        "title_en": "Lesson 2: Instructions",
+        "category_id": "cleaning",
+        "item_ids": [
+          "jn-l2-01",
+          "jn-l2-02",
+          "jn-l2-03",
+          "jn-l2-04",
+          "jn-l2-05",
+          "jn-l2-06",
+          "jn-l2-07",
+          "jn-l2-08",
+          "jn-l2-09",
+          "jn-l2-10"
+        ],
+        "order": 20,
+        "is_free": true
+      },
+      {
+        "id": "cleaning-3",
+        "title_bn": "পাঠ ৩: ঘরের নাম",
+        "title_en": "Lesson 3: Rooms and furniture",
+        "category_id": "cleaning",
+        "item_ids": [
+          "jn-l3-01",
+          "jn-l3-02",
+          "jn-l3-03",
+          "jn-l3-04",
+          "jn-l3-05",
+          "jn-l3-06",
+          "jn-l3-07",
+          "jn-l3-08",
+          "jn-l3-09",
+          "jn-l3-10"
+        ],
+        "order": 30,
+        "is_free": true
+      },
+      {
+        "id": "cleaning-4",
+        "title_bn": "পাঠ ৪: পরিবার ও সুপারভাইজারের সাথে",
+        "title_en": "Lesson 4: With the family or supervisor",
+        "category_id": "cleaning",
+        "item_ids": [
+          "jn-l4-01",
+          "jn-l4-02",
+          "jn-l4-03",
+          "jn-l4-04",
+          "jn-l4-05",
+          "jn-l4-06",
+          "jn-l4-07",
+          "jn-l4-08"
+        ],
+        "order": 40,
+        "is_free": true
+      }
+    ]
+  }
+}

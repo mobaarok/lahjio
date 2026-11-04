@@ -1,0 +1,136 @@
+from build import W, P, make_pack
+
+# A letter row: (letter, bn name, en name, bn sound, en sound, forms, note_bn, note_en)
+def letter(ar, bn_name, en_name, bn_sound, en_sound, forms, note_bn="", note_en=""):
+    shapes_bn = f"শুরু, মাঝ ও শেষে: {forms}।" if forms else ""
+    shapes_en = f"Start, middle, end: {forms}." if forms else ""
+    return (W, ar, f"উচ্চারণ: {bn_sound}", bn_name, f"Sound: {en_sound}", en_name,
+            " ".join(x for x in [note_bn, shapes_bn] if x),
+            " ".join(x for x in [note_en, shapes_en] if x))
+
+NO_JOIN_BN = "পরের অক্ষরের সাথে জোড়া লাগে না।"
+NO_JOIN_EN = "Never joins to the letter after it."
+
+lessons = [
+  ("letters", "read-1", "দিন ১: ا ب ت ث", "Day 1: ا ب ت ث", [
+    letter("ا", "আলিফ", "alif", "আ (লম্বা)", "a, long ā", "ا ـا",
+           "আরবি ডান থেকে বামে পড়ে। " + NO_JOIN_BN, "Arabic is read right to left. " + NO_JOIN_EN),
+    letter("ب", "বা", "bā", "ব", "b", "بـ ـبـ ـب", "নিচে এক ফোঁটা।", "One dot below."),
+    letter("ت", "তা", "tā", "ত", "t", "تـ ـتـ ـت", "ওপরে দুই ফোঁটা।", "Two dots above."),
+    letter("ث", "সা", "thā", "স (জিভ দাঁতে, ইংরেজি think-এর th)", "th as in 'think'", "ثـ ـثـ ـث",
+           "ওপরে তিন ফোঁটা। সৌদি কথায় অনেকে 'ত' বা 'স' বলে।", "Three dots above. Many Saudis say it as t or s."),
+    (W, "باب", "দরজা", "বাব", "Door", "bāb",
+     "প্রথম শব্দ পড়া! ب + ا + ب = বাব।", "Your first word! ب + ا + ب = bāb."),
+    (W, "بات", "রাত কাটাল", "বাত", "He stayed the night", "bāt",
+     "ب + ا + ت। শুধু পড়ার অনুশীলন।", "ب + ا + ت. Just reading practice."),
+  ]),
+  ("letters", "read-2", "দিন ২: ج ح خ", "Day 2: ج ح خ", [
+    letter("ج", "জীম", "jīm", "জ", "j", "جـ ـجـ ـج", "নিচে এক ফোঁটা।", "One dot below."),
+    letter("ح", "হা (গলার)", "ḥā", "হ (গলা চেপে, জোরে)", "ḥ, a strong breathy h", "حـ ـحـ ـح",
+           "কোনো ফোঁটা নেই। সাধারণ 'হ'-এর চেয়ে গলা থেকে জোরে বের হয়।", "No dots. Breathed hard from the throat."),
+    letter("خ", "খা", "khā", "খ (গলার খসখসে)", "kh, like Scottish 'loch'", "خـ ـخـ ـخ", "ওপরে এক ফোঁটা।", "One dot above."),
+    (W, "تاج", "মুকুট", "তাজ", "Crown", "tāj", "ت + ا + ج।", "ت + ا + ج."),
+    (W, "حب", "ভালোবাসা / দানা", "হুব্ব", "Love; grain", "ḥubb", "ح + ب।", "ح + ب."),
+    (W, "خبز", "রুটি", "খুবয", "Bread", "khubz", "খ + ব + য। দোকানের সাইনে দেখবেন।", "خ + ب + ز. You'll see it on bakery signs."),
+  ]),
+  ("letters", "read-3", "দিন ৩: د ذ ر ز", "Day 3: د ذ ر ز", [
+    letter("د", "দাল", "dāl", "দ", "d", "د ـد", NO_JOIN_BN, NO_JOIN_EN),
+    letter("ذ", "যাল", "dhāl", "য (জিভ দাঁতে, ইংরেজি this-এর th)", "dh, the 'th' in 'this'", "ذ ـذ",
+           "ওপরে এক ফোঁটা। সৌদি কথায় প্রায়ই 'দ' শোনায়। " + NO_JOIN_BN, "One dot above. Often sounds like d in Saudi speech. " + NO_JOIN_EN),
+    letter("ر", "রা", "rā", "র", "r (rolled)", "ر ـر", NO_JOIN_BN, NO_JOIN_EN),
+    letter("ز", "যা", "zāy", "য (ইংরেজি z)", "z", "ز ـز", "ر-এর মতো, ওপরে এক ফোঁটা। " + NO_JOIN_BN, "Like ر with a dot above. " + NO_JOIN_EN),
+    (W, "دجاج", "মুরগি", "দাজাজ", "Chicken", "dajāj", "د + ج + ا + ج।", "د + ج + ا + ج."),
+    (W, "رز", "চাল / ভাত", "রুয", "Rice", "ruzz", "ر + ز — দুটোই জোড়া লাগে না, তাই আলাদা দেখায়।", "ر + ز. Neither joins, so they stand apart."),
+  ]),
+  ("letters", "read-4", "দিন ৪: س ش ص ض", "Day 4: س ش ص ض", [
+    letter("س", "সীন", "sīn", "স", "s", "سـ ـسـ ـس", "তিনটা ছোট দাঁত।", "Three small teeth."),
+    letter("ش", "শীন", "shīn", "শ", "sh", "شـ ـشـ ـش", "س-এর ওপরে তিন ফোঁটা।", "Like س with three dots above."),
+    letter("ص", "সোয়াদ", "ṣād", "স (ভারী, মুখ গোল করে)", "ṣ, a heavy s", "صـ ـصـ ـص", "", ""),
+    letter("ض", "দোয়াদ", "ḍād", "দ (ভারী)", "ḍ, a heavy d", "ضـ ـضـ ـض", "ص-এর ওপরে এক ফোঁটা।", "Like ص with a dot above."),
+    (W, "شارع", "রাস্তা", "শারি", "Street", "shāriʿ", "রাস্তার নামের বোর্ডে সবসময় থাকে।", "On every street sign."),
+    (W, "صيدلية", "ফার্মেসি", "সাইদালিইয়া", "Pharmacy", "ṣaydaliyya", "ফার্মেসির সাইনবোর্ডে দেখবেন।", "You'll see it on pharmacy signs."),
+  ]),
+  ("letters", "read-5", "দিন ৫: ط ظ ع غ", "Day 5: ط ظ ع غ", [
+    letter("ط", "তোয়া", "ṭā", "ত (ভারী)", "ṭ, a heavy t", "طـ ـطـ ـط", "", ""),
+    letter("ظ", "যোয়া", "ẓā", "য (ভারী)", "ẓ, a heavy dh", "ظـ ـظـ ـظ", "ط-এর ওপরে এক ফোঁটা।", "Like ط with a dot above."),
+    letter("ع", "আইন", "ʿayn", "আ (গলা চেপে)", "ʿ, a tight throat sound", "عـ ـعـ ـع",
+           "বাংলায় নেই — গলা চেপে 'আ'। অডিও শুনে শুনে শিখুন।", "Not in English: a tight 'a' from the throat. Learn it by listening."),
+    letter("غ", "গাইন", "ghayn", "গ (গলার, খসখসে)", "gh, like a French r", "غـ ـغـ ـغ", "ع-এর ওপরে এক ফোঁটা।", "Like ع with a dot above."),
+    (W, "مطعم", "রেস্টুরেন্ট", "মাতআম", "Restaurant", "maṭʿam", "রেস্টুরেন্টের সাইনে থাকে।", "On restaurant signs."),
+    (W, "عصير", "জুস", "আসীর", "Juice", "ʿaṣīr", "", ""),
+  ]),
+  ("letters", "read-6", "দিন ৬: ف ق ك ل", "Day 6: ف ق ك ل", [
+    letter("ف", "ফা", "fā", "ফ", "f", "فـ ـفـ ـف", "ওপরে এক ফোঁটা।", "One dot above."),
+    letter("ق", "ক্বাফ", "qāf", "ক (গলার গভীর থেকে)", "q, a deep k", "قـ ـقـ ـق",
+           "ওপরে দুই ফোঁটা। সৌদি কথায় প্রায়ই 'গ' শোনায়।", "Two dots above. Often sounds like g in Saudi speech."),
+    letter("ك", "কাফ", "kāf", "ক", "k", "كـ ـكـ ـك", "", ""),
+    letter("ل", "লাম", "lām", "ল", "l", "لـ ـلـ ـل",
+           "ل আর ا পাশাপাশি এলে একসাথে 'لا' (লা) লেখা হয়।", "When ل meets ا they're written together as لا (lā)."),
+    (W, "قهوة", "কফি", "গাহওয়া", "Coffee", "gahwa", "ক্যাফের সাইনে দেখবেন।", "You'll see it on café signs."),
+    (W, "كلب", "কুকুর", "কালব", "Dog", "kalb", "", ""),
+  ]),
+  ("letters", "read-7", "দিন ৭: م ن ه و ي", "Day 7: م ن ه و ي", [
+    letter("م", "মীম", "mīm", "ম", "m", "مـ ـمـ ـم", "", ""),
+    letter("ن", "নূন", "nūn", "ন", "n", "نـ ـنـ ـن", "ওপরে এক ফোঁটা।", "One dot above."),
+    letter("ه", "হা", "hā", "হ (সাধারণ)", "h", "هـ ـهـ ـه", "", ""),
+    letter("و", "ওয়াও", "wāw", "ও / উ (লম্বা)", "w, long ū", "و ـو", NO_JOIN_BN, NO_JOIN_EN),
+    letter("ي", "ইয়া", "yā", "ই / য়", "y, long ī", "يـ ـيـ ـي", "নিচে দুই ফোঁটা।", "Two dots below."),
+    (W, "بيت", "বাসা", "বেইত", "House", "bēt", "ب + ي + ت।", "ب + ي + ت."),
+    (W, "يمين", "ডানে", "ইয়ামীন", "Right", "yamīn", "", ""),
+  ]),
+  ("letters", "read-8", "দিন ৮: বিশেষ চিহ্ন ও প্রথম শব্দ", "Day 8: Special marks and first words", [
+    (W, "ة", "উচ্চারণ: শেষে 'আ' (তা মারবুতা)", "তা মারবুতা", "Sound: a final -a (tā marbūṭa)", "tā marbūṭa",
+     "শুধু শব্দের শেষে আসে, যেমন سيارة (সাইয়ারা)।", "Only at the end of words, as in سيارة (sayyāra)."),
+    (W, "ال", "উচ্চারণ: আল (ইংরেজি the)", "আলিফ লাম", "Sound: al- ('the')", "alif lām",
+     "শব্দের শুরুতে 'ال' মানে নির্দিষ্ট: باب = দরজা, الباب = দরজাটা।", "ال at the start means 'the': باب = a door, الباب = the door."),
+    (W, "ى", "উচ্চারণ: শেষে 'আ' (আলিফ মাকসূরা)", "আলিফ মাকসূরা", "Sound: a final -a (alif maqṣūra)", "alif maqṣūra",
+     "ي-এর মতো দেখতে কিন্তু ফোঁটা নেই, আর পড়তে 'আ'। যেমন مستشفى।", "Looks like ي without dots and reads -a, as in مستشفى."),
+    (W, "ء", "উচ্চারণ: ছোট থামা (হামজা)", "হামজা", "Sound: a short stop (hamza)", "hamza",
+     "প্রায়ই ا-এর ওপরে-নিচে বসে: أ إ।", "Often sits on alif: أ إ."),
+    (W, "سيارة", "গাড়ি", "সাইয়ারা", "Car", "sayyāra", "শেষে ة = 'আ'।", "The final ة reads -a."),
+    (W, "ولد", "ছেলে", "ওয়ালাদ", "Boy", "walad", "", ""),
+    (W, "بنت", "মেয়ে", "বিনত", "Girl", "bint", "", ""),
+    (W, "كتاب", "বই", "কিতাব", "Book", "kitāb", "", ""),
+  ]),
+  ("signs", "read-9", "দিন ৯: সাইনবোর্ড পড়া", "Day 9: Reading signs", [
+    (W, "دخول", "প্রবেশ", "দুখূল", "Entrance", "dukhūl", "", ""),
+    (W, "خروج", "বের হওয়ার পথ", "খুরূজ", "Exit (way out)", "khurūj", "", ""),
+    (W, "مدخل", "প্রবেশপথ", "মাদখাল", "Entrance (door, gate)", "madkhal", "", ""),
+    (W, "مغلق", "বন্ধ", "মুগলাগ", "Closed", "mughlaq", "", ""),
+    (W, "مفتوح", "খোলা", "মাফতূহ", "Open", "maftūḥ", "", ""),
+    (W, "سحب", "টানুন", "সাহব", "Pull", "saḥb", "দরজায় লেখা থাকে।", "Written on doors."),
+    (W, "دفع", "ঠেলুন", "দাফ", "Push", "dafʿ", "দরজায় লেখা থাকে। আবার 'দাফ' মানে পেমেন্টও।", "Written on doors. dafʿ also means payment."),
+    (W, "رجال", "পুরুষ", "রিজাল", "Men", "rijāl", "টয়লেট বা নামাজের জায়গার দরজায় দেখবেন।", "On toilet and prayer room doors."),
+    (W, "نساء", "মহিলা", "নিসা", "Women", "nisāʾ", "", ""),
+    (W, "عوائل", "পরিবার", "আওয়াইল", "Families", "ʿawāʾil", "রেস্টুরেন্টে পরিবারের জায়গা।", "The family section in restaurants."),
+    (W, "مصلى", "নামাজের ঘর", "মুসাল্লা", "Prayer room", "muṣalla", "", ""),
+    (P, "دورات المياه", "টয়লেট", "দাওরাত আল-মিয়াহ", "Toilets", "dawrāt al-miyāh", "", ""),
+    (P, "ممنوع التدخين", "ধূমপান নিষেধ", "মামনূ আত-তাদখীন", "No smoking", "mamnūʿ at-tadkhīn", "", ""),
+    (W, "قف", "থামুন (স্টপ)", "গিফ", "Stop", "qif", "লাল অষ্টভুজ ট্রাফিক সাইনে লেখা।", "On the red octagonal road sign."),
+  ]),
+  ("signs", "read-10", "দিন ১০: দাম ও মেনু পড়া", "Day 10: Reading prices and menus", [
+    (W, "ر.س", "সৌদি রিয়াল (লেখায়)", "রিয়াল সাউদি", "SAR, Saudi riyal (written)", "riyāl saʿūdi",
+     "দামের পাশে 'ر.س' বা নতুন রিয়াল চিহ্ন দেখবেন।", "Prices show ر.س or the new riyal symbol."),
+    (P, "١٥ ر.س", "১৫ রিয়াল", "খামাস্তাশ রিয়াল", "15 riyals", "khamasṭaʿsh riyāl",
+     "আরবি অঙ্ক বাম থেকে ডানে পড়ে: ١٥ = ১৫।", "Arabic digits read left to right: ١٥ = 15."),
+    (P, "٢٥٠ ر.س", "২৫০ রিয়াল", "মিতেইন ওয়া খামসীন রিয়াল", "250 riyals", "mitēn w-khamsīn riyāl", "", ""),
+    (W, "السعر", "দাম", "আস-সির", "Price", "as-siʿr", "", ""),
+    (W, "قائمة", "মেনু / তালিকা", "গাইমা", "Menu, list", "qāʾima", "অনেক মেনুর ওপরে 'قائمة الطعام' লেখা থাকে।", "Many menus are headed قائمة الطعام."),
+    (W, "كبسة", "কাবসা (ভাত-মাংস)", "কাবসা", "Kabsa (rice and meat)", "kabsa",
+     "সৌদির জাতীয় খাবার।", "The Saudi national dish."),
+    (W, "مشويات", "গ্রিল আইটেম", "মাশউইয়াত", "Grills", "mashwiyyāt", "", ""),
+    (W, "حلويات", "মিষ্টি", "হালাউইয়াত", "Sweets, desserts", "ḥalawiyyāt", "", ""),
+    (W, "ماء", "পানি (লেখায়)", "মা", "Water (written)", "māʾ",
+     "লেখায় 'ماء', কিন্তু মুখে বলে 'মোইয়া'।", "Written ماء, but said mōya."),
+    (P, "عرض خاص", "স্পেশাল অফার", "আরদ খাস", "Special offer", "ʿarḍ khāṣṣ", "", ""),
+    (W, "مجاناً", "ফ্রি", "মাজ্জানান", "Free", "majjānan", "", ""),
+  ]),
+]
+
+make_pack("read-arabic.json", {
+    "id": "read-arabic",
+    "title_bn": "১০ দিনে আরবি পড়া", "title_en": "Read Arabic in 10 days",
+    "description_bn": "আরবি অক্ষর চেনা, সাইনবোর্ড পড়া, আর দাম ও মেনু পড়া — প্রতিদিন একটু করে।",
+    "description_en": "Learn the Arabic letters, then read signs, prices and menus, a little each day.",
+    "type": "reading", "is_free": True,
+}, lessons, "rd")

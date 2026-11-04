@@ -42,6 +42,7 @@ export default {
   "courseType.phrase": "বাক্য কোর্স",
   "courseType.topic": "বিষয়ভিত্তিক কোর্স",
   "courseType.mixed": "মিশ্র কোর্স",
+  "courseType.reading": "পড়া শেখার কোর্স",
   "audio.listen": "উচ্চারণ শোনো",
   "audio.noVoice": "এই ডিভাইসে আরবি ভয়েস নেই",
   "error.contentLoad": "লেসন লোড করা যায়নি। ইন্টারনেট সংযোগ দেখে আবার চেষ্টা করো।",

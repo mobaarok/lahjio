@@ -43,6 +43,7 @@ export default {
   "courseType.phrase": "Phrase course",
   "courseType.topic": "Topic course",
   "courseType.mixed": "Mixed course",
+  "courseType.reading": "Reading course",
   "audio.listen": "Listen to the pronunciation",
   "audio.noVoice": "This device has no Arabic voice",
   "error.contentLoad": "Couldn't load lessons. Check your internet connection and try again.",
