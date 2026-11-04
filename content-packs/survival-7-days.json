@@ -1,0 +1,1839 @@
+{
+  "name": "Survival Arabic: 7 days",
+  "categories": [
+    {
+      "id": "greetings",
+      "name_en": "Greetings",
+      "name_bn": "সালাম ও পরিচয়",
+      "order": 10
+    },
+    {
+      "id": "polite",
+      "name_en": "Yes, no and thanks",
+      "name_bn": "হ্যাঁ, না ও ধন্যবাদ",
+      "order": 20
+    },
+    {
+      "id": "understand",
+      "name_en": "Understanding",
+      "name_bn": "বোঝা ও জিজ্ঞেস করা",
+      "order": 30
+    },
+    {
+      "id": "numbers",
+      "name_en": "Numbers",
+      "name_bn": "সংখ্যা",
+      "order": 40
+    },
+    {
+      "id": "money",
+      "name_en": "Prices and money",
+      "name_bn": "দাম ও টাকা",
+      "order": 50
+    },
+    {
+      "id": "directions",
+      "name_en": "Directions",
+      "name_bn": "পথ ও দিক",
+      "order": 60
+    }
+  ],
+  "items": [
+    {
+      "id": "s7-d1-01",
+      "type": "phrase",
+      "arabic": "السلام عليكم",
+      "bangla": "আপনার ওপর শান্তি বর্ষিত হোক (সালাম)",
+      "english": "Peace be upon you (hello)",
+      "bn_transliteration": "আসসালামু আলাইকুম",
+      "en_transliteration": "as-salāmu ʿalaykum",
+      "category_ids": [
+        "greetings"
+      ],
+      "note_bn": "সৌদিতে সবচেয়ে বেশি ব্যবহৃত সালাম। দোকান, অফিস বা কারো কাছে গেলে আগে এটা বলুন।",
+      "note_en": "The most common greeting in Saudi. Say it first when you walk into a shop or office or up to someone."
+    },
+    {
+      "id": "s7-d1-02",
+      "type": "phrase",
+      "arabic": "وعليكم السلام",
+      "bangla": "আপনার ওপরও শান্তি বর্ষিত হোক",
+      "english": "And peace be upon you (reply)",
+      "bn_transliteration": "ওয়া আলাইকুমুস সালাম",
+      "en_transliteration": "wa ʿalaykum as-salām",
+      "category_ids": [
+        "greetings"
+      ],
+      "note_bn": "সালামের উত্তর। কেউ সালাম দিলে এটা বলতেই হবে।",
+      "note_en": "The reply to salām. Always answer a salām with this."
+    },
+    {
+      "id": "s7-d1-03",
+      "type": "word",
+      "arabic": "هلا",
+      "bangla": "হ্যালো (আন্তরিক)",
+      "english": "Hi",
+      "bn_transliteration": "হালা",
+      "en_transliteration": "hala",
+      "category_ids": [
+        "greetings"
+      ],
+      "note_bn": "খুব প্রচলিত ঘরোয়া সম্ভাষণ। সৌদিরা ফোন ধরেও 'হালা' বলে।",
+      "note_en": "A warm, casual hi. Saudis often answer the phone with it."
+    },
+    {
+      "id": "s7-d1-04",
+      "type": "phrase",
+      "arabic": "هلا والله",
+      "bangla": "আরে, স্বাগতম! খুব খুশি হলাম",
+      "english": "Hi, great to see you",
+      "bn_transliteration": "হালা ওয়াল্লাহ",
+      "en_transliteration": "hala wallāh",
+      "category_ids": [
+        "greetings"
+      ],
+      "note_bn": "'হালা'র চেয়েও আন্তরিক। পরিচিত কাউকে দেখে খুশি হলে বলে।",
+      "note_en": "Warmer than hala. Said to someone you're happy to see."
+    },
+    {
+      "id": "s7-d1-05",
+      "type": "phrase",
+      "arabic": "أهلاً وسهلاً",
+      "bangla": "স্বাগতম",
+      "english": "Welcome",
+      "bn_transliteration": "আহলান ওয়া সাহলান",
+      "en_transliteration": "ahlan wa sahlan",
+      "category_ids": [
+        "greetings"
+      ],
+      "note_bn": "কেউ আপনাকে এটা বললে উত্তরে বলুন 'আহলান বীক'।",
+      "note_en": "If someone says it to you, answer ahlan bīk."
+    },
+    {
+      "id": "s7-d1-06",
+      "type": "phrase",
+      "arabic": "صباح الخير",
+      "bangla": "শুভ সকাল",
+      "english": "Good morning",
+      "bn_transliteration": "সাবাহ আল-খেইর",
+      "en_transliteration": "ṣabāḥ al-khēr",
+      "category_ids": [
+        "greetings"
+      ],
+      "note_bn": "উত্তরে বলে 'সাবাহ আন-নূর'।",
+      "note_en": "The answer is ṣabāḥ an-nūr."
+    },
+    {
+      "id": "s7-d1-07",
+      "type": "phrase",
+      "arabic": "صباح النور",
+      "bangla": "শুভ সকাল (উত্তরে)",
+      "english": "Good morning (reply)",
+      "bn_transliteration": "সাবাহ আন-নূর",
+      "en_transliteration": "ṣabāḥ an-nūr",
+      "category_ids": [
+        "greetings"
+      ],
+      "note_bn": "'সাবাহ আল-খেইর'-এর উত্তর। মানে 'আলোর সকাল'।",
+      "note_en": "The reply to ṣabāḥ al-khēr. It means 'a morning of light'."
+    },
+    {
+      "id": "s7-d1-08",
+      "type": "phrase",
+      "arabic": "مساء الخير",
+      "bangla": "শুভ সন্ধ্যা",
+      "english": "Good evening",
+      "bn_transliteration": "মাসা আল-খেইর",
+      "en_transliteration": "masā al-khēr",
+      "category_ids": [
+        "greetings"
+      ],
+      "note_bn": "দুপুরের পর থেকে রাত পর্যন্ত বলা যায়। উত্তর: 'মাসা আন-নূর'।",
+      "note_en": "Used from the afternoon until night. The answer is masā an-nūr."
+    },
+    {
+      "id": "s7-d1-09",
+      "type": "phrase",
+      "arabic": "مساء النور",
+      "bangla": "শুভ সন্ধ্যা (উত্তরে)",
+      "english": "Good evening (reply)",
+      "bn_transliteration": "মাসা আন-নূর",
+      "en_transliteration": "masā an-nūr",
+      "category_ids": [
+        "greetings"
+      ]
+    },
+    {
+      "id": "s7-d1-10",
+      "type": "phrase",
+      "arabic": "كيف حالك؟",
+      "bangla": "আপনি কেমন আছেন?",
+      "english": "How are you?",
+      "bn_transliteration": "কেইফ হালাক?",
+      "en_transliteration": "kēf ḥālak?",
+      "category_ids": [
+        "greetings"
+      ],
+      "note_bn": "পুরুষকে 'হালাক', নারীকে 'হালিক'। সৌদিরা 'কাইফা' না বলে 'কেইফ' বলে।",
+      "note_en": "To a man: ḥālak, to a woman: ḥālik. Saudis say kēf, not the textbook kayfa."
+    },
+    {
+      "id": "s7-d1-11",
+      "type": "phrase",
+      "arabic": "وش أخبارك؟",
+      "bangla": "কী খবর?",
+      "english": "What's new? How's it going?",
+      "bn_transliteration": "ওশ আখবারাক?",
+      "en_transliteration": "wesh akhbārak?",
+      "category_ids": [
+        "greetings"
+      ],
+      "note_bn": "'ওশ' মানে 'কী' — রিয়াদের (নজদি) কথা। জেদ্দায় বলে 'এশ আখবারাক?'",
+      "note_en": "wesh means 'what' in Riyadh (Najdi). In Jeddah people say ēsh akhbārak?"
+    },
+    {
+      "id": "s7-d1-12",
+      "type": "phrase",
+      "arabic": "الحمد لله، بخير",
+      "bangla": "আলহামদুলিল্লাহ, ভালো আছি",
+      "english": "Fine, thank God",
+      "bn_transliteration": "আলহামদুলিল্লাহ, বিখেইর",
+      "en_transliteration": "al-ḥamdu lillāh, bikhēr",
+      "category_ids": [
+        "greetings"
+      ],
+      "note_bn": "কেমন আছেন জিজ্ঞেস করলে সৌদিরা প্রথমে 'আলহামদুলিল্লাহ' বলে, অবস্থা যেমনই হোক।",
+      "note_en": "Saudis answer 'how are you' with al-ḥamdu lillāh first, whatever their day is like."
+    },
+    {
+      "id": "s7-d1-13",
+      "type": "phrase",
+      "arabic": "وانت؟",
+      "bangla": "আর আপনি?",
+      "english": "And you?",
+      "bn_transliteration": "ওয়া ইনতা?",
+      "en_transliteration": "w-inta?",
+      "category_ids": [
+        "greetings"
+      ],
+      "note_bn": "নারীকে বলুন 'ওয়া ইনতি?'",
+      "note_en": "To a woman: w-inti?"
+    },
+    {
+      "id": "s7-d1-14",
+      "type": "phrase",
+      "arabic": "الله يسلمك",
+      "bangla": "আল্লাহ আপনাকে নিরাপদ রাখুন",
+      "english": "God keep you safe (thanks)",
+      "bn_transliteration": "আল্লাহ ইসাল্লিমাক",
+      "en_transliteration": "allāh ysallimak",
+      "category_ids": [
+        "greetings"
+      ],
+      "note_bn": "সৌদিরা খুব বলে: কুশল জিজ্ঞেসের উত্তরে, ধন্যবাদের উত্তরে বা বিদায়ের সময়।",
+      "note_en": "Very common: as a reply when someone asks about you, thanks you or says goodbye."
+    },
+    {
+      "id": "s7-d1-15",
+      "type": "phrase",
+      "arabic": "وش اسمك؟",
+      "bangla": "আপনার নাম কী?",
+      "english": "What's your name?",
+      "bn_transliteration": "ওশ ইসমাক?",
+      "en_transliteration": "wesh ismak?",
+      "category_ids": [
+        "greetings"
+      ],
+      "note_bn": "জেদ্দায়: 'এশ ইসমাক?' নারীকে: 'ইসমিক'।",
+      "note_en": "In Jeddah: ēsh ismak? To a woman: ismik."
+    },
+    {
+      "id": "s7-d1-16",
+      "type": "phrase",
+      "arabic": "اسمي رحيم",
+      "bangla": "আমার নাম রহিম",
+      "english": "My name is Rahim",
+      "bn_transliteration": "ইসমি রহিম",
+      "en_transliteration": "ismī Rahim",
+      "category_ids": [
+        "greetings"
+      ],
+      "note_bn": "'রহিম'-এর জায়গায় নিজের নাম বলুন।",
+      "note_en": "Put your own name in place of Rahim."
+    },
+    {
+      "id": "s7-d1-17",
+      "type": "word",
+      "arabic": "تشرفنا",
+      "bangla": "পরিচিত হয়ে খুশি হলাম",
+      "english": "Nice to meet you",
+      "bn_transliteration": "তাশাররাফনা",
+      "en_transliteration": "tsharrafna",
+      "category_ids": [
+        "greetings"
+      ],
+      "note_bn": "প্রথম পরিচয়ের পর বলে। উত্তরে আপনিও 'তাশাররাফনা' বলতে পারেন।",
+      "note_en": "Said after you first meet someone. You can answer with the same word."
+    },
+    {
+      "id": "s7-d1-18",
+      "type": "phrase",
+      "arabic": "مع السلامة",
+      "bangla": "বিদায়",
+      "english": "Goodbye",
+      "bn_transliteration": "মাআস সালামা",
+      "en_transliteration": "maʿa s-salāma",
+      "category_ids": [
+        "greetings"
+      ],
+      "note_bn": "উত্তরে বলে 'আল্লাহ ইসাল্লিমাক' বা 'ফি আমানিল্লাহ'।",
+      "note_en": "The answer is allāh ysallimak or fī amān illāh."
+    },
+    {
+      "id": "s7-d1-19",
+      "type": "phrase",
+      "arabic": "في أمان الله",
+      "bangla": "আল্লাহর হেফাজতে থাকুন (বিদায়)",
+      "english": "Goodbye (go in God's care)",
+      "bn_transliteration": "ফি আমানিল্লাহ",
+      "en_transliteration": "fī amān illāh",
+      "category_ids": [
+        "greetings"
+      ]
+    },
+    {
+      "id": "s7-d2-01",
+      "type": "word",
+      "arabic": "إيه",
+      "bangla": "হ্যাঁ",
+      "english": "Yes",
+      "bn_transliteration": "ইহ",
+      "en_transliteration": "ēh",
+      "category_ids": [
+        "polite"
+      ],
+      "note_bn": "সৌদিতে 'হ্যাঁ' বোঝাতে সবচেয়ে বেশি বলে 'ইহ'। বইয়ের 'নাআম' কম শোনা যায়।",
+      "note_en": "The everyday Saudi 'yes'. The textbook naʿam is heard much less."
+    },
+    {
+      "id": "s7-d2-02",
+      "type": "word",
+      "arabic": "أيوه",
+      "bangla": "হ্যাঁ, ঠিক",
+      "english": "Yes, right",
+      "bn_transliteration": "আইওয়া",
+      "en_transliteration": "aywa",
+      "category_ids": [
+        "polite"
+      ],
+      "note_bn": "জেদ্দা ও হিজাজে বেশি শোনা যায়, রিয়াদেও সবাই বোঝে।",
+      "note_en": "Heard more in Jeddah and the Hijaz, but understood in Riyadh too."
+    },
+    {
+      "id": "s7-d2-03",
+      "type": "word",
+      "arabic": "لا",
+      "bangla": "না",
+      "english": "No",
+      "bn_transliteration": "লা",
+      "en_transliteration": "lā",
+      "category_ids": [
+        "polite"
+      ]
+    },
+    {
+      "id": "s7-d2-04",
+      "type": "phrase",
+      "arabic": "لا، شكراً",
+      "bangla": "না, ধন্যবাদ",
+      "english": "No, thank you",
+      "bn_transliteration": "লা, শুকরান",
+      "en_transliteration": "lā, shukran",
+      "category_ids": [
+        "polite"
+      ],
+      "note_bn": "দোকানদার বা কেউ কিছু দিতে চাইলে ভদ্রভাবে না বলার উপায়।",
+      "note_en": "A polite way to say no when someone offers you something."
+    },
+    {
+      "id": "s7-d2-05",
+      "type": "word",
+      "arabic": "طيب",
+      "bangla": "আচ্ছা, ঠিক আছে",
+      "english": "OK",
+      "bn_transliteration": "তাইয়েব",
+      "en_transliteration": "ṭayyib",
+      "category_ids": [
+        "polite"
+      ],
+      "note_bn": "বস বা কাস্টমারকে 'ঠিক আছে' বলার সবচেয়ে কাজের শব্দ।",
+      "note_en": "The most useful 'OK' for your boss or a customer."
+    },
+    {
+      "id": "s7-d2-06",
+      "type": "word",
+      "arabic": "تمام",
+      "bangla": "ঠিক আছে, সব ঠিক",
+      "english": "Fine, all good",
+      "bn_transliteration": "তামাম",
+      "en_transliteration": "tamām",
+      "category_ids": [
+        "polite"
+      ],
+      "note_bn": "'সব ঠিক আছে?' জিজ্ঞেস করতেও বলে: 'তামাম?'",
+      "note_en": "Also a question: tamām? means 'all good?'"
+    },
+    {
+      "id": "s7-d2-07",
+      "type": "word",
+      "arabic": "أبشر",
+      "bangla": "অবশ্যই, এখনই করছি",
+      "english": "Sure, right away",
+      "bn_transliteration": "আবশির",
+      "en_transliteration": "abshir",
+      "category_ids": [
+        "polite"
+      ],
+      "note_bn": "খুব সৌদি শব্দ! কেউ কিছু করতে বললে 'আবশির' বললে বোঝায় আপনি খুশি মনে করে দেবেন। নারীকে: 'আবশিরি'।",
+      "note_en": "Very Saudi: tells someone you'll gladly do what they asked. To a woman: abshiri."
+    },
+    {
+      "id": "s7-d2-08",
+      "type": "phrase",
+      "arabic": "إن شاء الله",
+      "bangla": "আল্লাহ চাইলে (ইনশাআল্লাহ)",
+      "english": "God willing",
+      "bn_transliteration": "ইনশাআল্লাহ",
+      "en_transliteration": "in shā allāh",
+      "category_ids": [
+        "polite"
+      ],
+      "note_bn": "ভবিষ্যতের যেকোনো কাজে বলে। কখনো এর মানে ভদ্রভাবে 'হয়তো' — কথার সুর দেখে বুঝুন।",
+      "note_en": "Said about anything in the future. Sometimes it politely means 'maybe', so listen to the tone."
+    },
+    {
+      "id": "s7-d2-09",
+      "type": "word",
+      "arabic": "شكراً",
+      "bangla": "ধন্যবাদ",
+      "english": "Thank you",
+      "bn_transliteration": "শুকরান",
+      "en_transliteration": "shukran",
+      "category_ids": [
+        "polite"
+      ]
+    },
+    {
+      "id": "s7-d2-10",
+      "type": "word",
+      "arabic": "مشكور",
+      "bangla": "ধন্যবাদ (সৌদি ভঙ্গিতে)",
+      "english": "Thanks",
+      "bn_transliteration": "মাশকুর",
+      "en_transliteration": "mashkūr",
+      "category_ids": [
+        "polite"
+      ],
+      "note_bn": "সৌদিরা 'শুকরান'-এর মতোই 'মাশকুর' বলে। নারীকে: 'মাশকুরা'।",
+      "note_en": "Saudis say mashkūr as often as shukran. To a woman: mashkūra."
+    },
+    {
+      "id": "s7-d2-11",
+      "type": "phrase",
+      "arabic": "يعطيك العافية",
+      "bangla": "আল্লাহ আপনাকে শক্তি দিন",
+      "english": "God give you strength (thanks for your work)",
+      "bn_transliteration": "ইয়াতিক আল-আফিয়া",
+      "en_transliteration": "yaʿṭīk al-ʿāfya",
+      "category_ids": [
+        "polite"
+      ],
+      "note_bn": "কেউ কাজ করছে বা আপনার জন্য কিছু করেছে, তাকে বলুন। আপনাকে কেউ বললে উত্তর: 'আল্লাহ ইয়াফিক'।",
+      "note_en": "Said to someone working, or who did something for you. If someone says it to you, answer allāh yʿāfīk."
+    },
+    {
+      "id": "s7-d2-12",
+      "type": "phrase",
+      "arabic": "الله يعافيك",
+      "bangla": "আল্লাহ আপনাকেও ভালো রাখুন (উত্তরে)",
+      "english": "God keep you well (reply)",
+      "bn_transliteration": "আল্লাহ ইয়াফিক",
+      "en_transliteration": "allāh yʿāfīk",
+      "category_ids": [
+        "polite"
+      ]
+    },
+    {
+      "id": "s7-d2-13",
+      "type": "word",
+      "arabic": "العفو",
+      "bangla": "কোনো ব্যাপার না (ধন্যবাদের উত্তরে)",
+      "english": "You're welcome",
+      "bn_transliteration": "আল-আফু",
+      "en_transliteration": "al-ʿafu",
+      "category_ids": [
+        "polite"
+      ]
+    },
+    {
+      "id": "s7-d2-14",
+      "type": "phrase",
+      "arabic": "لو سمحت",
+      "bangla": "দয়া করে / শুনছেন?",
+      "english": "Please / Excuse me",
+      "bn_transliteration": "লাও সামাহত",
+      "en_transliteration": "law samaḥt",
+      "category_ids": [
+        "polite"
+      ],
+      "note_bn": "কাউকে ডাকতে বা কিছু চাইতে শুরুতে বলুন। নারীকে: 'লাও সামাহতি'।",
+      "note_en": "Use it to get someone's attention or before you ask for something. To a woman: law samaḥti."
+    },
+    {
+      "id": "s7-d2-15",
+      "type": "word",
+      "arabic": "تفضل",
+      "bangla": "নিন / আসুন / বসুন",
+      "english": "Here you are / Please, go ahead",
+      "bn_transliteration": "তাফাদ্দাল",
+      "en_transliteration": "tfaḍḍal",
+      "category_ids": [
+        "polite"
+      ],
+      "note_bn": "কিছু দেওয়ার সময়, কাউকে ভেতরে আসতে বা বসতে বলতে। নারীকে: 'তাফাদ্দালি'।",
+      "note_en": "When you hand something over, or invite someone in or to sit. To a woman: tfaḍḍali."
+    },
+    {
+      "id": "s7-d2-16",
+      "type": "word",
+      "arabic": "آسف",
+      "bangla": "দুঃখিত",
+      "english": "Sorry",
+      "bn_transliteration": "আসিফ",
+      "en_transliteration": "āsif",
+      "category_ids": [
+        "polite"
+      ],
+      "note_bn": "নারী নিজে বললে: 'আসফা'।",
+      "note_en": "A woman says āsfa."
+    },
+    {
+      "id": "s7-d2-17",
+      "type": "word",
+      "arabic": "معليش",
+      "bangla": "কিছু মনে করবেন না",
+      "english": "Sorry / Never mind",
+      "bn_transliteration": "মালেশ",
+      "en_transliteration": "maʿlēsh",
+      "category_ids": [
+        "polite"
+      ],
+      "note_bn": "ছোট ভুল হলে খুব বলা হয়। আবার 'বাদ দিন, সমস্যা নেই' অর্থেও বলে।",
+      "note_en": "Said for small mistakes. It also means 'never mind, it's fine'."
+    },
+    {
+      "id": "s7-d2-18",
+      "type": "phrase",
+      "arabic": "ما فيه مشكلة",
+      "bangla": "কোনো সমস্যা নেই",
+      "english": "No problem",
+      "bn_transliteration": "মা ফি মুশকিলা",
+      "en_transliteration": "mā fīh mushkila",
+      "category_ids": [
+        "polite"
+      ]
+    },
+    {
+      "id": "s7-d3-01",
+      "type": "phrase",
+      "arabic": "ما فهمت",
+      "bangla": "বুঝিনি",
+      "english": "I didn't understand",
+      "bn_transliteration": "মা ফিহিমত",
+      "en_transliteration": "mā fhimt",
+      "category_ids": [
+        "understand"
+      ],
+      "note_bn": "সবচেয়ে জরুরি কথা! না বুঝে 'ইহ' (হ্যাঁ) বলবেন না, এটা বলুন। এতে কাজে ভুল কম হয়।",
+      "note_en": "The most important phrase. Don't say 'yes' when you didn't understand; say this. It saves mistakes at work."
+    },
+    {
+      "id": "s7-d3-02",
+      "type": "word",
+      "arabic": "فاهم؟",
+      "bangla": "বুঝেছেন?",
+      "english": "Do you understand?",
+      "bn_transliteration": "ফাহিম?",
+      "en_transliteration": "fāhim?",
+      "category_ids": [
+        "understand"
+      ],
+      "note_bn": "বস প্রায়ই জিজ্ঞেস করে। বুঝলে বলুন 'ফাহিম', না বুঝলে 'মা ফিহিমত'। নারীকে: 'ফাহমা?'",
+      "note_en": "Bosses ask this a lot. Answer fāhim if you did, mā fhimt if you didn't. To a woman: fāhma?"
+    },
+    {
+      "id": "s7-d3-03",
+      "type": "word",
+      "arabic": "فهمت",
+      "bangla": "বুঝেছি",
+      "english": "I understood",
+      "bn_transliteration": "ফিহিমত",
+      "en_transliteration": "fhimt",
+      "category_ids": [
+        "understand"
+      ]
+    },
+    {
+      "id": "s7-d3-04",
+      "type": "phrase",
+      "arabic": "ممكن تعيد؟",
+      "bangla": "আবার বলবেন?",
+      "english": "Can you say it again?",
+      "bn_transliteration": "মুমকিন তিঈদ?",
+      "en_transliteration": "mumkin tʿīd?",
+      "category_ids": [
+        "understand"
+      ],
+      "note_bn": "'মুমকিন' মানে 'পারবেন কি' — যেকোনো অনুরোধ ভদ্র করে।",
+      "note_en": "mumkin means 'could you', and makes any request polite."
+    },
+    {
+      "id": "s7-d3-05",
+      "type": "phrase",
+      "arabic": "مرة ثانية",
+      "bangla": "আরেকবার",
+      "english": "One more time",
+      "bn_transliteration": "মাররা সানিয়া",
+      "en_transliteration": "marra thānya",
+      "category_ids": [
+        "understand"
+      ]
+    },
+    {
+      "id": "s7-d3-06",
+      "type": "phrase",
+      "arabic": "شوي شوي",
+      "bangla": "আস্তে আস্তে",
+      "english": "Slowly",
+      "bn_transliteration": "শুওয়াই শুওয়াই",
+      "en_transliteration": "shway shway",
+      "category_ids": [
+        "understand"
+      ],
+      "note_bn": "'শুওয়াই' মানে 'একটু'। দুবার বললে 'আস্তে আস্তে'।",
+      "note_en": "shway means 'a little'. Said twice it means 'slowly'."
+    },
+    {
+      "id": "s7-d3-07",
+      "type": "phrase",
+      "arabic": "تكلم شوي شوي، لو سمحت",
+      "bangla": "একটু আস্তে বলুন, প্লিজ",
+      "english": "Please speak slowly",
+      "bn_transliteration": "তাকাল্লাম শুওয়াই শুওয়াই, লাও সামাহত",
+      "en_transliteration": "takallam shway shway, law samaḥt",
+      "category_ids": [
+        "understand"
+      ],
+      "note_bn": "সৌদিরা খুব দ্রুত কথা বলে। এটা বললে তারা সাধারণত খুশি হয়ে আস্তে বলে।",
+      "note_en": "Saudis speak fast. Most are happy to slow down when you ask."
+    },
+    {
+      "id": "s7-d3-08",
+      "type": "phrase",
+      "arabic": "أتكلم عربي شوي",
+      "bangla": "আমি অল্প আরবি বলি",
+      "english": "I speak a little Arabic",
+      "bn_transliteration": "আতাকাল্লাম আরাবি শুওয়াই",
+      "en_transliteration": "atkallam ʿarabi shway",
+      "category_ids": [
+        "understand"
+      ]
+    },
+    {
+      "id": "s7-d3-09",
+      "type": "phrase",
+      "arabic": "ما أعرف عربي زين",
+      "bangla": "আমি ভালো আরবি জানি না",
+      "english": "I don't know Arabic well",
+      "bn_transliteration": "মা আরিফ আরাবি জেইন",
+      "en_transliteration": "mā aʿrif ʿarabi zēn",
+      "category_ids": [
+        "understand"
+      ],
+      "note_bn": "'জেইন' মানে 'ভালো' — সৌদিতে খুব বলে। 'জেইন?' মানে 'ঠিক আছে?'",
+      "note_en": "zēn means 'good', very common in Saudi. zēn? also means 'OK?'"
+    },
+    {
+      "id": "s7-d3-10",
+      "type": "phrase",
+      "arabic": "وش يعني؟",
+      "bangla": "এর মানে কী?",
+      "english": "What does it mean?",
+      "bn_transliteration": "ওশ ইয়ানি?",
+      "en_transliteration": "wesh yaʿni?",
+      "category_ids": [
+        "understand"
+      ],
+      "note_bn": "জেদ্দায়: 'এশ ইয়ানি?' কথার মাঝে শুধু 'ইয়ানি' শুনলে তার মানে 'মানে...'।",
+      "note_en": "In Jeddah: ēsh yaʿni? On its own in the middle of speech, yaʿni means 'I mean...'."
+    },
+    {
+      "id": "s7-d3-11",
+      "type": "phrase",
+      "arabic": "وش قلت؟",
+      "bangla": "কী বললেন?",
+      "english": "What did you say?",
+      "bn_transliteration": "ওশ গুলত?",
+      "en_transliteration": "wesh gult?",
+      "category_ids": [
+        "understand"
+      ],
+      "note_bn": "সৌদি উচ্চারণে 'ق' প্রায়ই 'গ' হয়: 'কুলত' না, 'গুলত'।",
+      "note_en": "In Saudi speech the letter qāf often sounds like g: gult, not qult."
+    },
+    {
+      "id": "s7-d3-12",
+      "type": "phrase",
+      "arabic": "ما أعرف",
+      "bangla": "জানি না",
+      "english": "I don't know",
+      "bn_transliteration": "মা আরিফ",
+      "en_transliteration": "mā aʿrif",
+      "category_ids": [
+        "understand"
+      ]
+    },
+    {
+      "id": "s7-d3-13",
+      "type": "word",
+      "arabic": "أعرف",
+      "bangla": "আমি জানি",
+      "english": "I know",
+      "bn_transliteration": "আরিফ",
+      "en_transliteration": "aʿrif",
+      "category_ids": [
+        "understand"
+      ]
+    },
+    {
+      "id": "s7-d3-14",
+      "type": "phrase",
+      "arabic": "وش هذا؟",
+      "bangla": "এটা কী?",
+      "english": "What is this?",
+      "bn_transliteration": "ওশ হাদা?",
+      "en_transliteration": "wesh hādha?",
+      "category_ids": [
+        "understand"
+      ],
+      "note_bn": "জিনিসটা দেখিয়ে বলুন। জেদ্দায়: 'এশ দা?'",
+      "note_en": "Point at the thing. In Jeddah: ēsh da?"
+    },
+    {
+      "id": "s7-d3-15",
+      "type": "phrase",
+      "arabic": "كيف أقول هذا بالعربي؟",
+      "bangla": "এটা আরবিতে কীভাবে বলে?",
+      "english": "How do I say this in Arabic?",
+      "bn_transliteration": "কেইফ আগুল হাদা বিল-আরাবি?",
+      "en_transliteration": "kēf agūl hādha bil-ʿarabi?",
+      "category_ids": [
+        "understand"
+      ],
+      "note_bn": "নতুন শব্দ শেখার সবচেয়ে ভালো উপায়। সৌদিরা শেখাতে পছন্দ করে।",
+      "note_en": "The best way to learn new words. Saudis like to teach."
+    },
+    {
+      "id": "s7-d3-16",
+      "type": "phrase",
+      "arabic": "أنا من بنغلاديش",
+      "bangla": "আমি বাংলাদেশ থেকে",
+      "english": "I'm from Bangladesh",
+      "bn_transliteration": "আনা মিন বাংলাদেশ",
+      "en_transliteration": "ana min banglādēsh",
+      "category_ids": [
+        "understand"
+      ],
+      "note_bn": "সৌদিরা প্রায়ই জিজ্ঞেস করে 'ইনতা মিন ওয়েন?' — আপনি কোথা থেকে?",
+      "note_en": "Saudis often ask inta min wēn? — where are you from?"
+    },
+    {
+      "id": "s7-d3-17",
+      "type": "phrase",
+      "arabic": "أنا جديد هنا",
+      "bangla": "আমি এখানে নতুন",
+      "english": "I'm new here",
+      "bn_transliteration": "আনা জাদীদ হিনা",
+      "en_transliteration": "ana jadīd hina",
+      "category_ids": [
+        "understand"
+      ],
+      "note_bn": "সৌদিরা 'হুনা' না বলে 'হিনা' বলে। নারী বললে: 'জাদীদা'।",
+      "note_en": "Saudis say hina for 'here'. A woman says jadīda."
+    },
+    {
+      "id": "s7-d4-01",
+      "type": "word",
+      "arabic": "صفر",
+      "bangla": "শূন্য (০)",
+      "english": "Zero (0)",
+      "bn_transliteration": "সিফর",
+      "en_transliteration": "ṣifr",
+      "category_ids": [
+        "numbers"
+      ],
+      "note_bn": "আরবি অঙ্কে লেখা হয় ٠ (একটা বিন্দু)।",
+      "note_en": "Written ٠ (a dot) in Arabic digits."
+    },
+    {
+      "id": "s7-d4-02",
+      "type": "word",
+      "arabic": "واحد",
+      "bangla": "এক (১)",
+      "english": "One (1)",
+      "bn_transliteration": "ওয়াহিদ",
+      "en_transliteration": "wāḥid",
+      "category_ids": [
+        "numbers"
+      ],
+      "note_bn": "আরবি অঙ্কে: ١",
+      "note_en": "Arabic digit: ١"
+    },
+    {
+      "id": "s7-d4-03",
+      "type": "word",
+      "arabic": "اثنين",
+      "bangla": "দুই (২)",
+      "english": "Two (2)",
+      "bn_transliteration": "ইসনেইন",
+      "en_transliteration": "ithnēn",
+      "category_ids": [
+        "numbers"
+      ],
+      "note_bn": "আরবি অঙ্কে: ٢। সোমবারকেও 'ইসনেইন' বলে।",
+      "note_en": "Arabic digit: ٢. Monday is also called ithnēn."
+    },
+    {
+      "id": "s7-d4-04",
+      "type": "word",
+      "arabic": "ثلاثة",
+      "bangla": "তিন (৩)",
+      "english": "Three (3)",
+      "bn_transliteration": "সালাসা",
+      "en_transliteration": "thalātha",
+      "category_ids": [
+        "numbers"
+      ],
+      "note_bn": "আরবি অঙ্কে: ٣। জেদ্দায় অনেকে বলে 'তালাতা'।",
+      "note_en": "Arabic digit: ٣. In Jeddah many say talāta."
+    },
+    {
+      "id": "s7-d4-05",
+      "type": "word",
+      "arabic": "أربعة",
+      "bangla": "চার (৪)",
+      "english": "Four (4)",
+      "bn_transliteration": "আরবাআ",
+      "en_transliteration": "arbaʿa",
+      "category_ids": [
+        "numbers"
+      ],
+      "note_bn": "আরবি অঙ্কে: ٤",
+      "note_en": "Arabic digit: ٤"
+    },
+    {
+      "id": "s7-d4-06",
+      "type": "word",
+      "arabic": "خمسة",
+      "bangla": "পাঁচ (৫)",
+      "english": "Five (5)",
+      "bn_transliteration": "খামসা",
+      "en_transliteration": "khamsa",
+      "category_ids": [
+        "numbers"
+      ],
+      "note_bn": "আরবি অঙ্কে: ٥ (দেখতে শূন্যের মতো, কিন্তু এটা পাঁচ!)",
+      "note_en": "Arabic digit: ٥ (looks like a zero, but it is five!)"
+    },
+    {
+      "id": "s7-d4-07",
+      "type": "word",
+      "arabic": "ستة",
+      "bangla": "ছয় (৬)",
+      "english": "Six (6)",
+      "bn_transliteration": "সিত্তা",
+      "en_transliteration": "sitta",
+      "category_ids": [
+        "numbers"
+      ],
+      "note_bn": "আরবি অঙ্কে: ٦",
+      "note_en": "Arabic digit: ٦"
+    },
+    {
+      "id": "s7-d4-08",
+      "type": "word",
+      "arabic": "سبعة",
+      "bangla": "সাত (৭)",
+      "english": "Seven (7)",
+      "bn_transliteration": "সাবআ",
+      "en_transliteration": "sabʿa",
+      "category_ids": [
+        "numbers"
+      ],
+      "note_bn": "আরবি অঙ্কে: ٧",
+      "note_en": "Arabic digit: ٧"
+    },
+    {
+      "id": "s7-d4-09",
+      "type": "word",
+      "arabic": "ثمانية",
+      "bangla": "আট (৮)",
+      "english": "Eight (8)",
+      "bn_transliteration": "সামানিয়া",
+      "en_transliteration": "thamānya",
+      "category_ids": [
+        "numbers"
+      ],
+      "note_bn": "আরবি অঙ্কে: ٨। জেদ্দায়: 'তামানিয়া'।",
+      "note_en": "Arabic digit: ٨. In Jeddah: tamānya."
+    },
+    {
+      "id": "s7-d4-10",
+      "type": "word",
+      "arabic": "تسعة",
+      "bangla": "নয় (৯)",
+      "english": "Nine (9)",
+      "bn_transliteration": "তিসআ",
+      "en_transliteration": "tisʿa",
+      "category_ids": [
+        "numbers"
+      ],
+      "note_bn": "আরবি অঙ্কে: ٩",
+      "note_en": "Arabic digit: ٩"
+    },
+    {
+      "id": "s7-d4-11",
+      "type": "word",
+      "arabic": "عشرة",
+      "bangla": "দশ (১০)",
+      "english": "Ten (10)",
+      "bn_transliteration": "আশারা",
+      "en_transliteration": "ʿashara",
+      "category_ids": [
+        "numbers"
+      ],
+      "note_bn": "আরবি অঙ্কে: ١٠",
+      "note_en": "Arabic digits: ١٠"
+    },
+    {
+      "id": "s7-d5-01",
+      "type": "word",
+      "arabic": "إحدعش",
+      "bangla": "এগারো (১১)",
+      "english": "Eleven (11)",
+      "bn_transliteration": "ইহদাশ",
+      "en_transliteration": "iḥdaʿsh",
+      "category_ids": [
+        "numbers"
+      ],
+      "note_bn": "১১ থেকে ১৯ সৌদিরা ছোট করে বলে, শেষে '-তাশ' বা '-আশ'।",
+      "note_en": "Saudis shorten 11 to 19; they end in -tash or -ash."
+    },
+    {
+      "id": "s7-d5-02",
+      "type": "word",
+      "arabic": "اثنعش",
+      "bangla": "বারো (১২)",
+      "english": "Twelve (12)",
+      "bn_transliteration": "ইসনাশ",
+      "en_transliteration": "ithnaʿsh",
+      "category_ids": [
+        "numbers"
+      ]
+    },
+    {
+      "id": "s7-d5-03",
+      "type": "word",
+      "arabic": "ثلطعش",
+      "bangla": "তেরো (১৩)",
+      "english": "Thirteen (13)",
+      "bn_transliteration": "সালাতাশ",
+      "en_transliteration": "thalaṭaʿsh",
+      "category_ids": [
+        "numbers"
+      ]
+    },
+    {
+      "id": "s7-d5-04",
+      "type": "word",
+      "arabic": "أربعطعش",
+      "bangla": "চৌদ্দ (১৪)",
+      "english": "Fourteen (14)",
+      "bn_transliteration": "আরবাতাশ",
+      "en_transliteration": "arbaʿṭaʿsh",
+      "category_ids": [
+        "numbers"
+      ]
+    },
+    {
+      "id": "s7-d5-05",
+      "type": "word",
+      "arabic": "خمسطعش",
+      "bangla": "পনেরো (১৫)",
+      "english": "Fifteen (15)",
+      "bn_transliteration": "খামাস্তাশ",
+      "en_transliteration": "khamasṭaʿsh",
+      "category_ids": [
+        "numbers"
+      ]
+    },
+    {
+      "id": "s7-d5-06",
+      "type": "word",
+      "arabic": "ستطعش",
+      "bangla": "ষোলো (১৬)",
+      "english": "Sixteen (16)",
+      "bn_transliteration": "সিত্তাশ",
+      "en_transliteration": "siṭṭaʿsh",
+      "category_ids": [
+        "numbers"
+      ]
+    },
+    {
+      "id": "s7-d5-07",
+      "type": "word",
+      "arabic": "سبعطعش",
+      "bangla": "সতেরো (১৭)",
+      "english": "Seventeen (17)",
+      "bn_transliteration": "সাবাতাশ",
+      "en_transliteration": "sabaʿṭaʿsh",
+      "category_ids": [
+        "numbers"
+      ]
+    },
+    {
+      "id": "s7-d5-08",
+      "type": "word",
+      "arabic": "ثمنطعش",
+      "bangla": "আঠারো (১৮)",
+      "english": "Eighteen (18)",
+      "bn_transliteration": "সামানতাশ",
+      "en_transliteration": "thamanṭaʿsh",
+      "category_ids": [
+        "numbers"
+      ]
+    },
+    {
+      "id": "s7-d5-09",
+      "type": "word",
+      "arabic": "تسعطعش",
+      "bangla": "উনিশ (১৯)",
+      "english": "Nineteen (19)",
+      "bn_transliteration": "তিসাতাশ",
+      "en_transliteration": "tisaʿṭaʿsh",
+      "category_ids": [
+        "numbers"
+      ]
+    },
+    {
+      "id": "s7-d5-10",
+      "type": "word",
+      "arabic": "عشرين",
+      "bangla": "বিশ (২০)",
+      "english": "Twenty (20)",
+      "bn_transliteration": "ইশরীন",
+      "en_transliteration": "ʿishrīn",
+      "category_ids": [
+        "numbers"
+      ]
+    },
+    {
+      "id": "s7-d5-11",
+      "type": "phrase",
+      "arabic": "خمسة وعشرين",
+      "bangla": "পঁচিশ (২৫)",
+      "english": "Twenty-five (25)",
+      "bn_transliteration": "খামসা ওয়া ইশরীন",
+      "en_transliteration": "khamsa w-ʿishrīn",
+      "category_ids": [
+        "numbers"
+      ],
+      "note_bn": "২১ থেকে ৯৯: আগে একক, তারপর 'ওয়া' (আর), তারপর দশক। ২৫ = পাঁচ আর বিশ।",
+      "note_en": "From 21 to 99 the ones come first, then wa (and), then the tens: 25 = five and twenty."
+    },
+    {
+      "id": "s7-d5-12",
+      "type": "word",
+      "arabic": "ثلاثين",
+      "bangla": "ত্রিশ (৩০)",
+      "english": "Thirty (30)",
+      "bn_transliteration": "সালাসীন",
+      "en_transliteration": "thalāthīn",
+      "category_ids": [
+        "numbers"
+      ]
+    },
+    {
+      "id": "s7-d5-13",
+      "type": "word",
+      "arabic": "أربعين",
+      "bangla": "চল্লিশ (৪০)",
+      "english": "Forty (40)",
+      "bn_transliteration": "আরবাঈন",
+      "en_transliteration": "arbaʿīn",
+      "category_ids": [
+        "numbers"
+      ]
+    },
+    {
+      "id": "s7-d5-14",
+      "type": "word",
+      "arabic": "خمسين",
+      "bangla": "পঞ্চাশ (৫০)",
+      "english": "Fifty (50)",
+      "bn_transliteration": "খামসীন",
+      "en_transliteration": "khamsīn",
+      "category_ids": [
+        "numbers"
+      ]
+    },
+    {
+      "id": "s7-d5-15",
+      "type": "word",
+      "arabic": "ستين",
+      "bangla": "ষাট (৬০)",
+      "english": "Sixty (60)",
+      "bn_transliteration": "সিত্তীন",
+      "en_transliteration": "sittīn",
+      "category_ids": [
+        "numbers"
+      ]
+    },
+    {
+      "id": "s7-d5-16",
+      "type": "word",
+      "arabic": "سبعين",
+      "bangla": "সত্তর (৭০)",
+      "english": "Seventy (70)",
+      "bn_transliteration": "সাবঈন",
+      "en_transliteration": "sabʿīn",
+      "category_ids": [
+        "numbers"
+      ]
+    },
+    {
+      "id": "s7-d5-17",
+      "type": "word",
+      "arabic": "ثمانين",
+      "bangla": "আশি (৮০)",
+      "english": "Eighty (80)",
+      "bn_transliteration": "সামানীন",
+      "en_transliteration": "thamānīn",
+      "category_ids": [
+        "numbers"
+      ]
+    },
+    {
+      "id": "s7-d5-18",
+      "type": "word",
+      "arabic": "تسعين",
+      "bangla": "নব্বই (৯০)",
+      "english": "Ninety (90)",
+      "bn_transliteration": "তিসঈন",
+      "en_transliteration": "tisʿīn",
+      "category_ids": [
+        "numbers"
+      ]
+    },
+    {
+      "id": "s7-d5-19",
+      "type": "word",
+      "arabic": "مية",
+      "bangla": "একশো (১০০)",
+      "english": "One hundred (100)",
+      "bn_transliteration": "মিয়া",
+      "en_transliteration": "miya",
+      "category_ids": [
+        "numbers"
+      ],
+      "note_bn": "বইয়ে লেখা 'مئة' বা 'مائة', কিন্তু বলে 'মিয়া'। ২০০ = 'মিতেইন'।",
+      "note_en": "Written مئة or مائة in books, but said miya. 200 is mitēn."
+    },
+    {
+      "id": "s7-d6-01",
+      "type": "word",
+      "arabic": "بكم؟",
+      "bangla": "কত দাম?",
+      "english": "How much?",
+      "bn_transliteration": "বিকাম?",
+      "en_transliteration": "bikam?",
+      "category_ids": [
+        "money"
+      ],
+      "note_bn": "দাম জিজ্ঞেস করার সবচেয়ে ছোট উপায়। জিনিসটা দেখিয়ে বলুন।",
+      "note_en": "The shortest way to ask a price. Point at the thing and say it."
+    },
+    {
+      "id": "s7-d6-02",
+      "type": "phrase",
+      "arabic": "بكم هذا؟",
+      "bangla": "এটার দাম কত?",
+      "english": "How much is this?",
+      "bn_transliteration": "বিকাম হাদা?",
+      "en_transliteration": "bikam hādha?",
+      "category_ids": [
+        "money"
+      ]
+    },
+    {
+      "id": "s7-d6-03",
+      "type": "phrase",
+      "arabic": "كم السعر؟",
+      "bangla": "দাম কত?",
+      "english": "What's the price?",
+      "bn_transliteration": "কাম আস-সির?",
+      "en_transliteration": "kam as-siʿr?",
+      "category_ids": [
+        "money"
+      ]
+    },
+    {
+      "id": "s7-d6-04",
+      "type": "word",
+      "arabic": "ريال",
+      "bangla": "রিয়াল (সৌদি টাকা)",
+      "english": "Riyal",
+      "bn_transliteration": "রিয়াল",
+      "en_transliteration": "riyāl",
+      "category_ids": [
+        "money"
+      ],
+      "note_bn": "১ রিয়াল = ১০০ হালালা। দামের লেখায় দেখবেন 'ر.س' বা 'SAR'।",
+      "note_en": "1 riyal = 100 halalas. Price tags show ر.س or SAR."
+    },
+    {
+      "id": "s7-d6-05",
+      "type": "word",
+      "arabic": "هللة",
+      "bangla": "হালালা (পয়সা)",
+      "english": "Halala (cent)",
+      "bn_transliteration": "হালালা",
+      "en_transliteration": "halala",
+      "category_ids": [
+        "money"
+      ]
+    },
+    {
+      "id": "s7-d6-06",
+      "type": "phrase",
+      "arabic": "عشرة ريال",
+      "bangla": "দশ রিয়াল",
+      "english": "Ten riyals",
+      "bn_transliteration": "আশারা রিয়াল",
+      "en_transliteration": "ʿashara riyāl",
+      "category_ids": [
+        "money"
+      ],
+      "note_bn": "বইয়ে বলে 'রিয়ালাত', কিন্তু দোকানে সবাই বলে 'আশারা রিয়াল'।",
+      "note_en": "Books say riyālāt, but in shops everyone says ʿashara riyāl."
+    },
+    {
+      "id": "s7-d6-07",
+      "type": "phrase",
+      "arabic": "خمسين ريال",
+      "bangla": "পঞ্চাশ রিয়াল",
+      "english": "Fifty riyals",
+      "bn_transliteration": "খামসীন রিয়াল",
+      "en_transliteration": "khamsīn riyāl",
+      "category_ids": [
+        "money"
+      ]
+    },
+    {
+      "id": "s7-d6-08",
+      "type": "word",
+      "arabic": "غالي",
+      "bangla": "দামি",
+      "english": "Expensive",
+      "bn_transliteration": "গালি",
+      "en_transliteration": "ghāli",
+      "category_ids": [
+        "money"
+      ],
+      "note_bn": "'গ' এখানে গলার ভেতর থেকে আসে (غ)।",
+      "note_en": "The gh is a throaty sound, like a French r."
+    },
+    {
+      "id": "s7-d6-09",
+      "type": "phrase",
+      "arabic": "غالي مرة",
+      "bangla": "খুব দামি",
+      "english": "Very expensive",
+      "bn_transliteration": "গালি মাররা",
+      "en_transliteration": "ghāli marra",
+      "category_ids": [
+        "money"
+      ],
+      "note_bn": "'মাররা' মানে 'খুব' — সৌদিতে খুব প্রচলিত।",
+      "note_en": "marra means 'very' — very common in Saudi."
+    },
+    {
+      "id": "s7-d6-10",
+      "type": "word",
+      "arabic": "رخيص",
+      "bangla": "সস্তা",
+      "english": "Cheap",
+      "bn_transliteration": "রাখীস",
+      "en_transliteration": "rakhīṣ",
+      "category_ids": [
+        "money"
+      ]
+    },
+    {
+      "id": "s7-d6-11",
+      "type": "phrase",
+      "arabic": "آخر سعر؟",
+      "bangla": "শেষ দাম কত?",
+      "english": "What's your last price?",
+      "bn_transliteration": "আখির সির?",
+      "en_transliteration": "ākhir siʿr?",
+      "category_ids": [
+        "money"
+      ],
+      "note_bn": "ছোট দোকান বা বাজারে দরদামের সময় বলুন। বড় দোকান ও সুপারমার্কেটে দাম সাধারণত ফিক্সড।",
+      "note_en": "Use it when bargaining in small shops and markets. Supermarkets and big stores have fixed prices."
+    },
+    {
+      "id": "s7-d6-12",
+      "type": "phrase",
+      "arabic": "نزّل شوي",
+      "bangla": "একটু কমান",
+      "english": "Bring it down a bit",
+      "bn_transliteration": "নাজ্জিল শুওয়াই",
+      "en_transliteration": "nazzil shway",
+      "category_ids": [
+        "money"
+      ]
+    },
+    {
+      "id": "s7-d6-13",
+      "type": "phrase",
+      "arabic": "فيه خصم؟",
+      "bangla": "ছাড় আছে?",
+      "english": "Is there a discount?",
+      "bn_transliteration": "ফি খাসম?",
+      "en_transliteration": "fīh khaṣm?",
+      "category_ids": [
+        "money"
+      ]
+    },
+    {
+      "id": "s7-d6-14",
+      "type": "phrase",
+      "arabic": "أبغى هذا",
+      "bangla": "আমি এটা চাই",
+      "english": "I want this",
+      "bn_transliteration": "আবগা হাদা",
+      "en_transliteration": "abgha hādha",
+      "category_ids": [
+        "money"
+      ],
+      "note_bn": "'আবগা' মানে 'চাই' — সৌদিতে সবচেয়ে বেশি শোনা শব্দগুলোর একটি। জেদ্দায় 'আবা'ও বলে।",
+      "note_en": "abgha means 'I want', one of the most heard words in Saudi. In Jeddah you also hear aba."
+    },
+    {
+      "id": "s7-d6-15",
+      "type": "phrase",
+      "arabic": "ما أبغى",
+      "bangla": "চাই না",
+      "english": "I don't want it",
+      "bn_transliteration": "মা আবগা",
+      "en_transliteration": "mā abgha",
+      "category_ids": [
+        "money"
+      ]
+    },
+    {
+      "id": "s7-d6-16",
+      "type": "phrase",
+      "arabic": "كاش ولا شبكة؟",
+      "bangla": "নগদ নাকি কার্ড?",
+      "english": "Cash or card?",
+      "bn_transliteration": "কাশ ওয়াল্লা শাবাকা?",
+      "en_transliteration": "kāsh walla shabaka?",
+      "category_ids": [
+        "money"
+      ],
+      "note_bn": "দোকানদার জিজ্ঞেস করে। 'শাবাকা' মানে কার্ড মেশিন (মাদা কার্ড)।",
+      "note_en": "Cashiers ask this. shabaka means the card machine (a mada card)."
+    },
+    {
+      "id": "s7-d6-17",
+      "type": "phrase",
+      "arabic": "عندك فكة؟",
+      "bangla": "ভাংতি আছে?",
+      "english": "Do you have change?",
+      "bn_transliteration": "ইনদাক ফাক্কা?",
+      "en_transliteration": "ʿindak fakka?",
+      "category_ids": [
+        "money"
+      ]
+    },
+    {
+      "id": "s7-d6-18",
+      "type": "phrase",
+      "arabic": "الحساب كم؟",
+      "bangla": "মোট বিল কত?",
+      "english": "How much is the bill?",
+      "bn_transliteration": "আল-হিসাব কাম?",
+      "en_transliteration": "al-ḥisāb kam?",
+      "category_ids": [
+        "money"
+      ],
+      "note_bn": "রেস্টুরেন্টে বা দোকানে সব মিলিয়ে কত হলো জানতে।",
+      "note_en": "To ask for the total in a restaurant or shop."
+    },
+    {
+      "id": "s7-d7-01",
+      "type": "word",
+      "arabic": "وين؟",
+      "bangla": "কোথায়?",
+      "english": "Where?",
+      "bn_transliteration": "ওয়েন?",
+      "en_transliteration": "wēn?",
+      "category_ids": [
+        "directions"
+      ],
+      "note_bn": "বইয়ের 'আইনা' না, সৌদিরা বলে 'ওয়েন'।",
+      "note_en": "Saudis say wēn, not the textbook ayna."
+    },
+    {
+      "id": "s7-d7-02",
+      "type": "phrase",
+      "arabic": "وينك؟",
+      "bangla": "আপনি কোথায়?",
+      "english": "Where are you?",
+      "bn_transliteration": "ওয়েনাক?",
+      "en_transliteration": "wēnak?",
+      "category_ids": [
+        "directions"
+      ],
+      "note_bn": "ড্রাইভার, ডেলিভারি বা বস ফোনে প্রায়ই জিজ্ঞেস করে। নারীকে: 'ওয়েনিক?'",
+      "note_en": "Drivers, delivery riders and bosses ask this on the phone. To a woman: wēnik?"
+    },
+    {
+      "id": "s7-d7-03",
+      "type": "phrase",
+      "arabic": "وين الحمام؟",
+      "bangla": "টয়লেট কোথায়?",
+      "english": "Where is the toilet?",
+      "bn_transliteration": "ওয়েন আল-হাম্মাম?",
+      "en_transliteration": "wēn al-ḥammām?",
+      "category_ids": [
+        "directions"
+      ],
+      "note_bn": "'হাম্মাম' মানে টয়লেট বা বাথরুম।",
+      "note_en": "ḥammām means toilet or bathroom."
+    },
+    {
+      "id": "s7-d7-04",
+      "type": "phrase",
+      "arabic": "وين المسجد؟",
+      "bangla": "মসজিদ কোথায়?",
+      "english": "Where is the mosque?",
+      "bn_transliteration": "ওয়েন আল-মাসজিদ?",
+      "en_transliteration": "wēn al-masjid?",
+      "category_ids": [
+        "directions"
+      ]
+    },
+    {
+      "id": "s7-d7-05",
+      "type": "word",
+      "arabic": "يمين",
+      "bangla": "ডানে",
+      "english": "Right",
+      "bn_transliteration": "ইয়ামীন",
+      "en_transliteration": "yamīn",
+      "category_ids": [
+        "directions"
+      ]
+    },
+    {
+      "id": "s7-d7-06",
+      "type": "word",
+      "arabic": "يسار",
+      "bangla": "বামে",
+      "english": "Left",
+      "bn_transliteration": "ইয়াসার",
+      "en_transliteration": "yasār",
+      "category_ids": [
+        "directions"
+      ],
+      "note_bn": "অনেক সৌদি বামকে 'শিমাল'ও বলে।",
+      "note_en": "Many Saudis also say shimāl for left."
+    },
+    {
+      "id": "s7-d7-07",
+      "type": "word",
+      "arabic": "سيدا",
+      "bangla": "সোজা",
+      "english": "Straight ahead",
+      "bn_transliteration": "সিদা",
+      "en_transliteration": "sīda",
+      "category_ids": [
+        "directions"
+      ],
+      "note_bn": "রাস্তায় 'সোজা যান' বোঝাতে সৌদিরা খুব বলে।",
+      "note_en": "Saudis use it a lot for 'go straight'."
+    },
+    {
+      "id": "s7-d7-08",
+      "type": "phrase",
+      "arabic": "على طول",
+      "bangla": "সোজা চলতে থাকুন",
+      "english": "Keep going straight",
+      "bn_transliteration": "আলা তূল",
+      "en_transliteration": "ʿala ṭūl",
+      "category_ids": [
+        "directions"
+      ]
+    },
+    {
+      "id": "s7-d7-09",
+      "type": "phrase",
+      "arabic": "لف يمين",
+      "bangla": "ডানে ঘুরুন",
+      "english": "Turn right",
+      "bn_transliteration": "লিফ ইয়ামীন",
+      "en_transliteration": "liff yamīn",
+      "category_ids": [
+        "directions"
+      ],
+      "note_bn": "ট্যাক্সি বা ডেলিভারিতে খুব দরকার। বামে: 'লিফ ইয়াসার'।",
+      "note_en": "Very useful in a taxi or on delivery. Left: liff yasār."
+    },
+    {
+      "id": "s7-d7-10",
+      "type": "word",
+      "arabic": "قدام",
+      "bangla": "সামনে",
+      "english": "In front, ahead",
+      "bn_transliteration": "গিদ্দাম",
+      "en_transliteration": "giddām",
+      "category_ids": [
+        "directions"
+      ],
+      "note_bn": "এখানেও 'ق' উচ্চারণ হয় 'গ'।",
+      "note_en": "Here too the qāf sounds like g."
+    },
+    {
+      "id": "s7-d7-11",
+      "type": "word",
+      "arabic": "ورا",
+      "bangla": "পেছনে",
+      "english": "Behind",
+      "bn_transliteration": "ওয়ারা",
+      "en_transliteration": "wara",
+      "category_ids": [
+        "directions"
+      ]
+    },
+    {
+      "id": "s7-d7-12",
+      "type": "word",
+      "arabic": "هنا",
+      "bangla": "এখানে",
+      "english": "Here",
+      "bn_transliteration": "হিনা",
+      "en_transliteration": "hina",
+      "category_ids": [
+        "directions"
+      ]
+    },
+    {
+      "id": "s7-d7-13",
+      "type": "word",
+      "arabic": "هناك",
+      "bangla": "ওখানে",
+      "english": "There",
+      "bn_transliteration": "হিনাক",
+      "en_transliteration": "hnāk",
+      "category_ids": [
+        "directions"
+      ]
+    },
+    {
+      "id": "s7-d7-14",
+      "type": "word",
+      "arabic": "قريب",
+      "bangla": "কাছে",
+      "english": "Near",
+      "bn_transliteration": "গারীব",
+      "en_transliteration": "garīb",
+      "category_ids": [
+        "directions"
+      ],
+      "note_bn": "রিয়াদে 'গারীব', জেদ্দায় বেশি শুনবেন 'কারীব'।",
+      "note_en": "garīb in Riyadh; in Jeddah you'll hear qarīb more."
+    },
+    {
+      "id": "s7-d7-15",
+      "type": "word",
+      "arabic": "بعيد",
+      "bangla": "দূরে",
+      "english": "Far",
+      "bn_transliteration": "বাঈদ",
+      "en_transliteration": "baʿīd",
+      "category_ids": [
+        "directions"
+      ]
+    },
+    {
+      "id": "s7-d7-16",
+      "type": "phrase",
+      "arabic": "وقف هنا",
+      "bangla": "এখানে থামুন",
+      "english": "Stop here",
+      "bn_transliteration": "ওয়াগগিফ হিনা",
+      "en_transliteration": "wagguf hina",
+      "category_ids": [
+        "directions"
+      ],
+      "note_bn": "ট্যাক্সি থেকে নামার সময় বলুন।",
+      "note_en": "Say it when you want to get out of a taxi."
+    },
+    {
+      "id": "s7-d7-17",
+      "type": "phrase",
+      "arabic": "عند الإشارة",
+      "bangla": "সিগন্যালের কাছে",
+      "english": "At the traffic light",
+      "bn_transliteration": "ইনদ আল-ইশারা",
+      "en_transliteration": "ʿind al-ishāra",
+      "category_ids": [
+        "directions"
+      ],
+      "note_bn": "'ইশারা' মানে ট্রাফিক লাইট।",
+      "note_en": "ishāra means traffic light."
+    },
+    {
+      "id": "s7-d7-18",
+      "type": "phrase",
+      "arabic": "بعد الدوار",
+      "bangla": "গোলচত্বরের পরে",
+      "english": "After the roundabout",
+      "bn_transliteration": "বাদ আদ-দাওয়ার",
+      "en_transliteration": "baʿd ad-dawwār",
+      "category_ids": [
+        "directions"
+      ]
+    }
+  ],
+  "course": {
+    "id": "survival-7-days",
+    "title_bn": "সারভাইভাল আরবি: ৭ দিন",
+    "title_en": "Survival Arabic: 7 days",
+    "description_bn": "সৌদিতে প্রথম সপ্তাহেই যা লাগবে: সালাম, হ্যাঁ-না, 'বুঝিনি', সংখ্যা, দাম জিজ্ঞেস আর রাস্তা চেনা। রিয়াদ ও জেদ্দার রোজকার কথা।",
+    "description_en": "What you need in your first week in Saudi: greetings, yes and no, \"I don't understand\", numbers, prices and directions. The everyday Arabic of Riyadh and Jeddah.",
+    "type": "mixed",
+    "level": "beginner",
+    "languages": [
+      "bn",
+      "en"
+    ],
+    "is_free": true,
+    "lessons": [
+      {
+        "id": "survival-day-1",
+        "title_bn": "দিন ১: সালাম ও পরিচয়",
+        "title_en": "Day 1: Greetings and introductions",
+        "category_id": "greetings",
+        "item_ids": [
+          "s7-d1-01",
+          "s7-d1-02",
+          "s7-d1-03",
+          "s7-d1-04",
+          "s7-d1-05",
+          "s7-d1-06",
+          "s7-d1-07",
+          "s7-d1-08",
+          "s7-d1-09",
+          "s7-d1-10",
+          "s7-d1-11",
+          "s7-d1-12",
+          "s7-d1-13",
+          "s7-d1-14",
+          "s7-d1-15",
+          "s7-d1-16",
+          "s7-d1-17",
+          "s7-d1-18",
+          "s7-d1-19"
+        ],
+        "order": 10,
+        "is_free": true
+      },
+      {
+        "id": "survival-day-2",
+        "title_bn": "দিন ২: হ্যাঁ, না, ধন্যবাদ",
+        "title_en": "Day 2: Yes, no and thank you",
+        "category_id": "polite",
+        "item_ids": [
+          "s7-d2-01",
+          "s7-d2-02",
+          "s7-d2-03",
+          "s7-d2-04",
+          "s7-d2-05",
+          "s7-d2-06",
+          "s7-d2-07",
+          "s7-d2-08",
+          "s7-d2-09",
+          "s7-d2-10",
+          "s7-d2-11",
+          "s7-d2-12",
+          "s7-d2-13",
+          "s7-d2-14",
+          "s7-d2-15",
+          "s7-d2-16",
+          "s7-d2-17",
+          "s7-d2-18"
+        ],
+        "order": 20,
+        "is_free": true
+      },
+      {
+        "id": "survival-day-3",
+        "title_bn": "দিন ৩: 'বুঝিনি, আবার বলুন'",
+        "title_en": "Day 3: \"I don't understand, please repeat\"",
+        "category_id": "understand",
+        "item_ids": [
+          "s7-d3-01",
+          "s7-d3-02",
+          "s7-d3-03",
+          "s7-d3-04",
+          "s7-d3-05",
+          "s7-d3-06",
+          "s7-d3-07",
+          "s7-d3-08",
+          "s7-d3-09",
+          "s7-d3-10",
+          "s7-d3-11",
+          "s7-d3-12",
+          "s7-d3-13",
+          "s7-d3-14",
+          "s7-d3-15",
+          "s7-d3-16",
+          "s7-d3-17"
+        ],
+        "order": 30,
+        "is_free": true
+      },
+      {
+        "id": "survival-day-4",
+        "title_bn": "দিন ৪: সংখ্যা ০ থেকে ১০",
+        "title_en": "Day 4: Numbers 0 to 10",
+        "category_id": "numbers",
+        "item_ids": [
+          "s7-d4-01",
+          "s7-d4-02",
+          "s7-d4-03",
+          "s7-d4-04",
+          "s7-d4-05",
+          "s7-d4-06",
+          "s7-d4-07",
+          "s7-d4-08",
+          "s7-d4-09",
+          "s7-d4-10",
+          "s7-d4-11"
+        ],
+        "order": 40,
+        "is_free": true
+      },
+      {
+        "id": "survival-day-5",
+        "title_bn": "দিন ৫: সংখ্যা ১১ থেকে ১০০",
+        "title_en": "Day 5: Numbers 11 to 100",
+        "category_id": "numbers",
+        "item_ids": [
+          "s7-d5-01",
+          "s7-d5-02",
+          "s7-d5-03",
+          "s7-d5-04",
+          "s7-d5-05",
+          "s7-d5-06",
+          "s7-d5-07",
+          "s7-d5-08",
+          "s7-d5-09",
+          "s7-d5-10",
+          "s7-d5-11",
+          "s7-d5-12",
+          "s7-d5-13",
+          "s7-d5-14",
+          "s7-d5-15",
+          "s7-d5-16",
+          "s7-d5-17",
+          "s7-d5-18",
+          "s7-d5-19"
+        ],
+        "order": 50,
+        "is_free": true
+      },
+      {
+        "id": "survival-day-6",
+        "title_bn": "দিন ৬: 'দাম কত?'",
+        "title_en": "Day 6: \"How much?\"",
+        "category_id": "money",
+        "item_ids": [
+          "s7-d6-01",
+          "s7-d6-02",
+          "s7-d6-03",
+          "s7-d6-04",
+          "s7-d6-05",
+          "s7-d6-06",
+          "s7-d6-07",
+          "s7-d6-08",
+          "s7-d6-09",
+          "s7-d6-10",
+          "s7-d6-11",
+          "s7-d6-12",
+          "s7-d6-13",
+          "s7-d6-14",
+          "s7-d6-15",
+          "s7-d6-16",
+          "s7-d6-17",
+          "s7-d6-18"
+        ],
+        "order": 60,
+        "is_free": true
+      },
+      {
+        "id": "survival-day-7",
+        "title_bn": "দিন ৭: পথ ও দিক",
+        "title_en": "Day 7: Directions",
+        "category_id": "directions",
+        "item_ids": [
+          "s7-d7-01",
+          "s7-d7-02",
+          "s7-d7-03",
+          "s7-d7-04",
+          "s7-d7-05",
+          "s7-d7-06",
+          "s7-d7-07",
+          "s7-d7-08",
+          "s7-d7-09",
+          "s7-d7-10",
+          "s7-d7-11",
+          "s7-d7-12",
+          "s7-d7-13",
+          "s7-d7-14",
+          "s7-d7-15",
+          "s7-d7-16",
+          "s7-d7-17",
+          "s7-d7-18"
+        ],
+        "order": 70,
+        "is_free": true
+      }
+    ]
+  }
+}

@@ -214,6 +214,7 @@ export default {
   "lesson.previous": "আগের",
   "lesson.next": "পরের",
   "lesson.startQuiz": "কুইজ শুরু",
+  "lesson.note": "জেনে রাখুন",
 
   // Progress
   "progress.title": "আমার অগ্রগতি",

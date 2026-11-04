@@ -20,7 +20,7 @@ export default function Lesson() {
   const { content, loading, error } = useContent();
   const progressState = useProgress();
   const { lessonProgress, recordAnswer, completeLesson } = progressState;
-  const { t, num, meaningOf, pronunciationOf, localized } = useLocale();
+  const { t, num, meaningOf, pronunciationOf, noteOf, localized } = useLocale();
 
   const [stage, setStage] = useState("learn"); // "learn" | "quiz" | "done"
   const [cardIndex, setCardIndex] = useState(0);
@@ -132,6 +132,14 @@ export default function Lesson() {
         </div>
         <p className="text-2xl font-bold text-slate-900">{meaningOf(item)}</p>
       </div>
+
+      {/* Optional tip from the item: when to say it, or why */}
+      {noteOf(item) && (
+        <div className="mt-4 rounded-2xl border border-amber-200 bg-amber-50 p-4 text-start">
+          <p className="text-sm font-semibold text-amber-800">💡 {t("lesson.note")}</p>
+          <p className="mt-1 text-slate-700">{noteOf(item)}</p>
+        </div>
+      )}
 
       <div className="mt-6 grid grid-cols-2 gap-3">
         <button

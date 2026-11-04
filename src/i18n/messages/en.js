@@ -215,6 +215,7 @@ export default {
   "lesson.previous": "Previous",
   "lesson.next": "Next",
   "lesson.startQuiz": "Start the quiz",
+  "lesson.note": "Good to know",
 
   // Progress
   "progress.title": "My progress",

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Alert, Badge, Field, Spinner } from "../../components/ui";
+import { deleteAllContent, exportContent } from "../../lib/admin";
 import { planImport, runImport } from "../../lib/contentPack";
 import { buttonClass, cardClass, inputClass } from "../../lib/styles";
 
@@ -67,7 +68,85 @@ export default function AdminImport() {
       )}
 
       {plan && !busy && <ImportSummary plan={plan} onImport={handleImport} />}
+
+      <StartFresh />
     </div>
+  );
+}
+
+// Saves an object as a .json file on this computer
+function downloadJson(data, fileName) {
+  const blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json" });
+  const link = document.createElement("a");
+  link.href = URL.createObjectURL(blob);
+  link.download = fileName;
+  link.click();
+  URL.revokeObjectURL(link.href);
+}
+
+// Danger zone: back up all content to a file, then delete it from Firestore
+function StartFresh() {
+  const [busy, setBusy] = useState(false);
+  const [message, setMessage] = useState({ tone: "", text: "" });
+  // The delete button only works after typing DELETE, so it can't be clicked by accident
+  const [confirmText, setConfirmText] = useState("");
+
+  async function handleBackup() {
+    setBusy(true);
+    try {
+      const backup = await exportContent();
+      downloadJson(backup, `lahjio-content-backup-${backup.exported_at.slice(0, 10)}.json`);
+      setMessage({ tone: "success", text: `Backup downloaded: ${backup.items.length} items, ${backup.courses.length} courses.` });
+    } catch {
+      setMessage({ tone: "error", text: "Couldn't make the backup." });
+    } finally {
+      setBusy(false);
+    }
+  }
+
+  async function handleDelete() {
+    if (confirmText !== "DELETE") return;
+    setBusy(true);
+    try {
+      const count = await deleteAllContent();
+      setMessage({ tone: "success", text: `Deleted ${count} documents. Now import a content pack above.` });
+      setConfirmText("");
+    } catch {
+      setMessage({ tone: "error", text: "Deleting stopped part way. Try again; it deletes what is left." });
+    } finally {
+      setBusy(false);
+    }
+  }
+
+  return (
+    <section className={`${cardClass} mt-10 space-y-3 border-red-200 p-5`}>
+      <h2 className="font-semibold text-red-700">Start fresh</h2>
+      <p className="text-sm text-slate-600">
+        Removes all content: every course, lesson, item and category. Learners' accounts, XP and streaks
+        stay. Download a backup first so nothing is lost for good.
+      </p>
+      {message.text && <Alert tone={message.tone}>{message.text}</Alert>}
+      <div className="flex flex-wrap gap-2">
+        <button type="button" onClick={handleBackup} disabled={busy} className={buttonClass("secondary")}>
+          1. Download backup
+        </button>
+        <input
+          value={confirmText}
+          onChange={(e) => setConfirmText(e.target.value)}
+          placeholder="Type DELETE"
+          aria-label="Type DELETE to allow deleting"
+          className={inputClass}
+        />
+        <button
+          type="button"
+          onClick={handleDelete}
+          disabled={busy || confirmText !== "DELETE"}
+          className={buttonClass("danger")}
+        >
+          2. Delete all content
+        </button>
+      </div>
+    </section>
   );
 }
 

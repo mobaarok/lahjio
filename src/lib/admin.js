@@ -104,6 +104,60 @@ export async function publishCourse(courseId) {
   return { lessons: lessonsToPublish.length, items: itemsToPublish.length };
 }
 
+// All content in one object (categories, items, courses with their lessons),
+// for a backup file before a reset. Firestore dates become ISO text.
+export async function exportContent() {
+  const [categories, items, courses] = await Promise.all([
+    listAll("categories"),
+    listAll("items"),
+    listAll("courses"),
+  ]);
+  for (const course of courses) {
+    course.lessons = await listAll("courses", course.id, "lessons");
+  }
+  return withPlainDates({ exported_at: new Date().toISOString(), categories, items, courses });
+}
+
+// Firestore timestamps -> "2026-11-04T10:00:00.000Z", everywhere in an object
+function withPlainDates(value) {
+  if (value?.toDate) return value.toDate().toISOString();
+  if (Array.isArray(value)) return value.map(withPlainDates);
+  if (value && typeof value === "object") {
+    return Object.fromEntries(Object.entries(value).map(([k, v]) => [k, withPlainDates(v)]));
+  }
+  return value;
+}
+
+// Deletes every course, lesson, item and category. Learners' saved progress
+// is kept; pages ignore progress for items and lessons that no longer exist.
+// Download exportContent() first. Returns how many documents were deleted.
+export async function deleteAllContent() {
+  const [categories, items, courses] = await Promise.all([
+    listAll("categories"),
+    listAll("items"),
+    listAll("courses"),
+  ]);
+
+  const paths = [
+    ...categories.map((c) => ["categories", c.id]),
+    ...items.map((i) => ["items", i.id]),
+  ];
+  for (const course of courses) {
+    const lessons = await listAll("courses", course.id, "lessons");
+    paths.push(...lessons.map((l) => ["courses", course.id, "lessons", l.id]));
+    paths.push(["courses", course.id]);
+  }
+
+  for (let start = 0; start < paths.length; start += 400) {
+    const batch = writeBatch(db);
+    for (const path of paths.slice(start, start + 400)) batch.delete(doc(db, ...path));
+    await batch.commit();
+  }
+
+  await bumpVersion();
+  return paths.length;
+}
+
 // "Daily Life" -> "daily-life"
 export function slugify(text) {
   return text

@@ -215,6 +215,7 @@ export default {
   "lesson.previous": "پچھلا",
   "lesson.next": "اگلا",
   "lesson.startQuiz": "کوئز شروع کریں",
+  "lesson.note": "جاننے کی بات",
 
   // Progress
   "progress.title": "میری پیش رفت",

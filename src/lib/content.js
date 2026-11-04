@@ -49,9 +49,14 @@ async function fetchPublished() {
     course.lessons = lessons[i].docs.map(toPlain).sort(byOrder);
   });
 
+  // Learners only see topics that have published words, so topics whose
+  // words were all archived disappear from the filters
+  const itemList = items.docs.map(toPlain);
+  const usedTopics = new Set(itemList.flatMap((item) => item.category_ids ?? []));
+
   return {
-    items: items.docs.map(toPlain),
-    categories: categories.docs.map(toPlain).sort(byOrder),
+    items: itemList,
+    categories: categories.docs.map(toPlain).filter((c) => usedTopics.has(c.id)).sort(byOrder),
     courses: courseList,
   };
 }

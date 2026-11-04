@@ -14,6 +14,8 @@ const emptyItem = {
   english: "",
   bn_transliteration: "",
   en_transliteration: "",
+  note_bn: "",
+  note_en: "",
   category_ids: [],
   level: "beginner",
   audio: "",
@@ -29,6 +31,9 @@ function toSaved(form) {
     english: form.english.trim(),
     bn_transliteration: form.bn_transliteration.trim(),
     en_transliteration: form.en_transliteration.trim(),
+    // Optional tip shown under the meaning: when to say it, or why
+    note_bn: form.note_bn.trim(),
+    note_en: form.note_en.trim(),
     category_ids: form.category_ids,
     level: form.level,
     audio: form.audio.trim() || null,
@@ -93,7 +98,10 @@ export default function AdminItemEdit() {
     if (form.category_ids.length === 0) return "Pick at least one category.";
 
     const duplicate = allItems.find(
-      (i) => i.id !== itemId && normalizeArabic(i.arabic) === normalizeArabic(form.arabic)
+      (i) =>
+        i.id !== itemId &&
+        i.status !== "archived" &&
+        normalizeArabic(i.arabic) === normalizeArabic(form.arabic)
     );
     if (duplicate) return `This Arabic already exists: "${duplicate.bangla}" (id ${duplicate.id}).`;
     return "";
@@ -182,6 +190,13 @@ export default function AdminItemEdit() {
         {textField("bn_transliteration", "Bangla pronunciation *", { required: true })}
         {textField("english", "English meaning")}
         {textField("en_transliteration", "English pronunciation")}
+
+        <Field label="Note (Bangla)" hint="Optional tip: when to say it, how Saudis use it, or a common mistake.">
+          <textarea rows={3} value={form.note_bn} onChange={(e) => update("note_bn", e.target.value)} className={inputClass} />
+        </Field>
+        <Field label="Note (English)" hint="Shown to English, Hindi and Urdu learners.">
+          <textarea rows={3} value={form.note_en} onChange={(e) => update("note_en", e.target.value)} className={inputClass} />
+        </Field>
 
         <div className="sm:col-span-2">
           <Field label="Audio file" hint='Path like "audio/42.mp3" in public/audio, or a full link. Empty uses the device voice.'>

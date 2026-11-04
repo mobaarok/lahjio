@@ -31,7 +31,10 @@ export default function Progress() {
   const fresh = items.length - seen.length;
   const known = items.filter((i) => progress[i.id]?.known).length;
   const due = items.filter((i) => isDue(progress[i.id], now)).length;
-  const lessonsDone = Object.values(lessonProgress).filter((l) => l.status === "completed").length;
+  // Only lessons that still exist (old results stay saved after a content reset)
+  const lessonsDone = content.courses
+    .flatMap((c) => c.lessons)
+    .filter((l) => lessonProgress[l.id]?.status === "completed").length;
 
   const hardWords = seen
     .filter((i) => progress[i.id].times_wrong > 0)

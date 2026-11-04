@@ -65,13 +65,19 @@ export function LocaleProvider({ children }) {
       : item.bn_transliteration;
   }
 
+  // The optional tip on an item (when to say it, or why). No fallback to the
+  // other language: a Bangla note doesn't help an English learner.
+  function noteOf(item) {
+    return (contentLocale === "en" ? item.note_en : item.note_bn) || "";
+  }
+
   // Picks a translated database field, e.g. localized(course, "title") reads
   // title_en or title_bn (by content language), and falls back to the other one
   function localized(object, field) {
     return object?.[`${field}_${contentLocale}`] || object?.[`${field}_bn`] || object?.[`${field}_en`] || "";
   }
 
-  const value = { locale, contentLocale, setLocale, t, num, meaningOf, pronunciationOf, localized };
+  const value = { locale, contentLocale, setLocale, t, num, meaningOf, pronunciationOf, noteOf, localized };
 
   return <LocaleContext.Provider value={value}>{children}</LocaleContext.Provider>;
 }

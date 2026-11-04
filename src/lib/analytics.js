@@ -180,10 +180,10 @@ export async function loadHardestWords(items, limit = 15) {
 
   const itemById = Object.fromEntries(items.map((i) => [i.id, i]));
   return Object.entries(totals)
-    .filter(([, t]) => t.wrong > 0)
+    .filter(([id, t]) => t.wrong > 0 && itemById[id]) // skip deleted items
     .map(([id, t]) => ({
       id,
-      item: itemById[id] ?? null,
+      item: itemById[id],
       wrong: t.wrong,
       learners: t.learners,
       wrongRate: Math.round((t.wrong / (t.right + t.wrong)) * 100),

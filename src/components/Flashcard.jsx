@@ -7,7 +7,7 @@ const faceClass =
 // A card that flips in 3D: Arabic on the front, the meaning on the back.
 // The parent decides whether it is flipped.
 export default function Flashcard({ word, flipped, onFlip }) {
-  const { t, meaningOf, pronunciationOf } = useLocale();
+  const { t, meaningOf, pronunciationOf, noteOf } = useLocale();
 
   return (
     <div className="relative mx-auto h-80 w-full max-w-md perspective-distant">
@@ -32,6 +32,7 @@ export default function Flashcard({ word, flipped, onFlip }) {
         <div className={`${faceClass} rotate-y-180 border border-slate-200 bg-white`} aria-hidden={!flipped}>
           <p className="text-3xl font-bold text-slate-900">{meaningOf(word)}</p>
           <p className="mt-3 text-lg text-slate-600">{pronunciationOf(word)}</p>
+          {noteOf(word) && <p className="mt-4 text-sm text-slate-500">💡 {noteOf(word)}</p>}
         </div>
       </button>
 

@@ -37,7 +37,11 @@ export async function planImport(pack) {
 
   const categoryIds = new Set(categories.map((c) => c.id));
   const itemIds = new Set(items.map((i) => i.id));
-  const idByArabic = new Map(items.map((i) => [arabicKey(i.arabic), i.id]));
+  // Archived items don't count, so a new pack can bring back the same Arabic
+  // with fresh wording and notes after an old course was archived
+  const idByArabic = new Map(
+    items.filter((i) => i.status !== "archived").map((i) => [arabicKey(i.arabic), i.id])
+  );
   const lessonIds = new Set(lessons.map((l) => l.id));
 
   const newItems = [];

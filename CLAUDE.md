@@ -83,6 +83,8 @@ The admin test account can open `/admin`. `npm run seed:learners` adds 8 fake le
 
 ### Content packs
 
+- `content-packs/survival-7-days.json` (made 2026-11-04): course 0, "Survival Arabic: 7 days", 7 lessons and 120 Riyadh/Jeddah items, 75 with notes. It is the local copy of what goes into Firestore. Not yet reviewed by a native speaker.
+
 New content is written as a JSON file in `content-packs/` (categories, items, and one course with lessons). The owner loads it in **Admin > Import**, which adds everything as drafts and skips what already exists (same id or same Arabic). **Publish everything** on a course page publishes the course, its draft lessons and their draft items. Logic: `src/lib/contentPack.js` and `publishCourse()` in `src/lib/admin.js`.
 
 ## How the code is organised
@@ -115,7 +117,9 @@ New content is written as a JSON file in `content-packs/` (categories, items, an
 ```
 items/{itemId}               words and phrases: type, arabic, bangla, english,
                              bn_transliteration, en_transliteration, category_ids,
-                             level, audio, status (draft|published|archived)
+                             level, audio, status (draft|published|archived),
+                             note_bn, note_en (optional tip: when to say it, or why;
+                             shown as "Good to know" in lessons, word cards, flashcards)
 categories/{categoryId}      name_en, name_bn, order (also used as lesson topics)
 courses/{courseId}           title_bn/en, description_bn/en, type, level,
                              languages, order, status, is_free, lesson_count
@@ -153,7 +157,7 @@ The published rules matched this file on 2026-11-03, before the analytics rules 
 - The admin area is English only. Code and comments are English.
 - Firestore fields use snake_case.
 - Items 1-42 keep numeric string ids so old saved progress still matches.
-- Never remove an item by deleting it: set `status: "archived"`, because progress and lessons point to items.
+- Never remove an item by deleting it: set `status: "archived"`, because progress and lessons point to items. The one exception is **Admin > Import > Start fresh**, which downloads a JSON backup and then deletes all courses, lessons, items and categories (learners' accounts, XP, streaks and saved progress stay; pages ignore progress for items and lessons that no longer exist).
 - Only published content reaches learners, and queries must filter `status == "published"` or the rules reject them.
 - Don't call `Date.now()` or `Math.random()` while rendering (React purity lint). Use `useNow()`, or do it in event handlers.
 - Keep components small and commented. The owner is learning React and wants code others can follow.

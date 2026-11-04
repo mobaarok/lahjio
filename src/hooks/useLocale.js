@@ -7,7 +7,7 @@ export const LocaleContext = createContext(null);
 //   t("nav.home")                    -> "হোম" or "Home"
 //   t("words.found", { count: 3 })   -> fills {count} in the message
 //   num(42)                          -> "৪২" in Bangla, "42" in English
-//   meaningOf(item), pronunciationOf(item), localized(course, "title")
+//   meaningOf(item), pronunciationOf(item), noteOf(item), localized(course, "title")
 //   contentLocale: language of lessons and meanings ("en" for Hindi and Urdu)
 export function useLocale() {
   const context = useContext(LocaleContext);
