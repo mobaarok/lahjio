@@ -25,12 +25,14 @@ Live site: https://mobaarok.github.io/lahjio-beta/
 - **PWA manifest:** the app can be added to a phone home screen. There is no offline service worker yet.
 - **Testing setup:** local Firebase emulators with seed data and test accounts
 
+**Firebase project:** `lahjio` (Firestore in `nam5`), since 2026-11-09. Everything was moved from the old project `lahjio-beta` (its settings are kept in `.env.lahjio-beta`, and the old project still exists): all 979 documents and the 4 login accounts with the same user ids, so progress and admin access carried over. The one email/password account came over without its password and needs "Forgot password" once. The backup used for the move is in `backups/lahjio-beta-2026-11-09/` (not in git).
+
 **Real Firestore content** (replaced on 2026-11-04: all old courses, items and categories were deleted with Start fresh):
 
 - 13 published courses, all free for now (`is_free: true`) and for Bangla and English learners, in this order: Survival Arabic: 7 days, Work Arabic, Daily Life Arabic, Understanding Saudis, 8 job packs (drivers, delivery riders, construction, restaurant staff, cleaners, security, sales, optical shop), Read Arabic in 10 days
 - 72 lessons and 773 unique items in Saudi (Riyadh/Jeddah) dialect, many with Bangla and English notes. Not yet reviewed by a native speaker.
 - The owner's plan: Survival and Read Arabic lesson 1 stay free; the other courses become paid once payments exist (Phase 6)
-- Two admin accounts, including the owner's `mobarokhrsa@gmail.com`. Admins are added by hand in the Firebase Console.
+- Admins are added by hand in the Firebase Console. In `lahjio` only the owner (`mobarokhrsa@gmail.com`) is an admin so far; the old project's second admin was not moved.
 
 **Known gaps:**
 
@@ -80,6 +82,12 @@ The admin test account can open `/admin`. `npm run seed:learners` adds 8 fake le
 - **Admin > Analytics** and **Admin > Users** read Firestore directly (`src/lib/analytics.js`): every user profile and lesson result on each load, count queries for daily activity, and all saved answers only when "Load word stats" is clicked. Fine on the free plan for a few thousand learners; after that, move the sums to a daily Cloud Function.
 - `VisitTracker` saves a visit when the app opens and a heartbeat every 3 minutes while it's on screen ("online now" = seen in the last 5 minutes). Country comes from the phone's time zone (`src/lib/countries.js`), so it's a good guess, not exact.
 - Google Analytics (`src/lib/googleAnalytics.js`, `PageViewTracker`) covers visitors who don't sign up. It's off until `VITE_FIREBASE_MEASUREMENT_ID` is in `.env`, and always off with the emulators. Its reports are in the Firebase Console, not the admin.
+
+### Backup and restore
+
+- `npm run backup` saves a whole project to `backups/<project>-<date>/` (all documents, accounts, published rules, a SCHEMA.md). It needs a service account key in `tools/service-account.json`, which only the owner can create.
+- `npm run restore -- backups/<folder>` loads a backup into a new, empty project, keeping user ids. Both have `:emulators` versions for testing.
+- Without a key, the 2026-11-09 move used the Firebase CLI (`auth:export` / `auth:import`) for accounts and the owner's admin session in the app for Firestore.
 
 ### Content packs
 
@@ -139,9 +147,9 @@ feedback/{id}                uid, email, message, created_at
 activity/{uid}_{day}         uid, day: one note per learner per day they open the app
 ```
 
-Security rules are in `firestore.rules`. They are **not** deployed automatically:
-paste them into Firebase Console > Firestore > Rules and publish after any change.
-The published rules matched this file on 2026-11-03, before the analytics rules were added (admin reads of users, collection-group reads of progress and lesson_progress, and `activity`). Check with the owner whether those are published.
+Security rules are in `firestore.rules`. They are **not** deployed automatically. Publish them after any change, with the owner's OK, either in Firebase Console > Firestore > Rules or with the Firebase CLI in `tools/` (signed in as the owner):
+`node tools/firebase-tools/node_modules/firebase-tools/lib/bin/firebase.js deploy --only firestore:rules --project lahjio`.
+The published rules in `lahjio` match this file (2026-11-09).
 
 ## Languages (i18n)
 
