@@ -10,7 +10,7 @@ Code: https://github.com/mobaarok/lahjio (renamed from `lahjio-beta` on 2026-11-
 
 ## Project status (last updated 2026-11-03)
 
-**Built and live** (`version1` at `c2a8bb1`, the release of 2026-11-03 with the Everyday Life course, Hindi and Urdu, and analytics):
+**Built and live** (`version1` at `105acc1`, moved forward on 2026-11-09: 13 courses, the new Firebase project `lahjio` and the lahjio.app domain):
 
 - **Landing page:** premium design with a phone mockup, real-life phrases with audio, a try-it question, an FAQ and live content numbers
 - **Logged-in dashboard:** streak, XP, daily goal, next lesson and word of the day
