@@ -26,3 +26,7 @@ dist-ssr
 
 # Local Java and firebase-tools for the emulators (see scripts/emulators.mjs)
 tools/
+
+# Firebase backups (npm run backup): learner emails and password hashes, never commit
+backups/
+# Service account key for npm run backup lives in tools/ (already ignored)
