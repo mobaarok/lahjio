@@ -8,23 +8,24 @@ English, with Hindi and Urdu interfaces that show English lesson content for now
 Live site: https://lahjio.app (custom domain on GitHub Pages; `public/CNAME` keeps it on every deploy, so never delete that file).
 Code: https://github.com/mobaarok/lahjio (renamed from `lahjio-beta` on 2026-11-09; GitHub redirects the old name). The local folder is still called `lahjio-beta`.
 
-## Project status (last updated 2026-11-03)
+## Project status (last updated 2026-11-09)
 
 **Built and live** (`version1` at `105acc1`, moved forward on 2026-11-09: 13 courses, the new Firebase project `lahjio` and the lahjio.app domain):
 
 - **Landing page:** premium design with a phone mockup, real-life phrases with audio, a try-it question, an FAQ and live content numbers
 - **Logged-in dashboard:** streak, XP, daily goal, next lesson and word of the day
 - **Words library:** search, word and phrase filter, topic filter, and card or list view
-- **Courses and lessons:** lessons unlock in order. Each lesson has a learn stage, a quiz and results.
+- **Courses and lessons:** lessons unlock in order. Each lesson has a learn stage, a quiz and results. Cards show the Bangla/English pronunciation big and the Arabic small (reading courses swap this), play the audio automatically, and show the item's "Good to know" note.
 - **Practice:** flashcards in four modes (due review, new, hard, all) with spaced repetition
-- **Quiz:** 10 questions of three types (read, pick the Arabic, listen). Guests can play too.
+- **Quiz:** 10 questions of three types (read, pick the Arabic, listen), with the pronunciation shown next to the Arabic and audio played automatically. Guests can play too.
 - **Progress page:** stats, daily goal setting, mastery levels, progress by topic and hardest words
-- **Account:** edit name, language, feedback, logout and account deletion
-- **Auth:** email and Google login, signup, password reset, privacy page
-- **Admin dashboard (`/admin`):** items (draft, published, archived; duplicate Arabic check), categories, courses and lessons (item picker and ordering), analytics, users, learner feedback and content import
+- **Account:** edit name, language, feedback and logout (account deletion was removed)
+- **Auth:** email and Google login, signup, password reset, privacy and terms pages
+- **Admin dashboard (`/admin`):** items (draft, published, archived; duplicate Arabic check; Bangla/English notes), categories, courses and lessons (item picker and ordering, "Publish everything"), analytics, users, learner feedback, content import, and "Start fresh" (backup, then delete all content)
 - **Languages:** Bangla (default), English, Hindi and Urdu (right to left). Hindi and Urdu have their own interface text but see English lessons and meanings, with a notice saying so
 - **PWA manifest:** the app can be added to a phone home screen. There is no offline service worker yet.
 - **Testing setup:** local Firebase emulators with seed data and test accounts
+- **Backup and restore scripts** (`npm run backup`, `npm run restore`) for moving a whole Firebase project
 
 **Firebase project:** `lahjio` (Firestore in `nam5`), since 2026-11-09. Everything was moved from the old project `lahjio-beta` (its settings are kept in `.env.lahjio-beta`, and the old project still exists): all 979 documents and the 4 login accounts with the same user ids, so progress and admin access carried over. The one email/password account came over without its password and needs "Forgot password" once. The backup used for the move is in `backups/lahjio-beta-2026-11-09/` (not in git).
 
@@ -37,21 +38,28 @@ Code: https://github.com/mobaarok/lahjio (renamed from `lahjio-beta` on 2026-11-
 
 **Known gaps:**
 
-- Native speakers haven't reviewed the words yet, and there are no native audio recordings (Web Speech reads every word)
+- Native speakers haven't reviewed the 773 items yet, and there are no native audio recordings (Web Speech reads every word)
 - Audio is entered as a path or link in the admin form. There is no upload yet (Phase 2).
-- No payments, no Android app, no analytics
-- The main JavaScript bundle is about 330 KB; Firebase is the largest part
+- No payments (every course is free) and no Android app
+- The main JavaScript bundle is about 385 KB and the Firebase bundle about 267 KB (114 KB and 82 KB gzipped)
+
+**Loose ends from the 2026-11-09 move** (check with the owner):
+
+- The one email/password learner must use "Forgot password" once
+- The old project's second admin is not an admin in `lahjio`; add their uid to `admins` if needed
+- Delete the old Firebase project `lahjio-beta` only after a few weeks of the new one working
+- Login on https://lahjio.app (domain added to Authorized domains) has not been tested by Claude; the owner should confirm it on a phone
 
 ## What to do next
 
 Agreed roadmap, in order. Ask the owner which step to start; they decide each session.
 
-1. **Content:** add about 150 to 200 everyday items (work, shop, taxi, hospital, boss) in 10 to 15 lessons, as drafts for the owner to review. Tick "English learners" on courses that have English fields.
+1. **Native-speaker review:** a Saudi speaker (ideally one from Riyadh and one from Jeddah) checks the Arabic, transliterations and notes of all 773 items, starting with Survival and the slang in Understanding Saudis. Fix mistakes in `scripts/content-packs/` (to keep the local copy right) and in Admin > Items.
 2. **Phase 2, audio upload:** upload recordings from the admin item form. First check if Firebase Storage needs the paid (Blaze) plan; if the owner won't add a card, compare a free host like Cloudinary.
 3. **Lessons:** add short dialogues and sentence practice to lessons (the `dialogue` field is planned on lessons).
-4. **Phase 5, real-user test:** give the app to 10 to 20 Bangladeshi expats in Riyadh for 2 to 4 weeks. Read feedback in Admin > Feedback, and add simple analytics.
+4. **Phase 5, real-user test:** give the app to 10 to 20 Bangladeshi expats in Riyadh for 2 to 4 weeks. Read feedback in Admin > Feedback and usage in Admin > Analytics.
 5. **Hindi and Urdu lessons:** the interfaces exist; add Hindi/Urdu fields to items and follow the steps in `src/i18n/locales.js`.
-6. **Phase 6, business:** free and paid tiers. Payments must update `users.plan` from a secure server (Cloud Functions), never the browser, and paid content needs its own protected documents. Later, a React Native app reusing the same Firebase data.
+6. **Phase 6, business:** free and paid tiers (planned: Survival and Read Arabic lesson 1 free, the rest paid; the "Free course" tick exists but isn't enforced yet). Payments must update `users.plan` from a secure server (Cloud Functions), never the browser, and paid content needs its own protected documents. Later, a React Native app reusing the same Firebase data.
 
 ## Stack
 
@@ -66,7 +74,8 @@ Agreed roadmap, in order. Ask the owner which step to start; they decide each se
 - `npm run dev`: dev server on http://localhost:5173, using the **real** Firebase project
 - `npm run build`, `npx eslint src`
 - `npm run check:i18n`: every text key used in the code exists in every language file
-- `npm run deploy`: publishes the current local code to the live site
+- `npm run deploy`: publishes the current local code to the live site (https://lahjio.app)
+- `npm run backup` / `npm run restore`: see "Backup and restore" below
 
 ### Testing logged-in pages safely (local emulators)
 
@@ -109,7 +118,7 @@ New content is written as a JSON file in `content-packs/` (categories, items, an
   - `courses.js`: lesson unlock order and `coursesForLocale()`
   - `quiz.js`: builds quiz questions
   - `speak.js`: plays an item's audio file, falling back to Web Speech (ar-SA)
-  - `account.js`: feedback and account deletion
+  - `account.js`: sending feedback
   - `styles.js`: shared Tailwind class strings (`buttonClass`, `inputClass`, `cardClass`, `chipClass`)
   - `format.js`: `dayKey`, `shuffled`, `normalizeArabic`, `byOrder`
   - `constants.js`: admin labels for item types, levels, statuses and course types
@@ -120,8 +129,9 @@ New content is written as a JSON file in `content-packs/` (categories, items, an
   - `useLocale`: language and translation helpers
   - `useNow`: the current time, safe to use while rendering
 - `src/context/`: the providers behind `useAuth`, `useProgress` and `useLocale`. Context objects live in the hook files, so provider files only export components (a React Fast Refresh lint rule).
-- `src/i18n/`: `locales.js` lists the languages; `messages/bn.js` and `messages/en.js` hold all learner text.
-- `scripts/`: `seed-emulators.mjs`, `seed-data.json`, `check-i18n.mjs`
+- `src/i18n/`: `locales.js` lists the languages; `messages/bn.js`, `en.js`, `hi.js` and `ur.js` hold all learner text.
+- `scripts/`: emulators (`emulators.mjs`, `seed-emulators.mjs`, `seed-data.json`, `seed-learners.mjs`, `emulators.env`), `check-i18n.mjs`, `backup-firebase.mjs`, `restore-firebase.mjs`, and `content-packs/` (the Python scripts that build the course JSON files)
+- `firebase-code-note.js` (project root) is an old note with the `lahjio-beta` web config; the app reads its config from `.env`
 
 ## Firestore data
 
@@ -167,7 +177,7 @@ The published rules in `lahjio` match this file (2026-11-09).
 
 - The admin area is English only. Code and comments are English.
 - Firestore fields use snake_case.
-- Items 1-42 keep numeric string ids so old saved progress still matches.
+- Item ids: the emulator seed items use numeric string ids ("1" to "42"); real content uses pack prefixes such as `s7-d1-01` or `wk-l1-01`. Never change an id, because progress and lessons point to it.
 - Never remove an item by deleting it: set `status: "archived"`, because progress and lessons point to items. The one exception is **Admin > Import > Start fresh**, which downloads a JSON backup and then deletes all courses, lessons, items and categories (learners' accounts, XP, streaks and saved progress stay; pages ignore progress for items and lessons that no longer exist).
 - Only published content reaches learners, and queries must filter `status == "published"` or the rules reject them.
 - Don't call `Date.now()` or `Math.random()` while rendering (React purity lint). Use `useNow()`, or do it in event handlers.
@@ -179,6 +189,8 @@ The published rules in `lahjio` match this file (2026-11-09).
 - They build step by step and like to test each step themselves before moving on.
 - Make code changes directly in the project, and explain what changed.
 - Ask before pushing, deploying, or writing to the real Firestore database.
-- Branches: new work goes on `main`. `version1` is the last known-good release, and the owner moves it forward when they ask.
-- Never sign in to the real Firebase project with the owner's credentials. Use the local emulators for logged-in testing.
+- Branches: new work goes on `main`. `version1` is the last known-good release (`105acc1`, 2026-11-09), and the owner moves it forward when they ask. `gh-pages` is the published site, written only by `npm run deploy`.
+- Never sign in to the real Firebase project with the owner's credentials. Use the local emulators for logged-in testing. When real data must be read or written, the owner signs in themselves (in the browser pane) and approves it.
+- The Firebase CLI in `tools/` is signed in as the owner. Use it only for what the owner asks (publishing rules, `auth:export`), and never read its stored tokens.
+- The browser pane can't open Google (Firebase Console) or GitHub settings pages, so the owner does Console and GitHub settings steps. `gh` (GitHub CLI) isn't installed.
 - Plan and roadmap discussions happen in chat first; the owner says when to start coding.
