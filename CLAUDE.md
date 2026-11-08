@@ -10,7 +10,7 @@ Code: https://github.com/mobaarok/lahjio (renamed from `lahjio-beta` on 2026-11-
 
 ## Project status (last updated 2026-11-09)
 
-**Built and live** (`version1` at `105acc1`, moved forward on 2026-11-09: 13 courses, the new Firebase project `lahjio` and the lahjio.app domain):
+**Built and live** (`version1` = `main` as of 2026-11-09: 13 courses, the new Firebase project `lahjio` and the lahjio.app domain):
 
 - **Landing page:** premium design with a phone mockup, real-life phrases with audio, a try-it question, an FAQ and live content numbers
 - **Logged-in dashboard:** streak, XP, daily goal, next lesson and word of the day
@@ -189,7 +189,7 @@ The published rules in `lahjio` match this file (2026-11-09).
 - They build step by step and like to test each step themselves before moving on.
 - Make code changes directly in the project, and explain what changed.
 - Ask before pushing, deploying, or writing to the real Firestore database.
-- Branches: new work goes on `main`. `version1` is the last known-good release (`105acc1`, 2026-11-09), and the owner moves it forward when they ask. `gh-pages` is the published site, written only by `npm run deploy`.
+- Branches: new work goes on `main`. `version1` is the last known-good release (moved to match `main` on 2026-11-09), and the owner moves it forward when they ask. `gh-pages` is the published site, written only by `npm run deploy`.
 - Never sign in to the real Firebase project with the owner's credentials. Use the local emulators for logged-in testing. When real data must be read or written, the owner signs in themselves (in the browser pane) and approves it.
 - The Firebase CLI in `tools/` is signed in as the owner. Use it only for what the owner asks (publishing rules, `auth:export`), and never read its stored tokens.
 - The browser pane can't open Google (Firebase Console) or GitHub settings pages, so the owner does Console and GitHub settings steps. `gh` (GitHub CLI) isn't installed.
