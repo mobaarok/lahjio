@@ -5,7 +5,8 @@ Learners study words and phrases, take lessons in courses, practise with
 flashcards and quizzes, and build a daily streak. The interface is Bangla or
 English, with Hindi and Urdu interfaces that show English lesson content for now.
 
-Live site: https://lahjio.app (custom domain on GitHub Pages; `public/CNAME` keeps it on every deploy, so never delete that file). The old address https://mobaarok.github.io/lahjio-beta/ still works.
+Live site: https://lahjio.app (custom domain on GitHub Pages; `public/CNAME` keeps it on every deploy, so never delete that file).
+Code: https://github.com/mobaarok/lahjio (renamed from `lahjio-beta` on 2026-11-09; GitHub redirects the old name). The local folder is still called `lahjio-beta`.
 
 ## Project status (last updated 2026-11-03)
 
