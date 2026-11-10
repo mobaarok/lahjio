@@ -104,6 +104,49 @@ export async function publishCourse(courseId) {
   return { lessons: lessonsToPublish.length, items: itemsToPublish.length };
 }
 
+// The path an item's audio file has when it's named after the item id
+export function audioPathFor(itemId) {
+  return `audio/${itemId}.mp3`;
+}
+
+// True if the site serves a real audio file at this path. The dev server
+// answers missing files with the app's HTML page, so check the file type too.
+async function audioFileExists(path) {
+  try {
+    const response = await fetch(path, { method: "HEAD", cache: "no-store" });
+    return response.ok && (response.headers.get("content-type") ?? "").startsWith("audio");
+  } catch {
+    return false;
+  }
+}
+
+// For every item without audio, checks if public/audio/<id>.mp3 is on the
+// site and, if so, saves that path in the item's "audio" field.
+// Items that already have audio are never changed. Returns the linked ids.
+export async function linkAudioFiles(items) {
+  const missing = items.filter((item) => !item.audio);
+
+  // Check 20 files at a time, so hundreds of items don't flood the network
+  const found = [];
+  for (let start = 0; start < missing.length; start += 20) {
+    const group = missing.slice(start, start + 20);
+    const exists = await Promise.all(group.map((item) => audioFileExists(audioPathFor(item.id))));
+    found.push(...group.filter((_, index) => exists[index]));
+  }
+
+  // Firestore allows 500 writes per batch; stay well below
+  for (let start = 0; start < found.length; start += 400) {
+    const batch = writeBatch(db);
+    for (const item of found.slice(start, start + 400)) {
+      batch.update(doc(db, "items", item.id), { audio: audioPathFor(item.id), updated_at: serverTimestamp() });
+    }
+    await batch.commit();
+  }
+
+  if (found.length > 0) await bumpVersion();
+  return { checked: missing.length, linked: found.map((item) => item.id) };
+}
+
 // All content in one object (categories, items, courses with their lessons),
 // for a backup file before a reset. Firestore dates become ISO text.
 export async function exportContent() {

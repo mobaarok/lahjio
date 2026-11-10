@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Icon from "../../components/Icon";
 import { Alert, Badge, EmptyState, Spinner } from "../../components/ui";
-import { listAll } from "../../lib/admin";
+import { audioPathFor, linkAudioFiles, listAll } from "../../lib/admin";
 import { ITEM_TYPES, STATUSES, labelOf, statusTone } from "../../lib/constants";
 import { byOrder } from "../../lib/format";
 import { buttonClass, cardClass, inputClass } from "../../lib/styles";
@@ -24,6 +24,10 @@ export default function AdminItems() {
   const [status, setStatus] = useState("all");
   const [categoryId, setCategoryId] = useState("all");
 
+  // "Link audio files": linking is true while it runs, audioResult is the message after
+  const [linking, setLinking] = useState(false);
+  const [audioResult, setAudioResult] = useState(null);
+
   useEffect(() => {
     let ignore = false;
     Promise.all([listAll("items"), listAll("categories")])
@@ -39,6 +43,25 @@ export default function AdminItems() {
       ignore = true;
     };
   }, []);
+
+  // Finds audio/<id>.mp3 files on the site for items without audio and links them
+  async function handleLinkAudio() {
+    setLinking(true);
+    setAudioResult(null);
+    try {
+      const { checked, linked } = await linkAudioFiles(items);
+      // Show the new audio in the list without loading everything again
+      const linkedIds = new Set(linked);
+      setItems((current) =>
+        current.map((item) => (linkedIds.has(item.id) ? { ...item, audio: audioPathFor(item.id) } : item))
+      );
+      setAudioResult({ tone: "success", text: `Checked ${checked} items without audio. Linked ${linked.length}.` });
+    } catch {
+      setAudioResult({ tone: "error", text: "Couldn't link audio files. Check your connection and try again." });
+    } finally {
+      setLinking(false);
+    }
+  }
 
   if (error) return <Alert>{error}</Alert>;
   if (!items) return <Spinner label="Loading items..." />;
@@ -63,11 +86,29 @@ export default function AdminItems() {
           {items.length} items · {countBy("published")} published · {countBy("draft")} drafts ·{" "}
           {countBy("archived")} archived
         </p>
-        <Link to="/admin/items/new" className={buttonClass("primary", "md")}>
-          <Icon name="plus" className="size-4" />
-          New item
-        </Link>
+        <div className="flex flex-wrap gap-2">
+          <button
+            type="button"
+            onClick={handleLinkAudio}
+            disabled={linking}
+            title="Links public/audio/<item id>.mp3 to items that have no audio yet"
+            className={buttonClass("secondary", "md", "disabled:opacity-60")}
+          >
+            <Icon name="volume" className="size-4" />
+            {linking ? "Checking files..." : "Link audio files"}
+          </button>
+          <Link to="/admin/items/new" className={buttonClass("primary", "md")}>
+            <Icon name="plus" className="size-4" />
+            New item
+          </Link>
+        </div>
       </div>
+
+      {audioResult && (
+        <div className="mb-4">
+          <Alert tone={audioResult.tone}>{audioResult.text}</Alert>
+        </div>
+      )}
 
       <div className="mb-4 grid gap-2 sm:grid-cols-2 lg:grid-cols-4">
         <input
