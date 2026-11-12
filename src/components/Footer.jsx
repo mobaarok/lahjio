@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Icon from "./Icon";
 import LanguageSwitcher from "./LanguageSwitcher";
 import Wordmark from "./Wordmark";
 import { useLocale } from "../hooks/useLocale";
@@ -141,7 +142,8 @@ function ContactBox() {
           href={`mailto:${CONTACT.email}`}
           className={`${button} border border-slate-300 bg-white text-slate-700 hover:bg-slate-50`}
         >
-          ✉️ <span dir="ltr">{CONTACT.email}</span>
+          <Icon name="mail" className="size-5 text-emerald-700" />
+          <span dir="ltr">{CONTACT.email}</span>
         </a>
       </div>
     </div>
