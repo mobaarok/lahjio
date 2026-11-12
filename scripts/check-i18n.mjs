@@ -24,6 +24,16 @@ const dynamicKeys = [
   ...["free", "letters", "dialect", "phone", "time"].flatMap((k) => [`landing.faq.${k}Q`, `landing.faq.${k}A`]),
   ...["collect", "why", "where", "never", "contact"].flatMap((k) => [`privacy.${k}`, `privacy.${k}Text`]),
   ...["use", "content", "account", "free", "changes", "contact"].flatMap((k) => [`terms.${k}`, `terms.${k}Text`]),
+  // Learning guide (src/pages/Guide.jsx and src/components/GuideSurvey.jsx)
+  ...["general", "arabic", "app", "survey"].flatMap((k) => [`guide.${k}.short`, `guide.${k}.title`, `guide.${k}.intro`]),
+  ...["little", "spaced", "aloud", "use", "mistakes"].flatMap((k) => [`guide.general.${k}`, `guide.general.${k}Text`]),
+  ...["dialect", "phrases", "listen", "known", "script"].flatMap((k) => [`guide.arabic.${k}`, `guide.arabic.${k}Text`]),
+  ...["courses", "practice", "quiz", "words", "goal", "progress"].flatMap((k) => [`guide.app.${k}`, `guide.app.${k}Text`]),
+  ...["lesson", "review", "quiz", "real"].flatMap((k) => [`guide.routine.${k}`, `guide.routine.${k}Text`]),
+  ...["topics", "types", "level"].map((k) => `guide.survey.${k}`),
+  ...["work", "shopping", "transport", "health", "offices", "bank", "home", "friends"].map((k) => `guide.survey.topics.${k}`),
+  ...["phrases", "dialogues", "listening", "reading", "writing", "grammar"].map((k) => `guide.survey.types.${k}`),
+  ...["new", "some", "good"].map((k) => `guide.survey.level.${k}`),
 ];
 
 function sourceFiles(dir) {

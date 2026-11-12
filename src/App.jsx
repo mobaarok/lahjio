@@ -20,6 +20,7 @@ const Progress = lazy(() => import("./pages/Progress"));
 const Account = lazy(() => import("./pages/Account"));
 const Privacy = lazy(() => import("./pages/Privacy"));
 const Terms = lazy(() => import("./pages/Terms"));
+const Guide = lazy(() => import("./pages/Guide"));
 
 const AdminLayout = lazy(() => import("./pages/admin/AdminLayout"));
 const AdminItems = lazy(() => import("./pages/admin/AdminItems"));
@@ -56,6 +57,7 @@ export default function App() {
         <Route path="/quiz" element={<Quiz />} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/terms" element={<Terms />} />
+        <Route path="/guide" element={<Guide />} />
 
         {/* Needs a login */}
         <Route path="/courses/:courseId/lessons/:lessonId" element={loggedIn(<LessonPage />)} />

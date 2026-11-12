@@ -105,6 +105,18 @@ export default function Dashboard({ user }) {
         </Link>
       </div>
 
+      {/* Link to the Learning guide: study tips and the course survey */}
+      <Link to="/guide" className={`${cardClass} flex items-center gap-4 p-5 transition hover:border-emerald-300`}>
+        <span className="flex size-12 items-center justify-center rounded-2xl bg-emerald-50 text-emerald-700">
+          <Icon name="bulb" className="size-6" />
+        </span>
+        <span className="flex-1">
+          <span className="block font-semibold text-slate-900">{t("nav.guide")}</span>
+          <span className="block text-sm text-slate-500">{t("dashboard.guideText")}</span>
+        </span>
+        <Icon name="right" className="size-5 text-slate-400 rtl:rotate-180" />
+      </Link>
+
       {wordOfDay && (
         <div className={`${cardClass} p-5`}>
           <p className="text-sm font-medium text-emerald-700">{t("dashboard.wordOfDay")}</p>

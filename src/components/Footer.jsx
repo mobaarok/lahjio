@@ -11,6 +11,7 @@ const learnLinks = [
   { to: "/words", key: "nav.words" },
   { to: "/practice", key: "nav.practice" },
   { to: "/quiz", key: "nav.quiz" },
+  { to: "/guide", key: "nav.guide" },
 ];
 
 const aboutLinks = [

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Alert, EmptyState, Spinner } from "../../components/ui";
+import { Alert, Badge, EmptyState, Spinner } from "../../components/ui";
 import { deleteFeedback, listFeedback } from "../../lib/admin";
 import { buttonClass, cardClass } from "../../lib/styles";
 
@@ -40,7 +40,9 @@ export default function AdminFeedback() {
       {entries.map((entry) => (
         <article key={entry.id} className={`${cardClass} p-4`}>
           <div className="mb-2 flex flex-wrap items-center justify-between gap-2 text-sm text-slate-500">
-            <span>
+            <span className="flex flex-wrap items-center gap-2">
+              {/* Answers from the Learning guide survey are marked kind: "survey" */}
+              {entry.kind === "survey" && <Badge tone="sky">Survey</Badge>}
               {entry.email || "Unknown user"} · {entry.created_at?.toDate?.().toLocaleString() ?? "just now"}
             </span>
             <button type="button" onClick={() => handleDelete(entry.id)} className={buttonClass("ghost", "sm")}>

@@ -164,6 +164,22 @@ export default function Landing() {
         </div>
       </section>
 
+      {/* Learning guide */}
+      <section className="pb-16 sm:pb-24">
+        <div className="flex flex-col items-center gap-5 rounded-3xl border border-emerald-200 bg-emerald-50 p-6 text-center sm:flex-row sm:p-8 sm:text-start">
+          <span className="flex size-14 shrink-0 items-center justify-center rounded-2xl bg-white text-emerald-700 shadow-sm">
+            <Icon name="bulb" className="size-7" />
+          </span>
+          <div className="flex-1">
+            <h2 className="text-xl font-bold text-slate-900 sm:text-2xl">{t("landing.guide.title")}</h2>
+            <p className="mt-1 text-slate-600">{t("landing.guide.text")}</p>
+          </div>
+          <Link to="/guide" className={buttonClass("primary", "lg", "shrink-0")}>
+            {t("landing.guide.button")}
+          </Link>
+        </div>
+      </section>
+
       {/* FAQ */}
       <section className="mx-auto max-w-3xl pb-16 sm:pb-24">
         <h2 className="text-center text-3xl font-bold text-slate-900">{t("landing.faq.title")}</h2>
