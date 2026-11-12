@@ -18,7 +18,8 @@
     "backup:emulators": "node --env-file=scripts/emulators.env scripts/backup-firebase.mjs",
     "restore": "node scripts/restore-firebase.mjs",
     "restore:emulators": "node --env-file=scripts/emulators.env scripts/restore-firebase.mjs",
-    "check:i18n": "node scripts/check-i18n.mjs"
+    "check:i18n": "node scripts/check-i18n.mjs",
+    "audio": "node --env-file-if-exists=.env.elevenlabs scripts/make-audio.mjs"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.3",

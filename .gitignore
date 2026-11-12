@@ -30,3 +30,6 @@ tools/
 # Firebase backups (npm run backup): learner emails and password hashes, never commit
 backups/
 # Service account key for npm run backup lives in tools/ (already ignored)
+
+# ElevenLabs API key for npm run audio (scripts/make-audio.mjs), never commit
+.env.elevenlabs

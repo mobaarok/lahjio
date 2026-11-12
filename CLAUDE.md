@@ -39,11 +39,13 @@ Code: https://github.com/mobaarok/lahjio (renamed from `lahjio-beta` on 2026-11-
 **Known gaps:**
 
 - Native speakers haven't reviewed the 773 items yet
-- Recorded audio exists only for Survival day 1 (`s7-d1-01` to `s7-d1-19`, added 2026-11-10); every other item uses Web Speech
+- Audio files exist for every item (2026-11-12): real recordings for Survival day 1 (`s7-d1-01` to `s7-d1-19`), ElevenLabs voices for the rest. Native speakers haven't checked the ElevenLabs pronunciation yet, and single letters in Read Arabic may be said by name instead of sound
 - Audio is entered as a path or link in the admin form. There is no upload yet (Phase 2).
 - No payments (every course is free)
 
 **Audio files:** `public/audio/<itemId>.mp3` (named by item id, one flat folder), deployed with the site, so they're served at `https://lahjio.app/audio/<itemId>.mp3`. The item's `audio` field stores the relative path `audio/<itemId>.mp3` (no leading slash). The web app plays it as is; other apps add `https://lahjio.app/` in front. To replace a recording, use a new file name (for example `-v2`) so phones don't keep the cached old file.
+
+**ElevenLabs audio (`npm run audio`):** `scripts/make-audio.mjs` makes `public/audio/<itemId>.mp3` from the content packs with ElevenLabs model `eleven_v4`: Abdulrahman (male, `KfYUTAF49N2CPU3iKuMi`) says the Arabic, 0.7 s of silence, then Heba Mansuri (female, `v7UCHHCrHj1KBa4E41gb`). Options: `--test`, `--ids a,b`, `--all`, `--dry`. It skips items that already have a file. It needs the owner's key in `.env.elevenlabs` (git-ignored; the owner writes it, Claude never reads it) and a paid ElevenLabs plan (library voices aren't allowed on the free API). After making files: commit, deploy, then the owner clicks **Link audio files** in Admin > Items (it checks each file on the live site, so deploy first).
 
 **Android app:** the owner is building an Android app in a separate project that uses the same Firebase project (`lahjio`) and the same Firestore data. Keep data changes compatible with it: don't rename fields or change what a field holds without checking with the owner.
 - The main JavaScript bundle is about 385 KB and the Firebase bundle about 267 KB (114 KB and 82 KB gzipped)
