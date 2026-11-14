@@ -106,6 +106,7 @@ export default function AdminUsers() {
                   <td className="max-w-56 px-4 py-3">
                     <p className="truncate font-medium text-slate-900">{u.name || "No name"}</p>
                     <p className="truncate text-xs text-slate-500">{u.email || u.uid}</p>
+                    {u.is_deleted && <Badge tone="red">Deleted</Badge>}
                   </td>
                   <td className="px-4 py-3">{u.country}</td>
                   <td className="px-4 py-3">{languageName(u.locale)}</td>

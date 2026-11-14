@@ -248,6 +248,12 @@ export default {
   "account.send": "भेजें",
   "account.feedbackSent": "धन्यवाद! हमें आपका संदेश मिल गया।",
   "account.logout": "लॉग आउट",
+  "account.delete": "अकाउंट डिलीट करें",
+  "account.deleteText": "आपका अकाउंट बंद हो जाएगा और आप इससे दोबारा लॉग इन नहीं कर पाएँगे। ऐप से इसे वापस नहीं किया जा सकता।",
+  "account.deleteConfirm": "हाँ, मेरा अकाउंट डिलीट करें",
+  "account.deleteCancel": "अकाउंट रखें",
+  "account.deleting": "डिलीट हो रहा है...",
+  "account.deletedNotice": "यह अकाउंट डिलीट हो चुका है, इसलिए इससे लॉग इन नहीं किया जा सकता।",
 
   // Login, signup and password reset
   "auth.email": "ईमेल",

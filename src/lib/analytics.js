@@ -56,6 +56,8 @@ export async function loadUsers(lessonResults) {
       current_streak: data.current_streak ?? 0,
       longest_streak: data.longest_streak ?? 0,
       lessons_done: lessonsDone[d.id] ?? 0,
+      // The learner deleted their account (the profile is only marked, never removed)
+      is_deleted: data.is_deleted === true,
     };
   });
 }

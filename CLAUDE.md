@@ -19,7 +19,7 @@ Code: https://github.com/mobaarok/lahjio (renamed from `lahjio-beta` on 2026-11-
 - **Practice:** flashcards in four modes (due review, new, hard, all) with spaced repetition
 - **Quiz:** 10 questions of three types (read, pick the Arabic, listen), with the pronunciation shown next to the Arabic and audio played automatically. Guests can play too.
 - **Progress page:** stats, daily goal setting, mastery levels, progress by topic and hardest words
-- **Account:** edit name, language, feedback and logout (account deletion was removed)
+- **Account:** edit name, language, feedback, logout and "Delete account" (soft delete since 2026-11-14: it sets `is_deleted: true` and `deleted_at` on `users/{uid}` and removes nothing; `AuthProvider` signs that account out again on every login and shows a notice; Admin > Users shows a "Deleted" badge. Learners can't undo it; to restore someone, set `is_deleted` to false in the Firebase Console. The Android app should do the same check)
 - **Auth:** email and Google login, signup, password reset, privacy and terms pages
 - **Admin dashboard (`/admin`):** items (draft, published, archived; duplicate Arabic check; Bangla/English notes), categories, courses and lessons (item picker and ordering, "Publish everything"), analytics, users, learner feedback, content import, and "Start fresh" (backup, then delete all content)
 - **Languages:** Bangla (default), English, Hindi and Urdu (right to left). Hindi and Urdu have their own interface text but see English lessons and meanings, with a notice saying so
@@ -159,6 +159,7 @@ admins/{uid}                 exists = admin; added by hand in the Firebase Conso
 users/{uid}                  xp, current_streak, longest_streak, last_active_date,
                              today_key, today_count, daily_goal (never plan from the app),
                              name, email, locale, time_zone, signed_up_at, last_seen_at
+                             is_deleted, deleted_at (set by "Delete account"; never undone from the app)
                              (written by VisitTracker on every visit, for analytics)
   progress/{itemId}          known, box, times_correct, times_wrong, next_review_at
   lesson_progress/{lessonId} course_id, status, best_score

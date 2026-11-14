@@ -248,6 +248,12 @@ export default {
   "account.send": "Send",
   "account.feedbackSent": "Thank you! We got your message.",
   "account.logout": "Log out",
+  "account.delete": "Delete account",
+  "account.deleteText": "Your account will be closed and you won't be able to log in with it again. This can't be undone from the app.",
+  "account.deleteConfirm": "Yes, delete my account",
+  "account.deleteCancel": "Keep my account",
+  "account.deleting": "Deleting...",
+  "account.deletedNotice": "This account was deleted, so you can't log in with it.",
 
   // Login, signup and password reset
   "auth.email": "Email",

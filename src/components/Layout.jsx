@@ -7,6 +7,7 @@ import Footer from "./Footer";
 import VisitTracker from "./VisitTracker";
 import PageViewTracker from "./PageViewTracker";
 import { Alert, Spinner } from "./ui";
+import { useAuth } from "../hooks/useAuth";
 import { useLocale } from "../hooks/useLocale";
 import { useProgress } from "../hooks/useProgress";
 
@@ -14,6 +15,7 @@ import { useProgress } from "../hooks/useProgress";
 export default function Layout() {
   const { t } = useLocale();
   const { error, clearError } = useProgress();
+  const { deletedSignIn, clearDeletedSignIn } = useAuth();
 
   // overflow-x-clip lets full-bleed sections reach the screen edges without
   // adding a sideways scrollbar
@@ -32,6 +34,17 @@ export default function Layout() {
               <Alert>{t(error)}</Alert>
             </div>
             <button onClick={clearError} className="p-2 text-sm text-slate-500" aria-label={t("common.close")}>
+              ✕
+            </button>
+          </div>
+        )}
+        {/* A deleted account tried to log in and was signed out again */}
+        {deletedSignIn && (
+          <div className="mb-4 flex items-start gap-2">
+            <div className="flex-1">
+              <Alert>{t("account.deletedNotice")}</Alert>
+            </div>
+            <button onClick={clearDeletedSignIn} className="p-2 text-sm text-slate-500" aria-label={t("common.close")}>
               ✕
             </button>
           </div>

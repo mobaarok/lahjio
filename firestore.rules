@@ -57,8 +57,12 @@ service cloud.firestore {
       allow delete: if isOwner(userId);
       allow create: if isOwner(userId) &&
         !request.resource.data.keys().hasAny(["plan", "plan_expires_at"]);
+      // A learner can mark their account deleted (is_deleted: true) but never
+      // undo it; only the owner can, in the Firebase Console
       allow update: if isOwner(userId) &&
-        !request.resource.data.diff(resource.data).affectedKeys().hasAny(["plan", "plan_expires_at"]);
+        !request.resource.data.diff(resource.data).affectedKeys().hasAny(["plan", "plan_expires_at"]) &&
+        !(resource.data.get("is_deleted", false) == true &&
+          request.resource.data.get("is_deleted", false) != true);
 
       match /progress/{itemId} {
         allow read, write: if isOwner(userId);

@@ -247,6 +247,12 @@ export default {
   "account.send": "পাঠাও",
   "account.feedbackSent": "ধন্যবাদ! তোমার মতামত আমরা পেয়েছি।",
   "account.logout": "লগআউট",
+  "account.delete": "অ্যাকাউন্ট মুছে ফেলো",
+  "account.deleteText": "তোমার অ্যাকাউন্ট বন্ধ হয়ে যাবে, আর এটা দিয়ে আবার লগইন করতে পারবে না। অ্যাপ থেকে এটা ফেরানো যাবে না।",
+  "account.deleteConfirm": "হ্যাঁ, আমার অ্যাকাউন্ট মুছে ফেলো",
+  "account.deleteCancel": "অ্যাকাউন্ট রাখো",
+  "account.deleting": "মুছে ফেলা হচ্ছে...",
+  "account.deletedNotice": "এই অ্যাকাউন্টটি মুছে ফেলা হয়েছে, তাই এটা দিয়ে লগইন করা যাবে না।",
 
   // Login, signup and password reset
   "auth.email": "ইমেইল",

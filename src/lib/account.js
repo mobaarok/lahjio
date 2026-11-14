@@ -1,6 +1,17 @@
-// Account actions: sending feedback and the Learning guide survey
-import { addDoc, collection, serverTimestamp } from "firebase/firestore";
+// Account actions: deleting the account, sending feedback and the Learning guide survey
+import { addDoc, collection, doc, serverTimestamp, setDoc } from "firebase/firestore";
 import { db } from "../firebase";
+
+// "Deletes" an account without removing anything: it only marks the profile
+// with is_deleted, so progress and feedback stay for the owner. The login
+// still exists, but AuthProvider signs out anyone whose profile has this mark.
+export function markAccountDeleted(user) {
+  return setDoc(
+    doc(db, "users", user.uid),
+    { is_deleted: true, deleted_at: serverTimestamp() },
+    { merge: true }
+  );
+}
 
 export function sendFeedback(user, message) {
   return addDoc(collection(db, "feedback"), {

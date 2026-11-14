@@ -7,11 +7,11 @@ import LanguageSwitcher from "../components/LanguageSwitcher";
 import { Alert, Field, PageHeader } from "../components/ui";
 import { useAuth } from "../hooks/useAuth";
 import { useLocale } from "../hooks/useLocale";
-import { sendFeedback } from "../lib/account";
+import { markAccountDeleted, sendFeedback } from "../lib/account";
 import { authErrorKey } from "../lib/authErrors";
 import { buttonClass, cardClass, inputClass } from "../lib/styles";
 
-// Profile, language, feedback and logout
+// Profile, language, feedback, logout and account deletion
 export default function Account() {
   const { user, isAdmin } = useAuth();
   const { t } = useLocale();
@@ -21,6 +21,8 @@ export default function Account() {
   const [feedback, setFeedback] = useState("");
   const [message, setMessage] = useState({ tone: "", text: "" });
   const [busy, setBusy] = useState("");
+  // The delete button first shows a confirm box; this says if it's open
+  const [confirmDelete, setConfirmDelete] = useState(false);
 
   // Runs one action at a time and shows its result
   async function run(action, task, successKey) {
@@ -58,6 +60,19 @@ export default function Account() {
   async function handleLogout() {
     navigate("/", { replace: true });
     await signOut(auth);
+  }
+
+  // Marks the profile as deleted (nothing is removed), then logs out
+  async function handleDelete() {
+    setBusy("delete");
+    setMessage({ tone: "", text: "" });
+    try {
+      await markAccountDeleted(user);
+      await handleLogout();
+    } catch (err) {
+      setMessage({ tone: "error", text: t(authErrorKey(err.code)) });
+      setBusy("");
+    }
   }
 
   const links = [
@@ -116,6 +131,26 @@ export default function Account() {
         <Icon name="logout" />
         {t("account.logout")}
       </button>
+
+      {/* Delete account: a small link first, then a confirm box */}
+      {confirmDelete ? (
+        <section className="space-y-3 rounded-2xl border border-red-200 bg-red-50 p-5">
+          <p className="font-semibold text-red-800">{t("account.delete")}</p>
+          <p className="text-sm text-red-700">{t("account.deleteText")}</p>
+          <div className="flex flex-wrap gap-2">
+            <button onClick={handleDelete} disabled={busy === "delete"} className={buttonClass("danger", "md", "disabled:opacity-60")}>
+              {busy === "delete" ? t("account.deleting") : t("account.deleteConfirm")}
+            </button>
+            <button onClick={() => setConfirmDelete(false)} disabled={busy === "delete"} className={buttonClass("secondary")}>
+              {t("account.deleteCancel")}
+            </button>
+          </div>
+        </section>
+      ) : (
+        <button onClick={() => setConfirmDelete(true)} className="mx-auto block text-sm text-red-600 hover:underline">
+          {t("account.delete")}
+        </button>
+      )}
     </div>
   );
 }

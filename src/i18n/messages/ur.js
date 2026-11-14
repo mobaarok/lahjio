@@ -248,6 +248,12 @@ export default {
   "account.send": "بھیجیں",
   "account.feedbackSent": "شکریہ! ہمیں آپ کا پیغام مل گیا۔",
   "account.logout": "لاگ آؤٹ",
+  "account.delete": "اکاؤنٹ ڈیلیٹ کریں",
+  "account.deleteText": "آپ کا اکاؤنٹ بند ہو جائے گا اور آپ اس سے دوبارہ لاگ اِن نہیں کر سکیں گے۔ ایپ سے اسے واپس نہیں کیا جا سکتا۔",
+  "account.deleteConfirm": "ہاں، میرا اکاؤنٹ ڈیلیٹ کریں",
+  "account.deleteCancel": "اکاؤنٹ رکھیں",
+  "account.deleting": "ڈیلیٹ ہو رہا ہے...",
+  "account.deletedNotice": "یہ اکاؤنٹ ڈیلیٹ ہو چکا ہے، اس لیے اس سے لاگ اِن نہیں کیا جا سکتا۔",
 
   // Login, signup and password reset
   "auth.email": "ای میل",
