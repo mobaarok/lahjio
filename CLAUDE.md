@@ -55,7 +55,7 @@ Code: https://github.com/mobaarok/lahjio (renamed from `lahjio-beta` on 2026-11-
 - The one email/password learner must use "Forgot password" once
 - The old project's second admin is not an admin in `lahjio`; add their uid to `admins` if needed
 - Delete the old Firebase project `lahjio-beta` only after a few weeks of the new one working
-- Login on https://lahjio.com has not been tested by Claude: add `lahjio.com` (and `www.lahjio.com`) to Firebase Console > Authentication > Settings > Authorized domains, then the owner should confirm login on a phone
+- Login on https://lahjio.com works and the Google sign-in branding is verified (owner confirmed 2026-11-14)
 - The Android app must use `https://lahjio.com/` in front of audio paths; `lahjio.app` no longer serves the site
 
 ## What to do next
