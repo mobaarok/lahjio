@@ -169,7 +169,7 @@ activity/{uid}_{day}         uid, day: one note per learner per day they open th
 
 Security rules are in `firestore.rules`. They are **not** deployed automatically. Publish them after any change, with the owner's OK, either in Firebase Console > Firestore > Rules or with the Firebase CLI in `tools/` (signed in as the owner):
 `node tools/firebase-tools/node_modules/firebase-tools/lib/bin/firebase.js deploy --only firestore:rules --project lahjio`.
-The published rules in `lahjio` match this file (2026-11-09).
+The published rules in `lahjio` match this file (2026-11-14, with the is_deleted rule).
 
 ## Languages (i18n)
 
