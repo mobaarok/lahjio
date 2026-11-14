@@ -5,12 +5,12 @@ Learners study words and phrases, take lessons in courses, practise with
 flashcards and quizzes, and build a daily streak. The interface is Bangla or
 English, with Hindi and Urdu interfaces that show English lesson content for now.
 
-Live site: https://lahjio.app (custom domain on GitHub Pages; `public/CNAME` keeps it on every deploy, so never delete that file).
+Live site: https://lahjio.com (custom domain on GitHub Pages since 2026-11-14, before that lahjio.app; `public/CNAME` keeps it on every deploy, so never delete or change that file without the owner).
 Code: https://github.com/mobaarok/lahjio (renamed from `lahjio-beta` on 2026-11-09; GitHub redirects the old name). The local folder is still called `lahjio-beta`.
 
 ## Project status (last updated 2026-11-09)
 
-**Built and live** (`version1` = `main` as of 2026-11-09: 13 courses, the new Firebase project `lahjio` and the lahjio.app domain):
+**Built and live** (`version1` = `main` as of 2026-11-09: 13 courses, the new Firebase project `lahjio`; the domain moved to lahjio.com on 2026-11-14):
 
 - **Landing page:** premium design with a phone mockup, real-life phrases with audio, a try-it question, an FAQ and live content numbers
 - **Logged-in dashboard:** streak, XP, daily goal, next lesson and word of the day
@@ -43,7 +43,7 @@ Code: https://github.com/mobaarok/lahjio (renamed from `lahjio-beta` on 2026-11-
 - Audio is entered as a path or link in the admin form. There is no upload yet (Phase 2).
 - No payments (every course is free)
 
-**Audio files:** `public/audio/<itemId>.mp3` (named by item id, one flat folder), deployed with the site, so they're served at `https://lahjio.app/audio/<itemId>.mp3`. The item's `audio` field stores the relative path `audio/<itemId>.mp3` (no leading slash). The web app plays it as is; other apps add `https://lahjio.app/` in front. To replace a recording, use a new file name (for example `-v2`) so phones don't keep the cached old file.
+**Audio files:** `public/audio/<itemId>.mp3` (named by item id, one flat folder), deployed with the site, so they're served at `https://lahjio.com/audio/<itemId>.mp3`. The item's `audio` field stores the relative path `audio/<itemId>.mp3` (no leading slash). The web app plays it as is; other apps add `https://lahjio.com/` in front. To replace a recording, use a new file name (for example `-v2`) so phones don't keep the cached old file.
 
 **ElevenLabs audio (`npm run audio`):** `scripts/make-audio.mjs` makes `public/audio/<itemId>.mp3` from the content packs with ElevenLabs model `eleven_v4`: Abdulrahman (male, `KfYUTAF49N2CPU3iKuMi`) says the Arabic, a short gap (about 0.3 s, like the owner's s7-d1 recordings), then Heba Mansuri (female, `v7UCHHCrHj1KBa4E41gb`). The joined file must not keep ElevenLabs' "Info" frame: Android's player trusts it and stops after the male voice. Options: `--test`, `--ids a,b`, `--all`, `--dry`, and `--fix` (cleans existing files without calling ElevenLabs). It skips items that already have a file. It needs the owner's key in `.env.elevenlabs` (git-ignored; the owner writes it, Claude never reads it) and a paid ElevenLabs plan (library voices aren't allowed on the free API). After making files: commit, deploy, then the owner clicks **Link audio files** in Admin > Items (it checks each file on the live site, so deploy first).
 
@@ -55,7 +55,8 @@ Code: https://github.com/mobaarok/lahjio (renamed from `lahjio-beta` on 2026-11-
 - The one email/password learner must use "Forgot password" once
 - The old project's second admin is not an admin in `lahjio`; add their uid to `admins` if needed
 - Delete the old Firebase project `lahjio-beta` only after a few weeks of the new one working
-- Login on https://lahjio.app (domain added to Authorized domains) has not been tested by Claude; the owner should confirm it on a phone
+- Login on https://lahjio.com has not been tested by Claude: add `lahjio.com` (and `www.lahjio.com`) to Firebase Console > Authentication > Settings > Authorized domains, then the owner should confirm login on a phone
+- The Android app must use `https://lahjio.com/` in front of audio paths; `lahjio.app` no longer serves the site
 
 ## What to do next
 
@@ -81,7 +82,7 @@ Agreed roadmap, in order. Ask the owner which step to start; they decide each se
 - `npm run dev`: dev server on http://localhost:5173, using the **real** Firebase project
 - `npm run build`, `npx eslint src`
 - `npm run check:i18n`: every text key used in the code exists in every language file
-- `npm run deploy`: publishes the current local code to the live site (https://lahjio.app)
+- `npm run deploy`: publishes the current local code to the live site (https://lahjio.com)
 - `npm run backup` / `npm run restore`: see "Backup and restore" below
 
 ### Testing logged-in pages safely (local emulators)

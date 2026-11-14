@@ -6,7 +6,7 @@ Lahjio is a web app for Bangla-speaking expats working in Saudi Arabia. Learners
 study words and phrases in short lessons, practise with flashcards and quizzes,
 hear every word, and keep a daily streak.
 
-- **Live site:** https://lahjio.app
+- **Live site:** https://lahjio.com
 - **Code:** https://github.com/mobaarok/lahjio
 - **Firebase account:** mobarokhrsa@gmail.com (project `lahjio`)
 
@@ -40,7 +40,7 @@ paid courses and an Android app. The full roadmap is in [CLAUDE.md](CLAUDE.md).
 ## Built with
 
 React 19, Vite 8, Tailwind CSS 4, React Router 7 and Firebase (Auth and Firestore).
-Hosted on GitHub Pages with the custom domain `lahjio.app`.
+Hosted on GitHub Pages with the custom domain `lahjio.com`.
 
 ## Run it on your computer
 
@@ -67,7 +67,7 @@ npm run dev:emulators      # the app on http://localhost:5180
 | `npm run build` | Builds the site into `dist/` |
 | `npx eslint src` | Checks the code |
 | `npm run check:i18n` | Checks every text exists in all four languages |
-| `npm run deploy` | Builds and publishes the site to https://lahjio.app |
+| `npm run deploy` | Builds and publishes the site to https://lahjio.com |
 | `npm run backup` | Saves the whole Firebase project to `backups/` (needs a service account key) |
 | `npm run restore -- backups/<folder>` | Loads a backup into a new, empty Firebase project |
 
