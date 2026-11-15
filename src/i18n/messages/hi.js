@@ -23,6 +23,7 @@ export default {
   "footer.tagline": "अपनी भाषा में सऊदी अरबी सीखें",
   "footer.privacy": "प्राइवेसी पॉलिसी",
   "footer.terms": "उपयोग की शर्तें",
+  "footer.deleteAccount": "अकाउंट डिलीट करने का तरीका",
   "footer.feedback": "सुझाव भेजें",
   "footer.learn": "सीखें",
   "footer.soon": "लिंक जल्द आ रहा है",

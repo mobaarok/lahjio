@@ -19,6 +19,8 @@ const aboutLinks = [
   { to: "/account", key: "footer.feedback" },
   { to: "/privacy", key: "footer.privacy" },
   { to: "/terms", key: "footer.terms" },
+  // A separate static page (public/delete-account/), so it uses href, not to
+  { href: "./delete-account/", key: "footer.deleteAccount" },
 ];
 
 // How learners can reach us when they have a problem.
@@ -102,10 +104,17 @@ function LinkColumn({ title, links }) {
       <p className="font-semibold text-slate-800">{title}</p>
       <ul className="mt-2 space-y-1.5">
         {links.map((link) => (
-          <li key={link.to}>
-            <Link to={link.to} className="hover:text-emerald-700">
-              {t(link.key)}
-            </Link>
+          <li key={link.key}>
+            {/* "href" links go to a plain page outside the app; "to" links stay inside it */}
+            {link.href ? (
+              <a href={link.href} className="hover:text-emerald-700">
+                {t(link.key)}
+              </a>
+            ) : (
+              <Link to={link.to} className="hover:text-emerald-700">
+                {t(link.key)}
+              </Link>
+            )}
           </li>
         ))}
       </ul>

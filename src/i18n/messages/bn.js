@@ -22,6 +22,7 @@ export default {
   "footer.tagline": "নিজের ভাষায় সৌদি আরবি শেখো",
   "footer.privacy": "গোপনীয়তা নীতি",
   "footer.terms": "ব্যবহারের শর্তাবলি",
+  "footer.deleteAccount": "অ্যাকাউন্ট মোছার নিয়ম",
   "footer.feedback": "মতামত দাও",
   "footer.learn": "শেখো",
   "footer.soon": "লিংক শিগগিরই আসছে",

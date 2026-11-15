@@ -23,6 +23,7 @@ export default {
   "footer.tagline": "اپنی زبان میں سعودی عربی سیکھیں",
   "footer.privacy": "پرائیویسی پالیسی",
   "footer.terms": "استعمال کی شرائط",
+  "footer.deleteAccount": "اکاؤنٹ ڈیلیٹ کرنے کا طریقہ",
   "footer.feedback": "رائے بھیجیں",
   "footer.learn": "سیکھیں",
   "footer.soon": "لنک جلد آ رہا ہے",

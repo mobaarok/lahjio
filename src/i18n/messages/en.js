@@ -23,6 +23,7 @@ export default {
   "footer.tagline": "Learn Saudi Arabic in your own language",
   "footer.privacy": "Privacy policy",
   "footer.terms": "Terms of use",
+  "footer.deleteAccount": "Delete your account",
   "footer.feedback": "Send feedback",
   "footer.learn": "Learn",
   "footer.soon": "link coming soon",
