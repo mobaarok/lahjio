@@ -307,6 +307,10 @@ export default {
   "privacy.whereText": "Data is stored securely in Google's Firebase service. Only you can see your own progress.",
   "privacy.never": "What we never do",
   "privacy.neverText": "We don't sell your data to anyone, and we don't use it for advertising.",
+  "privacy.delete": "Deleting your account",
+  "privacy.deleteText":
+    "Tap \"Delete account\" on the account page, or email lahjioapp@gmail.com. Your account is closed at once, and your login, profile, progress and feedback are permanently deleted within 30 days.",
+  "privacy.deleteLink": "How to delete your account",
   "privacy.contact": "Contact",
   "privacy.contactText": "If you have questions, write to us with \"Send feedback\" on the account page.",
   "terms.subtitle": "The rules for using Lahjio, in plain words.",

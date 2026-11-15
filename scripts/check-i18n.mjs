@@ -22,7 +22,7 @@ const dynamicKeys = [
   ...["learn", "practice", "remember"].flatMap((k) => [`landing.how.${k}`, `landing.how.${k}Text`]),
   ...["words", "audio", "review", "habit"].flatMap((k) => [`landing.features.${k}`, `landing.features.${k}Text`]),
   ...["free", "letters", "dialect", "phone", "time"].flatMap((k) => [`landing.faq.${k}Q`, `landing.faq.${k}A`]),
-  ...["collect", "why", "where", "never", "contact"].flatMap((k) => [`privacy.${k}`, `privacy.${k}Text`]),
+  ...["collect", "why", "where", "never", "delete", "contact"].flatMap((k) => [`privacy.${k}`, `privacy.${k}Text`]),
   ...["use", "content", "account", "free", "changes", "contact"].flatMap((k) => [`terms.${k}`, `terms.${k}Text`]),
   // Learning guide (src/pages/Guide.jsx and src/components/GuideSurvey.jsx)
   ...["general", "arabic", "app", "survey"].flatMap((k) => [`guide.${k}.short`, `guide.${k}.title`, `guide.${k}.intro`]),

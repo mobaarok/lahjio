@@ -21,6 +21,18 @@
         "5180"
       ],
       "port": 5180
+    },
+    {
+      "name": "lahjio-built",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "vite",
+        "preview",
+        "--port",
+        "4173",
+        "--strictPort"
+      ],
+      "port": 4173
     }
   ]
 }
